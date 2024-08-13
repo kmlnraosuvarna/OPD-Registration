@@ -1,0 +1,3 @@
+/* AUTOCOMPLETE */
+
+.autocomplete{width: 25%;position: relative;}.autocomplete input{font-size: 1.2em;width: 325%;padding:-0.8em;}.autocomplete ul{position: absolute;left: 0;width: 25%;border-left: 1px solid #888;border-right: 1px solid #888;border-bottom: 1px solid #888;z-index: 1;}.autocomplete li{text-align: left;list-style:none;width: 25%;padding:0.4em;background-color: #fff;}.autocomplete li.active{width: 25%;background-color: #4bf;}.autocomplete .highlight {background-color: #E2E2E2;}.autocomplete li.active .highlight {background: #666;color: #fff;}

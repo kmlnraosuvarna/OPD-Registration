@@ -1,0 +1,3048 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Universal.master.cs" Inherits="Private_Masters_Theme1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/Private/UserControls/LookUp.ascx" TagName="lookup" TagPrefix="lookupuc" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>HIMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/angular.min.js") %>"></script>
+    <link rel="SHORTCUT ICON" type="image/png" href="../../Assets/img/Brand_Logo.png">
+    <%--  <link rel="Stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/redmond/jquery-ui-1.7.1.custom.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/iconfont/css/animation.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/iconfont/css/fontello.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/css/SuToaster.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/fontastic-icon/styles.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/css/responsive.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/tooltipster/tooltipster.bundle.min.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/css/shortcut.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/lis/styles.css")%>" />--%>
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/css/responsive.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/css/libraries.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/css/Theme1Style.css")%>" />
+    <link rel="stylesheet" type="text/css" href="<%# Page.ResolveUrl("~/Assets/css/color1.css")%>" />
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/jquery.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/underscore.min.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/Theme1.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/json.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/lookup.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/JSScript/NurseStationScripts/NsStationAutoArrowSelection.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/JSScript/DashBoardScripts/AutoCompletion.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/Global.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/FileSaver.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/js/ExtendedJScript.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveUrl("~/Assets/tooltipster/tooltipster.bundle.min.js") %>"></script>
+    <%--    <script src="../../Assets/js/xlsx.core.min.js" type="text/javascript"></script>
+    <script src="../../Assets/js/alasql.min.js" type="text/javascript"></script>--%>
+    <style>
+        .Sessiondiv
+        {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 120px;
+            background: #fff;
+            z-index: 99999;
+            margin-left: -150px;
+            margin-top: -75px;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .Sessiondiv label
+        {
+        }
+        .Sessiondiv label i
+        {
+            color: #fff;
+            border-radius: 50px;
+            background: #ff6666;
+            padding: 7px 0 2px 0;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            margin-right: 5px;
+        }
+        .Sessiondiv label a:link
+        {
+            display: inline-block;
+            color: #03abd5;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .Sessiondiv label a:hover
+        {
+            color: #fff;
+            background: #03abd5;
+            padding: 2px 8px;
+            border-radius: 5px;
+        }
+        .pageheader > h1
+        {
+            display: none;
+        }
+    </style>
+    <style type="text/css">
+        .cmasktoken
+        {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 41px;
+            z-index: 9999;
+        }
+        .squarehelp
+        {
+            font-size: 16px;
+            color: #03abd5; /* padding: 0px 4px 0px 4px;*/
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript" language="javascript">
+
+        var _curSessionID = '';
+        $(document).keydown(function (event) {
+
+            var devTool = $('#ctl00_hdndevtool').val();
+            if (devTool == '' || devTool == null || devTool == undefined) devTool = 'N';
+//            console.log(event.keyCode);
+//            if (event.keyCode == 18 || event.keyCode == 83 || event.keyCode == 39) {
+//                //alert('hi');
+//                event.stopPropagation();
+//                event.preventDefault();
+//            }
+            if (devTool == 'N' || devTool == 'n') {
+                if (event.keyCode == 123)
+                    return false;
+                else if (event.ctrlKey && event.shiftKey && event.keyCode == 73)
+                    return false;
+            }
+        });
+        window.onload = function () {
+            var devTool = $('#ctl00_hdndevtool').val();
+            if (devTool == '' || devTool == null || devTool == undefined) devTool = 'N';
+            if (devTool == 'N' || devTool == 'n') {
+                document.oncontextmenu = new Function("return false");
+            }
+        }
+        $.fn.scustommessageboxThumb = function (_Type, headerText, bodyText, yesCallBack, callBackParamList, noCallBack, ThumbCallBack) {
+            if ($(this).length > 0)
+                $(this).remove();
+
+            var _ybtnText; var _nbtnText = ""; var _ThumbKeyUse = "";
+            if (_Type == 1) {
+                _ybtnText = "Ok";
+                _nbtnText = "Cancel";
+            }
+            else if (_Type == 9) {
+                _ybtnText = "Yes";
+                _nbtnText = "No";
+                _ThumbKeyUse = "Thumb";
+            }
+            else {
+                _ybtnText = "Yes";
+                _nbtnText = "No";
+            }
+            var _html = "";
+            if (_Type == 9) {
+                _html = '<div class="smessagebox"><div class="promptmask"></div><div class="prompt" ><h1></h1><div><i class="icon-check-1"></i><h2></h2></div><button id="syesbutton">' + _ybtnText + '</button><button id="snobutton">' + _nbtnText + '</button><button id="sThumbbutton">' + _ThumbKeyUse + '</button></div></div>';
+            }
+            else {
+                _html = '<div class="smessagebox"><div class="promptmask"></div><div class="prompt" ><h1></h1><div><i class="icon-check-1"></i><h2></h2></div><button id="syesbutton">' + _ybtnText + '</button><button id="snobutton">' + _nbtnText + '</button></div></div>';
+            }
+
+            $("body").append(_html);
+            $(".smessagebox h1").html(headerText);
+            $(".smessagebox h2").html(bodyText);
+            $(".smessagebox #syesbutton").bind("click", function () {
+                if (callBackParamList != '' || callBackParamList != undefined)
+                    yesCallBack(callBackParamList);
+                else
+                    yesCallBack();
+                $(".smessagebox *").unbind(); $(".smessagebox").hide(); $(".smessagebox").remove();
+            });
+            $(".smessagebox #sThumbbutton").bind("click", function () {
+                if (callBackParamList != '' || callBackParamList != undefined)
+                    ThumbCallBack(callBackParamList);
+                else
+                    ThumbCallBack();
+                $(".smessagebox *").unbind(); $(".smessagebox").hide(); $(".smessagebox").remove();
+            });
+            if (typeof noCallBack == "function") {
+                $(".smessagebox #snobutton").bind("click", function () {
+                    noCallBack(); $(".smessagebox *").unbind();
+                    $(".smessagebox").hide();
+                    $(".smessagebox").remove();
+                });
+            }
+            else {
+                $(".smessagebox #snobutton").hide();
+            }
+
+        };
+        $(window).on('focus', function (e) {
+            var desc = document.title;
+            if ($('[id*=hdnSessionDocId]').val() != '' && $('[id*=hdnSessionDocId]').val() != '0'
+            && $('[id*=hdnSessionSubModId]').val() != '' && $('[id*=hdnSessionSubModId]').val() != '0'
+            && $('[id*=hdnSessionModId]').val() != '' && $('[id*=hdnSessionModId]').val() != '0'
+            && $('[id*=hdnSessionDocId]').val() != 'undefined' && $('[id*=hdnSessionModId]').val() != 'undefined' && $('[id*=hdnSessionSubModId]').val() != 'undefined') {
+                var docid = $('[id*=hdnSessionDocId]').val();
+                var submodid = $('[id*=hdnSessionSubModId]').val();
+                var modid = $('[id*=hdnSessionModId]').val();
+                console.log('docid=' + docid + 'smodid=' + submodid + 'modid=' + modid);
+                ManageSessions(docid, submodid, modid);
+            }
+            else {
+
+            }
+            //MySessionCheck();
+        });
+
+        function ManageSessions(docid, submodid, modid) {
+            $.ajax({
+                type: "POST",
+                url: _iniUrl + 'Private/FrontOffice/OPD/opdsessionst.aspx/SessionManage',
+                data: "{'docid': '" + docid + "','submodid': '" + submodid + "','modid': '" + modid + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                error: function (jqXHR, textStatus, errorThrown) { },
+                success: function (res) {
+
+                }
+            });
+        }
+        function ButtonsDisplay(Buttons) {
+
+            $.each(Buttons[0].childNodes, function (k, l) {
+                if (l.title.toUpperCase().indexOf('EDIT') != -1 || l.title.toUpperCase().indexOf('APPROVE') != -1 || l.title.toUpperCase().indexOf('CANCEL') != -1 || l.title.toUpperCase().indexOf('DELETE') != -1) {
+                    l.style.display = 'none';
+                }
+            });
+
+
+
+        }
+        var _pFix = '#ctl00_ContentPlaceHolder1_';
+        var _commonCph = "ctl00_ContentPlaceHolder1_";
+        var _sessionID = 0;
+        function ConfirmationRequiredFor_message(obj, param, message) {
+            var SaveAlert = document.getElementById(obj);
+            $(".smessagebox").scustommessagebox(1, "", message, OnsuccesssaveConfirmation_message, param);
+        }
+        function OnsuccesssaveConfirmation_message() {
+            var origin = window.location.origin;
+            var _url = window.location.pathname.split('/')[1];
+            window.location = origin + '/' + _url + '/Default.aspx';
+            return false;
+        }
+        function MySessionCheck() {
+//            GetNonAsync("Private/FrontOffice/OPD/opdsessionst.aspx/LocalStorageSession",
+//            { ID: 1 },
+//            function (jdata) {
+
+//                if (jdata != '' && jdata != null && jdata != undefined) {
+//                    if (jdata.d == '' || jdata.d == null || jdata.d == undefined) { jdata.d = 0; }
+//                    if (localStorage.hmodule == '' || localStorage.hmodule == null || localStorage.hmodule == undefined) { localStorage.hmodule = ''; }
+//                    if (localStorage.hdocument == '' || localStorage.hdocument == null || localStorage.hdocument == undefined) { localStorage.hdocument = ''; }
+//                    _curSessionID = jdata.d;
+//                    if (_sessionID == 0) {
+//                        //_sessionID = _curSessionID;
+//                        _sessionID = sessionStorage.session_id;
+//                    }
+//                    if (_sessionID != undefined && _sessionID != jdata.d) {
+//                        $("#MySessionExpired").show();
+//                        ClearBrowserHistory();
+//                        __doPostBack('ctl00$lnkLogout', '');
+//                        return false;
+//                    }
+//                    else {
+//                        if (localStorage.hmodule == '' && localStorage.hdocument == '' && parseInt(jdata.d) == 0) {
+//                            $("#MySessionExpired").show();
+//                            ClearBrowserHistory();
+//                            __doPostBack('ctl00$lnkLogout', '');
+//                            return false;
+//                        }
+//                    }
+//                }
+//            },
+//            function () {
+//            });
+        }
+
+        $(window).on("focus", function (e) {
+            if (_curSessionID != "0") {
+                MySessionCheck();
+            }
+        });
+        function UpdateSessionDoc() {
+            document.getElementById('ctl00_hdndocsessionid').value = sessionStorage.docc_id;
+            document.getElementById('ctl00_hdngdocformcd').value = sessionStorage.docc_form_cd;
+            document.getElementById('ctl00_hdnmodulesessionid').value = sessionStorage.modulesession_id;
+            document.getElementById('ctl00_hdnsubmodulesessionid').value = sessionStorage.submodulesession_id;
+            var doc_id = document.getElementById('ctl00_hdndocsessionid').value;
+            var doc_from_cd = document.getElementById('ctl00_hdngdocformcd').value;
+            var modulesession_id = document.getElementById('ctl00_hdnmodulesessionid').value;
+            var submodulesession_id = document.getElementById('ctl00_hdnsubmodulesessionid').value;
+            GetNonAsync(
+                    "Private/Corporate/Changes/CorpRegandRefLetterList.aspx/UpdateSessionDocId",
+                    { docid: doc_id, modulesession_id: modulesession_id, submodulesession_id: submodulesession_id, doc_from_cd: doc_from_cd },
+                    function (jdata) {
+                    },
+                    function () {
+                    });
+        }
+        function ClickNavigation(link) {
+            window.open(link);
+        }
+        function onDocsucess(result) {
+            var gridService = document.getElementById('ctl00_gridDocsAvilability');
+            $("table[id$=gridDocsAvilability] tr:has(td)").each(function () {
+                $(this).closest('tr').remove();
+            });
+            if (result != null) {
+
+                for (var i = 0; i < result.length; i++) {
+                    if (i == 0 && gridService.rows.length - 1 == 1) {
+                        $('table[id$=gridDocsAvilability] tr:has(td)').each(function (e) {
+                            $(this).closest('tr').find('[id*=DoctorName]').text(result[i].DOCTOR_NAME);
+                            $(this).closest('tr').find('[id*=lblshift1]').text(result[i].SHIFT1);
+                            $(this).closest('tr').find('[id*=lblShift2]').text(result[i].SHIFT2);
+                            $(this).closest('tr').find('[id*=lblShift3]').text(resultd[i].SHIFT3);
+                            return false;
+                        });
+                    }
+                    else {
+                        var sno = i + 1;
+                        fn_Add_Grid_Row(result[i].DOCTOR_NAME, result[i].SHIFT1, result[i].SHIFT2, result[i].SHIFT3);
+                    }
+
+                }
+
+            }
+            return false;
+        }
+
+
+        function OnDocFailure(ex) { }
+        function DoctorShedule() {
+            $find('ctl00_mdldiscreq').show();
+            var date = document.getElementById('ctl00_hdnDate').value;
+            var argument = document.getElementById('ctl00_hdnDate').value;
+            CallBillsServer(argument);
+        }
+        function DoctorShed() {
+            $('[id*=DivDoctors]').show();
+            var _date = document.getElementById('ctl00_hdnDate').value;
+            var argument = document.getElementById('ctl00_hdnDate').value;
+
+            var param = param || {};
+            param.dataKey = "";
+            param.pageSize = 10;
+            param.pageNum = 1;
+            param.defaultWSParams = { date: _date };
+
+            param.wsPath = "Private/dasboard.aspx/GetDocAvailability";
+            param.wsFilterPath = "Private/module.aspx/GetDocAvailability";
+            param.template = ["DOCTOR_NAME*DOCTOR_NAME"
+                    , "SHIFT1*SHIFT1"
+                    , "SHIFT2*SHIFT2"
+                    , "SHIFT3*SHIFT3"];
+            param.header = [{ col: "Doctor Name", sort: true, filter: true }
+                    , { col: "Shift 1", sort: true, filter: true }
+                    , { col: "shift 2", sort: true, filter: true }
+                    , { col: "Shift 3", sort: true, filter: true}];
+
+            param.enablePaging = false;
+            param.enableTrace = false;
+            param.enableFilter = false;
+            param.enableCheckbox = false;
+            param.enableSorting = true;
+            param.RowNo = true;
+            gridControl = $("#divAvailabilityDoctors").jtable(param);
+        }
+        function ClosingDoctorsPopup() {
+            $('[id*=DivDoctors]').hide();
+            return false;
+        }
+        function BillResponseHandler(result, context) {
+
+            document.getElementById('ctl00_gridDocsAvilability').innerHTML = result;
+        }
+
+        var index = 0;
+        var compose_id = 0;
+
+        function fn_Add_Grid_Row(DOCTOR_NAMES, SHIFT1, SHIFT2, SHIFT3) {
+            var rowIndex = 0;
+            var rowColor = 0;
+            var newCell = 0;
+            var gvService = document.getElementById('ctl00_gridDocsAvilability');
+
+            var rowIndex = gvService.rows.length;
+            var newRow = gvService.insertRow(rowIndex);
+            if (rowColor == 0) {
+                newRow.className = 'gridAlternaterow'
+                rowColor++;
+            }
+            else {
+                newRow.className = 'gridrow'
+                rowColor = 0;
+            }
+
+            newCell = newRow.insertCell(0);
+            var DoctorName = document.createElement('label'); DoctorName.id = 'DoctorName' + index; DoctorName.innerHTML = DOCTOR_NAMES;
+            newCell.appendChild(DoctorName);
+
+            newCell = newRow.insertCell(1);
+            var lblshift1 = document.createElement('label'); newCell.align = 'left'; lblshift1.id = 'lblshift1' + index; lblshift1.innerHTML = SHIFT1;
+            newCell.appendChild(lblshift1);
+
+            newCell = newRow.insertCell(2);
+            var lblShift2 = document.createElement('label'); newCell.align = 'left'; lblShift2.id = 'lblShift2' + index; lblShift2.innerHTML = SHIFT2;
+            newCell.appendChild(lblShift2);
+
+            newCell = newRow.insertCell(3);
+            var lblShift3 = document.createElement('label'); newCell.align = 'left'; lblShift3.id = 'lblShift3' + index; lblShift3.innerHTML = SHIFT3;
+            newCell.appendChild(lblShift3);
+            index++;
+        }
+        function OnLocationSelection() {
+
+        }
+        function countDown() {
+        }
+
+        function OnsucessMail(result) {
+
+            if (result != null && result != '') {
+                AlertRequest(result);
+            }
+        }
+        function Onfail1(result) {
+            if (result != null && result != '') {
+                AlertRequest(result);
+            }
+        }
+        function AlertRequest(Result) {
+            $('#printpopup').show();
+            if (Result[0].ADMN_NO == '') {
+                document.getElementById('dispoptext').innerHTML = "You Got <b class='count'>&nbsp;1&nbsp;</b> New Message : " + "<br><b class='title'>Subject :-</b><br>" + Result[0].SUBJECT + " ";
+            }
+            else {
+                document.getElementById('dispoptext').innerHTML = "You Got <b  class='count'>&nbsp;1&nbsp;</b>New Message : " + "<br><b class='title'>Subject :-</b><br>" + Result[0].SUBJECT + "  " + "For Admission No:-" + Result[0].ADMN_NO;
+            }
+
+            compose_id = Result[0].COMPOSE_ID;
+        }
+        function closemsgbox() {
+            var MsgId = compose_id;
+            if (MsgId != null && MsgId != undefined && MsgId != '') { MsgId = parseInt(MsgId); } else { MsgId = parseInt("0"); }
+//            GetAsync(
+//                    "DrugIndentService.asmx/UpdateDischargeFlagRaisingAlert",
+//                    { MessageId: MsgId },
+//                    function (jdata) {
+//                        OnsucessMail1(jdata.d);
+//                    },
+//                    function () {
+//                        Onfail11(data);
+//                    });
+            $('#printpopup').hide();
+            return false;
+        }
+
+        function OnsucessMail1(result) {
+            if (result != null && result != '') {
+                AlertRequest1(result);
+            }
+        }
+        function AlertRequest1(Result) {
+            $('#printpopup').hide();
+        }
+        function Onfail11(result) {
+            $('#printpopup').hide();
+            return false;
+        }
+
+        function PendingBTRCount() {
+        }
+        function Onsucess(result) {
+            if (result != null && result != '') {
+                if (result[0].COUNT != 0) {
+                    AlertReq(result);
+                }
+            }
+        }
+        function Onfail2(result) {
+        }
+        function AlertReq(Result) {
+            $('#PendingCount').show();
+            document.getElementById('dispoppendingcount').innerHTML = "Pending Bed Trnsf.Req Count :" + " " + Result[0].COUNT + " ";
+        }
+        function closePencntmsgbox() {
+            $('#PendingCount').hide();
+        }
+
+        function RedirectBTRA() {
+
+            $('#PendingCount').hide();
+            window.location.replace(_iniUrl + 'Private/NurseStation/BedTransferRequestApproval.aspx');
+            return false;
+
+        }
+
+        function OkMsgBox() {
+            var _Url = window.location.host;
+            var hostname = '/' + window.location.pathname.split('/')[1] + '/';
+            var MainUrl = 'http://' + _Url + hostname + 'Private/MessageStation/MessagesView.aspx?id=' + compose_id;
+            window.open(MainUrl);
+        }
+        
+    </script>
+    <style type="text/css">
+        #divAvailabilityDoctors table.grid
+        {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .cmasktoken
+        {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 41px;
+            z-index: 9999;
+        }
+        .showcss
+        {
+            display: block;
+        }
+        .hidecss
+        {
+            display: none;
+        }
+        
+        .clos
+        {
+            border: 0px;
+            border-radius: 3px;
+            background: #fff;
+            color: #ff6666;
+            padding: 3px 0px;
+            cursor: pointer;
+        }
+        .clos:hover
+        {
+            border: 0px;
+            background: #fff;
+            border-radius: 3px;
+            color: red;
+            padding: 3px 0px;
+        }
+        #dispoptext b.title
+        {
+            margin-top: 11px;
+            float: left;
+            width: 100%;
+            margin-bottom: 7px;
+        }
+        #dispoptext b.count
+        {
+            background: #ff6666;
+            padding: 3px;
+            color: #fff;
+            border-radius: 50%;
+        }
+    </style>
+    <style>
+        div#snav span
+        {
+            float: left;
+            color: #fff;
+            padding: 5px 9px;
+            margin: 0 5px 0 0;
+            cursor: pointer;
+            position: relative;
+        }
+        div#snav span:hover
+        {
+            color: #fff;
+            background: #01a2d8;
+            border-radius: 3px 3px 5px 5px;
+            -moz-box-shadow: inset 0 2px 2px 1px #066f92;
+            -webkit-box-shadow: inset 0 2px 2px 1px #066f92;
+            box-shadow: inset 0 2px 2px 1px #066f92;
+        }
+        div#snav span:hover .usettingsdiv
+        {
+            display: block;
+            right: -30px;
+            z-index: 999999;
+            animation: navmenu 2s 1;
+            -o-animation: navmenu 2s 1;
+            -moz-animation: navmenu 2s 1;
+            -webkit-animation: navmenu 2s 1;
+        }
+        .usettingsdiv
+        {
+            top: 23px;
+            padding-top: 9px;
+            position: absolute;
+            display: none;
+            border-radius: 0 0 5px 5px;
+        }
+        .usettingsdiv i
+        {
+            top: -5px;
+            right: 63px;
+            position: absolute;
+            border: 7px solid transparent;
+            border-bottom-color: #fff;
+            width: 0;
+            height: 0;
+            z-index: auto;
+            right: 63px !important;
+        }
+        .usettingslist
+        {
+            border-radius: 0 0 5px 5px;
+            border-width: 0 1px 3px;
+            border-bottom: 3px solid #01a2d8;
+            border-color: #01a2d8;
+            background: #fcfcfc;
+            -moz-box-shadow: 0 3px 6px 2px #999;
+            -webkit-box-shadow: 0 3px 6px 2px #999;
+            box-shadow: 0 3px 6px 2px #999;
+            width: 150px;
+        }
+        div#snav span .usettingslist ul
+        {
+            padding: 0px;
+            margin: 0px 0px 0px 0px;
+            display: block;
+            z-index: 999999;
+        }
+        div#snav span .usettingslist ul li
+        {
+            border-bottom: 1px dotted #cacaca;
+            list-style: none;
+            color: #505050;
+            text-decoration: none;
+            padding: 0px 9px 0px 9px;
+            display: block;
+            margin: 0px;
+            line-height: 25px;
+            width: 100%;
+            white-space: nowrap;
+            padding-right: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        div#snav span .usettingslist ul li a
+        {
+            color: #505050;
+            text-decoration: none;
+            padding: 0px 9px 0px 9px;
+            display: block;
+            margin: 0px;
+            line-height: 25px;
+            width: 100%;
+        }
+        div#snav span .usettingslist ul li:hover
+        {
+            box-shadow: none;
+            border-radius: 0;
+            color: #fff;
+            background: #01a2d8;
+        }
+        
+        div#snav a.active label
+        {
+            display: none;
+        }
+        
+        div#snav span label
+        {
+            display: none;
+        }
+        
+        #hrfInbox label
+        {
+            display: none;
+        }
+        div#snav a.active
+        {
+            color: #fff;
+            background: none !important;
+            -moz-box-shadow: inset 0 0 2px 1px #03396c;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+        div#snav a.active i
+        {
+            display: block;
+            font-size: 17px;
+        }
+        
+        div#snav span i
+        {
+            display: block;
+            font-size: 17px;
+        }
+        
+        #hrfInbox i
+        {
+            display: block;
+            font-size: 17px;
+        }
+        @media screen and (max-width: 1024px)
+        {
+          #ctl00_versioncaption
+            {
+                display: none !important;
+            }
+            div#snav a.active i
+            {
+                display: block;
+                font-size: 17px;
+            }
+            div#snav a.active label
+            {
+                display: none;
+            }
+            div#snav span i
+            {
+                display: block;
+                font-size: 17px;
+            }
+            div#snav span label
+            {
+                display: none;
+            }
+            #hrfInbox i
+            {
+                display: block;
+                font-size: 17px;
+            }
+            #hrfInbox label
+            {
+                display: none;
+            }
+            #ctl00_ipaddressdiv
+            {
+                display: none !important;
+            }
+            #ctl00_versioncaption
+            {
+                width: 85px;
+            }
+        }
+    
+        @media screen and (max-width: 792px)
+        {
+            #ctl00_versioncaption
+            {
+                display: none !important;
+            }
+        }
+        @media screen and (max-width: 755px)
+        {
+            .search_icon
+            {
+                display: block;
+                position: fixed;
+                right: 10px;
+                font-size: 17px;
+            }
+            div#snav a, div#snav a:link
+            {
+                font-size: 14px;
+            }
+            #icn_search
+            {
+                background: #f9f9f9;
+                position: fixed;
+                top: 48px;
+                right: 10px;
+                margin: 0 auto;
+                padding: 10px;
+                left: 10px;
+                z-index: 999;
+                border: 1px solid #ffffff;
+                display: none;
+            }
+        }
+        @media screen and (max-width: 489px)
+        {
+            div#Clogo
+            {
+                float: right;
+                display: none;
+            }
+            div#snav a
+            {
+                padding: 5px 4px !important;
+            }
+        }
+        @media screen and (max-width: 375px)
+        {
+            .support
+            {
+                display: none;
+            }
+            #usettings
+            {
+                display: none;
+            }
+        }
+        div.token_status span.label
+        {
+            left: 72px;
+        }
+        .token_status button:hover
+        {
+            background: #063453;
+            color: #fff;
+        }
+        div.token_status
+        {
+            padding: 2px;
+            float: right;
+            margin: -2px 5px 0 0px;
+            border-radius: 0px;
+            height: 49px;
+            position: relative;
+            background: #F7FDFF;
+            padding: 12px 12px;
+            display: none;
+        }
+        .token_status button
+        {
+            cursor: pointer;
+            border: 1px solid #014c7c;
+            background: #0872b7;
+            color: #fff;
+            border-radius: 3px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="body1" runat="server">
+    <script type="text/javascript" language="javascript">
+
+        function aspFreezeHeader(_grids) {
+            try {
+                if (_grids.length > 0) {
+                    _.each(_grids, function (i, j) {
+                        var _headerControlHTML = $("#" + i + " tbody>tr:nth-child(1)").html();
+                        if (_headerControlHTML) {
+                            var tblclass = $("#" + i).attr("class");
+                            $("#" + i).parent().addClass("scrolldivh");
+                            $("#" + i).parent().attr("id", 'div_' + i);
+
+                            $("#div_" + i + " .fixedheader").remove();
+
+                            var _GTRTH = "<div class='fixedheader' id='" + i + "_fixed' style='position: absolute; top: 0px; left: 0px; width: 100%; overflow: hidden;z-index: 1;'><table class='" + tblclass + "' cellspacing='0' cellpadding='0' border='0'><tbody><tr>" + _headerControlHTML + "</tr></tbody></table></div>"
+
+                            $(_GTRTH).insertBefore("#" + i);
+
+                            $("#div_" + i).scroll(function () {
+                                $("#" + i + "_fixed").scrollLeft($(this).scrollLeft());
+                            });
+                            var scrollwidth = $('.scwidth').width();
+
+                            var dydiv1 = $("#div_" + i).height();
+                            var dytbl1 = $("#" + i).height();
+                            var dydiv2 = $("#" + i + "_fixed").width();
+                            if (dydiv1 >= dytbl1) {
+
+                                $("#" + i + "_fixed").width(dydiv2);
+                            }
+                            else if (dydiv1 < dytbl1) {
+                                $("#" + i + "_fixed").width(dydiv2 - scrollwidth);
+                            }
+
+                            GridTableWidth(i);
+                            SetTableFreeze1(i);
+                        }
+
+                    });
+                }
+            }
+            catch (e) {
+            }
+        }
+
+        function SetTableFreeze1(ctrlId) {
+            $('#' + ctrlId + '_fixed table').width($('#' + ctrlId).width());
+            $('#' + ctrlId + ' tr:nth-child(1) th').each(function (i, j) {
+                var colwidth = $(this).outerWidth();
+                $('#' + ctrlId + '_fixed table tr th').each(function (k, l) {
+                    if (i == k) {
+                        $(this).css('min-width', colwidth + 'px');
+                    }
+                });
+            });
+        }
+        function AdjustData(i, ctrlId) {
+            $('#' + ctrlId + ' tr td').each(function (x, y) {
+                var dataa = $(this).text().trim();
+                var _strlen = dataa.length;
+                if (_strlen > 25) {
+                    $(this).addClass('tdsize');
+                    var _title = "title=\"" + dataa + "\"";
+                    if (_title != undefined) {
+                        var __td = "<label  class='ellipsisd' " + _title + "><span class='ellipsis'>" + dataa + "</span></label>";
+                        $(this).find('span').empty().append(__td);
+                    }
+                }
+            });
+        }
+        function GridTableWidth(_selfid) {
+            var parenttblWidth = $("#" + _selfid).parent().parent() == undefined ? "0" : $("#" + _selfid).parent().parent().width();
+            var tblWidth = $("#" + _selfid).width();
+            if (parenttblWidth >= tblWidth) {
+                var cellWidth = $("#" + _selfid + " > tbody > tr > td:last-child()").width();
+                var cellHWidth = $("#" + _selfid + " > thead > tr > th:last-child()").width();
+                $("#" + _selfid + " > tbody > tr > td:last-child()").css({ "min-width": (parenttblWidth - tblWidth) + cellWidth });
+                $("#" + _selfid + " > thead > tr > th:last-child()").css({ "min-width": (parenttblWidth - tblWidth) + cellHWidth });
+            }
+        }
+
+        function fn_NavToDashboard() {
+            alert(_iniUrl);
+            alert('<%=SessionHandler.UserName.ToUpper() %>');
+            return false;
+        }
+    </script>
+    <form id="form1" runat="server" defaultbutton="btnid1">
+    <asp:ScriptManager ID="sManager" runat="server" EnablePageMethods="true" ScriptMode="Release">
+        <Services>
+        </Services>
+    </asp:ScriptManager>
+    <asp:LinkButton ID="lnkForseClose" runat="server" Style='display: none;'>Force Close</asp:LinkButton>
+    <div id="topnav"   class="clearfix">
+        <%--<%=Neodynamic.SDK.Web.WebClientPrint.CreateScript(HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Host + ":" + HttpContext.Current.Request.Url.Port + "/SLIMS_UAT/WebClientPrintAPI.ashx", HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Host + ":" + HttpContext.Current.Request.Url.Port + "/SLIMS_UAT/PrintReportHandler.ashx", HttpContext.Current.Session.SessionID)%>--%>
+        <%--<%=Neodynamic.SDK.Web.WebClientPrint.CreateScript(HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Host + ":" + HttpContext.Current.Request.Url.Port + "/User Interface/WebClientPrintAPI.ashx", HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Host + ":" + HttpContext.Current.Request.Url.Port + "/User Interface/PrintReportHandler.ashx", HttpContext.Current.Session.SessionID)%>--%>
+        <div style="display:none" id="logo">
+         <img src="<%=Page.ResolveUrl("~/CompanyLogo/Brand_Logo.png")%>" alt="Suvarna HIMS" />
+                <b>SUVARNA</b>
+        </div>
+        <div style="display:none" id="mnav">
+            <i class="icon-menu-1"></i>
+            <div class="mask">
+            </div>
+            <div class="nav-menu-drop">
+                <b></b>
+                <div class="menu-drop-div">
+                    <table align="left" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td align="left" valign="top">
+                                <div class="submodule-list divscroll">
+                                    <h4>
+                                        <select id="dpl_modules" class="dropdown">
+                                        </select></h4>
+                                    <div id="menudata">
+                                    </div>
+                                </div>
+                            </td>
+                            <td align="left" valign="top">
+                                <div class="document-list">
+                                    <div class="menuscroll">
+                                        <div id="menudatasmall">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="display:none" id="snav">
+            <a class="active" id="hrfModules" runat="server" href="~/Private/module.aspx"><i
+                class="icon-th-large-outline tooltip" title=" Module View"></i>
+                <label>
+                    Module View</label></a>
+            <asp:LinkButton ID="hrfDashboards" Style="display: none;" runat="server" OnClientClick='return fn_DashboardClick();'><i class="su-flickr"></i> <strong>Dashboard  </strong>
+            </asp:LinkButton>
+            <span class="dasbrd_list"><i class="icon-chart-pie tooltip" title="Dashboard"></i>
+                <label>
+                    Dashboard</label>
+                <div id="list_itm" class="usettingsdiv">
+                    <i></i>
+                    <div class="usettingslist">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+            <%--<a id="hrfQuickLinks" runat="server" style="display: none;" href="~/Private/Laboratory/DispatchDashBoardNew.aspx?Type=Header">
+                Enquiry</a> --%>
+            <span class="dasbrd_list" id="quickLinks"><i class=" icon-heart tooltip" title="Quick Links">
+            </i>
+                <label>
+                    Quick Links</label>
+                <div id="listhrfQuickLinks" class="usettingsdiv">
+                    <i></i>
+                    <div class="usettingslist">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+            <%--<a id="hrfInbox" runat="server" href="~/Private/MessageStation/MailMessages.aspx?ref=inbox&p=i">
+                    Inbox</a>--%>
+            <a id="hrfInbox" href="#" onclick='fn_InboxClick()'><i class="icon-mail-1 tooltip"
+                title="Inbox"></i>
+                <label>
+                    Inbox
+                </label>
+            </a><a style="display: none"><i class="icon-cog search_icon" id="search_icon"></i>
+            </a>
+        </div>
+        <div style="display:none" id="icn_search">
+            <div id="gsearch">
+                <div style="float: left; position: relative;">
+                    <input type="text" autocomplete="off" id="globalSearch" name="globalSearch" class="quicksearch" />
+                    <div id="qsoptions" class="auto_options gs">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <button value="&nbsp;" class="search dnavigate">
+                    &nbsp;
+                </button>
+                <button value="&nbsp;" class="ntab newtab">
+                    &nbsp;
+                </button>
+                <input type="button" value="&nbsp;" onclick="return DoctorShed();" class="docbtn"
+                    style="cursor: pointer;" />
+                <ul style="display: none;">
+                    <li><a href="#" onclick="hideAllIframes()">Home</a></li>
+                    <li><a href="#" id="div_" onclick="showIframe('div_iframe')">op</a></li>
+                    <li><a href="#" id="div_1" onclick="showIframe('div_1')">consul</a></li>
+                    <li><a href="#" id="div_2" onclick="showIframe('div_2')">admi</a></li>
+                </ul>
+            </div>
+            <div class="train" id="versioncaption" style="display: none;" runat="server">
+            </div>
+            <div class="ipaddr" id="ipaddressdiv" runat="server" style="display: none;">
+                <label>
+                    Your IP Address</label>
+                <h3 id="ipaddress" runat="server">
+                    <%--192.168.100.100--%></h3>
+            </div>
+            <div id="Clogo">
+                 <img src="<%=Page.ResolveUrl("~/CompanyLogo/CBrand_Logo.PNG")%>" alt="Suvarna HIMS" />
+            <b id="clntlogoname"></b>
+            </div>
+            <div class="support">
+                <i class="icon-help"></i>
+                <div class="supportlist">
+                    <h2>
+                        Help Desk Contact Information</h2>
+                    <div class="supportblock">
+                        <h3>
+                            Hospital Extensions</h3>
+                        <div>
+                            <i class="su-telephone"></i>
+                            <label id="lblExtension" runat="server">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="supportblock">
+                        <h3>
+                            On Call Number</h3>
+                        <div>
+                            <i class="su-telephone"></i>
+                            <label id="lblCallNo" runat="server">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="supportblock">
+                        <h3>
+                            Email</h3>
+                        <div>
+                            <i class="su-email-envelope"></i>
+                            <label id="lblHDMail" runat="server">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="usettings">
+                <div id="usettingsdiv">
+                    <i></i>
+                    <div id="usettingslist" class="mcheck">
+                        <ul>
+                            <li>
+                                <asp:LinkButton ID="lnkLogout" OnClientClick="ClearBrowserHistory();" runat="server">Logout</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Private/Admin/View/UpdateProfile.aspx">My profile</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Private/Admin/View/ChagnePassword.aspx">Change Password</asp:LinkButton></li>
+                            <li style="display: none;">
+                                <div class="themediv">
+                                    Change Theme</div>
+                                <div class="themediv1">
+                                    <div class="blue" onclick="ThemeChange()">
+                                    </div>
+                                    <div class="yellow" onclick="ThemeChange()">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="location">
+                                    <span>Select Location</span>
+                                    <asp:DropDownList ID="ddlLocation" onchange="Onchangeloacation(this);" runat="server">
+                                        <asp:ListItem Value="0">--SELECT--</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="lnlExtendedDsply" OnClientClick="return DisplayExtendedMonitor();"
+                                    runat="server">Extended Display</asp:LinkButton>
+                            </li>
+                            <li id="directprintli">
+                                <asp:CheckBox ID="chkComDirectPrint" runat="server" Text="Direct Print" CssClass="filled-in"
+                                    onchange="ChangePrintType();" />
+                            </li>
+                            <li id="withheadli">
+                                <asp:CheckBox ID="chkComWithHead" runat="server" Text="With Header" CssClass="filled-in"
+                                    onchange="ChangeHeaderType();" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display:none" id="divTokenStatus" class="token_status">
+            <button id="btnSkip" value="&nbsp;" class="ntab" title="Skip" onclick="return OnNextTokenClick('SKIP');"
+                style="cursor: pointer;">
+                <i class="icon-to-end-alt"></i>
+            </button>
+            <button id="btnNext" value="&nbsp;" class="ntab" title="Next" onclick="return OnNextTokenClick('NEXT');"
+                style="cursor: pointer;">
+                <i class="icon-fast-forward"></i>
+            </button>
+            <span class="label">Token No :</span>
+            <select id="ddlToken" class="dd-width">
+                <option value="0">select</option>
+            </select>
+            <button id="btnComplete" value="&nbsp;" class="ntab" title="Complete" onclick="return OnServiedTokenClick();"
+                style="cursor: pointer;">
+                <i class=" icon-ok-circled"></i>
+            </button>
+            <button id="btnReCall" value="&nbsp;" class="ntab" title="Re call" onclick="return OnReCallTokenClick();"
+                style="cursor: pointer;">
+                <i class=" icon-reply"></i>
+            </button>
+            <button id="btnGenToken" value="&nbsp;" class="ntab" title="Generate Tokens" onclick="return OngenerateNewToken();"
+                style="cursor: pointer; display: none;">
+                <i class="icon-plus-1"></i>
+            </button>
+            <div style="float: left; width: auto; position: relative">
+                <button value="&nbsp;" class="ntab" title="Token Settings" onclick="return OnCallTokens('A');">
+                    <i class=" icon-cog"></i>
+                </button>
+                <div id="divCounterCall" class="tsettingsdiv">
+                    <div class="tokendiv">
+                        <div class="tleft-div">
+                            <ul>
+                                <li class="bg-1"><i class="icon-clock-1"></i>
+                                    <h1>
+                                        Counter</h1>
+                                    <asp:DropDownList ID="ddlCounter" runat="server" onchange="return OnCounterLogIn();"
+                                        CssClass="dd-counter">
+                                    </asp:DropDownList>
+                                </li>
+                                <li class="bg-2" onclick="return OnTokensList('PENDING');"><i class=" icon-hourglass">
+                                </i>
+                                    <h1>
+                                        Pending Tokens</h1>
+                                    <b class="count"><span id="lblPendingtkns"></span></b></li>
+                                <li class="bg-3" onclick="return OnTokensList('SKIP');"><i class="icon-to-end-alt"></i>
+                                    <h1>
+                                        Skipped Tokens</h1>
+                                    <b class="count"><span id="lblskiptkns"></span></b></li>
+                                <li class="bg-4" onclick="return OnTokensList('FINISH');"><i class="icon-ok-circle">
+                                </i>
+                                    <h1>
+                                        Served Tokens</h1>
+                                    <b class="count"><span id="lblservedtkns"></span></b></li>
+                            </ul>
+                        </div>
+                        <div class="tright-div">
+                            <h1>
+                                <asp:Label ID="lblcounterCalling" runat="server" Font-Bold="true" Height="26px" Text="Pending Tokens"></asp:Label>
+                                <i class="counter-close icon-cancel-1" onclick="return OnCloseCallTokens();"></i>
+                            </h1>
+                            <div class="avg-time">
+                                <div style="display: none;">
+                                    <span>Avg Waiting Time:</span>
+                                    <label>
+                                        00:00:00</label></div>
+                                <div style="display: none;">
+                                    <span>Bench Mark Time:</span>
+                                    <label>
+                                        00:03:00</label></div>
+                            </div>
+                            <div class="status-grid" style="overflow: auto; width: 100%; position: relative;">
+                                <div id="divTokens">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="btnLogOut" value="&nbsp;" class="ntab" title="LogOut" onclick="return OnCounterLogOut();"
+                style="cursor: pointer;">
+                <i class="icon-logout"></i>
+            </button>
+        </div>
+    </div>
+    <div class="contentbody">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="bottomnav">
+        <div style="">
+            <div style="float: left; width: 85px;">
+                <b>Organization :</b>
+            </div>
+            <div style="clear: right; margin-left: 85px; padding-right: 5px; text-overflow: ellipsis;
+                overflow: hidden; white-space: nowrap;">
+                <asp:Label ID="lblorgname" runat="server"></asp:Label>
+            </div>
+        </div>
+        <div style="">
+            <table border="0" cellpadding="0" cellspacing="0" align="left">
+                <tbody>
+                    <tr>
+                        <td align="left" style="padding-right: 10px; padding-left: 5px;">
+                            <b>Location :</b>
+                        </td>
+                        <td align="left" style="padding-right: 10px;">
+                            <asp:Label ID="lblLocationName" runat="server"></asp:Label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="">
+            <div style="float: left; width: 55px; padding-top: 2px; padding-left: 2px;">
+                <b>Caption :</b>
+            </div>
+            <div style="clear: right; margin-left: 55px; padding-right: 5px;">
+                <marquee class="scroll_container" onmouseout="this.start()" onmouseover="this.stop()"
+                    width="100%" truespeed="true" scrolldelay="40" scrollamount="1" behavior="scroll"
+                    direction="left">
+                    <%=SessionHandler.CAPTION_NAME%>
+                </marquee>
+            </div>
+        </div>
+        <div style="">
+            <table border="0" cellpadding="0" cellspacing="0" align="right">
+                <tr>
+                    <td align="left" style="padding-right: 5px;">
+                        <b>User :</b>
+                    </td>
+                    <td align="left" style="padding-right: 10px;">
+                        <%=SessionHandler.REFERENCE_NAME%>
+                    </td>
+                    <td align="right" style="padding-right: 5px;">
+                        <b>LogIn At :</b>
+                    </td>
+                    <td align="left" style="padding-right: 10px;">
+                        <asp:Label ID="txtlastlogin" runat="server" ReadOnly="true"></asp:Label><asp:HiddenField
+                            ID="hdninboxalert" runat="server" />
+                    </td>
+                    <td align="right" style="padding-right: 5px;">
+                        <b>ShiftLog Status :</b>
+                    </td>
+                    <td align="left" style="padding-right: 5px;">
+                        <asp:Label ID="lblshiftlogstatus" runat="server" ReadOnly="true"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='MySessionExpired' class='masking'>
+        <div class='cmask'>
+        </div>
+        <div class='Sessiondiv'>
+            <label>
+                <i class=' icon-info-1'></i>Your session has expired.<br />
+                <asp:LinkButton ID="lnksess" runat="server" OnClientClick="ClearBrowserHistory();"
+                    PostBackUrl="~/Default.aspx">Login again</asp:LinkButton></label></div>
+    </div>
+    <%--<div id="pnlTokenSys" runat="server" class="masking" style="top: 96px; z-index: 0;">
+        <div class="cmask" style="top: 61px; margin: 0 0.7%; width: 98.8%;">
+        </div>
+        <div class="clientpopup" style="margin-left: -180px; margin-top: -107px; width: 350px;">
+            <div class="pop-header">
+                <h1>
+                    Scan Token
+                </h1>
+                <input type="button" id="btnTokensys" onclick="return ClosingTokenPopup();" value="x" />
+            </div>
+            <div class="pop-body" style="padding: 30px; overflow: hidden; height: 100px;">
+                <table>
+                    <tr>
+                        <td>
+                            Scan Token No
+                        </td>
+                        <td>
+                            <input type="text" id="txtTokenScan" tabindex="1" onblur="onstatusValidation()" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>--%>
+    <div style="display: none;">
+        <div class="scwidth">
+        </div>
+        <asp:Button ID="btnid1" runat="server" Visible="false" OnClientClick="return validate();" />
+        <asp:HiddenField ID="hdndocsessionid" runat="server" />
+        <asp:HiddenField ID="hdnmodulesessionid" runat="server" />
+        <asp:HiddenField ID="hdnsubmodulesessionid" runat="server" />
+        <asp:HiddenField ID="_hdnModId" runat="server" />
+        <asp:HiddenField ID="_hdnDocId" runat="server" />
+        <asp:HiddenField ID="_hdnPageUrl" runat="server" />
+        <asp:HiddenField ID="_hdnNavigation" runat="server" />
+        <asp:HiddenField ID="hdnlocname" runat="server" />
+        <asp:HiddenField ID="hdnMsgId" runat="server" />
+        <asp:HiddenField ID="hdnDate" runat="server" />
+        <asp:HiddenField ID="hdnDashBoard" runat="server" />
+        <asp:HiddenField ID="hdnDashBoardUmr" runat="server" />
+        <asp:HiddenField ID="hdnDashBoardAdmnNo" runat="server" />
+        <asp:HiddenField ID="hdnDashBoardcName" runat="server" />
+        <asp:HiddenField ID="hdnDashBoardPatID" runat="server" />
+        <asp:HiddenField ID="_Document_ID" runat="server" />
+        <asp:HiddenField ID="hdnLocationId" runat="server" />
+        <asp:HiddenField ID="hdnurl" runat="server" />
+        <asp:HiddenField ID="hdnIsBack" runat="server" />
+        <asp:HiddenField ID="_hdnFranchUser_ID" runat="server" />
+        <asp:HiddenField ID="hdnDocTokenPer" runat="server" />
+        <asp:HiddenField ID="hdnTokenType" runat="server" />
+        <asp:HiddenField ID="hdnIstokencall" runat="server" />
+        <asp:HiddenField ID="hdnCurrTokenType" runat="server" />
+        <asp:HiddenField ID="hdnPageMode" runat="server" />
+        <asp:HiddenField ID="hdnCurrentCounter" runat="server" />
+        <asp:HiddenField ID="hdnClientMechineName" runat="server" />
+        <asp:HiddenField ID="hdnSessionWarning" runat="server" />
+        <asp:HiddenField ID="hdnDMSUmrNo" runat="server" />
+        <asp:HiddenField ID="hdnDMSUmrNoshow" runat="server" />
+        <asp:HiddenField ID="hdnDMSReferenceNoshow" runat="server" />
+        <asp:HiddenField ID="hdnDMSAdmnNo" runat="server" />
+        <asp:HiddenField ID="hdnMtablename" runat="server" />
+        <asp:HiddenField ID="hdnMtblautocdGlobalcolumns" runat="server" />
+        <asp:HiddenField ID="hdnMtblautoidcolumns" runat="server" />
+        <asp:HiddenField ID="hdntoasterwait1" Value="5" runat="server" />
+        <asp:HiddenField ID="hdntoasterwait2" Value="5" runat="server" />
+        <asp:HiddenField ID="hdndocname" runat="server" />
+        <asp:HiddenField ID="hdnextendedWindow" runat="server" />
+        <asp:HiddenField ID="hdnphymid" runat="server" />
+        <asp:HiddenField ID="hdnER_moduleID" runat="server" />
+        <asp:HiddenField ID="hdnDialysis_modID" runat="server" />
+        <asp:HiddenField ID="hdnSessionDocId" runat="server" />
+        <asp:HiddenField ID="hdnSessionModId" runat="server" />
+        <asp:HiddenField ID="hdnSessionSubModId" runat="server" />
+        <asp:HiddenField ID="hdnBldBankUrl" runat="server" />
+        <asp:HiddenField ID="hdnLisNewUrl" runat="server" />
+        <asp:HiddenField ID="hdnUserId" runat="server" />
+        <asp:HiddenField ID="hdnSessionId" runat="server" />
+        <asp:HiddenField ID="hdnLocId" runat="server" />
+        <asp:HiddenField ID="hdnLisurl" runat="server" />
+        <asp:HiddenField ID="hdnReportExportParams" runat="server" />
+        <asp:HiddenField ID="hdnReportExportColumns" runat="server" />
+        <asp:HiddenField ID="hdnrptconformation" runat="server" />
+        <asp:HiddenField ID="hdninboxurl" runat="server" />
+        <asp:HiddenField ID="hdnDashboardURL" runat="server" />
+        <asp:HiddenField ID="hdnShowExportRep" runat="server" />
+        <input type="hidden" id="_abspath" value="<%=Page.ResolveUrl("~") %>" />
+        <asp:HiddenField ID="hdndocprnpermission" runat="server" />
+        <asp:HiddenField ID="hidnlocid" runat="server" />
+        <asp:HiddenField ID="hdnlocationname" runat="server" />
+        <asp:HiddenField ID="hdnlocalmoduledatadb" runat="server" />
+        <asp:HiddenField ID="hdnclientIPaddress" runat="server" />
+        <asp:HiddenField ID="hdnclientLogoName" runat="server" />
+        <asp:HiddenField ID="hdnMstDateFormat" runat="server" />
+        <asp:HiddenField ID="hdnMstTimeFormat" runat="server" />
+        <asp:HiddenField ID="hdndevtool" runat="server" Value="N" />
+        <asp:HiddenField ID="hdnaddpermissionuserwise" runat="server" Value="N" />
+        <asp:HiddenField ID="hdnqrypermissionuserwise" runat="server" Value="N" />
+        <asp:HiddenField ID="hdnprntHeaderpermissionuserwise" runat="server" Value="N" />
+        <asp:HiddenField ID="hdnDashBoardModuleID" runat="server" Value="199" />
+        <asp:HiddenField ID="hdnVitalPermission" runat="server" Value="N" />
+        <asp:HiddenField ID="hdnLoginUserName" runat="server" Value="N" />
+        <asp:HiddenField ID="hdnVitalModuleName" runat="server" />
+        <asp:HiddenField ID="hdnVitalDocID" runat="server" />
+        <asp:HiddenField ID="hdnIsMedClg" runat="server" Value="False" />
+        <asp:HiddenField ID="hdnTransfercancelPer" runat="server" Value="N" />
+        <asp:HiddenField ID="hdnTransfercancelID" runat="server" />
+        <asp:HiddenField ID="hdnEnableThumb" runat="server" />
+        <asp:HiddenField ID="hdnThemePath" runat="server" Value="~/Assets/css/color1.css" />
+        <asp:HiddenField ID="hdnIsQuickLinkShow" runat="server" />
+        <asp:HiddenField ID="hdnReportPrintType" runat="server" />
+        <asp:HiddenField ID="hdnecitigen" runat="server" />
+        <asp:HiddenField ID="hdngdocformcd" runat="server" />
+    </div>
+    <div id="DivDoctors" runat="server" class="masking">
+        <div class="cmask">
+        </div>
+        <div class="clientpopup" style="margin-left: -350px; margin-top: -250px; width: 750px;">
+            <div class="pop-header">
+                <h1>
+                    Today Doctors Availability
+                </h1>
+                <asp:Button buttonaction="cancelButton" ID="Button1" runat="server" OnClientClick="return ClosingDoctorsPopup();"
+                    CssClass="cbutton" Text="&times;" />
+            </div>
+            <div class="pop-body grid" style="overflow: hidden; height: 375px; position: relative;">
+                <div style="height: 300px; overflow: auto;" id="divAvailabilityDoctors">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="divdiscreq" runat="server" style="display: none;">
+    </div>
+    </form>
+    <div id="myModalDialog" style="display: none;" class="dialogs">
+        <h2>
+            <font color="red">Mail Alert</font>
+        </h2>
+        <p id="mailAlert">
+        </p>
+        <div align="center">
+            <input type="button" onclick="return closemsgbox();" value="OK" />
+        </div>
+    </div>
+    <div class="alertpopup" id="printpopup" style="width: 300px; display: none;">
+        <div class="pop-header" style="background: #03abd5 !important;">
+            <h1 style="font-weight: 400; color: #fff">
+                Inbox Message
+            </h1>
+            <input type="button" id="btnclose1" onclick="closemsgbox()" value="X" class="clos" />
+            <input type="button" id="btnok" onclick="return OkMsgBox()" value="OK" class="clos" />
+        </div>
+        <div class="pop-body" style="padding: 15px; overflow: hidden; min-height: 100px;
+            background: #E5FAFF !important;">
+            <div id="dispoptext">
+            </div>
+        </div>
+    </div>
+    <div class="alertpopup" id="PendingCount" style="width: 300px; display: none; left: 10px !important;">
+        <div class="pop-header" style="background: #03abd5 !important;">
+            <h1 style="font-weight: 400; color: #fff">
+                Pending Requests
+            </h1>
+            <input type="button" id="btnclose2" onclick="closePencntmsgbox()" value="X" class="clos" />
+        </div>
+        <div class="pop-body" style="padding: 15px; overflow: hidden; min-height: 100px;
+            background: #E5FAFF !important;">
+            <div id="dispoppendingcount" onclick="return RedirectBTRA();">
+            </div>
+        </div>
+    </div>
+    <div id="progressshow" style="display: none; z-index: 999999; top: 0; left: 0; height: 100%;
+        width: 100%; position: absolute;" class="modalBackground">
+        <div style="z-index: 999999; top: 50%; left: 50%; position: absolute;">
+            <asp:Image ID="imgpro" runat="server" ImageUrl="~/Images/progress.gif" />
+        </div>
+    </div>
+    <div class="toastdiv">
+    </div>
+    <script type="text/javascript">
+        Page.Init('<%=SessionHandler.MODULE_ID %>');
+        var sessionTimeoutWarning = document.getElementById('ctl00_hdnSessionWarning').value;
+
+        function getPosition(str, m, i) { return str.split(m, i).join(m).length; }
+        var timeinsecaftersessionout = document.getElementById('ctl00_hdnSessionWarning').value;
+        var secondTick = 0;
+        function ResetThisSession() {
+            secondTick = 0;
+        }
+        var tick = setTimeout("StartThisSessionTimer();", 1000);
+        function StartThisSessionTimer() {
+            secondTick++;
+            if (secondTick > parseInt(timeinsecaftersessionout) * 60) {
+                clearTimeout(tick);
+                ClearBrowserHistory();
+                __doPostBack('ctl00$lnkLogout', '');
+                return;
+            }
+            tick = setTimeout("StartThisSessionTimer();", 1000);
+        }
+        $(function () {
+            $("body").on('click keypress', function () { ResetThisSession(); });
+        });
+    </script>
+    <script type="text/javascript">
+        var fcount = 0;
+        function createIframe(url, _id) {
+            alert(fcount);
+            $("body").append("<div id=\"div_iframe\"+" + fcount + " class=\"divIframe\"><iframe id=" + _id + " src=\"" + url + "\" frameborder=\"0\" width=\"100%\"  /></div>");
+            fcount++;
+            $(".divIframe iframe").css({ height: ($(".divIframe").height()) + "px" });
+        }
+        function showIframe(id) {
+            alert(id);
+            if (id == 'div_iframe')
+                $("#div_iframe0").show();
+            else if (id == 'div_1')
+                $("#div_iframe1").show();
+            else if (id == 'div_2')
+                $("#div_iframe2").show();
+        }
+
+        function hideAllIframes() {
+            $(".divIframe").hide();
+        }
+
+        function ManageSes(_ID, _MID, _DID, _MNAME, _URL, _istoken, docfrmcd) {
+            localStorage.setItem("ISTOKEN", _istoken); onSetTokenKey();
+//            GetAsync(
+//            "Private/dasboard.aspx/ManageSessions",
+//            { ID: _ID.split('-')[0], MID: _MID, DID: _DID, MNAME: _MNAME, URL: _URL, MFRMCD: _ID.split('-')[1], DOCFORMCD: docfrmcd },
+//            function (JData) {
+//            },
+//            function (jqXHR, textStatus, errorThrown) {
+//            });
+        }
+        function ManageModuleSes(_ID) {
+//            GetAsync(
+//            "Private/dasboard.aspx/Managemids",
+//            { ID: _ID },
+//            function (JData) {
+//            },
+//            function (jqXHR, textStatus, errorThrown) {
+//            });
+        }
+        function Managedocid(_DID) {
+//            GetAsync(
+//            "Private/dasboard.aspx/Managedocumentid",
+//            { DID: _DID },
+//            function (JData) {
+//            },
+//            function (jqXHR, textStatus, errorThrown) {
+//            });
+        }
+
+        $(document).on("keydown", ".stayonenter", function (e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        function Onchangeloacation(objs) {
+            var _ID = document.getElementById("ctl00_ddlLocation").options[document.getElementById("ctl00_ddlLocation").selectedIndex].value;
+            var _LOC = document.getElementById("ctl00_ddlLocation").options[document.getElementById("ctl00_ddlLocation").selectedIndex].text;
+            document.getElementById("ctl00_hdnlocname").value = _LOC;
+
+            ClearBrowserHistory();
+            __doPostBack($('[id*=ddlLocation]').attr("name"), "");
+        }   
+        function ChangePrintType() {
+            var _printtype = "";
+            if (document.getElementById('ctl00_chkComDirectPrint').checked == true)
+                _printtype = "Y";
+            else
+                _printtype = "N";
+
+            document.getElementById('ctl00_hdnReportPrintType').value = _printtype;
+//                        GetAsync(
+//                     "Private/dasboard.aspx/AssignChangedPrintType",
+//                        { PrintType: _printtype },
+//                        function (JData) {
+
+//                        },
+//                        function (jqXHR, textStatus, errorThrown) {
+//                        });
+        }
+
+
+        function AssignChangedPrintType(reportpath) {
+            var userid = <%=SessionHandler.UserID %>;
+            var sessionid = <%=SessionHandler.MODULE_ID %>;
+            var PrintFlag = 'SRS';
+            var repPath = reportpath;
+
+            var PrintFlag='SRS';
+            var srsflag='A';
+            var printbillid = 'RGB0026694';
+          
+         //    jsWebClientPrint.print('useDefaultPrinter=' + false + '&printerName=' +PrintFlag + '&bill_no=' +printbillid+ '&userid=' +userid+ '&sessionid=' +sessionid + '&srsflagval=' +srsflag + '&reportPath=' + repPath);
+
+            jsWebClientPrint.print('useDefaultPrinter=' + false + '&userid=' + userid + '&sessionid=' + sessionid + '&reportPath=' + repPath);
+          //  return false;
+            //            reportpath = reportpath + "&PRINT_TYPE=" + document.getElementById('ctl00_hdnReportPrintType').value;
+            //            return reportpath;
+        }
+
+
+        function ChangeHeaderType() {
+            var _headervisibletype = "";
+            if (document.getElementById('ctl00_chkComWithHead').checked == true)
+                _headervisibletype = "Y";
+            else
+                _headervisibletype = "N";
+//            GetAsync(
+//         "Private/dasboard.aspx/AssignChangedHeaderVisibleType",
+//            { HeaderVisibleType: _headervisibletype },
+//            function (JData) {
+
+//            },
+//            function (jqXHR, textStatus, errorThrown) {
+//            });
+        }
+    </script>
+    <script type="text/javascript" language="javascript">
+        function AutoTexts(obj) {
+            var USArrowFlag = false;
+            var ctrl = $(obj);
+            var _timeout = 100;
+            var _auto_lk_txt = $(obj);
+            var _auto_lk_options = $(obj).parent().find('div');
+            clearTimeout(_timeout);
+            if ($(obj).val().length > 1) {
+                USArrowFlag = true;
+                _timeout = setTimeout(function () {
+                    var _prams = new Object();
+                    var _prefixText = _auto_lk_txt.val();
+                    var _contextKey = 'FACILITY_DESC';
+
+                    GetAsync(
+             "UserValidationCredentialService.asmx/GetLocationsauto",
+               { prefixText: _prefixText, contextKey: _contextKey },
+
+                         function (jdata) {
+
+                             if (jdata.d.length > 0)
+                                 USArrowFlag = true;
+                             else
+                                 USArrowFlag = false;
+
+                             var _ul = "<ul>";
+                             $(jdata.d).each(function (i, j) {
+
+                                 _ul += "<li><a href='#'>" + $.parseJSON(j).First + "</a><span style=display:none;>'" + $.parseJSON(j).Second + "'</span></li>";
+                             });
+                             _ul += "</ul>";
+                             _auto_lk_options.empty().html(_ul).css({ "top": ctrl.outerHeight() + "px", "min-width": ctrl.outerWidth() + "px" }).show();
+                             _auto_lk_options.find("ul li a").click(function (event) {
+
+                                 var tb = eval($.trim($(this).next("span").html()));
+                                 ctrl.val($(this).html());
+                                 Location($(this).html(), $.parseJSON(tb).Value);
+                                 _auto_lk_options.hide();
+                             });
+
+                             if (jdata.d.length == 0) {
+                                 USArrowFlag = false;
+                                 _auto_lk_options.empty();
+                                 _auto_lk_options.removeAttr('style');
+                             }
+
+                         }
+                             );
+                }, 100);
+            }
+            if (USArrowFlag) {
+                var USAutoArrowOpitions = {};
+                USAutoArrowOpitions.txtBoxID = $(obj);
+                USAutoArrowOpitions.OptionsDivID = $(obj).parent().find('div');
+                return UniverseAutoArrowSelection(USAutoArrowOpitions);
+            }
+        }
+        function UniverseReturnPreviousObj(objval, obj) {
+            var url = "";
+            var results = objval;
+
+            if (results.Value != '' && parseFloat(results.Value.trim()) > 0) {
+                document.getElementById('ctl00_hidnlocid').value = results.Value;
+                var _ID = results.Value;
+                var _LOC = results.Text;
+                GetNonAsync(
+         "Private/dasboard.aspx/ManageLocationId",
+            { locID: _ID, loc: _LOC },
+            function (JData) {
+                if (JData.d[0] == "N" && JData.d[1] == "N" && JData.d[2] == "N" && JData.d[3] == "N" && JData.d[4] == "N" && JData.d[5] == "N" && JData.d[6] == "N" && JData.d[7] == "N")
+                    url = "module.aspx";
+            },
+            function (jqXHR, textStatus, errorThrown) {
+            });
+
+            }
+            if (url == "") {
+                url = window.location.href;
+                window.location = url;
+            }
+            else {
+                var _location = getRootWebSitePath();
+                window.location = _location + "/Private/module.aspx";
+            }
+            return false;
+        }
+
+        function getRootWebSitePath() {
+            var _location = document.location.toString();
+            var applicationNameIndex = _location.indexOf('/', _location.indexOf('://') + 3);
+            var applicationName = _location.substring(0, applicationNameIndex) + '/';
+            var webFolderIndex = _location.indexOf('/', _location.indexOf(applicationName) + applicationName.length);
+            var webFolderFullPath = _location.substring(0, webFolderIndex);
+
+            return webFolderFullPath;
+        }
+
+        function Location(tb, val) {
+
+            var _LOC = tb;
+            var _ID = val;
+            document.getElementById("ctl00_hdnlocname").value = _LOC;
+//            GetAsync(
+//         "Private/dasboard.aspx/ManageLocationId",
+//            { locID: _ID, loc: _LOC },
+//            function (JData) {
+
+//            },
+//            function (jqXHR, textStatus, errorThrown) {
+//            });
+            var url = window.location.href;
+            window.location.href = url;
+            return false;
+        }
+        function ViceVersaReplaceSplChar(value) {
+            value = value.replace('&gt;', '>');
+            value = value.replace('&lt;', '<');
+            value = value.replace('&amp;', '&');
+            value = value.replace('&amp;', '&&');
+            value = value.replace('&apos;', "'");
+            value = value.replace('&#37;', '%');
+            value = value.replace('&quot;', '"');
+            value = value.replace("&#39;", "'");
+            return value;
+        }
+
+        var UrlVal = ReturnIniUrl();
+        var count = 0;
+
+        function HideAutoLookup() {
+            setTimeout(function () {
+                $('.lk_auto_options').hide();
+            }, 1000);
+        }
+
+    </script>
+    <script type="text/javascript" language="javascript">
+        function DisplayExtendedMonitor() {
+            if (document.getElementById('<%= hdnextendedWindow.ClientID %>').value == 'W') {
+                window.open(_iniUrl + "Private/FrontOffice/ExtendedDisplay.aspx", "myWindow", "width=10000,height=10000,left = 490,top=300");
+            }
+            else {
+                window.open(_iniUrl + "Private/FrontOffice/ExtendedDisplay.aspx");
+            }
+            return false;
+        }
+
+        function ClearBrowserHistory() {
+            sessionStorage.clear();
+            localStorage.clear();
+            localStorage.removeItem('ModuleDataDB');
+            localStorage.removeItem('hmodule');
+            localStorage.removeItem('hdocument');
+            $('[id*=ddlExportData]').val('Select One');
+            if (_curSessionID != "0") {
+                if ($('[ID*=divTokenStatus]').css('display') == "block") {
+                    if ($('[id$=ddlCounter]').val() == 0 || $('[id$=ddlCounter]').find('option:selected').text() == "--Select--" || $('[id$=ddlCounter]').val() == null) {
+                        return true;
+                    }
+                    else {
+                        alert('Please Logout Counter First');
+                        $('[id*=divCounterCall]').css('display', 'block');
+                        return false;
+                    }
+                }
+            }
+        }
+
+        function OnCloseCallTokens() {
+            $('[id*=divCounterCall]').css('display', 'none');
+            return false;
+        }
+        function ViewTokenRow(InputData, Status) {
+        }
+        function OnReCallTokenClick() {
+            if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please Select counter.", 5, 2);
+                return false;
+            }
+            else if ($('[id*=ddlToken]').find('option:selected').text() == '' || $('[id*=ddlToken]').find('option:selected').text() == 'select') {
+                $(".stoast").toastText("Info", "Please Select Token.", 5, 2);
+                return false;
+            }
+            else {
+                var _tokenno = $('[id*=ddlToken]').find('option:selected').text(); var _flag = 'R';
+//                GetAsync("Private/module.aspx/OnGetRecallToken",
+//                { TokenNo: _tokenno, Flag: _flag },
+//                function (jdata) {
+//                    console.log('swetha', jdata);
+//                },
+//                function () {
+//                });
+            }
+            return false;
+        }
+        function UpdateRecallTokenStatus(TokenNo, _Status) {
+//            GetAsync("Private/module.aspx/UpdateRecallTokenStatus",
+//                { TOKENNO: TokenNo, Status: _Status },
+//                function (jdata) {
+//                    if (_Status == 'S') {
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                    }
+//                },
+//                function () {
+//                });
+        }
+            
+    </script>
+    <script type="text/javascript">
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function getAllCookies(cname) {
+            var machinename = getCookie('machinename');
+        }
+        document.addEventListener('click', function Clickoutside(event) {
+            if ($('[id$=icn_search]').is(':visible') && $('[id$=search_icon]').is(':visible')) {
+                $('[id$=icn_search]').fadeOut();
+                return false;
+            }
+        });
+        $(document).ready(function () {
+
+            /*manju*/
+            $('[id$=search_icon]').click(function () {
+                if ($('[id$=icn_search]').is(':visible')) {
+                    $('[id$=icn_search]').fadeOut();
+                    return false;
+                } else {
+                    $('[id$=icn_search]').fadeIn();
+                    return false;
+                };
+            });
+            /*manju*/
+            var _thisURL = window.location.href;
+            if (_thisURL.toUpperCase().indexOf("MODULE.ASPX") >= 0) {
+                if (_thisURL.indexOf('?') >= 0) {
+                    var _qParams = _thisURL.split('?')[1].split('&');
+                    for (var iParam = 0; iParam < _qParams.length; iParam++) {
+                        if (_qParams[iParam].toUpperCase().indexOf("LOGOUT") >= 0) {
+                            var _index = _qParams[iParam].indexOf('=');
+                            var _paramVal = _qParams[iParam].substring(_index + 1, _qParams[iParam].length);
+                            try {
+                                _paramVal = atob(_paramVal);
+                            }
+                            catch (er) {
+                                _paramVal = _qParams[iParam].substring(_index + 1, _qParams[iParam].length);
+                            }
+                            if (_paramVal == 'Y') {
+                                ClearBrowserHistory();
+                                __doPostBack('ctl00$lnkLogout', '');
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            var clientLogoName = $('[id*=hdnclientLogoName]').val();
+            if (clientLogoName == '' || clientLogoName == undefined || clientLogoName == null) clientLogoName = '';
+            $('[id*=clntlogoname]').text(clientLogoName);
+            getAllCookies();
+            var _path = window.location.pathname.split('/')[1]
+            var _url = _path + '/'
+            var _pathname = window.location.pathname.replace(_url, '~')
+            _pathname = _pathname.split('~')[1];
+            _pathname = '/' + _pathname;
+            if ($('[id*=hdndocprnpermission]').val() == 'Y') {
+                document.getElementById('directprintli').style.display = "block";
+                document.getElementById('withheadli').style.display = "block";
+            }
+            else {
+                document.getElementById('directprintli').style.display = "none";
+                document.getElementById('withheadli').style.display = "none";
+            }
+
+            if ($('[id*=hdnIstokencall]').val() == "True" && $('[id*=hdnDocTokenPer]').val() == "Y" && $('[id*=hdnTokenSys]').val() == "AddNew") {
+
+                GetCounterByMechineName();
+                $('[id*=divTokenStatus]').css('display', 'block');
+                //  $('[id*=pnlTokenSys]').css('display', 'block');
+                $('.train,.ipaddr').hide();
+            }
+            else {
+                $('[id*=divTokenStatus]').css('display', 'none');
+                $('.train,.ipaddr').show();
+            }
+           var Doc_form_cd= document.getElementById('ctl00_hdngdocformcd').value;
+            var doc_id = document.getElementById('ctl00_hdndocsessionid').value;
+            var modulesession_id = document.getElementById('ctl00_hdnmodulesessionid').value;
+            var submodulesession_id = document.getElementById('ctl00_hdnsubmodulesessionid').value;
+            if (doc_id == "" || doc_id == null || doc_id == undefined) { doc_id = "0"; }
+               if (Doc_form_cd == "" || Doc_form_cd == null || Doc_form_cd == undefined) { Doc_form_cd = ""; }
+            if (modulesession_id == "" || modulesession_id == null || modulesession_id == undefined) { modulesession_id = "0"; }
+            if (submodulesession_id == "" || submodulesession_id == null || submodulesession_id == undefined) { submodulesession_id = "0"; }
+            sessionStorage.setItem("docc_id", doc_id);
+            sessionStorage.setItem("docc_form_cd", Doc_form_cd); sessionStorage.setItem("modulesession_id", modulesession_id);
+            sessionStorage.setItem("submodulesession_id", submodulesession_id);
+            var username = '<%=SessionHandler.UserName%>';
+            _sessionID = '<%=SessionHandler.DBSESSION_ID%>';
+            _curSessionID = _sessionID;
+            sessionStorage.setItem("UserName", "");
+            sessionStorage.setItem("UserName", username);
+
+//            setInterval(function () {
+//                MySessionCheck();
+//            }, 60000);
+
+//            setInterval(function () { 
+//                fn_ChechForceClose();
+//            }, 5000000);
+
+//            function fn_ChechForceClose() {
+//                GetNonAsync(
+//                            "Private/dasboard.aspx/CheckForceClose",
+//                            {},
+//                            function (JData) {
+//                                var sForceClose = JData.d;
+//                                if (sForceClose == "Y") {
+//                                    __doPostBack('<%=lnkForseClose.UniqueID %>', '')
+//                                }
+//                            },
+//                            function (jqXHR, textStatus, errorThrown) {
+//                            }
+//                );
+//            }
+            if ($('[id*=hdnTokenSys]').val() == "AddNew" && $('[id*=hdnDocTokenPer]').val() == "Y" && $('[id$=ddlCounter]').val() != 0 && $('[id$=ddlCounter]').find('option:selected').text() != "--Select--") {
+                BindTokens('PENDING');
+            }
+        });
+        function onSetTokenKey() {
+            if ($('[id*=hdnTokenSys]').val() == "AddNew" && $('[id*=hdnDocTokenPer]').val() == "Y") {
+                if (document.getElementById('ctl00_hdnPageMode').value != 'View') {
+                    $('[id*=pnlTokenSys]').css('display', 'block');
+                }
+            }
+            else {
+                $('[id*=pnlTokenSys]').css('display', 'none');
+            }
+            $('[id*=txtTokenScan]').val('');
+        }
+       
+        function ongridurlKey(gridurl) {
+            var _gridpath = gridurl;
+            if (_gridpath != undefined) {
+                if (_gridpath == "#") {
+                    _gridpath = _gridpath;
+                }
+                else {
+                    _gridpath = _gridpath.replace("~/", $("#_abspath").val());
+                }
+            }
+            localStorage.setItem("GRID", _gridpath);
+        }
+
+        function ClosingTokenPopup() {
+            var path = localStorage.getItem("GRID");
+            window.location.assign(path);
+        }
+        /* function onstatusValidation() {
+        if ($('[id*=txtTokenScan]') != null) {
+        if ($('[id*=txtTokenScan]').val() == '' || $('[id*=txtTokenScan]').val() == null || $('[id*=txtTokenScan]').val() == undefined) {
+        document.getElementById('txtTokenScan').focus();
+        }
+        }
+        }*/
+        function GetCounterByMechineName(status) {
+            var MechineName = $('[id$=hdnClientMechineName]').val();
+            GetNonAsync(
+            "Private/module.aspx/Get_Counter_by_Mechin_Name",
+                { Mechine_Name: MechineName },
+                function (jdata) {
+                    var _optionsVal = '';
+                    $('[id*=ddlCounter]').empty();
+                    var _data = jQuery.parseJSON(jdata.d);
+////                    if (_data != '' && _data != null) {
+////                        if (_data[0]["IS_TOKEN_REQUIRED"] == 'N') {
+////                            $('[id*=divTokenStatus]').css('display', 'none');
+////                            return false;
+////                        }
+////                    }
+                    if (_data.length > 0) {
+                        for (var i = 0; i < _data.length; i++) {
+//                            if (_data[i]["COUNTER_STATUS"] == 'L') {
+//                            $("[id*=ddlCounter]").append($('<option selected="true"></option>').val(_data[i]["COUNTER_ID"]).html(_data[i]["COUNTER_NAME"]));
+//                             localStorage.setItem('selectedCounter',  _data[i]["COUNTER_ID"]);
+//                             prevCounter=_data[i]["COUNTER_ID"];
+//                            }
+//                            else if (_data[i]["COUNTER_STATUS"] == 'O') {
+                            if((localStorage.getItem('selectedCounter')!=null || localStorage.getItem('selectedCounter')!='' || localStorage.getItem('selectedCounter')!=0 || localStorage.getItem('selectedCounter')!=undefined ) && (localStorage.getItem('selectedCounter')==_data[i]["COUNTER_ID"]))
+                            {
+                            
+                                 $("[id*=ddlCounter]").append($('<option selected="true"></option>').val(_data[i]["COUNTER_ID"]).html(_data[i]["COUNTER_NAME"]));
+                                 localStorage.setItem('selectedCounter',  _data[i]["COUNTER_ID"]);
+                                 prevCounter=_data[i]["COUNTER_ID"];
+                            }
+                            else {
+                                  if(i==0)
+                                     $("[id*=ddlCounter]").append($('<option selected="true"></option>').val("0").html('--Select--'));
+                                  $("[id*=ddlCounter]").append($('<option></option>').val(_data[i]["COUNTER_ID"]).html(_data[i]["COUNTER_NAME"]));
+                              }
+                         
+                        }
+                        if (localStorage.getItem('selectedCounter')==null || localStorage.getItem('selectedCounter')==0 || $('[id$=ddlCounter]').val()=='') {
+                            $(".stoast").toastText("Info", "Please Log In Counter.", 5, 2);
+                               $('[id*=divCounterCall]').css('display', 'block');
+                        }
+                    }
+                    else {
+                        $('[id*=divTokenStatus]').css('display', 'none');
+                    }
+                });
+            return false;
+        }
+        function OnCallTokens(_state) {
+            if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                return false;
+            }
+            else {
+                var CounterID = $('[id$=ddlCounter]').val();
+                var serviceTypeId = $('[id$=hdnTokenType]').val();
+//                GetAsync("Private/module.aspx/GetPendingSkippedServedTokenCount",
+//                    { CounterID: CounterID, tokenType: serviceTypeId },
+//                    function (jdata) {
+//                        var input = jQuery.parseJSON(jdata.d);
+//                        $('[id*=lblPendingtkns]').text(input[0].PENDING);
+//                        $('[id*=lblskiptkns]').text(input[0].SKIP);
+//                        $('[id*=lblservedtkns]').text(input[0].FINISH);
+//                        $('[id*=lblretfinishtkns]').text(input[0].FINISH);
+//                        OnTokensList('PENDING');
+//                    },
+//                    function () {
+//                    });
+            }
+            $('[id*=divCounterCall]').css('display', 'block');
+            return false;
+        }
+        var prevCounter=0;
+        function OnCounterLogIn() { 
+            if (prevCounter!=0 && $('[id$=ddlCounter]').val() != prevCounter) {
+                $(".stoast").toastText("Info", "Please Logout the current counter.", 5, 2);
+                $('[id$=ddlCounter]').val(prevCounter);
+                return false;
+            }
+            if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select') {
+                $(".stoast").toastText("Info", "Finish or Skip  The Current Token.", 5, 2);
+                return false;
+            }
+            else
+            {
+                var CounterID = $('[id$=ddlCounter]').val();
+                var TerminalName = $('[id$=hdnClientMechineName]').val(); ;
+                var Status = 'L';
+
+                GetNonAsync("Private/module.aspx/OnCounterLogIn",
+                    { CounterID: CounterID, TerminalName: TerminalName, Status: Status },
+                    function (jdata) {
+                        $('[id$=ddlCounter] option:selected').text();
+                       // $('[id$=ddlCounter]').attr('disabled', true);
+                        localStorage.setItem('selectedCounter',  $('[id$=ddlCounter]').val());
+                        if(prevCounter!=CounterID)
+                        {
+                            OnTokensList('PENDING');
+                            OnCallTokens('cnt');
+                             if($('[id$=ddlCounter]').val() != 0 && $('[id$=ddlCounter]').find('option:selected').text() != "--Select--")
+                                  BindTokens('PENDING');
+                            prevCounter=CounterID;
+                        }
+                    },
+                    function () {
+                    });
+            }
+            return false;
+
+        }
+        function OnCounterLogOut() {
+            if ($('[id$=ddlCounter]').val() == "0") {
+                $(".stoast").toastText("Info", "Counter Already Loged Out.", 5, 2);
+                return false;
+            }
+            if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select') {
+                $(".stoast").toastText("Info", "Finish or Skip  The Current Token.", 5, 2);
+                return false;
+            }
+            var CounterID = $('[id$=ddlCounter]').val();
+            var TerminalName = $('[id$=hdnClientMechineName]').val(); ;
+            var Status = 'O';
+            GetNonAsync("Private/module.aspx/OnCounterLogIn",
+                { CounterID: CounterID, TerminalName: TerminalName, Status: Status },
+                function (jdata) {
+                    $(".stoast").toastText("Info", "Counter LogOut Successfully.", 5, 2);
+                    localStorage.setItem('selectedCounter',  0);
+                    prevCounter=0;
+                    //  $('[id$=ddlCounter]').attr('disabled', false);
+                    var griddiv = document.getElementById('divTokens');
+                    griddiv.innerHTML = '';
+                    document.getElementById('lblPendingtkns').innerHTML = '0';
+                    document.getElementById('lblskiptkns').innerHTML = '0';
+                    document.getElementById('lblservedtkns').innerHTML = '0';
+                       GetCounterByMechineName('LogOut');
+                      if($('[id$=ddlCounter]').val() != 0 && $('[id$=ddlCounter]').find('option:selected').text() != "--Select--")
+                          BindTokens('PENDING');
+                      $('#ddlToken').empty();
+                },
+                function () {
+                });
+            return false;
+        }
+        function QuickSearchGridURL() {
+
+        }
+        function OngenerateNewToken() {
+            if ($('[id$=ddlCounter]').val() == null) {
+                $(".stoast").toastText("Info", "Presently There Is No Counter Mapped To This Terminal.", 5, 2);
+                return false;
+            }
+            if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select') {
+                $(".stoast").toastText("Info", "Finish The Current Token.", 5, 2);
+                return false;
+            }
+            if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please LogIn Counter.", 5, 2);
+                return false;
+            }
+            var counter_Id = $('[id$=ddlCounter]').val();
+            var serviceTypeId = $('[id$=hdnTokenType]').val();
+            var NewTokenStatus = 'C';
+            GetNonAsync("Private/module.aspx/GenerateNewToken",
+                { counter_Id: counter_Id, serviceTypeId: serviceTypeId, NewTokenStatus: NewTokenStatus },
+                function (jdata) {
+                    $('[id*=ddlToken]').find('option:selected').text(jdata.d);
+                    localStorage.setItem('selectedToken',  jdata.d);
+                    $('[id*=divEnquiryRefund]').css('display', 'block');
+                    return false;
+                },
+                function () {
+                    alert('Fail');
+                });
+            return false;
+        }
+
+        function BindTokens(Flag) {
+            var counter_Id = $('[id$=ddlCounter]').val();
+            var serviceTypeId = $('[id$=hdnTokenType]').val();
+            if (serviceTypeId != "" && counter_Id!=0 && counter_Id!='' &&  $('[id$=ddlCounter]').find('option:selected').text()!="--Select--") {
+                GetNonAsync("Private/module.aspx/GetPendingSkipServedTokens",
+                { counter_Id: counter_Id, serviceTypeId: serviceTypeId, Flag: Flag },
+                function (jdata) {
+                    var _data = jdata.d[0];
+                    if (_data != '' && _data != null) {
+                        if (_data[0]["IS_TOKEN_REQUIRED"] == 'N') {
+                            $('[id*=divTokenStatus]').css('display', 'none');
+                            return false;
+                        }
+                    }
+                    if (_data.length > 0) {
+                        var selectedtoken = $('[id*=ddlToken]').find('option:selected').text();
+                        $('#ddlToken').html('');
+                        for (var i = 0; i < _data.length; i++) {
+                            if (i == 0 && $('[id*=ddlToken]').find('option:selected').text() == '' && (selectedtoken == '' || selectedtoken == 'select'))
+                                $('#ddlToken').append(new Option('select', 0));
+
+                            $('#ddlToken').append(new Option(_data[i].TOKEN_NO, _data[i].TOKEN_NO));
+                        }
+                        if(localStorage.getItem('selectedToken')!=''&&localStorage.getItem('selectedToken')!=null && localStorage.getItem('selectedToken')!=undefined)
+                            $('[id*=ddlToken]').find('option:selected').text(localStorage.getItem('selectedToken'));
+                        else if (selectedtoken != '' && selectedtoken != 'select')
+                            $('[id*=ddlToken]').find('option:selected').text(selectedtoken);
+                    }
+                    return false;
+                },
+                function () {
+                    alert('Fail');
+                });
+            }
+        }
+        var prevToken = '';
+        $('#ddlToken').on("change", function (e) {
+            var sel = $(this).find(":selected");
+            //   $('[id*=pnlTokenSys]').css('display', 'block');
+            //   $('[id*=txtTokenScan]').val('');
+            if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select' && (prevToken != '' && prevToken != 'select' &&  prevToken != $('[id*=ddlToken]').find('option:selected').text())) {
+            console.log('prevToken:'+prevToken);
+                $(".stoast").toastText("Info", "Finish The Current Token.", 5, 2);
+              //  $('[id*=ddlToken]').find('option:selected').text(prevToken);
+	                for(var op of document.getElementById('ddlToken').options)
+	                {
+	                if(op.value==prevToken)
+	                {op.selected=true;
+	                break;}
+	                }
+                return false;
+            }
+            prevToken = $('[id*=ddlToken]').find('option:selected').text();
+            OnDdlSelectedTokenClick($('[id*=ddlToken]').find('option:selected').text());
+        })
+
+        function OnDdlSelectedTokenClick(Tokenno) {
+            if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please Select counter.", 5, 2);
+                return false;
+            }
+
+            else {
+
+                var TOKEN_NO = Tokenno;
+                var Service_Type_Id = $('[id$=hdnTokenType]').val();
+                var TokenNo = Tokenno;
+                var Counter_Id = $('[id$=ddlCounter]').val();
+                localStorage.setItem('selectedToken',  TokenNo);
+//                GetAsync("Private/module.aspx/OnSelectedPendingToCurrentToken",
+//                { Service_Type_Id: Service_Type_Id, TokenNo: TokenNo, Counter_Id: Counter_Id },
+//                function (jdata) {
+//                    var str = jdata.d;
+//                    var counterdet = str.split(',');
+//                    if (counterdet[0] == Counter_Id) {
+//                        $('[id*=divCounterCall]').css('display', 'none');
+//                        return false;
+//                    }
+//                    else {
+//                        $(".stoast").toastText("Info", 'This Token Has Selected In Counter (' + counterdet[1] + ')', 5, 2);
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                        OnTokensList('SKIP');
+//                        OnCallTokens('cnt');
+//                        return false;
+//                    }
+//                },
+//                function () {
+//                });
+            }
+            return false;
+        }
+        var _state = '';
+        function OnTokensList(Flag) {
+          var hdnDateFormat =  $('[id$=hdnDateFormat]').val();//document.getElementById('ctl00_ContentPlaceHolder1_headerControl1_hdnDateFormat').value;
+            if (hdnDateFormat == undefined || hdnDateFormat == null || hdnDateFormat == "") { hdnDateFormat = "dd-MMM-yyyy"; }
+            var hdnTimeFormat =  $('[id$=hdnTimeFormat]').val();//document.getElementById('ctl00_ContentPlaceHolder1_headerControl1_hdnTimeFormat').value;
+            if (hdnTimeFormat == undefined || hdnTimeFormat == null || hdnTimeFormat == "") { hdnTimeFormat = "HH:mm:ss"; }
+
+            var counter_Id = $('[id$=ddlCounter]').val();
+            var serviceTypeId = $('[id$=hdnTokenType]').val();
+            if(serviceTypeId==''||serviceTypeId==undefined|| serviceTypeId==null) serviceTypeId=0;
+            var Counter_name = $('[id$=ddlCounter]').find('option:selected').text();
+            var param = param || {};
+            param.dataKey = "TOKEN_NO";
+            param.pageSize = 10;
+            param.pageNum = 1;
+            param.defaultWSParams = { counter_Id: counter_Id, serviceTypeId: serviceTypeId, Flag: Flag };
+            param.wsPath = "Private/module.aspx/GetPendingSkipServedTokens";
+            param.wsFilterPath = "Private/module.aspx/GetPendingSkipServedTokens";
+            if (Flag == "FINISH") {
+                param.template = ["TOKEN_NO*TOKEN_NO"
+                     , "SERVICE_NAME*SERVICE_NAME"
+                     , "CREATE_DT*CREATE_DT"
+                     , "AVG_TIME*AVG_TIME"
+                     , "USERNAME*USERID"
+                      , "MOBILE_NO*MOBILE_NO"];
+            }
+            else if (Flag == "SKIP") {
+                param.template = [[{ icon: _iniUrl + 'Assets/Grid_Icons/calimg.png', click: 'OnSkipTokenClick', alt: 'Call'}]
+                     , "TOKEN_NO*TOKEN_NO"
+                    , "SERVICE_NAME*SERVICE_NAME"
+                    , "CREATE_DT*CREATE_DT"
+                    , "AVG_TIME*AVG_TIME"
+                    , "USERNAME*USERID"
+                     , "MOBILE_NO*MOBILE_NO"];
+            }
+            else {
+                param.template = [[{ icon: _iniUrl + 'Assets/Grid_Icons/calimg.png', click: 'OnPendingSelectedTokenClick', alt: 'Call'}
+//                 ,{ icon: _iniUrl + 'Assets/Grid_Icons/next_btn.gif', click: 'OnPendingSkipClick', alt: 'Skip'}
+//                ,{ icon: _iniUrl + 'Assets/Grid_Icons/next_btn.gif', click: 'OnPendingServedTokenClick', alt: 'Complete'}
+]
+                     , "TOKEN_NO*TOKEN_NO"
+                    , "SERVICE_NAME*SERVICE_NAME"
+                    , "CREATE_TIME*CREATE_TIME"
+                    , "AVG_TIME*AVG_TIME"
+                     , "MOBILE_NO*MOBILE_NO"
+                    ];
+            }
+            if (Flag == "FINISH") {
+                param.header = [{ col: "Token No", sort: false, filter: true, width: '12%' }
+                    , { col: "Service Name", sort: false, filter: true, width: '22%' }
+                    , { col: "Create Time", sort: false, filter: true, width: '10%' }
+                    , { col: "Avg Waiting Time(min)", sort: false, filter: true, width: '18%' }
+                    , { col: "User Name", sort: false, filter: true, width: '25%'}
+                    , { col: "Mobile No", sort: false, filter: true}];
+            }
+            else if (Flag == "SKIP") {
+                param.header = ["Call"
+                    , { col: "Token No", sort: false, filter: true, width: '12%' }
+                    , { col: "Service Name", sort: false, filter: true, width: '22%' }
+                    , { col: "Create Time", sort: false, filter: true, width: '10%' }
+                    , { col: "Skipped Time", sort: false, filter: true, width: '25%' }
+                    , { col: "User Name", sort: false, filter: true, width: '25%'}
+                    , { col: "Mobile No", sort: false, filter: true}];
+            }
+            else {
+                param.header = ["Call"
+                    , { col: "Token No", sort: false, filter: true, width: '12%' }
+                    , { col: "Service Name", sort: false, filter: true, width: '22%' }
+                    , { col: "Create Time", sort: false, filter: true, width: '10%' }
+                    , { col: "Avg Waiting Time(min)", sort: false, filter: true, width: '18%' }
+                    , { col: "Mobile No", sort: false, filter: true}
+                    ];
+            }
+            param.enablePaging = false;
+            param.enableTrace = false;
+            param.enableFilter = false;
+            param.enableCheckbox = false;
+            param.enableSorting = false;
+            param.tableTemplate = true;
+            param.RowNo = true;
+          
+            gridControl = $("#divTokens").jtable(param);
+            if (Flag == "FINISH") {
+                document.getElementById('ctl00_lblcounterCalling').innerHTML = 'Served Tokens';
+            }
+            else if (Flag == "SKIP") {
+                document.getElementById('ctl00_lblcounterCalling').innerHTML = 'Skipped Tokens';
+            }
+            else {
+                document.getElementById('ctl00_lblcounterCalling').innerHTML = 'Pending Tokens';
+            }
+            if (Flag == "FINISH") Flag = 'PENDING';
+          //  BindTokens(Flag);
+           BindTokens('PENDING');
+        }
+
+
+        function getcurrentToken(Counter_Id, ServiceTypeId, Mechine_Name) {
+            var counter_Id = Counter_Id;
+            var serviceTypeId = ServiceTypeId
+            var MechineName = Mechine_Name;
+//            GetAsync("Private/module.aspx/GetCurrentTokenByCounter",
+//                  { MechineName: MechineName },
+//                  function (jdata) {
+//                      var _data = jQuery.parseJSON(jdata.d);
+//                      if (_data.length > 0) {
+//                          $('[id*=ddlToken]').find('option:selected').text(_data[0]["TOKEN_NO"]);
+//                          $('[id$=ddlToken]').attr('disabled', true);
+//                      }
+//                  });
+        }
+        /*  $('[id*=txtTokenScan]').keydown(function (e) {
+        if (e.keyCode == 13) {
+        var serviceTypeId = $('[id$=hdnTokenType]').val();
+        var _tokenno = $('[id$=txtTokenScan]').val();
+        var currentToken = $('[id$=ddlToken]').val();
+        if (_tokenno.toUpperCase() == currentToken.toUpperCase()) {
+        $('[id*=pnlTokenSys]').css('display', 'none');
+        e.preventDefault();
+        }
+        else {
+        //  alert("Please Scan Proper Token No");
+        $(".stoast").toastText("Info", "Please Scan Proper Token No.", 5, 2);
+        $('[id*=pnlTokenSys]').css('display', 'block');
+        $('[id*=txtTokenScan]').val('');
+        e.preventDefault();
+        }
+        }
+        });*/
+
+        function OnServiedTokenClick() {
+            if ($('[id$=ddlCounter]').val() == null) {
+                $(".stoast").toastText("Info", "Presently There Is No Counter Mapped To This Terminal.", 5, 2);
+                return false;
+            }
+            if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please Select counter.", 5, 2);
+                return false;
+            }
+            else if ($('[id*=ddlToken]').find('option:selected').text() == '' || $('[id*=ddlToken]').find('option:selected').text() == 'select') {
+                $(".stoast").toastText("Info", "Please Select Token.", 5, 2);
+                return false;
+            }
+            else {
+                var PreviousToken = $('[id*=ddlToken]').find('option:selected').text();
+                var Counter_Id = $('[id$=ddlCounter]').val();
+//                GetAsync(
+//                    "Private/module.aspx/TokenToBeComplete",
+//                { PreviousToken: PreviousToken, Counter_Id: Counter_Id },
+//                function (jdata) {
+//                    if (jdata.d != null && jdata.d != '' && jdata.d != undefined) {
+//                        OnCallTokens('A');
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                       prevToken='';
+//                        $('[id*=divCounterCall]').css('display', 'none');
+//                        localStorage.setItem('selectedToken',  '');
+//                        prevToken='';
+//                         BindTokens('PENDING');
+//                        return false;
+//                    }
+//                    else {
+//                        $(".stoast").toastText("Info", "Currently There Are No Tokens.", 5, 2);
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                        return false;
+//                    }
+//                },
+//                function () {
+//                });
+            }
+            return false;
+        }
+
+        var Count = 0;
+        function OnNextTokenClick(Flag) {
+            if ($('[id$=ddlCounter]').val() == null) {
+                $(".stoast").toastText("Info", "Presently There Is No Counter Mapped To This Terminal.", 5, 2);
+                return false;
+            }
+            if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please Select counter.", 5, 2);
+                return false;
+            }
+            else {
+                if (Flag == 'SKIP') {
+                    if ($('[id*=ddlToken]').find('option:selected').text() == '' || $('[id*=ddlToken]').find('option:selected').text() == 'select') {
+                        $(".stoast").toastText("Info", "Please Select Token.", 5, 2);
+                        return false;
+                    }
+                }
+                else if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select') {
+                    $(".stoast").toastText("Info", "Finish The Current Token.", 5, 2);
+                    return false;
+                }
+                var Service_Type_Id = $('[id$=hdnTokenType]').val();
+                var PreviousToken = $('[id*=ddlToken]').find('option:selected').text();
+                if(PreviousToken=='select')PreviousToken='';
+                var Counter_Id = $('[id$=ddlCounter]').val();
+//                GetAsync(
+//                    "Private/module.aspx/GetNextToken",
+//                { Service_Type_Id: Service_Type_Id, PreviousToken: PreviousToken, Counter_Id: Counter_Id, Flag: Flag },
+//                function (jdata) {
+//                    if (jdata.d != null && jdata.d != '' && jdata.d != undefined) {
+//                        if (Flag == 'NEXT') {
+//                            $('[id*=ddlToken]').find('option:selected').text(jdata.d);
+//                             localStorage.setItem('selectedToken',  jdata.d);
+//                            //     $('[id*=pnlTokenSys]').css('display', 'block');
+//                            //  $('[id*=txtTokenScan]').val('');
+//                        }
+//                        else if (Flag == 'SKIP') {
+//                            $('[id*=ddlToken]').find('option:selected').text('');
+//                            localStorage.setItem('selectedToken',  '');
+//                            prevToken='';
+//                        }
+//                        OnCallTokens('A');
+//                        BindTokens('PENDING');
+//                        $('[id*=divCounterCall]').css('display', 'none');
+//                        return false;
+//                    }
+//                    else {
+//                        $(".stoast").toastText("Info", "Currently There Are No Tokens.", 5, 2);
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                        prevToken='';
+//                        return false;
+//                    }
+//                },
+//                function () {
+//                });
+            }
+            return false;
+        }
+
+        
+        function OnPendingSkipClick(InputData, Status)
+        {
+         if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please Select counter.", 5, 2);
+                return false;
+            }
+            else if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select') {
+                $(".stoast").toastText("Info", "Finish The Current Token.", 5, 2);
+                return false;
+            }
+            else {
+               var _data = gridControl.getDataRow(InputData);
+                var TOKEN_NO = _data["TOKEN_NO"];
+                var Service_Type_Id = $('[id$=hdnTokenType]').val();
+                var TokenNo = _data["TOKEN_NO"];
+                var Counter_Id = $('[id$=ddlCounter]').val();
+
+//                GetAsync(
+//                    "Private/module.aspx/GetNextToken",
+//                { Service_Type_Id: Service_Type_Id, PreviousToken: TokenNo, Counter_Id: Counter_Id, Flag: 'SKIP' },
+//                function (jdata) {
+//                    if (jdata.d != null && jdata.d != '' && jdata.d != undefined) {
+//                          $('[id*=ddlToken]').find('option:selected').text('');
+//                             localStorage.setItem('selectedToken',  '');
+//                       prevToken='';
+//                        OnCallTokens('A');
+//                        BindTokens('PENDING');
+//                        $('[id*=divCounterCall]').css('display', 'none');
+//                        return false;
+//                    }
+//                    else {
+//                        $(".stoast").toastText("Info", "Currently There Are No Tokens.", 5, 2);
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                        prevToken='';
+//                        return false;
+//                    }
+//                },
+//                function () {
+//                });
+            }
+        }
+
+        function OnPendingServedTokenClick(InputData, Status)
+        {
+         if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please Select counter.", 5, 2);
+                return false;
+            }
+            else if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select') {
+                $(".stoast").toastText("Info", "Finish The Current Token.", 5, 2);
+                return false;
+            }
+            else {
+            var _data = gridControl.getDataRow(InputData);
+               
+                var TokenNo = _data["TOKEN_NO"];
+                var Counter_Id = $('[id$=ddlCounter]').val();
+
+//                GetAsync(
+//                    "Private/module.aspx/TokenToBeComplete",
+//                { PreviousToken: TOKEN_NO, Counter_Id: Counter_Id },
+//                function (jdata) {
+//                    if (jdata.d != null && jdata.d != '' && jdata.d != undefined) {
+//                        OnCallTokens('A');
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                      prevToken='';
+//                        $('[id*=divCounterCall]').css('display', 'none');
+//                        localStorage.setItem('selectedToken',  '');
+//                        prevToken='';
+//                          BindTokens('PENDING');
+//                        return false;
+//                    }
+//                    else {
+//                        $(".stoast").toastText("Info", "Currently There Are No Tokens.", 5, 2);
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+
+//                        return false;
+//                    }
+//                },
+//                function () {
+//                });
+            }
+        }
+
+
+        function OnPendingSelectedTokenClick(InputData, Status) {
+            if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please Select counter.", 5, 2);
+                return false;
+            }
+            else if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select') {
+                $(".stoast").toastText("Info", "Finish The Current Token.", 5, 2);
+                return false;
+            }
+            else {
+                var _data = gridControl.getDataRow(InputData);
+                var TOKEN_NO = _data["TOKEN_NO"];
+                var Service_Type_Id = $('[id$=hdnTokenType]').val();
+                var TokenNo = _data["TOKEN_NO"];
+                var Counter_Id = $('[id$=ddlCounter]').val();
+//                GetAsync("Private/module.aspx/OnSelectedPendingToCurrentToken",
+//                { Service_Type_Id: Service_Type_Id, TokenNo: TokenNo, Counter_Id: Counter_Id },
+//                function (jdata) {
+//                    var str = jdata.d;
+//                    var counterdet = str.split(',');
+//                    if (counterdet[0] == Counter_Id) {
+//                        $('[id*=ddlToken]').find('option:selected').text(TOKEN_NO);
+//                         localStorage.setItem('selectedToken',  TOKEN_NO);
+//                        //  $('[id*=pnlTokenSys]').css('display', 'block');
+//                        $('[id*=divCounterCall]').css('display', 'none');
+//                        return false;
+//                    }
+//                    else {
+//                        $(".stoast").toastText("Info", 'This Token Has Selected In Counter (' + counterdet[1] + ')', 5, 2);
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                        OnTokensList('SKIP');
+//                        //BindTokens();
+//                        OnCallTokens('cnt');
+//                        return false;
+//                    }
+
+//                },
+//                function () {
+//                });
+            }
+            return false;
+        }
+
+        var Count = 0;
+        function OnSkipTokenClick(InputData, Status) {
+            if ($('[id$=ddlCounter]').val() == 0 && $('[id$=ddlCounter]').find('option:selected').text() == "--Select--") {
+                $('[id*=divCounterCall]').css('display', 'block');
+                $(".stoast").toastText("Info", "Please Select counter.", 5, 2);
+                return false;
+            }
+            else if ($('[id*=ddlToken]').find('option:selected').text() != '' && $('[id*=ddlToken]').find('option:selected').text() != 'select') {
+                $(".stoast").toastText("Info", "Finish The Current Token.", 5, 2);
+                return false;
+            }
+            else {
+                var _data = gridControl.getDataRow(InputData);
+                var TOKEN_NO = _data["TOKEN_NO"];
+                var Service_Type_Id = $('[id$=hdnTokenType]').val();
+                var TokenNo = _data["TOKEN_NO"];
+                var Counter_Id = $('[id$=ddlCounter]').val();
+//                GetAsync("Private/module.aspx/OnConvertSkipToCurrentToken",
+//                { Service_Type_Id: Service_Type_Id, TokenNo: TokenNo, Counter_Id: Counter_Id },
+//                function (jdata) {
+//                    var str = jdata.d;
+//                    var counterdet = str.split(',');
+//                    if (counterdet[0] == Counter_Id) {
+//                        $('[id*=ddlToken]').find('option:selected').text(TOKEN_NO);
+//                        localStorage.setItem('selectedToken',  TOKEN_NO);
+//                        OnTokensList('SKIP');
+//                        OnCallTokens('cnt');
+//                        //  $('[id*=pnlTokenSys]').css('display', 'block');
+//                        $('[id*=divCounterCall]').css('display', 'none');
+//                        return false;
+//                    }
+//                    else {
+//                        $(".stoast").toastText("Info", 'This Token Has Selected In Counter (' + counterdet[1] + ')', 5, 2);
+//                        $('[id*=ddlToken]').find('option:selected').text('');
+//                        OnTokensList('SKIP');
+//                        OnCallTokens('cnt');
+//                        return false;
+//                    }
+
+//                },
+//                function () {
+//                });
+            }
+            return false;
+        }
+        function AssignCokie() {
+            window.open('../../../SetCookie.aspx');
+            return false;
+        }
+    </script>
+    <script type="text/javascript">
+
+
+        var NAV = {};
+        NAV.RWD = {
+            body: document.getElementsByTagName('body')[0],
+            head: document.getElementsByTagName('head')[0],
+            deviceWidth: null,
+            roundedWidth: null,
+            init: function () {
+
+                NAV.RWD.deviceWidth = document.documentElement.clientWidth;
+                NAV.RWD.roundedWidth = NAV.RWD.roundWidth(NAV.RWD.deviceWidth);
+                NAV.RWD.setupClient(NAV.RWD.deviceWidth);
+                window.onresize = function (a) {
+                    NAV.RWD.deviceWidth = document.documentElement.clientWidth;
+                    NAV.RWD.roundedWidth = NAV.RWD.roundWidth(NAV.RWD.deviceWidth);
+                    NAV.RWD.setupClient(NAV.RWD.deviceWidth)
+                }
+
+            },
+            deviceBucketer: function (a) {
+                var b = "large";
+                if (a < 831) {
+                    if (a < 661) {
+                        b = "small"
+                    } else {
+                        b = "medium"
+                    }
+                } else {
+                    b = "large"
+                }
+                return b
+            },
+            roundWidth: function (a) {
+                var b = 0;
+                a % 100 > 50 ? b = 50 : 0;
+                return Math.min(Math.floor(a / 100) * 100) + b
+            },
+            capitalize: function (a) {
+                return a.charAt(0).toUpperCase() + a.slice(1).toLowerCase()
+            },
+            setupClient: function (a) {
+                NAV.RWD.body.className = NAV.RWD.body.className.replace(/\bres_.*?\b/g, '');
+                NAV.RWD.body.className += " res_" + NAV.RWD.roundedWidth;
+            }
+        };
+
+        NAV.RWD.init();
+
+        var _browser = (navigator.userAgent).toUpperCase();
+        if (_browser.indexOf("CHROME") != -1) {
+            _browser = "chrome";
+        }
+        else if (_browser.indexOf("MSIE 10.0") != -1) {
+            alert(navigator.appVersion);
+
+            var ver = parseInt(navigator.appVersion);
+
+            _browser = "ie9";
+        }
+        else if (_browser.indexOf("FIREFOX") != -1) {
+            _browser = "firefox";
+        }
+        else if (_browser.indexOf("SAFARI") != -1) {
+            _browser = "safari";
+        }
+        $("body").addClass(_browser);
+
+        var msgid = 0;
+       
+
+    </script>
+    <script type="text/javascript">
+        (function ($) {
+
+            $.fn.scustommessagebox = function (_Type, headerText, bodyText, yesCallBack, callBackParamList, noCallBack, noCallbackParams) {
+                if ($(this).length > 0)
+                    $(this).remove();
+
+                var _ybtnText; var _nbtnText = "";
+                if (_Type == 1) {
+                    _ybtnText = "Ok";
+                    _nbtnText = "Cancel";
+                }
+                else if (_Type == 7) {
+                    _ybtnText = "Print";
+                    _nbtnText = "Don't Print";
+                }
+                else {
+                    _ybtnText = "Yes";
+                    _nbtnText = "No";
+                }
+
+                var _html = '<div class="smessagebox"><div class="promptmask"></div><div class="prompt" ><h1></h1><div><i class="icon-check-1"></i><h2></h2></div><button id="syesbutton">' + _ybtnText + '</button><button id="snobutton">' + _nbtnText + '</button></div></div>';
+
+                $("body").append(_html);
+                $(".smessagebox h1").html(headerText);
+                $(".smessagebox h2").html(bodyText);
+                $(".smessagebox #syesbutton").focus();
+                $(".smessagebox #syesbutton").bind("click", function () {
+                    if (callBackParamList != '')
+                        yesCallBack(callBackParamList);
+                    else
+                        yesCallBack();
+                    $(".smessagebox *").unbind(); $(".smessagebox").hide(); $(".smessagebox").remove();
+                });
+                $(".smessagebox #syesbutton").on('keydown', function (e) {
+                    e.stopPropagation();
+                    if (e.keyCode == 13) {
+                        if (callBackParamList != '')
+                            yesCallBack(callBackParamList);
+                        else
+                            yesCallBack();
+                        $(".smessagebox *").unbind(); $(".smessagebox").hide(); $(".smessagebox").remove();
+                    }
+
+                    return true;
+                });
+                if (typeof noCallBack == "function") {
+                    $(".smessagebox #snobutton").bind("click", function () {
+                        if (noCallbackParams!= undefined && noCallbackParams != '')
+                            noCallBack(noCallbackParams);
+                        else
+                            noCallBack(); 
+                        
+                        $(".smessagebox *").unbind();
+                        $(".smessagebox").hide();
+                        $(".smessagebox").remove();
+                    });
+                }
+                else {
+                    $(".smessagebox #snobutton").hide();
+                }
+            };
+
+            $.fn.toastText = function (title, text, wait, cid) {
+                wait = 10;
+
+                var cid = cid || 1;
+                var t_class = [];
+                t_class[0] = "";
+                t_class[1] = "sucess";
+                t_class[2] = "info";
+                t_class[3] = "warning";
+                t_class[4] = "danger";
+
+                var t_icon = [];
+                t_icon[0] = "";
+                t_icon[1] = "icon-check-1";
+                t_icon[2] = "icon-info-1";
+                t_icon[3] = "icon-cancel-alt";
+                t_icon[4] = "icon-erase";
+
+                if ($(this).length > 0)
+                    $(this).remove();
+
+                $(".toastdiv").append("<div class=\"alertprompt " + t_class[cid] + "\" ><span class=\"title\"><i class=" + t_icon[cid] + "></i>" + title + "</span> <span class=\"message\">" + text + "</span> <button class=\"alertclose\">X</button></div>");
+
+                $(".alertprompt").fadeIn(300, function () {
+                    setTimeout(function () {
+                        $(".alertprompt").animate({ 'margin-right': '-500px' }).fadeOut(1000, function () {
+                            $(".alertprompt").remove();
+                        });
+                    }, wait * 1000);
+                }).animate({ 'margin-top': '10px' });
+
+                $(".alertprompt button").bind("click", function () {
+                    $(this).parent().remove();
+                });
+            };
+
+            $.fn.scustomconfirmbox = function (_Type, headerText, bodyText) {
+                if ($(this).length > 0)
+                    $(this).remove();
+
+                var _ybtnText; var _nbtnText = "";
+                if (_Type == 1) {
+                    _ybtnText = "Ok";
+                    _nbtnText = "Cancel";
+                }
+                else {
+                    _ybtnText = "Yes";
+                    _nbtnText = "No";
+                }
+
+                var _html = '<div class="smessagebox"><div class="promptmask"></div><div class="prompt" ><h1></h1><div><i class="icon-check-1"></i><h2></h2></div><button id="syesbutton">' + _ybtnText + '</button><button id="snobutton">' + _nbtnText + '</button></div></div>';
+
+                $("body").append(_html);
+                $(".smessagebox h1").html(headerText);
+                $(".smessagebox h2").html(bodyText);
+                $(".smessagebox #syesbutton").focus();
+                $(".smessagebox #syesbutton").bind("click", function () {
+                    $(".smessagebox *").unbind(); $(".smessagebox").hide(); $(".smessagebox").remove();
+                    return true;
+                });
+                $(".smessagebox #syesbutton").on('keydown', function (e) {
+                    e.stopPropagation();
+                    if (e.keyCode == 13) {
+                        $(".smessagebox *").unbind(); $(".smessagebox").hide(); $(".smessagebox").remove();
+                    }
+                   
+                    return true;
+                });
+                $(".smessagebox #snobutton").bind("click", function () {
+                    $(".smessagebox *").unbind();
+                    $(".smessagebox").hide();
+                    $(".smessagebox").remove(); return false;
+                });
+            };
+        } (jQuery));
+
+        function fn_InboxClick() {
+            var host = window.location.origin
+            var _labUrl = host + document.getElementById('ctl00_hdninboxurl').value;
+            var MID = '72';
+            var userid = '<%=SessionHandler.UserID %>';
+            var sessionid = '<%=SessionHandler.DBSESSION_ID %>';
+            window.location.assign(_labUrl + 'USER_ID=' + userid + '&SESSION_ID=' + sessionid + '&MODULE_ID=' + MID);
+        }
+
+        function fn_DashboardClick() {
+            var host = window.location.origin
+            var _dbUrl = host + document.getElementById('ctl00_ContentPlaceHolder1_hdnDashboardURL').value;
+            window.location.assign(_dbUrl);
+            return false;
+        }
+
+        var DashBoardBinding = function () {
+
+            var _Module_ID = $('[id$=hdnDashBoardModuleID]').val();
+            var _User_ID = $('[id$=hdnUserId]').val();
+            var row2 = localStorage.getItem('hdashboarddoc');
+            if (row2 == '' || row2 == undefined || row2 == 'undefined') {
+//                GetAsync(
+//            "Private/dasboard.aspx/GetDashBoardBinding",
+//            { User_ID: _User_ID, Module_ID: _Module_ID },
+//            function (Data) {
+//                var row1 = JSON.parse(Data.d);
+//                localStorage.setItem('hdashboarddoc', Data.d);
+//                var row2 = localStorage.getItem('hdashboarddoc');
+//                var row = JSON.parse(row2);
+//                if (row != "" && row != null && row != undefined) {
+//                    var opt = "";
+//                    for (var i = 0; i < row.length; i++) {
+//                        var docName = row[i]["DOC_NAME"].toString();
+//                        var Url = row[i]["NEW_PAGE_URL"].toString();
+//                        opt += "<li id=\"" + Url + "\" onclick=\"listclick(this);\" title='" + docName + "' >" + docName + "</li>";
+//                    }
+//                    $("#list_itm ul").append(opt);
+//                }
+//            },
+//            function (jqXHR, textStatus, errorThrown) {
+//            });
+            } else {
+                var row2 = localStorage.getItem('hdashboarddoc');
+                var row = JSON.parse(row2);
+                if (row != "" && row != null && row != undefined) {
+                    var opt = "";
+                    for (var i = 0; i < row.length; i++) {
+                        var docName = row[i]["DOC_NAME"].toString();
+                        var Url = row[i]["NEW_PAGE_URL"].toString();
+                        opt += "<li id=\"" + Url + "\" onclick=\"listclick(this);\" title='" + docName + "' >" + docName + "</li>";
+                    }
+                    $("#list_itm ul").append(opt);
+                }
+            }
+        }
+        function QuickLinksBind() {
+            var _User_ID = $('[id$=hdnUserId]').val();
+            GetNonAsync(
+            "Private/dasboard.aspx/QuickLinksBind",
+            { User_ID: _User_ID, project_cd: 'HIS' },
+            function (Data) {
+                var jdata = JSON.parse(Data.d);
+                if (jdata != "" && jdata != null && jdata != undefined) {
+                    var opt = "";
+                    for (var i = 0; i < jdata.length; i++) {
+                        var docName = jdata[i]["DOC_NAME"].toString();
+                        var docid = jdata[i]["DOC_ID"].toString();
+                        var DOC_FORM_CD = jdata[i]["DOC_FORM_CD"];
+                        var Url = jdata[i]["NEW_PAGE_URL"].toString();
+                        //                        var moduleid = jdata[i]["PARENT_DOC_ID"].toString();
+                        //                        var submodid = jdata[i]["PARENT_MODULE_ID"].toString();
+                        opt += "<li id=\"" + docid + "," + Url + "," + DOC_FORM_CD + " \" onclick=\"QuickLinkslistclick(this);\" title='" + docName + "' >" + docName + "</li>";
+                    }
+                    $("#listhrfQuickLinks ul").append(opt);
+                }
+            },
+            function (jqXHR, textStatus, errorThrown) {
+            });
+        }
+        function QuickLinkslistclick(docid) {
+            var dID = docid.id.split(",")[0];
+            var url = docid.id.split(",")[1];
+            var DOC_FORM_CD = docid.id.split(",")[2];
+            var URLC = url + '?&DOC_FORM_CD=' + DOC_FORM_CD;
+            var MODULE_ID = 0; //docid.id.split(",")[3];
+            var SUB_MODULE_ID = 0; //docid.id.split(",")[4];
+            GetNonAsync(
+                    "Private/dasboard.aspx/ManageSessionsQuickLinks",
+                    { ID: SUB_MODULE_ID, MID: MODULE_ID, DID: dID, MNAME: '', URL: URLC, MFRMCD: '', DOCFORMCD: DOC_FORM_CD },
+                    function (JData) {
+                        if (JData != "" && JData != null && JData != undefined) {
+                            QuickLinkslistclickUrl(JData);
+                        }
+                    },
+                    function (jqXHR, textStatus, errorThrown) {
+                        e.preventDefault();
+                    });
+        }
+        function QuickLinkslistclickUrl(url) {
+
+            var origin = window.location.origin;
+            var _url = window.location.pathname.split('/')[1];
+            if (url.d.indexOf('~') == 0) {
+                url.d = url.d.substring(1, url.d.length);
+            }
+            window.location = origin + "/" + _url + url.d;
+            return false;
+        }
+
+        function listclick(url) {
+
+            var origin = window.location.origin;
+            var _url = window.location.pathname.split('/')[1];
+            if (url.id.indexOf('~') == 0) {
+                url.id = url.id.substring(1, url.id.length);
+            }
+            window.location = origin + "/" + _url + url.id;
+            return false;
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.tooltip').tooltipster({
+                theme: 'Light',
+                animation: 'grow',
+                delay: 200,
+                side: 'top'
+            });
+
+            //DashBoardBinding();
+            if (document.getElementById('ctl00_hdnIsQuickLinkShow').value == 'YES') {
+                quickLinks.style.display = "block";
+                QuickLinksBind();
+            }
+            else {
+                quickLinks.style.display = "none";
+            }
+
+        });
+        $(document).ready(function () {
+            var docid = document.getElementById('ctl00_hdndocsessionid').value;
+            var docformcd = document.getElementById('ctl00_hdngdocformcd').value;
+            if (localStorage.getItem("hdocument") != '') {
+                var ttt = jQuery.parseJSON(localStorage.getItem("hdocument"));
+                if (ttt != null && ttt != undefined && document.title != 'Module View' && document.title != 'Admin Dashboard' && document.title != 'Inventory DashBoard' && document.title != 'Revenue Dashboard' && document.title != 'Statistics Dashboard' && document.title != 'Lab Admin. Dashboard' && document.title != 'Lab Service Status Dashboard') {
+                    for (var i = 0; i < ttt.length; i++) {
+                        if (ttt[i].smid == docid && ttt[i].pdType != 'M') {
+                            $('.pageheader>h1').show().text(ttt[i].smodule)
+                            document.title = ttt[i].smodule;
+                        } else {
+                            $('.pageheader>h1').show();
+                        }
+                    }
+                }
+                else {
+                    $('.pageheader>h1').show();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

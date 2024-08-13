@@ -1,0 +1,211 @@
+﻿body {margin: 0px; padding: 0px;  font-family:'Roboto Lt', Verdana;
+      height:100%; background-repeat:no-repeat; width:100%;
+                background: -moz-Radial-gradient(50% 50%, circle farthest-side, #ffffff 20%,#edf2f6 77%);
+                background: -webkit-gradient(Radial, 50% 50%, circle farthest-side, #ffffff 20%,#edf2f6 77%);
+                background: -webkit-Radial-gradient(50% 50%, circle farthest-side, #ffffff 20%,#edf2f6 77%);
+                background: -o-Radial-gradient(50% 50%, circle farthest-side, #ffffff 20%,#edf2f6 77%);
+                background: -ms-Radial-gradient(50% 50%, circle farthest-side, #ffffff 20%,#edf2f6 77%);
+                background: Radial-gradient(50% 50%, circle farthest-side, #ffffff 20%,#edf2f6 77%);
+                
+              
+      
+      
+}
+
+.sub_maincls{ margin:0 auto; width:100%; padding:0px;}
+.sub_logo{ margin:41px 20px 0 0; padding:0px;}
+.sub_logo img{ float:right;} 
+.sub_logo ul {margin:0px; padding:0px;}
+
+.sub_logo ul li {display:block !important; margin:0; padding:0px; 
+                          background:url('../images/sub1_logoimg.png'); background-repeat:no-repeat;  z-index:999999;}
+.sub_logo ul li.sub_logoimg{background-position:-0px -120px;  margin:0 0 1px 0; height:94px; width:300px; float:right; }
+.sub_logo ul li.sub_logocaption{background-position:25px 0px;  margin:0px 0 1px 0; position:absolute; top:200px; 
+                                padding:0 0 0 0; height:130px; width:800px; z-index:0 !important; }
+
+
+.sub_loginbox{ margin:25px 0px -10px 0; padding:0px; float:right; clear:both;  }
+
+.sub_loginbox .sub_logtitle{  background: none repeat scroll 0 0 #00ada9;border-radius: 10px 0px 0 0; margin: 0;padding: 0;
+                                    }
+.sub_loginbox .sub_logtitle h1{ font-size:16px; color:White; font-weight:normal; padding:6px 5px 6px 5px; margin:0px; text-align:center; 
+                                    }
+.sub_loginbox .sub_logfield{ background: none repeat scroll 0 0 #962984; border-radius: 0 0 0px 10px; box-shadow: 0 4px 8px -5px #000 inset;
+                             height: 180px;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    z-index: 0;}
+.sub_loginbox .textbox{margin: 0px 10px 0px 30px; padding: 28px 0px 0px;}               
+.sub_logfield span{ margin:0px; padding:6px 7px 7px 7px; background:#03aca9; float:left;}
+.sub_logfield span img{ height:22px; width:22px; margin:0; padding:0px;}
+.sub_logfield input[type="text"]{ height:35px; margin:0px; border:0px; padding:0px 0 0 5px; width:74%;}
+.sub_logfield input[type="Password"]{ height:35px; margin:0px; border:0px; padding:0px 0 0 5px; width:74%;}
+.sub_logfield .checkbox{ margin:5px 0 0 0px; width:100px; float:left;}
+
+.sub_logfield .button{ padding:0px; margin:0px; float:right; }
+.sub_logfield .button input[type="button"]{ border:0px; background:#03aca9; color:#fff; 
+                                            padding:5px 8px 5px 8px; margin:10px 25px 0 0;
+                                            
+                                           }
+                                            
+.bot_box{position: absolute; right: 250px; bottom: 0;}                                           
+.bot_vision{ margin:0px 20px 0 0; padding:0px; float:left;}
+.bot_vision .vision{ background:#962984; padding:5px 0 5px 0; margin:0px; border-radius:5px 5px 0 0; }
+.bot_vision .vision h2{ margin:0px; padding:0px 0 0 0;font-size:16px; font-weight:normal; color:White; text-align:center;}
+.bot_vision .vision_body{ margin:0px 0 0 0; padding:0px; background:#f8f8f8;  width:220px; height:200px; box-shadow:1px 0px 5px 0px #797979;}
+.bot_vision .vision_body ul{ margin:0px 10px 10px 25px; padding:10px 0 0 0; width:auto;}
+.bot_vision .vision_body ul li{ margin:0px 0 10px 0; padding:0px; font-size:10px; color:#797979;
+                                }
+ 
+
+.paneheader    { box-shadow:1px 1px 5px 2px #797979; border:1px solid #bdbdb; }
+.paneheader h1 {  background: #ededed; 
+                 background: -moz-linear-gradient(top, #f6f6f6 50%, #ededed 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#f6f6f6), color-stop(100%,#ededed));
+              background: -webkit-linear-gradient(top, #f6f6f6 50%,#ededed 100%);
+              background: -o-linear-gradient(top, #f6f6f6 50%,#ededed 100%);
+              background: -ms-linear-gradient(top, #f6f6f6 50%,#ededed 100%);
+              background: linear-gradient(to bottom, #f6f6f6 50%,#ededed 100%);
+                    font-size:22px; color:#000000; font-family:'Segoe UI'; font-weight:normal; margin:0px; padding:5px; border-bottom:1px solid #ccc;}
+ .modalBackground{background:#797979; opacity:0.5; position:fixed; top:0px; left:0px; z-index:999999; }     
+ .forget{ margin:0px; padding:10px;   }
+
+ .forget h2{ font-size:12px; color:#797979; font-family:Roboto Lt; font-weight:normal;}
+ .forget table tr td input[type="text"]{ height:23px; border:1px solid #ccc;}
+ .forget table tr td .dropdown{ height:25px; border:1px solid #ccc;}
+  
+ .Dfooter{ clear:both; position:absolute; bottom:0px; right:0px;  padding:2px; width:99.5%; }
+  
+  
+ .text_img{float: left; margin:0px 0 0 15px; padding:0px; position:absolute; top:210px; left:0px;}
+ .text_img img{margin:0px 0 0 0px; width:1000px;}
+  
+ .res_700 .sub_logo img{ width:240px;}
+
+ .res_700 .text_img img { width:450px;}
+ .res_700 .bot_vision{ margin-right:15px;}
+ .res_700 .bot_vision .vision_body { width:145px; }
+ .res_700 .bot_vision .vision_body ul { margin:0px 5px 10px 15px;}
+ .res_700 .bot_vision .vision_body ul li{ font-size:9px;}
+ .res_700 .sub_loginbox .sub_logfield{ height: 180px; width: 200px;}
+ .res_700 .bot_box       { right: 200px; }
+ .res_700 .sub_logfield .button input[type="button"]{margin-right:17px !important;}
+  
+  
+  
+  .res_750 .sub_logo img{ width:250px;}
+ 
+  .res_750 .text_img img { margin:0px 0 0 0px; width:500px;}
+  .res_750 .bot_vision .vision_body { width:155px; }
+  .res_750 .bot_vision .vision_body ul { margin-left:15px;}
+  .res_750 .bot_vision .vision_body ul li{ font-size:9px;}
+  .res_750 .sub_loginbox .sub_logfield{ height: 180px; width: 200px;}
+  .res_750 .bot_box       {right: 200px; }
+  .res_750 .sub_logfield .button input[type="button"]{margin-right:17px !important;}
+  
+  .res_800 .sub_logo img{ width:260px;}
+  
+  .res_800 .text_img img {  width:550px; margin:0px 0 0 0px;}
+  .res_800 .bot_vision .vision_body { width:170px;}
+  .res_800 .bot_vision .vision_body ul { margin-left:15px;}
+  .res_800 .bot_vision .vision_body ul li{ font-size:9px;}
+  .res_800 .sub_loginbox .sub_logfield{ height: 180px; width: 200px;}
+  .res_800 .bot_box       {right: 200px; }
+  .res_800 .sub_logfield .button input[type="button"]{margin-right:13px !important;}
+  
+  .res_850 .sub_logo img{ width:270px;}
+
+  .res_850 .text_img img { width:600px;  margin:0px 0 0 0px;}
+  .res_850 .bot_vision .vision_body { width:180px; }
+  .res_850 .bot_vision .vision_body ul { margin-left:15px;}
+  .res_850 .bot_vision .vision_body ul li{ font-size:9px;}
+  .res_850 .sub_loginbox .sub_logfield{ height: 180px; width: 220px;}
+  .res_850 .bot_box       {  right: 220px; }
+  .res_850 .sub_logfield .button input[type="button"]{margin-right:16px !important;}
+  
+  .res_900 .sub_logo img{ width:280px;}
+
+  .res_900 .text_img img { width:600px;  margin:0px 0 0 0px;}
+  .res_900 .bot_vision .vision_body { width:190px; }
+  .res_900 .bot_vision .vision_body ul {  margin-left:15px;}
+  .res_900 .bot_vision .vision_body ul li{ font-size:10px;}
+  .res_900 .sub_loginbox .sub_logfield{ height: 180px; width: 230px;}
+  .res_900 .bot_box       { right: 230px; }
+  .res_900 .sub_logfield .button input[type="button"]{margin-right:19px !important;}
+  
+  .res_950 .sub_logo img{ width:290px;}
+
+  .res_950 .text_img img { width:680px;  margin:0px 0 0 0px;}
+  .res_950 .bot_vision .vision_body { width:200px; }
+  .res_950 .bot_vision .vision_body ul { margin-left:20px;}
+  .res_950 .bot_vision .vision_body ul li{ font-size:10px;}
+  .res_950 .sub_loginbox .sub_logfield{ height: 180px; width: 230px;}
+  .res_950 .bot_box       { right: 230px; }
+  .res_950 .sub_logfield .button input[type="button"]{margin-right:19px !important;}
+  
+  
+  .res_1000 .sub_logo img{ width:300px;}
+
+  .res_1000 .text_img img { width:680px; margin:0px 0 0 0px;}
+  .res_1000 .bot_vision .vision_body { width:210px; }
+  .res_1000 .bot_vision .vision_body ul { margin-left:20px;}
+  .res_1000 .bot_vision .vision_body ul li{ font-size:10px;}
+  .res_1000 .sub_loginbox .sub_logfield{ height: 180px; width: 240px;}
+  .res_1000 .bot_box       { right: 240px; }
+  .res_1000 .sub_logfield .button input[type="button"]{margin-right:21px !important;}
+  
+  .res_1050 .sub_logo img{ width:310px;}
+ 
+  .res_1050 .text_img img { width:700px;  margin:0px 0 0 0px;}
+  .res_1050 .bot_vision .vision_body { width:220px; }
+  .res_1050 .bot_vision .vision_body ul {  margin-left:20px;}
+  .res_1050 .bot_vision .vision_body ul li{ font-size:10px;}
+  .res_1050 .sub_loginbox .sub_logfield{ height: 180px; width: 250px;}
+  .res_1050 .bot_box       { right: 250px; }
+  
+  .res_1100 .sub_logo img{ width:320px;}
+
+  .res_1100 .text_img img { width:750px;  margin:0px 0 0 0px;}
+  
+  .res_1150 .sub_logo img{ width:320px;}
+
+  .res_1150 .text_img img { width:800px;  }
+  
+  .res_1200 .sub_logo img{ width:320px;}
+
+  .res_1200 .text_img img { width:900px;  margin:0px 0 0 0px;}
+  
+  .res_1250 .sub_logo img{ width:320px;}
+
+  .res_1250 .text_img img { width:900px;  margin:0px 0 0 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.bot_values{ margin:0px 25px 0px 0px; padding:0px;  }
+.bot_values .vision{ background:#962984; padding:5px 0 5px 0; margin:0px; border-radius:5px 5px 0 0; width:220px;}
+.bot_values .vision h2{ margin:0px; padding:0px 0 0 0;font-size:16px; font-weight:normal; color:White; text-align:center;}
+.bot_values .vision_body{ margin:0px 0 0 0; padding:0px;  background:#f8f8f8; height:190px;  width:220px; box-shadow:1px 0px 5px 0px #797979;}
+.bot_values .vision_body ul{ margin:0px 10px 10px 25px; padding:25px 0 0 0; width:auto;}
+.bot_values .vision_body ul li{ margin:0px 0 10px 0; padding:0px; font-size:10px; color:#797979;
+                                }
+ 
+.bot_mission{ margin:0px 0px 0px 0px; padding:0px;}
+.bot_mission .vision{ background:#962984; padding:5px 0 5px 0; margin:0px; border-radius:5px 5px 0 0; width:220px;}
+.bot_mission .vision h2{ margin:0px; padding:0px 0 0 0;font-size:16px; font-weight:normal; color:White; text-align:center;}
+.bot_mission .vision_body{ margin:0px 0 0 0; padding:0px;   background:#f8f8f8; height:190px;  width:220px; box-shadow:1px 0px 5px 0px #797979;}
+.bot_mission .vision_body ul{ margin:0px 10px 10px 25px; padding:25px 0 0 0; width:auto;}
+.bot_mission .vision_body ul li{ margin:0px 0 10px 0; padding:0px; font-size:10px; color:#797979;
+                                }*/

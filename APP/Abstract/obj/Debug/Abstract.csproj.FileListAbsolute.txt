@@ -1,0 +1,27 @@
+D:\manju\SHIMS\Dll's\EzHms.Abstract.dll
+D:\manju\SHIMS\Dll's\EzHms.Abstract.pdb
+D:\WorkFiles\SHIMS\APP\Abstract\obj\Debug\Abstract.csprojResolveAssemblyReference.cache
+D:\WorkFiles\SHIMS\Dll's\EzHms.Abstract.dll
+D:\WorkFiles\SHIMS\Dll's\EzHms.Abstract.pdb
+D:\WorkFiles\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.dll
+D:\WorkFiles\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.pdb
+D:\Projects\SHIMS\Dll's\EzHms.Abstract.dll
+D:\Projects\SHIMS\Dll's\EzHms.Abstract.pdb
+D:\Projects\SHIMS\APP\Abstract\obj\Debug\Abstract.csprojResolveAssemblyReference.cache
+D:\Projects\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.dll
+D:\Projects\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.pdb
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\Dll's\EzHms.Abstract.dll
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\Dll's\EzHms.Abstract.pdb
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\Abstract\obj\Debug\Abstract.csprojResolveAssemblyReference.cache
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.dll
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.pdb
+E:\SHIMS\Dll's\EzHms.Abstract.dll
+E:\SHIMS\Dll's\EzHms.Abstract.pdb
+E:\SHIMS\APP\Abstract\obj\Debug\Abstract.csprojResolveAssemblyReference.cache
+E:\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.dll
+E:\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.pdb
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\Abstract\obj\Debug\Abstract.csprojResolveAssemblyReference.cache
+C:\Users\naresh p\Desktop\OPD\SHIMS\Dll's\EzHms.Abstract.dll
+C:\Users\naresh p\Desktop\OPD\SHIMS\Dll's\EzHms.Abstract.pdb
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.dll
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\Abstract\obj\Debug\EzHms.Abstract.pdb

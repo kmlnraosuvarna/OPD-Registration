@@ -1,0 +1,84 @@
+﻿.Micon .docs,.nMicon .docs{position:absolute; display:none; left:0%; margin-left:-55px; top:60px; height:250px; width:190px;}
+.Micon:hover .docs{position:absolute; display:block; z-index:33333;}
+.Micon,.nMicon{border:1px solid #dedbdb; width:80px; height:80px;padding:12px 12px 12px 12px; margin:0 auto;text-overflow:ellipsis; text-align:center; vertical-align:middle; border-radius:100px;background: #e3e3e2;background: -moz-linear-gradient(top, #DDF3FF 0%, #FDFEFF 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DDF3FF), color-stop(100%,#FDFEFF));background: -webkit-linear-gradient(top, #DDF3FF 0%,#FDFEFF 100%);background: -o-linear-gradient(top, #DDF3FF 0%,#FDFEFF 100%);background: -ms-linear-gradient(top, #DDF3FF 0%,#FDFEFF 100%); background: linear-gradient(to bottom, #DDF3FF 0%,#FDFEFF 100%); position:relative;cursor:pointer; }
+.Micon:hover,.nMicon:hover{border:0px solid #accde4;width:80px; height:80px; padding:13px 13px 13px 13px;background: #ebebeb;background: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fcfcfc));background: -webkit-linear-gradient(top, #ffffff 0%,#fcfcfc 100%);background: -o-linear-gradient(top, #ffffff 0%,#fcfcfc 100%);background: -ms-linear-gradient(top, #ffffff 0%,#fcfcfc 100%);background: linear-gradient(to bottom, #ffffff 0%,#fcfcfc 100%);-moz-box-shadow:inset 0px 2px 12px 0px #28a5e8;-webkit-box-shadow:inset 0px 2px 12px 0px #28a5e8;box-shadow:inset 0px 2px 12px 0px #28a5e8;}
+.ie7 .Micon,.ie7 .nMicon{ width:40px; height:40px;padding:12px 12px 12px 12px;}
+.ie7 .Micon:hover,.ie7 .nMicon:hover,.ie8 .Micon:hover,.ie8 .nMicon:hover{border:1px solid #648cb4;background: #e3e3e2;}
+ul#modulelist li .Micon img,ul#modulelist li .nMicon img{height:54px;}
+.large ul#modulelist li{margin: 1.4%;width: 9.6%;}
+.medium ul#modulelist ul{margin:0% 1.2%;}
+.medium ul#modulelist li{margin: 1.4% 2% 1.4% 2%;width: 10.28%;}
+.Smedium ul#modulelist ul{margin:0% 1.2%;}
+.Smedium ul#modulelist li{margin:1.4% 2.6% 1.4% 2.6%;width: 11.4%;}
+.small ul#modulelist li{margin: 1% 2.8% 1% 2.8%;width: 13.8%;}
+.vsmall ul#modulelist li{margin: 1.4%;width: 9.6%;}
+
+.module-icon{height:54px; width:54px; margin:0px; padding:0px;     background: url(img/module-ico.png) no-repeat;}
+.accounts,.Module-254{background-position: -324px -54px; }
+.adminreports,.Module-30,.Module-152{background-position: -378px -162px; }
+.Appointment_icon,.Module-70,.Module-243{background-position: 3px 0px; }
+.Asset,.Module-314{background-position: -54px 0px; }
+.bloodbank,.Module-319{    background-position: -107px 0px; }
+.company,.Module-102{    background-position: -162px 0px; }
+.cssd,.Module-291{background-position: -216px 0px; }
+.daycare,.Module-139{    background-position: -324px -1px; }
+.Dashboard,.Module-488,.Module-199{background-position: -270px -1px;}
+.DepartmentStores,.Module-334,.Module-333{background-position: -378px 0px; }
+.LabRadiology,.Module-11,.Module-263,.Module-261{    background-position: -54px -108px; }
+.dialysis,.Module-364,.Module-349{    background-position: -431px 0px; }
+.diet,.Module-325{background-position: -486px 0px; }
+.doctordesk,.Module-121,.Module-155{background-position: 0px -54px; }
+.er,.Module-355,.Module-345{background-position: -107px -54px;}
+.feedback,.Module-352,.Module-339{background-position: -161px -54px; }
+.FrontOffice,.Module-16{background-position: -270px -54px; }
+.franchisee,.Module-276{    background-position: -214px -54px; }
+.healthcard,.Module-232,.Module-212{    background-position: -324px -54px;}
+.hic,.Module-326{background-position: -378px -54px; }
+.hl7,.Module-125{background-position: -432px -54px; }
+.housekeeping,.Module-284,.Module-283{background-position: -483px -54px;}
+.LIMS_FINANCIALS,.Module-248{    background-position: -108px -108px; }
+.LIS-Master,.Module-234,.Module-236,.Module-238,.Module-240{    background-position: -162px -108px;}
+.limsmsg,.Module-253{background-position: -378px -108px; }
+.lisreport,.Module-227{    background-position: -216px -108px;}
+.loginfo,.Module-69{    background-position: -270px -108px; }
+.mastersicon,.Module-5{background-position: -324px -108px; }
+.msgstation,.Module-72,.Module-228{background-position: -378px -108px; }
+.MIS_icon,.Module-50,.Module-207{background-position: -432px -108px;}
+.mrd,.Module-346,.Module-342{background-position: -488px -108px; }
+.mycard,.Module-301,.Module-318{    background-position: 0px -160px;}
+.negotiation,.Module-272{    background-position: -52px -163px;}
+.nursestation,.Module-146{background-position: -109px -163px; }                             
+.otmodule,.Module-322{    background-position: -163px -163px;}   
+.patientmodule,.Module-197{background-position: -216px -163px; }                          
+.patientDashboard,.Module-267{background-position: -270px -1px;}
+.physiothrapy,.Module-371,.Module-374{background-position: -268px -165px;}
+.ris,.Module-377,.Module-381{background-position: -323px -165px;}
+.security,.Module-15{background-position: -432px -165px; }
+.services,.Module-13{background-position: -489px -165px; }
+.shiftlog..Module-144{    background-position: 0px -214px; }
+.stores,.Module-157{background-position: -55px -214px; }
+.CHSS,.Module-1000{background-position: -326px -53px; }
+.suvey,.Module-107{background-position: -160px -217px; }
+.Transport,.Module-287{background-position: -270px -217px; }
+.transeport,.Module-282{background-position: -216px -217px; }
+.tally,.Module-413{background-position: -330px -221px;}
+#iconlist, #iconlist > li{list-style: none;padding: 0px;margin: 0px;float: left;}
+#iconlist{margin-top:20px;}
+#iconlist > li{display: inline-block;width: 120px;margin-left: 10px;margin-bottom: 10px;text-align:center; height  :120px;vertical-align:bottom;}
+#iconlist > li > a{    padding: 4px;font-size: 10px;margin: 5px 0px 0px 0px;color: #0365A1;text-transform: uppercase; text-decoration:none;/*white-space: nowrap;overflow: hidden;text-overflow: ellipsis;*/}
+#iconlist li a:hover{cursor:pointer;}        
+.modulelist,.submodulelist{ list-style:none;margin:0px;padding:0px;}
+.modulelist > li > a{display:block;padding:5px;border-bottom:1px solid #CDCCCC;cursor:pointer;  background: linear-gradient(to bottom,#FAFAFA 0,#E4E4E4 100%);
+border-top: 1px solid #FFF;}
+.modulelist > li:last-child a{border-bottom:none;}
+.submodulelist{background:#f9f9f9;}
+.submodulelistli{display:none;}
+.submodulelistdiv{}        
+.submodulelistli > li{}
+.submodulelist > li { padding: 0px; margin: 0;}
+.submodulelist > li > a{display:block;padding:5px;color:#03abd5;border-bottom:1px solid #CDCCCC; cursor:pointer;border-left:3px solid transparent}
+.submodulelist > li > a:hover{border-left:3px solid #03abd5;}
+#iconlist > li:hover{border: 0px solid lightgray;}   
+.webui-popover .webui-popover-content { max-height:350px;} 
+.res_1350 #iconlist > li{width: 123px;}
+.res_1250 #iconlist > li{width: 129px;}

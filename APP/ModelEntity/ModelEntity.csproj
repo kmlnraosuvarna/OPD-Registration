@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A22A42F-815E-439F-AD60-4AACB0C1273F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EzHms.ModelEntity</RootNamespace>
+    <AssemblyName>EzHms.ModelEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Dll%27s\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Dll%27s\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.AppSettings.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.AppSettings.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Caching.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Database, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Database.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Caching.Database.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\qardp01\shared\Development.net\Rama\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Data.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\QARDP01\Shared\Development.net\Rama\Bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.5.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll's\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbEntityName.cs" />
+    <Compile Include="ADT_DSCHRG_SUM.cs" />
+    <Compile Include="ADT_DSCHRG_SUM_COLLECTION.cs" />
+    <Compile Include="Assayworkflow.cs" />
+    <Compile Include="AssayworkflowCollections.cs" />
+    <Compile Include="AutoComplete.cs" />
+    <Compile Include="BillDetMaster.cs" />
+    <Compile Include="Changepwd.cs" />
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="CommonProperties.cs" />
+    <Compile Include="Controlvalue set Modelentity.cs" />
+    <Compile Include="Dimensions.cs" />
+    <Compile Include="DimensionsCollection.cs" />
+    <Compile Include="DOCTOR.cs" />
+    <Compile Include="DoctorCollection.cs" />
+    <Compile Include="DoctorMaster.cs" />
+    <Compile Include="Dynamicoperaion.cs" />
+    <Compile Include="Employer.cs" />
+    <Compile Include="ENTITY.cs" />
+    <Compile Include="EntityCollection.cs" />
+    <Compile Include="Enumarated.cs" />
+    <Compile Include="Eventform.cs" />
+    <Compile Include="Eventformcollection.cs" />
+    <Compile Include="FacilityMaster.cs" />
+    <Compile Include="FacilityMasterCollection.cs" />
+    <Compile Include="FinancialWorkFlow.cs" />
+    <Compile Include="FinancialWorkFlowCollection.cs" />
+    <Compile Include="FinancialWorkFlowState.cs" />
+    <Compile Include="GenericComparer.cs" />
+    <Compile Include="GenericPopUpConstants.cs" />
+    <Compile Include="GridCollection.cs" />
+    <Compile Include="Addcontrolcollection.cs" />
+    <Compile Include="AddressCollection.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="AddressMaster.cs" />
+    <Compile Include="ConvertionTypes.cs" />
+    <Compile Include="Grid.cs" />
+    <Compile Include="HC_Scheme.cs" />
+    <Compile Include="HC_SCHEME_Collections.cs" />
+    <Compile Include="HC_SCHEME_RULE.cs" />
+    <Compile Include="HC_SCHEME_RULE_COLL.cs" />
+    <Compile Include="HealthCardClass.cs" />
+    <Compile Include="HealthCardCollection.cs" />
+    <Compile Include="HealthCardCollectionDet.cs" />
+    <Compile Include="Healthcarddetlcollectionxml.cs" />
+    <Compile Include="HealthCardSlabCollection.cs" />
+    <Compile Include="HEALTH_CARD.cs" />
+    <Compile Include="HEALTH_CARD_DET.cs" />
+    <Compile Include="HEALTH_CARD_DET_COLL.cs" />
+    <Compile Include="HEALTH_CARD_TYPE.cs" />
+    <Compile Include="HEALTH_CARD_TYPE_COLL.cs" />
+    <Compile Include="HEALTH_CARD_TYPE_SLAB.cs" />
+    <Compile Include="IpPatserviceentryParams.cs" />
+    <Compile Include="KitGroupMaster.cs" />
+    <Compile Include="KitMaster.cs" />
+    <Compile Include="KitRecieve.cs" />
+    <Compile Include="KitRecieveColl.cs" />
+    <Compile Include="KitRequest.cs" />
+    <Compile Include="KitRequestColl.cs" />
+    <Compile Include="KitReturn.cs" />
+    <Compile Include="KitReturnColl.cs" />
+    <Compile Include="KitSterilizationColl.cs" />
+    <Compile Include="KitUsage.cs" />
+    <Compile Include="LevelCollection.cs" />
+    <Compile Include="LocationMaster.cs" />
+    <Compile Include="COUNTERMASTER.cs" />
+    <Compile Include="COUNTERMASTERCOLLECTION.cs" />
+    <Compile Include="CounterUser.cs" />
+    <Compile Include="CounterUserColl.cs" />
+    <Compile Include="CurrencySettingCollections.cs" />
+    <Compile Include="CurrencySettings.cs" />
+    <Compile Include="FO_BILL.cs" />
+    <Compile Include="LOCATION_DET.cs" />
+    <Compile Include="LookupconfigCollection.cs" />
+    <Compile Include="LookupconfigMaster.cs" />
+    <Compile Include="MedicalRecordMaintenaceCollection.cs" />
+    <Compile Include="OPD_TYPE.cs" />
+    <Compile Include="OPD_TYPE_COLL.cs" />
+    <Compile Include="OPD_PROC.cs" />
+    <Compile Include="OPD_PROC_COLL.cs" />
+    <Compile Include="OPD_PROC_SRV.cs" />
+    <Compile Include="OPD_PROC_SRV_COLL.cs" />
+    <Compile Include="OSPListElement.cs" />
+    <Compile Include="Parameter-Valueset.cs" />
+    <Compile Include="Parameters.cs" />
+    <Compile Include="ConverEnumToString.cs" />
+    <Compile Include="GridPaging.cs" />
+    <Compile Include="Methods.cs" />
+    <Compile Include="MethodsCollection.cs" />
+    <Compile Include="Mformdetails.cs" />
+    <Compile Include="Mformdetailscollections.cs" />
+    <Compile Include="MFormheader.cs" />
+    <Compile Include="ParameterValuesetCollection.cs" />
+    <Compile Include="PatientRegistration.cs" />
+    <Compile Include="PatientRegistrationCollection.cs" />
+    <Compile Include="PATIENT_MEDICAL_HISTORY.cs" />
+    <Compile Include="PriceLevelCollection.cs" />
+    <Compile Include="PriceLevels.cs" />
+    <Compile Include="PropertyHandler.cs" />
+    <Compile Include="QuestionTemplate.cs" />
+    <Compile Include="QuestionTemplateCollection.cs" />
+    <Compile Include="RackFileEntry.cs" />
+    <Compile Include="RackFileEntryColl.cs" />
+    <Compile Include="RackMaster.cs" />
+    <Compile Include="RackMasterColl.cs" />
+    <Compile Include="ReceiptMaster.cs" />
+    <Compile Include="ReceiptMasterCollection.cs" />
+    <Compile Include="ReferalMaster.cs" />
+    <Compile Include="RegAtuoDetails.cs" />
+    <Compile Include="RegTypeMaster.cs" />
+    <Compile Include="RegTypeMaterColl.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="ServiceCollection.cs" />
+    <Compile Include="ServiceDetMaster.cs" />
+    <Compile Include="ServiceDetMasterCollection.cs" />
+    <Compile Include="ServiceDimenssion.cs" />
+    <Compile Include="ServiceGroup.cs" />
+    <Compile Include="ServiceGroupCollection.cs" />
+    <Compile Include="ServiceLevels.cs" />
+    <Compile Include="ServiceMapiingToLocColl.cs" />
+    <Compile Include="ServiceMapping.cs" />
+    <Compile Include="ServiceMappingCollection.cs" />
+    <Compile Include="ServiceMappingToLoc.cs" />
+    <Compile Include="ServiceMaster.cs" />
+    <Compile Include="ServiceMasterCollection.cs" />
+    <Compile Include="ServicePrice.cs" />
+    <Compile Include="ServicePriceCollection.cs" />
+    <Compile Include="ServicePriceDim.cs" />
+    <Compile Include="ServicePriceDimCollection.cs" />
+    <Compile Include="SERVICE_PRICE.cs" />
+    <Compile Include="service_priceCollection.cs" />
+    <Compile Include="Service_PriceModel.cs" />
+    <Compile Include="SERVICE_TYPE_CHANGE.cs" />
+    <Compile Include="SERVICE_TYPE_CHANGE_COLL.cs" />
+    <Compile Include="ShiftHandover.cs" />
+    <Compile Include="StoresConstatns.cs" />
+    <Compile Include="ST_TAX_FLD.cs" />
+    <Compile Include="ST_TAX_FLDCOLLECTION.cs" />
+    <Compile Include="TARIFF_SERVICE.cs" />
+    <Compile Include="TARIFF_SERVICE_COLL.cs" />
+    <Compile Include="TransactionMaster.cs" />
+    <Compile Include="Transport.cs" />
+    <Compile Include="UMR_DOC_INCLUDES.cs" />
+    <Compile Include="UMR_INCLUDES_COLL.cs" />
+    <Compile Include="UMR_LOCK.cs" />
+    <Compile Include="UMR_LOCK_COLL.cs" />
+    <Compile Include="UMR_LOCK_INCLUDES.cs" />
+    <Compile Include="UserAudit.cs" />
+    <Compile Include="UserAuditCollection.cs" />
+    <Compile Include="UserdetCollection.cs" />
+    <Compile Include="USER_DOC_AUDIT.cs" />
+    <Compile Include="USER_LIMIT.cs" />
+    <Compile Include="USER_LIMIT_COLL.cs" />
+    <Compile Include="ConsultationTypeCollection.cs" />
+    <Compile Include="ConsultationTypeMaster.cs" />
+    <Compile Include="DALConstants.cs" />
+    <Compile Include="ListElements.cs" />
+    <Compile Include="LocationCollection.cs" />
+    <Compile Include="Locations.cs" />
+    <Compile Include="LookUpSearch.cs" />
+    <Compile Include="LOOKUP_CONFIG.cs" />
+    <Compile Include="OrganizationMaster.cs" />
+    <Compile Include="OrganizationMasterCollection.cs" />
+    <Compile Include="Parameter_EntityValue.cs" />
+    <Compile Include="Parameter_EntityValueCollection.cs" />
+    <Compile Include="Patient.cs" />
+    <Compile Include="PatientAddress.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreProcedures.cs" />
+    <Compile Include="UserCollection.cs" />
+    <Compile Include="UserLogingInfo.cs" />
+    <Compile Include="UserLoginInfoCollection.cs" />
+    <Compile Include="UserOrGroupDoc.cs" />
+    <Compile Include="USERS.cs" />
+    <Compile Include="USER_DOC_ACCESS.cs" />
+    <Compile Include="USER_GROUP.cs" />
+    <Compile Include="USER_HINT.cs" />
+    <Compile Include="USER_ROLE.cs" />
+    <Compile Include="ViewPaging.cs" />
+    <Compile Include="WardGroup.cs" />
+    <Compile Include="WardMaster.cs" />
+    <Compile Include="WardMasterCollection.cs" />
+    <Compile Include="Ward_Group_Collection.cs" />
+    <Compile Include="WebConfigSetting.cs" />
+    <Compile Include="WebConfigSettingCollection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.Logging.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

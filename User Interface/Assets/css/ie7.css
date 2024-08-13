@@ -1,0 +1,28 @@
+﻿
+/*input[type="text"],input[type="password"]{ width:96%;}
+select{ width:99.5%;}
+textarea{ width:98%;resize:vertical;}
+
+.FormsCtrl td input[type="text"],.FormsCtrl td input[type="password"],.HFormsCtrl td input[type="text"]{padding: 3px 2px 3px 2px;}
+.FormsCtrl td input[type="text"]:focus,.FormsCtrl td input[type="password"]:focus,.HFormsCtrl td input[type="text"]:focus{padding: 3px 2px 3px 2px;}
+
+.FormsCtrl td table tr td { padding: 0px 1px 0px 0px; }
+.HFormsCtrl td table tr td { padding: 0px 4px 1px 0px; }
+.HFormsCtrl td table tr td select{ width:102%;}
+
+    
+
+.col3-1{width:32.5% !important;}
+.col2-2{width:65.8% !important;}
+
+#gsearch input[type="text"],input[type="password"] { padding:2px !important; }
+#gsearch select { padding:3px !important; font-size:13px; }
+#gsearch button { height:23px; width:28px; float:left; }
+div#logo {height: 22px; }
+div#mnav{margin-top:11px !important;}
+div#usettings{padding: 5px 4px 9px 4px;height: 25px;width: 22px !important;background-position:-34px -168px;}
+div#usettingslist{border:1px solid Red;border-width:0px 1px 3px 1px;}
+div#usettingslist ul li a {width: 130px;}
+div#usettingslist ul li .themediv1	{width: 120px; margin-bottom:5px;} */
+
+

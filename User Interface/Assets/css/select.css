@@ -1,0 +1,138 @@
+﻿
+@media print
+{
+    
+body,.bigfont,.smallfont,.patienttbl{font-size: 15px;}
+.lbltitle{ font-size: 21px;}
+.tblfont{font-size: 12px;}
+
+body{}
+.Disc_report{padding:0px 0px;margin: 0px 20px 0px 20px;}
+body,.bigfont,.smallfont,.tblfont,.lbltitle,.patienttbl,br{font-family: Bookman Old Style;color:#000000;line-height:1}
+body{padding: 0px;line-height:1}
+
+.tblfont{border-collapse:collapse;}
+
+body,.bigfont,.smallfont,.tblfont,.lbltitle,.patienttbl,br{font-family: Bookman Old Style;color:#000000;line-height:1}
+p, h1, h2, h3,div{padding: 0px;margin: 0px;line-height:1}
+td{vertical-align:top;}
+.clientheader,.pdfffoter {}
+.clientheader table,.clientheader td{border:0px !important;} 
+
+.patienttbl,.patienttbl td,.pagetbl,.pagetbl td,.pagetbl th,.doctbl td,.doctbl th{border:1px solid #ffffff !important}
+.tblfont,.tblfont td, .tblfont th{border:1px solid #ffffff !important}
+
+p{text-align:justify;}
+
+
+table.tblfont tr td,table.tblfont tr th{padding: 0px 5px 0px 0px !important;vertical-align:top;}
+
+.lbltitle{  font-weight: bold; border-bottom: 0px solid #000; text-align: center;padding-bottom: 0px; }
+.mlc{text-align:center;}
+.medicationtbl{width:100%;}.medicationtbl  tr.MedicHeader{ font-weight:bold; background:#eee;}
+.medic1{text-align:left;}.medic2{text-align:left;}.medic3{text-align:left;}.medic4,.medic5,.medic6,.medic7,.medic8{text-align:center;}.medic9{text-align:left;}
+.pdetails {border-bottom: 0px solid #000;}
+       
+.patienttbl td{padding: 1px 0 1px 2px; vertical-align:top;}
+
+.txtlbl,.col{font-weight:bold;}
+.pcol1{width: 130px;} .pcol2	{width:5px} .pcol3{width:auto} .pcol4{width: 160px;} .pcol5{width:5px} .pcol6{width: 180px;}
+.investigationtbl{width:100%; border-collapse:collapse;}.InvestHeader{background:#eee;}.InvestHeader1{background:#d8d8d8;}.InvestName{}
+.icdHeader{background:#eee;}.icd1{width:50px;}.icd2{width:140px;}.icd3{width:auto;}
+.divDiagtbl{width:100%;}.divDiagtbl  tr.divDiagtblHeader{ font-weight:bold; background:#eee;}.Diag1{text-align:left;}.Diag2{text-align:left;}.Diag3{text-align:left;}
+.medicationtbl{width:100%; border-collapse:collapse; border:1px solid #cacaca !important;}
+.medicationtbl > tbody > tr > td{border-right:1px solid #cacaca !important; border-bottom:1px solid #cacaca !important;}
+.medicationtbl > tbody > tr > th{border-right:1px solid #cacaca !important; border-bottom:1px solid #cacaca !important;}
+
+.divDiagtbl > tbody > tr > th,.divDiagtbl > tbody > tr > td{text-align:left; vertical-align: top;}
+.divDiagtbl > tbody > tr > td:nth-child(1){width:50%}
+.divDiagtbl > tbody > tr > td:nth-child(2){width:50%}
+
+.divsurgerytbl > tbody > tr > td:nth-child(1){width:40px}
+.divsurgerytbl > tbody > tr > td:nth-child(2){width:auto}
+.divsurgerytbl > tbody > tr > td:nth-child(3){width:130px}
+
+.doctbl{}
+.doctbl > tbody > tr > td:nth-child(1){width:30%;text-align:left; vertical-align: top;}
+.doctbl > tbody > tr > td:nth-child(2){width:70%;text-align:left; vertical-align: top;}
+
+.signdocs img{height:50px;}
+.signdocs span{display: block;text-align: right;}
+.tdnote span:nth-child(1){float: left;text-align: left;}
+.tdnote span:nth-child(2){float: right;text-align: right;}
+.lbltitle span{display:block;}
+.logocell img{display:none;} 
+
+.datecol{width:20%;}
+.paramcol{width:45%;}
+.resultcol{width:25%;}
+.unitcol{width:10%;}
+.indentcol{width:20%;}
+.snamecol{width:60%;}
+.f1col-1{width:30%}
+.f1col-2{width:70%}
+
+.registrar{ margin-top:10px;}
+
+ul{margin:8px;}
+span{margin: 0px;}
+
+/*
+.maintbl{}
+.maintbl > tbody > tr > td:nth-child(1),.maintbl > thead> tr > td:nth-child(1){width:20%}
+
+.maintbl > tbody > tr > td:nth-child(3),.maintbl > thead> tr > td:nth-child(3){width:25%}
+.maintbl > tbody > tr > td:nth-child(4),.maintbl > thead> tr > td:nth-child(4){width:10%}
+.mainchildtbl{}
+.mainchildtbl > tbody > tr > td:nth-child(1),.mainchildtbl > thead> tr > td:nth-child(1){width:20%}
+
+.mainchildtbl > tbody > tr > td:nth-child(3),.mainchildtbl > thead> tr > td:nth-child(3){width:25%}
+.mainchildtbl > tbody > tr > td:nth-child(4),.mainchildtbl > thead> tr > td:nth-child(4){width:10%}
+.pendtbl {}
+.pendtbl > tbody > tr > td:nth-child(1),.pendtbl > thead> tr > td:nth-child(1){width:20%}
+
+.pendtbl > tbody > tr > td:nth-child(3),.pendtbl > thead> tr > td:nth-child(3){width:20%}
+.pendtbl > tbody > tr > td:nth-child(4),.pendtbl > thead> tr > td:nth-child(4){}
+}
+*/
+}
+
+/*@page{}
+
+@media print{
+
+.Disc_report{padding:0px 0px;margin: 0px 20pt 0px 20pt}
+body,.bigfont,.smallfont,.tblfont,.lbltitle,.patienttbl{font-family: Bookman Old Style;color:#000000;line-height:1}
+body,.bigfont,.smallfont,.patienttbl{font-size: 16px;}
+.lbltitle{ font-size: 21px;}
+.tblfont{font-size: 14px;border-collapse:collapse;}
+body{line-height:1}
+
+
+p, h1, h2, h3,div,span{padding: 0px;margin: 0px;}
+
+table.tblfont tr td,table.tblfont tr th{padding: 1px 5px 1px 0px !important;vertical-align:top;}
+
+.lbltitle{  font-weight: bold; border-bottom: 1px solid #000; text-align: center;padding-bottom: 5px; }
+.medicationtbl{width:100%;}.medicationtbl  tr.MedicHeader{ font-weight:bold; background:#eee;}
+.medic1{text-align:left;}.medic2{text-align:left;}.medic3{text-align:left;}.medic4,.medic5,.medic6,.medic7,.medic8{text-align:center;}.medic9{text-align:left;}
+.pdetails {border-bottom: 1px solid #000;}
+.patienttbl td{padding: 0px 0 0px 2px; vertical-align:top;}
+td{vertical-align:top;}
+.txtlbl,.col{font-weight:bold;}
+.pcol1{width: 130px;} .pcol2	{width:5px} .pcol3{width:auto} .pcol4{width: 160px;} .pcol5{width:5px} .pcol6{width: 180px;}
+.investigationtbl{width:100%; border-collapse:collapse;}.InvestHeader{background:#eee;}.InvestHeader1{background:#d8d8d8;}.InvestName{}
+.icdHeader{background:#eee;}.icd1{width:50px;}.icd2{width:140px;}.icd3{width:auto;}
+.divDiagtbl{width:100%;}.divDiagtbl  tr.divDiagtblHeader{ font-weight:bold; background:#eee;}.Diag1{text-align:left;}.Diag2{text-align:left;}.Diag3{text-align:left;}
+.medicationtbl{width:100%; border-collapse:collapse; border:1px solid #cacaca;}
+.medicationtbl > tbody > tr > td{border-right:1px solid #cacaca; border-top:1px solid #cacaca;}
+
+.signdocs img{height:50px;}
+.signdocs span{display: block;text-align: right;}
+.tdnote span:nth-child(1){float: left;text-align: left;}
+.tdnote span:nth-child(2){float: right;text-align: right;}
+.lbltitle span{display:block;}
+}
+
+*/
+

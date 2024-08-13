@@ -1,0 +1,1684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="EzHms.Abstract.AdtDschrgFrmt" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAQAAAAAAIAACAAAAEgAAgAAAAAAAAgAAAA=</HashCode>
+      <FileName>AdtDschrgFrmt.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.AppSlot" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAEAAAAAAAEAAgAAAAA=</HashCode>
+      <FileName>AppSlot.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.FB_Abstract1" Collapsed="true">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>FB_Abstract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAbstract" Collapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>FB_Abstract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Imyinterface" Collapsed="true">
+    <Position X="24.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>FB_Abstract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Ipaging" Collapsed="true">
+    <Position X="22.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FB_Abstract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAutoExte" Collapsed="true">
+    <Position X="35" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FB_Abstract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAccountLedger" Collapsed="true">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAccountLedger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAcknowledgment" Collapsed="true">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>IAcknowledgment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAddress" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAddress.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAddressType" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAddressType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAdmin" Collapsed="true">
+    <Position X="28" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>IAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAdmission" Collapsed="true">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAACAAAQQAIAAAAABAACQAAFkERAAACEKEAAEQIwA=</HashCode>
+      <FileName>IAdmission.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IADT_APPBILL" Collapsed="true">
+    <Position X="29.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAABAIABAAAABAEAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>IADT_APPBILL.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IADT_DISCNT" Collapsed="true">
+    <Position X="31.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAABAQAAAAAAAAgAAAAAAAAABAAgAAAAA=</HashCode>
+      <FileName>IADT_DISCNT.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IADT_DSCHRG_EXCPN" Collapsed="true">
+    <Position X="33.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IADT_DSCHRG_EXCPN.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAdtSrvLock" Collapsed="true">
+    <Position X="35" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAgAAQAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>IAdtSrvLock.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAdtWardSrEntry" Collapsed="true">
+    <Position X="36.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAEAACCAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAdtWardSrEntry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAllergies" Collapsed="true">
+    <Position X="12.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAADAAAQAAQAAAAAAQAAAAAAgAAAAAAGA=</HashCode>
+      <FileName>IAllergies.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAnesthesiaMaster" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAACEAAAAAYQAA=</HashCode>
+      <FileName>IAnesthesiaMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAntiBioticSetup" Collapsed="true">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAIoAAAABAAFAAAAAAAAAEAEAAAAAEgAAAABAAAAA=</HashCode>
+      <FileName>IAntiBioticSetup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IApmntDetails" Collapsed="true">
+    <Position X="15.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAgAAAAAAAAAAAAAiAAAAAAEAAAAAAgAAAAA=</HashCode>
+      <FileName>IApmntDetails.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAppLoginfo" Collapsed="true">
+    <Position X="17.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAppLoginfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAppointment" Collapsed="true">
+    <Position X="19.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAJQACAEIAAACAAgAAABcABACAACAEEAUAAEAAAEAE=</HashCode>
+      <FileName>IAppointment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IApptCancellations" Collapsed="true">
+    <Position X="21" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QoAAAAAAQggAAAAAAAAAAAAAAAAACAAAAEIQAAAIAAA=</HashCode>
+      <FileName>IApptCancellations.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAPPTDayVList" Collapsed="true">
+    <Position X="22.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQQAAEQAAAAQAACCIABCQASAEAAAASAEQAEAAQgAA=</HashCode>
+      <FileName>IAPPTDayVList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IApptResoueceMaster" Collapsed="true">
+    <Position X="24.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAiBIABQBKQACAACAAEMEAAAAmIAACCQRg=</HashCode>
+      <FileName>IApptResoueceMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAssignPermissions" Collapsed="true">
+    <Position X="26.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABEAgEACIAByEAgKEAQCIIgEFAABACEEMgAAIIIAAk=</HashCode>
+      <FileName>IAssignPermissions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAssignUserToGroup" Collapsed="true">
+    <Position X="28" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAE=</HashCode>
+      <FileName>IAssignUserToGroup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAuthorization" Collapsed="true">
+    <Position X="29.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAACAgAAAAACAgCAAAAACAAAAACAEAAAAICAAA=</HashCode>
+      <FileName>IAuthorization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAutoCompleteList" Collapsed="true">
+    <Position X="31.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAAQAAAAAAAAAAAEAQAEAAAIAIAAQAAA=</HashCode>
+      <FileName>IAutoCompleteList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IAutoGenerateCD" Collapsed="true">
+    <Position X="36.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAutoGenerateCD.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBank" Collapsed="true">
+    <Position X="12.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAACAAAAAQgAAAABACACAAAgEIgAA=</HashCode>
+      <FileName>IBank.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBankOpeAuthority" Collapsed="true">
+    <Position X="14" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBankOpeAuthority.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBedChart" Collapsed="true">
+    <Position X="15.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAIAAAAAAAAAEAoAAA=</HashCode>
+      <FileName>IBedChart.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBedManagement" Collapsed="true">
+    <Position X="17.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAE=</HashCode>
+      <FileName>IBedManagement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBedMaster" Collapsed="true">
+    <Position X="19.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAIAAAAAAgAAAAAAAAAAAAAAgBACAAAAASABABA=</HashCode>
+      <FileName>IBedMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBedRoomWard" Collapsed="true">
+    <Position X="21" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBedRoomWard.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBedTransfer" Collapsed="true">
+    <Position X="22.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAABAAQAAAAAAACAAAAAAAgAAAA=</HashCode>
+      <FileName>IBedTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBillingHead" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAACAAAAAAAQAQAwAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>IBillingHead.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBillSettlement" Collapsed="true">
+    <Position X="24.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAE=</HashCode>
+      <FileName>IBillSettlement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBillStatus" Collapsed="true">
+    <Position X="26.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>IBillStatus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBRWDetails" Collapsed="true">
+    <Position X="28" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBRWDetails.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IBusinessPartner" Collapsed="true">
+    <Position X="29.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBusinessPartner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICaption" Collapsed="true">
+    <Position X="31.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICaption.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICashDenomination" Collapsed="true">
+    <Position X="33.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAgAgAAAA=</HashCode>
+      <FileName>ICashDenomination.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Ichangepatient" Collapsed="true">
+    <Position X="35" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAKACgAQQAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Ichangepatient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IChangepwd" Collapsed="true">
+    <Position X="36.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAgAA=</HashCode>
+      <FileName>IChangepwd.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICHart" Collapsed="true">
+    <Position X="12.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAQAIAAAAAAAAAEAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ICHart.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICOM_MSG_ADDR_BOOK" Collapsed="true">
+    <Position X="14" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAABAIAAAAAAA=</HashCode>
+      <FileName>ICOM_MSG_ADDR_BOOK.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICOM_MSG_AMT_RANGE" Collapsed="true">
+    <Position X="15.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAABBAQAQAAAAAAAAAAQAEAAQCAAAAhAIAEAA=</HashCode>
+      <FileName>ICOM_MSG_AMT_RANGE.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICOM_MSG_FORMAT_TYPE" Collapsed="true">
+    <Position X="17.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICOM_MSG_FORMAT_TYPE.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICOM_MSG_FORMATTEMP" Collapsed="true">
+    <Position X="19.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAIAAAEAAAAAIAAAAAAAAAAAAACAAAQAAA=</HashCode>
+      <FileName>ICOM_MSG_FORMATTEMP.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICOM_MSG_MESSAGE" Collapsed="true">
+    <Position X="21" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAgAAAAABAAAABAAAgAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICOM_MSG_MESSAGE.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICOM_MSG_TRANS_TYPE" Collapsed="true">
+    <Position X="22.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICOM_MSG_TRANS_TYPE.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICommonMethods" Collapsed="true">
+    <Position X="24.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>ICommonMethods.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICommunication" Collapsed="true">
+    <Position X="26.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICommunication.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICompanyPolicy" Collapsed="true">
+    <Position X="28" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAABAAAEAAAiAAwAAAAAAQAA=</HashCode>
+      <FileName>ICompanyPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IComplaintList" Collapsed="true">
+    <Position X="29.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAGAAAAAAAAAA=</HashCode>
+      <FileName>IComplaintList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IComplainttype" Collapsed="true">
+    <Position X="31.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAACAAAQAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>IComplainttype.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IComponentValue" Collapsed="true">
+    <Position X="33.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgMACAEEAAAUgAAgAABAwwSVEAEBSQAAAABAAAAAg=</HashCode>
+      <FileName>IComponentValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IComposeMessages" Collapsed="true">
+    <Position X="35" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAUAAhAABKAD4AA/gAACACgAARAACAAQwQMABgAgE=</HashCode>
+      <FileName>IComposeMessages.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IConditions" Collapsed="true">
+    <Position X="36.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAQE=</HashCode>
+      <FileName>IConditions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IConsultationType" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAICIAAEAAACCgAAAAAAAAAAAA=</HashCode>
+      <FileName>IConsultationType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IControlValMaster" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAEAAAAgAQAAAAAAAAAAAABCAAAI=</HashCode>
+      <FileName>IControlValMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ICreditOrg" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YACQCAAAEASILi0ACCAAjSGoCADAgQUICYAIAIQFACk=</HashCode>
+      <FileName>ICreditOrg.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDashboard" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDashboard.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDataSetExport" Collapsed="true">
+    <Position X="15.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDataSetExport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDcotorAvailability" Collapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAAAEAAAgAAAAAAAAECAA=</HashCode>
+      <FileName>IDcotorAvailability.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDefaultDoctor" Collapsed="true">
+    <Position X="19.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQ0AAAAAAAAAAAIAAAAAAAAAACAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>IDefaultDoctor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDeliveryInfo" Collapsed="true">
+    <Position X="24.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAACQAAAAAAAAACiAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDeliveryInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDepartments" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>IDepartments.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDesignation" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDesignation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IdesignationInt" Collapsed="true">
+    <Position X="26.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>IdesignationInt.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDfltSchedule" Collapsed="true">
+    <Position X="28" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAAACAAACI=</HashCode>
+      <FileName>IDfltSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Idocdept" Collapsed="true">
+    <Position X="29.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAgAAAAAAAAABAAAAAEgAAAAAAAAEIAAAIAg=</HashCode>
+      <FileName>Idocdept.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDocFormatMap" Collapsed="true">
+    <Position X="31.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAAAAAAAQAAAAAAAAMAAAQBAAAIAAACAAAAIA=</HashCode>
+      <FileName>IDocFormatMap.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDocHelp" Collapsed="true">
+    <Position X="33.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>IDocHelp.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDoctorDeskLabinfor" Collapsed="true">
+    <Position X="35" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDoctorDeskLabinfor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IdoctorMaster" Collapsed="true">
+    <Position X="36.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAEAAAUAJQRxCAICQEAAJAGQAAgAAJyAQCEBohCZAE=</HashCode>
+      <FileName>IdoctorMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDoctorsDesk" Collapsed="true">
+    <Position X="12.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAABAAAAAAAAEAAAgAAQAABCAAgAAQIAAAAgAAA=</HashCode>
+      <FileName>IDoctorsDesk.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDoctorTransfer" Collapsed="true">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDoctorTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDoctorTreatPrefrence" Collapsed="true">
+    <Position X="15.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAEEAAAAAAAAABAEAAAQAAgBAAAAAAAAEAA=</HashCode>
+      <FileName>IDoctorTreatPrefrence.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDocument" Collapsed="true">
+    <Position X="17.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDocument.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDotnetquestions" Collapsed="true">
+    <Position X="19.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAA=</HashCode>
+      <FileName>IDotnetquestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDrugList" Collapsed="true">
+    <Position X="21" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACgAAAAAAAAAgAAEAAgkBEAAAAAAAAAQAgBAAAA=</HashCode>
+      <FileName>IDrugList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDSCRD_PRF_TAX" Collapsed="true">
+    <Position X="22.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQIAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>IDSCRD_PRF_TAX.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IDynamicMastersBO" Collapsed="true">
+    <Position X="24.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAACACAgCAgEAAAAAUAAAAAAQCCABCAAAA=</HashCode>
+      <FileName>IDynamicMastersBO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IEIssues" Collapsed="true">
+    <Position X="26.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAgAAAgAAAIQAAAgAAAAQAAAAAAABAAAgAAA=</HashCode>
+      <FileName>IEIssues.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IEmployeeInformation" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAYAAAAAAAAQAAAAAAAgAAAAAACIEAAAAAAQ=</HashCode>
+      <FileName>IEmployeeInformation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IEmployeeType" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEmployeeType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IEmpType" Collapsed="true">
+    <Position X="28" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAQAAAA=</HashCode>
+      <FileName>IEmpType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IException" Collapsed="true">
+    <Position X="29.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAACAQAAAAAAg=</HashCode>
+      <FileName>IException.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IFacilityMaster" Collapsed="true">
+    <Position X="31.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>IFacilityMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IFinancialworkflow" Collapsed="true">
+    <Position X="33.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAEAAAABBAAAAAAAAgAAgEAAAAAAAAACAAAA=</HashCode>
+      <FileName>IFinancialworkflow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IFO_BILL_CNCL" Collapsed="true">
+    <Position X="36.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>IFO_BILL_CNCL.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IFO_OPD_BILL" Collapsed="true">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAEAQACBIAAAAQAAAEEAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFO_OPD_BILL.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IFormheader" Collapsed="true">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFormheader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IGeneralExamination" Collapsed="true">
+    <Position X="15.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAABAAAAAAAAAAAACAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>IGeneralExamination.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IGradeMaster" Collapsed="true">
+    <Position X="21" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAIAAACAAAAAEAAQAAAAAAAAAAAAACAg=</HashCode>
+      <FileName>IGradeMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IgroupPatient" Collapsed="true">
+    <Position X="22.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAACAAAAEAAQAAAAAAAAAA=</HashCode>
+      <FileName>IgroupPatient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IHabituations" Collapsed="true">
+    <Position X="24.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAABAAAAAgAA=</HashCode>
+      <FileName>IHabituations.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IHL7_Tables" Collapsed="true">
+    <Position X="26.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoshEAAIAIBAEgAEKQgBhAQIEkAiACBAAAQEAAAAQA=</HashCode>
+      <FileName>IHL7_Tables.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IHomeView" Collapsed="true">
+    <Position X="6.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>IHomeView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IICDCodes" Collapsed="true">
+    <Position X="28" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAGAACAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAw=</HashCode>
+      <FileName>IICDCodes.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IImmunization" Collapsed="true">
+    <Position X="29.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAABAEgAEAAAAAQAAAAAAEAAAAAAAAAAEAAAAMA=</HashCode>
+      <FileName>IImmunization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IinPatientCredit" Collapsed="true">
+    <Position X="31.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAQAAAAAACAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>IinPatientCredit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IInpatientSummary" Collapsed="true">
+    <Position X="33.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABQAAAAAAAAAAAAiAAAAAEAAAAABAAAAAAAAEAg=</HashCode>
+      <FileName>IInpatientSummary.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IIPAdmissionCancel" Collapsed="true">
+    <Position X="35" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>IIPAdmissionCancel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IipAdvanceReport" Collapsed="true">
+    <Position X="36.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IipAdvanceReport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IipApporxmateBill" Collapsed="true">
+    <Position X="12.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IipApporxmateBill.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IIpfeedbackList" Collapsed="true">
+    <Position X="14" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAAAgAAAAAAAQAAACAAQAEQAAAAIBQCAEAAA=</HashCode>
+      <FileName>IIpfeedbackList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IIPFinalBillCancel" Collapsed="true">
+    <Position X="15.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAIIAEAAAAAAA=</HashCode>
+      <FileName>IIPFinalBillCancel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IipReceiptCancel" Collapsed="true">
+    <Position X="17.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>IipReceiptCancel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IipReceiptCancellationList" Collapsed="true">
+    <Position X="19.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAACAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>IipReceiptCancellationList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ILaboratoryOrgnism" Collapsed="true">
+    <Position X="21" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILaboratoryOrgnism.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Ilabreport" Collapsed="true">
+    <Position X="22.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAJAAAASAEAAAAgBQAACAAAIAAAAAAAACEAA=</HashCode>
+      <FileName>Ilabreport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Ilabreportdet" Collapsed="true">
+    <Position X="24.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ilabreportdet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Ilabtranlocmap" Collapsed="true">
+    <Position X="26.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAkAAAAAAAAAAAAAAAAQAAAAAAAEICAAAgAAAAAA=</HashCode>
+      <FileName>Ilabtranlocmap.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ILicienceInfo" Collapsed="true">
+    <Position X="28" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAEQCAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILicienceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ILisMapping" Collapsed="true">
+    <Position X="29.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAEQEAAAAAAQAACABUAACIAQAADAAQAACAAAAA=</HashCode>
+      <FileName>ILisMapping.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ILocation" Collapsed="true">
+    <Position X="31.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>ILocation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ILogin" Collapsed="true">
+    <Position X="33.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILogin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ILookUpSearch" Collapsed="true">
+    <Position X="35" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>ILookUpSearch.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IMailCompose" Collapsed="true">
+    <Position X="36.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAQAEgAAABBAAAAAAAAAAAABAEgAAAAA=</HashCode>
+      <FileName>IMailCompose.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IManagementTeam" Collapsed="true">
+    <Position X="12.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>IManagementTeam.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IManagerialTeam" Collapsed="true">
+    <Position X="14" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAABAAQAAAAA=</HashCode>
+      <FileName>IManagerialTeam.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IMeasurments" Collapsed="true">
+    <Position X="15.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAACA=</HashCode>
+      <FileName>IMeasurments.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IMedicationsOrTreatments" Collapsed="true">
+    <Position X="17.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAoAAAAgAIAAAAAAAARAAAAAEAAAAAABJAAAAAAAE=</HashCode>
+      <FileName>IMedicationsOrTreatments.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IMergeUmrNos" Collapsed="true">
+    <Position X="19.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAQA=</HashCode>
+      <FileName>IMergeUmrNos.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IMessageStation" Collapsed="true">
+    <Position X="21" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAEAAAAAAAAACAAAAACEAAAAAAAAAAAACAACEAAAA=</HashCode>
+      <FileName>IMessageStation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IMsgCAT" Collapsed="true">
+    <Position X="22.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgABAAAAgAAAAAAAIAAAAAAAAAAAEAAAAAAAAAgAgA=</HashCode>
+      <FileName>IMsgCAT.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IMyProfile" Collapsed="true">
+    <Position X="26.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>IMyProfile.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IOPD_PROC" Collapsed="true">
+    <Position X="29.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAGAAAAAAAAABAQIAAAAAAAAAgAAAEQAA=</HashCode>
+      <FileName>IOPD_PROC.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Iopfeedbacklist" Collapsed="true">
+    <Position X="31.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAAAAAABAAEAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Iopfeedbacklist.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IOrganization" Collapsed="true">
+    <Position X="33.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAQgAAAAAAAAAAAAAgAAAAAAAAEEAAA=</HashCode>
+      <FileName>IOrganization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IOrgBankAccount" Collapsed="true">
+    <Position X="35" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAACAgAAgABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOrgBankAccount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Iotherhosmaping" Collapsed="true">
+    <Position X="36.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Iotherhosmaping.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IOutSourceLabReport" Collapsed="true">
+    <Position X="12.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOutSourceLabReport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IOutSourcingBills" Collapsed="true">
+    <Position X="14" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAgAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOutSourcingBills.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IOutSourcingLabChargeSetup" Collapsed="true">
+    <Position X="15.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAABAACAAAAIAAAAAAAAAAAAAgIAAAAAAAAIA=</HashCode>
+      <FileName>IOutSourcingLabChargeSetup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPACKAGE_CONVERTION" Collapsed="true">
+    <Position X="17.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAgAAAAAAAAQAAAgAAAAAAAAAA=</HashCode>
+      <FileName>IPACKAGE_CONVERTION.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPackageServices" Collapsed="true">
+    <Position X="19.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPackageServices.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPaEmergency" Collapsed="true">
+    <Position X="21" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAEAAAAAAAEAAAAAgAAAAAEAAAAMAAAAA=</HashCode>
+      <FileName>IPaEmergency.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Ipatient" Collapsed="true">
+    <Position X="26.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAABAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ipatient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPatientFamilyDiseases" Collapsed="true">
+    <Position X="28" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIQAAAkAAAAACAQAAAAAAAAAAAIAAAABABQAAAAA=</HashCode>
+      <FileName>IPatientFamilyDiseases.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPatientFeedBack" Collapsed="true">
+    <Position X="29.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAAAACAAAAAAAAAAIAAAAACAQAAAAAAABAAAAIAAAA=</HashCode>
+      <FileName>IPatientFeedBack.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPatientinformation" Collapsed="true">
+    <Position X="31.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPatientinformation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPatientMedicalHistory" Collapsed="true">
+    <Position X="33.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DBAAACAAAAUAAAAAAAAAAAEAAAWAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPatientMedicalHistory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPatientRegistration" Collapsed="true">
+    <Position X="35" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pABAIKEgIUFgALoQRIwIFGIIJCAAESGsQYEoEAgCwAI=</HashCode>
+      <FileName>IPatientRegistration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPatientServices" Collapsed="true">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPatientServices.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPaymentVoucher" Collapsed="true">
+    <Position X="36.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAQCAQAAAAAAAAAAABIAAAAAAAEAAAQACAAEAA=</HashCode>
+      <FileName>IPaymentVoucher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPostDiscount" Collapsed="true">
+    <Position X="12.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAQAA=</HashCode>
+      <FileName>IPostDiscount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPPatientServiceEntryDtls" Collapsed="true">
+    <Position X="14" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIIRIAgAAABAAAACEAAAAAAAAAAACAAAAAAABAEEIAA=</HashCode>
+      <FileName>IPPatientServiceEntryDtls.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPreAdmission" Collapsed="true">
+    <Position X="15.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAIAAAAAAAEAwgAAAAAA=</HashCode>
+      <FileName>IPreAdmission.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IPrintSettings" Collapsed="true">
+    <Position X="17.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAEIAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPrintSettings.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IProcedures" Collapsed="true">
+    <Position X="19.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAABAAAAAAAAAAAAAAEAJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IProcedures.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IQMS_DOCTOR_APT_SCH" Collapsed="true">
+    <Position X="21" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>IQMS_DOCTOR_APT_SCH.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IQuestions" Collapsed="true">
+    <Position X="22.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IQuestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.insert" Collapsed="true">
+    <Position X="28" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IQuestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.findadd" Collapsed="true">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>IQuestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Idelete" Collapsed="true">
+    <Position X="21" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IQuestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Ifnpl" Collapsed="true">
+    <Position X="35" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>IQuestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Iview" Collapsed="true">
+    <Position X="24.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>IQuestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IGpaging" Collapsed="true">
+    <Position X="19.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IQuestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Iautocomplit" Collapsed="true">
+    <Position X="33.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>IQuestions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Iradilogy" Collapsed="true">
+    <Position X="24.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Iradilogy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IReAdmission" Collapsed="true">
+    <Position X="28" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAQAAAgABAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>IReAdmission.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IReceipt" Collapsed="true">
+    <Position X="29.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAKFAcAACIIASAABAwEHAAAUBkATCSgYAMAQBAQQAA=</HashCode>
+      <FileName>IReceipt.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IRecommendations" Collapsed="true">
+    <Position X="31.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAkAAAAAAAAAAAAAAQAAAABAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>IRecommendations.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IReferal" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAEAAEAAABAAAAAAAAAAAAAAAgAAQAA=</HashCode>
+      <FileName>IReferal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IRefferalLetterEntry" Collapsed="true">
+    <Position X="33.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgICAAAAACAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRefferalLetterEntry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IRegistrationProvider" Collapsed="true">
+    <Position X="35" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAIAAAAAAAAAAAAAAAEAAAABAgAAgAQAAAAAA=</HashCode>
+      <FileName>IRegistrationProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IReleasOfBed" Collapsed="true">
+    <Position X="36.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAA=</HashCode>
+      <FileName>IReleasOfBed.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IRemarks" Collapsed="true">
+    <Position X="12.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAIAABAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>IRemarks.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IReports" Collapsed="true">
+    <Position X="14" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgADAAAIAAiAAAAAEAAAAAAAAAACABABAAAAAIAAA=</HashCode>
+      <FileName>IReports.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IResultEntry" Collapsed="true">
+    <Position X="15.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAoBJAAgAAkyICAEFgDBABoAMSREQIAACAAMCACiAEA=</HashCode>
+      <FileName>IResultEntry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IResultEntryApproval" Collapsed="true">
+    <Position X="17.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAADAQAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>IResultEntryApproval.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IResultEntryDetails" Collapsed="true">
+    <Position X="19.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>IResultEntryDetails.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IResultInnergrid" Collapsed="true">
+    <Position X="21" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>IResultInnergrid.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IRoomMaster" Collapsed="true">
+    <Position X="22.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAQABAAQAAEQAAAAAAEAAAAAAAAACABAAAAgQAFQ=</HashCode>
+      <FileName>IRoomMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IRsrcMan" Collapsed="true">
+    <Position X="24.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAQAAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>IRsrcMan.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IRsrcSchedule" Collapsed="true">
+    <Position X="26.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIBoAIAACAAAAAAAAAABAIABAAAAAAAAgAAACA=</HashCode>
+      <FileName>IRsrcSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISampleCancel" Collapsed="true">
+    <Position X="28" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAEAQAAAiAAAAAAAAUIEAAAAAAJAEAAQAAAA=</HashCode>
+      <FileName>ISampleCancel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISampleEntry" Collapsed="true">
+    <Position X="29.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIIgAAAAAABIARCAAAGAAgAAACBAIABAAAAAAACACA=</HashCode>
+      <FileName>ISampleEntry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISchDateTime" Collapsed="true">
+    <Position X="31.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAQBAAAAAAAAAgAEAAAIAAAAQAAAAQAAQAAA=</HashCode>
+      <FileName>ISchDateTime.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISchTemplate" Collapsed="true">
+    <Position X="33.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISchTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISearchControl" Collapsed="true">
+    <Position X="35" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAgAAAAAAAAAAAAAAAACAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>ISearchControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISearchData" Collapsed="true">
+    <Position X="36.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISearchData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISecurityAndIdentity" Collapsed="true">
+    <Position X="12.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISecurityAndIdentity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServiceDetMaster" Collapsed="true">
+    <Position X="14" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAgQAABAAAAAQgAAAAAQAggAAAAAAAAAAABAACIA=</HashCode>
+      <FileName>IServiceDetMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IserviceGroup" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAgACAAAAAAAACYABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IserviceGroup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServicesModule" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>IserviceGroup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServiceGroupMapping" Collapsed="true">
+    <Position X="15.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAACAAAAAAAAAAAAAAAAAAQACAAAAA=</HashCode>
+      <FileName>IServiceGroupMapping.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServiceMapping" Collapsed="true">
+    <Position X="17.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAQAAAAAAAAAAAAAAAAAAAACgAAYAAAAgAAAA=</HashCode>
+      <FileName>IServiceMapping.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IserviceMapToLoc" Collapsed="true">
+    <Position X="19.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIACAAAAAAAAAAAAAAAgAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>IserviceMapToLoc.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServiceMaster" Collapsed="true">
+    <Position X="21" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECQAAAAAAAAAUAAAAAAAAABAAAAQAABgAAoAAAAAg=</HashCode>
+      <FileName>IServiceMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServicePercentageSetUp" Collapsed="true">
+    <Position X="22.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>IServicePercentageSetUp.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServicePrice" Collapsed="true">
+    <Position X="24.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAQAAAAAAEgAAAAAAAQAAQAAAQAAQAAAAAAAAAA=</HashCode>
+      <FileName>IServicePrice.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServices" Collapsed="true">
+    <Position X="26.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YACAAExtQAAgCAAECAAABBAAASgAACAQEBAUiQrQAAA=</HashCode>
+      <FileName>IServices.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IServiceType" Collapsed="true">
+    <Position X="28" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAACAAQAAIAAIAAAAAAICACAAAAAAQAAAAA=</HashCode>
+      <FileName>IServiceType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Isetvaluemaster" Collapsed="true">
+    <Position X="29.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Isetvaluemaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IGetsetvaluesetmaster" Collapsed="true">
+    <Position X="17.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Isetvaluemaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IdeleteSetValue" Collapsed="true">
+    <Position X="22.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Isetvaluemaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IpagingSetValue" Collapsed="true">
+    <Position X="24.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Isetvaluemaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.AutoCompletion" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Isetvaluemaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.AutoCode" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Isetvaluemaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IShiftCollectionSubmit" Collapsed="true">
+    <Position X="31.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAAAAAAA=</HashCode>
+      <FileName>IShiftCollectionSubmit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IShiftLog" Collapsed="true">
+    <Position X="33.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAACAQAAEAgAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>IShiftLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISiteMapDataProvider" Collapsed="true">
+    <Position X="35" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISiteMapDataProvider.cs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISpeciality" Collapsed="true">
+    <Position X="36.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISpeciality.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISpecimen" Collapsed="true">
+    <Position X="12.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISpecimen.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISurgery" Collapsed="true">
+    <Position X="14" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEAAAAAAAAAAAAAACAAAAAAAAAAAAAACEAAAAASA=</HashCode>
+      <FileName>ISurgery.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISurgeryCategory" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAABAIAFAAAEAAAAAAAAAAAEAAAAAAAAEAIAAAA=</HashCode>
+      <FileName>ISurgeryCategory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ISurgeryClassification" Collapsed="true">
+    <Position X="15.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAEAAAAAAAAggAAAAAAEAAAAAAQCAA=</HashCode>
+      <FileName>ISurgeryClassification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.Itariff" Collapsed="true">
+    <Position X="17.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAIAAAAAAAAACAAAgABgEQQgAQAAACAAAAAA=</HashCode>
+      <FileName>Itariff.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ITariffServiceMapping" Collapsed="true">
+    <Position X="19.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITariffServiceMapping.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ITemplate" Collapsed="true">
+    <Position X="21" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITemplate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ITemplateGroupMaster" Collapsed="true">
+    <Position X="22.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAQABAAACAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ITemplateGroupMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ITemplateQuestionmaster" Collapsed="true">
+    <Position X="24.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQCAEAEAAAAEAEAAAAAJAAA=</HashCode>
+      <FileName>ITemplateQuestionmaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ITemplatSetup" Collapsed="true">
+    <Position X="26.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIABAAAAAAIQAAAgAAAEAAAAAAAAAAAAQAAAEAAIAA=</HashCode>
+      <FileName>ITemplatSetup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ITestFormatSetup" Collapsed="true">
+    <Position X="28" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAgCBAABAAAAAAAAAgAAACABCAAgAAAAAAAAA=</HashCode>
+      <FileName>ITestFormatSetup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.ITestSpecimen" Collapsed="true">
+    <Position X="29.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAABARAAAAAAgABAAAAAAAigAABAAAAEAAAAA=</HashCode>
+      <FileName>ITestSpecimen.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IUMR_LOCK" Collapsed="true">
+    <Position X="31.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>IUMR_LOCK.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IunivStd" Collapsed="true">
+    <Position X="33.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAACICAAAACAAAAAgAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>IunivStd.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IUser" Collapsed="true">
+    <Position X="35" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACLEgRSKkwIAIEgAAAINqKAAYAKBAAwggAEgQLTAgg=</HashCode>
+      <FileName>IUser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IUSER_LIMIT" Collapsed="true">
+    <Position X="36.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAgAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IUSER_LIMIT.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IUserAudit" Collapsed="true">
+    <Position X="12.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>IUserAuditcs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IUserDetails" Collapsed="true">
+    <Position X="14" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAEAAAAIIEkgCABgAACMAAQAAAAEoAAAiAACEAAAA=</HashCode>
+      <FileName>IUserDetails.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IuserLoginInfo" Collapsed="true">
+    <Position X="15.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAIAAAAAAAAAA=</HashCode>
+      <FileName>IuserLoginInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IUserMenu" Collapsed="true">
+    <Position X="17.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAQAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IUserMenu.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IUserShiftAdvance" Collapsed="true">
+    <Position X="19.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>IUserShiftAdvance.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IUserValidation" Collapsed="true">
+    <Position X="21" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>IUserValidation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IVactainer" Collapsed="true">
+    <Position X="22.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IVactainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IView" Collapsed="true">
+    <Position X="26.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IVW_COLUMNS_SMS" Collapsed="true">
+    <Position X="28" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>IVW_COLUMNS_SMS.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IWardwiseCreditLimit" Collapsed="true">
+    <Position X="29.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAIAAAAAAAAAA=</HashCode>
+      <FileName>IWardwiseCreditLimit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IWorkflow" Collapsed="true">
+    <Position X="31.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAABABBAAAAAEAEAIAgEAAAAAgQAAAIAAA=</HashCode>
+      <FileName>IWorkflow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.QuestionScoreAbstract" Collapsed="true">
+    <Position X="33.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAgAAAAAAAggAABAAAAAAAAIAAQAAAA=</HashCode>
+      <FileName>QuestionScoreAbstract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EzHms.Abstract.IRadiologyRptDispatch" Collapsed="true">
+    <Position X="26.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAEAQAAACAAAAIAAAAQAAEAAAAAAABCAAAA=</HashCode>
+      <FileName>RadiologyRptDispatch.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

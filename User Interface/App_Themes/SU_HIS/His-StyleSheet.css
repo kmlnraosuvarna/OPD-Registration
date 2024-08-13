@@ -1,0 +1,1534 @@
+.top-menu
+{
+    background-image: url(Images/top-menu-bg.gif);
+    background-repeat: repeat-x;
+}
+.DashTopmenu
+{
+    background-image: url(Images/DashTopmenu.gif);
+    background-repeat: repeat;
+    background-position: bottom;
+}
+
+
+
+.Linkbtntxt
+{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    color: #3b89a6;
+}
+
+.inputtext
+{
+    width: 254px;
+    height: 44px;
+}
+
+.disabletextbox
+{
+    height: 14px;
+    border: solid 1px #818d98;
+    background-color: #333333;
+
+    font-size: 11px;
+    cursor: text;
+    padding-left: 2px; /* -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; /* future proofing  -khtml-border-radius: 2px; /* for old Konqueror browsers */
+}
+
+/*combobox styles starts here*/
+
+
+.ComboBoxDropDownValid:focus
+{
+    border: 1px solid #f4785e;
+    background: #cbe6ef;
+    cursor: pointer;
+    _cursor: hand;
+    height: 18px;
+    font-size: 11px;
+    color: #000000;
+    margin: 0px;
+    vertical-align: bottom;
+}
+.ComboBoxDropDownValid
+{
+    border: 1px solid #f4785e;
+    background-image: url(Images/Textbox_bg.gif);
+    background-repeat: repeat-x;
+    cursor: pointer;
+    _cursor: hand;
+    height: 18px;
+    font-size: 11px;
+    color: #000000;
+    margin: 0px;
+    vertical-align: bottom;
+}
+.BindModule:focus
+{
+    border: 1px solid #aac8f1;
+    background: #cbe6ef;
+    cursor: pointer;
+    _cursor: hand;
+    height: 18px;
+    font-size: 11px;
+    color: #15428b;
+    margin: 0px;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+.BindModule
+{
+    border: 1px solid #aac8f1;
+    background-image: url(Images/ModuleDropBg.gif);
+    background-repeat: repeat-x;
+    background-position: center;
+    cursor: pointer;
+    _cursor: hand;
+    height: 18px;
+    font-size: 11px;
+    color: #15428b;
+    margin: 0px;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+
+.Labelcolor
+{
+    color: #0066c0;
+}
+/* below styles starts under stpi040 */
+
+
+
+.trborder
+{
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.tdbaground
+{
+    /*background-color: #ebf3ff;      border-bottom: solid 1px #d8d8d8;*/
+    padding: 4px 0px 4px 4px;
+}
+
+.ShowTxtFormat
+{
+    height: 14px;
+    border: solid 1px #818d98;
+    background-image: url(Images/Textbox_bg.gif);
+    background-repeat: repeat-x;
+    color: #616161;
+
+    font-size: 11px;
+    cursor: text;
+    padding-left: 2px;
+}
+.ShowLblFormat
+{
+    background-color: #ebf3ff;
+    height: 16px;
+    border: 1px solid #ebf3ff;
+
+    font-size: 11px;
+    cursor: default;
+    padding-left: 2px;
+}
+
+.ShownewFormat
+{
+    height: 16px;
+    border: 1px solid #f4785e;
+
+    font-size: 11px;
+    border-width: 1px;
+    border-color: Red;
+    padding-left: 2px;
+}
+
+/*below styles belongs to DynamicMasters.aspx*/
+
+a
+{
+    color: #333333;
+    text-decoration: none;
+
+    font-size: 11px;
+}
+a:hover
+{
+    color: #000000;
+}
+div.pnllist
+{
+    background: #ffffff;
+}
+div.pnllist:hover
+{
+    background: #ffe6a0;
+}
+div.pnl
+{
+    font: 80% tahoma;
+    top: 1px;
+}
+.imgbg
+{
+    background-color: #e9eeee;
+    border-right: solid 1px #c5c5c5;
+}
+.imgbg:hover
+{
+    background-color: #ffe6a0;
+    border-right: solid 1px #ffe6a0;
+}
+
+
+
+.panel .header .content H2
+{
+    font-size: 12pt;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 0px 0px 8px;
+    margin: 0;
+    float: left;
+}
+
+.ContextMenuPanel
+{
+    border: 1px solid #868686;
+    z-index: 1000;
+    background: url(images/menu-bg.gif) repeat-y 0 0 #FAFAFA;
+    cursor: default;
+    padding: 1px 1px 0px 1px;
+    font-size: 11px;
+}
+.ContextMenuBreak
+{
+    margin: 1px 1px 1px 0px;
+    padding: 0;
+    height: 1px;
+    overflow: hidden;
+    display: block;
+    border-top: 1px solid #C5C5C5;
+}
+a.ContextMenuItem
+{
+    margin: 1px 0 1px 0;
+    display: block;
+    color: #003399;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 4px 19px 4px 0px;
+    white-space: nowrap;
+}
+li
+{
+    /*list-style-image: url(images/edit.png);*/
+    list-style-position: outside;
+    vertical-align: middle;
+}
+a.ContextMenuItem-Selected
+{
+    font-weight: bold;
+}
+a.ContextMenuItem:hover
+{
+    background-color: #FFE6A0;
+    color: #003399;
+    border: 1px solid #D2B47A;
+    padding: 3px 18px 3px 0px;
+}
+
+/*above styles belongs to DynamicMasters.aspx*/
+
+
+/*below styles belongs to ServiceGrpAuditOpt.aspx*/
+.bgtext
+{
+    color: #3966bf;
+    font-size: 11px;
+ 
+}
+/*above styles belongs to ServiceGrpAuditOpt.aspx*/
+
+
+
+/*below styles belongs to DashBoard.aspx*/
+
+.dashboardlink
+{
+    color: #2d2727;
+    font-size: 12px;
+
+    text-decoration: none;
+}
+.dashboardlink:hover
+{
+    color: #011326;
+    font-size: 12px;
+
+    text-decoration: underline;
+}
+.main-top-head
+{
+    color: #014f83;
+    font-size: 14px;
+
+    font-weight: bold;
+    letter-spacing: normal;
+    padding-top: 5px;
+}
+
+
+/*below styles belongs to MailMessages.aspx*/
+
+.link_text
+{
+    color: #2b2b3d;
+    font-size: 11px;
+
+    text-decoration: none;
+}
+.link_text:hover
+{
+    color: #2b2b3d;
+    font-size: 11px;
+
+    text-decoration: underline;
+}
+.link_Refresh
+{
+    color: #2b2b3d;
+    font-size: 11px;
+
+    text-decoration: underline;
+}
+.link_Refresh:hover
+{
+    color: #2b2b3d;
+    font-size: 11px;
+
+    text-decoration: none;
+}
+
+/* above styles belongs to MailMessages.aspx*/
+
+
+/*below styles belongs to CompanyPolicies.aspx*/
+
+.accordionHeaderse2
+{
+    color: #006699;
+
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-right: 15px;
+    cursor: pointer;
+    border-bottom: 0px;
+    background-color: #f8f7f7;
+    border: 0px solid #cccccc;
+    height: 20px;
+    vertical-align: top;
+    background-image: url(Images/Img-minusicon_9x9.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: White;
+    background-position: 3px 50%;
+    text-align: left;
+    border-bottom: 0px;
+}
+.accordionHeader2
+{
+    color: #21536A;
+
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-right: 15px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background-color: #f8f7f7;
+    height: 20px;
+    vertical-align: top;
+    background-image: url(Images/Img-plusicon_9x9.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 3px 50%;
+    text-align: left;
+}
+*html .accordionHeader2
+{
+    color: #21536A;
+
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background-color: #9fc0f1;
+    background-image: url(Images/Img-plusicon_9x9.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 3px 50%;
+    height: 23px;
+    vertical-align: top;
+    text-align: left;
+}
+*html .accordionHeaderse2
+{
+    color: #006699;
+
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 0px solid #cccccc;
+    background-color: #f8f7f7;
+    background-image: url(Images/Img-minusicon_9x9.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: White;
+    background-position: 3px 50%;
+    height: 23px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 0px;
+}
+.accordionContent2
+{
+    margin-top: 0px;
+    color: #000000;
+    text-align: left;
+    border: 0px solid #cccccc;
+    border-top: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: url(Images/formunderline.gif) no-repeat #ffffff;
+    background-position: top left;
+
+    font-size: 11px;
+}
+
+
+/*above styles belongs to CompanyPolicies.aspx*/
+.accordionHeadse
+{
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-right: 15px;
+    cursor: pointer;
+    border-bottom: 0px;
+    background-color: #f8f7f7;
+    border: 1px solid #2f4f4f;
+    height: 20px;
+    vertical-align: top;
+    background-color:#5078b3;
+    text-align: left;
+    border-bottom: 0px;
+}
+.accordionHead
+{
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-right: 15px;
+    cursor: pointer;
+    border: 1px solid #2f4f4f;
+    background-color: #f8f7f7;
+    height: 20px;
+    vertical-align: top;
+    background-color:#2e4d7b;
+    text-align: left;
+}
+*html .accordionHead
+{
+    color: #21536A;
+
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 1px solid #2f4f4f;
+    background-color: #2e4d7b;
+    height: 23px;
+    vertical-align: top;
+    text-align: left;
+}
+*html .accordionHeadse
+{
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 1px solid #2f4f4f;
+    background-color: #5078b3;
+    height: 23px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 0px;
+}
+.accordionCont
+{
+    margin-top: 0px;
+    color: #000000;
+    text-align: left;
+    border: 1px solid #2f4f4f;
+    border-top: 0px;
+    padding: 10px;
+    background: #d3deef;
+
+    font-size: 12px;
+}
+.accordionCont h1
+{
+    margin:0px;
+    padding:0px;
+    text-align: left;
+
+    font-size: 16px;
+    color:#2f4f4f;
+    width:100%;
+    
+}
+.accordionCont p
+{
+    margin: 0px;
+    color: #000000;
+    text-align: left;
+    padding: 2px 10px;
+
+    font-size: 14px;
+}
+.accordionCont p span
+{
+    letter-spacing:.1em;
+}
+.accordionCont ul
+{
+    margin: 0px;
+    color: #000000;
+    text-align: left;
+    padding: 2px 15px;
+
+    font-size: 14px;
+}
+.accordionCont ul li
+{
+    margin: 0px;
+    color: #000000;
+    text-align: left;
+    padding: 2px 20px;
+
+    font-size: 14px;
+    list-style-type :square;
+}
+
+/*below styles from ModelPopUpStyles.css*/
+
+/*Modal Popup*/
+.modalBackground
+{
+    background-color: white;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    z-index:99999;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*below styles from grid_Styles.css*/
+
+.previous
+{
+    background: transparent url(Images/previous1.gif) no-repeat scroll center;
+    height: 1.3em;
+    width: 16px;
+}
+.next
+{
+    background: transparent url(Images/next1.gif) no-repeat scroll center;
+    height: 1.3em;
+    width: 16px;
+}
+.gotopage
+{
+    font-size: x-small;
+    width: 20px;
+}
+
+#ddlPageSize
+{
+    height: 15px;
+}
+#ddlpazesize1
+{
+    height: 15px;
+}
+
+/*above styles from Bubbles.css*/
+
+/*below styles from divstyles.css*/
+
+
+
+/*above styles from divstyles.css*/
+
+/*below styles from Main_Tabstyles.css*/
+
+.fancy
+{
+    display: block; /* fonts for the tabs */
+
+    font-size: 13px;
+}
+.fancy .ajax__tab_tab
+{
+    /* header text is always be bold */
+  font-weight:normal;
+}
+.fancy .ajax__tab_body
+{
+    background-color: #fff;
+    border: 0px solid #eeeeee;
+    border-top: 1px;
+    padding: 0px;
+}
+
+.fancy .ajax__tab_header
+{
+    border-bottom: 1px solid #eeeeee;
+    padding-right: 10px;
+}
+
+/* regular header styles */
+.fancy .ajax__tab_header .ajax__tab_tab
+{
+    /* left/right rounded images are 11 pixels wide */
+    margin: 0px 5px 0px 5px;
+    color: #fff;
+    background: url(Images/TAB_bg.gif) repeat-x;
+}
+.fancy .ajax__tab_header .ajax__tab_outer
+{
+    /* 2 pixel horizontal space between tabs */
+    margin-right: 1px;
+    margin-left:1px;
+    background: url(Images/TAB_right.gif) no-repeat right top;
+}
+.fancy .ajax__tab_header .ajax__tab_inner
+{
+    background: url(Images/TAB_left.gif) no-repeat left top;
+}
+
+/* active/hover headers styles */
+.fancy .ajax__tab_active .ajax__tab_tab, .fancy .ajax__tab_hover .ajax__tab_tab
+{
+    /* left/right rounded images are 11 pixels wide */
+    margin: 0px 5px 0px 5px;
+    color: #111111;
+    background: url(Images/TAB_bg.gif) repeat-x 0pt -48px;
+}
+.fancy .ajax__tab_active .ajax__tab_outer, .fancy .ajax__tab_hover .ajax__tab_outer
+{
+    /* 2 pixel horizontal space between tabs */
+    margin-right: 2px;
+    background: url(Images/TAB_right.gif) no-repeat 100% -48px;
+}
+.fancy .ajax__tab_active .ajax__tab_inner, .fancy .ajax__tab_hover .ajax__tab_inner
+{
+    background: url(Images/TAB_left.gif) no-repeat 0pt -48px;
+}
+
+/*above styles from Main_Tabstyles.css*/
+
+.fancy3
+{
+    display: block; /* fonts for the tabs */    
+    font-size: 13px;
+}
+.fancy3 .ajax__tab_tab
+{
+    /* header text is always be bold */
+    font-weight:normal;
+    
+}
+.fancy3 .ajax__tab_body
+{
+    background-color: #fff;
+    border: 1px solid #9bd1f2;
+    border-left-color:#9bd1f2;
+    padding: 0px;
+}
+
+.fancy3 .ajax__tab_header
+{
+    border-bottom: 0px solid #eeeeee;
+    padding-right: 10px;
+    height:22px;
+}
+
+/* regular header styles */
+.fancy3 .ajax__tab_header .ajax__tab_tab
+{
+    /* left/right rounded images are 11 pixels wide */
+    margin: 0px 5px 0px 5px;
+    color: #fff;
+     font-weight:normal;
+    background: url(Images/TAB_bg.gif) repeat-x;
+    height:16px;
+    padding:3px;
+}
+.fancy3 .ajax__tab_header .ajax__tab_outer
+{
+    /* 2 pixel horizontal space between tabs */
+    margin-right: 1px;
+    background: url(Images/TAB_right1.gif) no-repeat right top;
+}
+.fancy3 .ajax__tab_header .ajax__tab_inner
+{
+    background: url(Images/TAB_left1.gif) no-repeat left top;
+}
+
+/* active/hover headers styles */
+.fancy3 .ajax__tab_active .ajax__tab_tab, .fancy3 .ajax__tab_hover .ajax__tab_tab
+{
+    /* left/right rounded images are 11 pixels wide */
+    margin: 0px 5px 0px 5px;
+    color: #111111;
+    background: url(Images/TAB_bg.gif) repeat-x 0pt -48px;
+    height:17px;
+}
+.fancy3 .ajax__tab_active .ajax__tab_outer, .fancy3 .ajax__tab_hover .ajax__tab_outer
+{
+    /* 2 pixel horizontal space between tabs */
+    margin-right: 2px;
+    background: url(Images/TAB_right1.gif) no-repeat 100% -48px;
+}
+.fancy3 .ajax__tab_active .ajax__tab_inner, .fancy3 .ajax__tab_hover .ajax__tab_inner
+{
+    background: url(Images/TAB_left1.gif) no-repeat 0pt -48px;
+}
+/*below styles from grid.css*/
+
+.fancyStore{display: block;font-size: 13px;height:96%;}
+.fancyStore .ajax__tab_tab{font-weight:normal;}
+.fancyStore .ajax__tab_body{background-color: #fff;border: 0px solid #eeeeee;border-top: 1px;padding: 0px;height:95%;overflow:auto;}
+.fancyStore .ajax__tab_header{border-bottom: 1px solid #eeeeee;padding-right: 10px;}
+.fancyStore .ajax__tab_header .ajax__tab_tab{margin: 0px 5px 0px 5px;color: #fff;background: url(Images/TAB_bg.gif) repeat-x;}
+.fancyStore .ajax__tab_header .ajax__tab_outer{margin-right: 1px;margin-left:1px;background: url(Images/TAB_right.gif) no-repeat right top;}
+.fancyStore .ajax__tab_header .ajax__tab_inner{background: url(Images/TAB_left.gif) no-repeat left top;}
+.fancyStore .ajax__tab_active .ajax__tab_tab, .fancyStore .ajax__tab_hover .ajax__tab_tab{margin: 0px 5px 0px 5px;color: #111111;background: url(Images/TAB_bg.gif) repeat-x 0pt -48px;}
+.fancyStore .ajax__tab_active .ajax__tab_outer, .fancyStore .ajax__tab_hover .ajax__tab_outer{margin-right: 2px;background: url(Images/TAB_right.gif) no-repeat 100% -48px;}
+.fancyStore .ajax__tab_active .ajax__tab_inner, .fancyStore .ajax__tab_hover .ajax__tab_inner{background: url(Images/TAB_left.gif) no-repeat 0pt -48px;}
+
+
+
+.dropdown
+{
+    border: 1px solid #bebebe;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    _cursor: hand;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    font-size: 11px;
+
+    color: #414141;
+}
+*html .dropdown
+{
+    border: 1px solid #bebebe;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    _cursor: hand;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    font-size: 11px;
+
+    color: #414141;
+}
+
+.txtbox
+{
+    font-size: 11px;
+
+    color: #414141;
+    border: solid 1px #9b9898;
+}
+*html .txtbox
+{
+    font-size: 11px;
+
+    height: 14px;
+    color: #414141;
+    border: solid 1px #9b9898;
+}
+
+.pagertext
+{
+    color: #2b2b3d;
+    font-size: 11px;
+
+}
+
+.Chkbox
+{
+    color: #000000;
+    font-size: 11px;
+
+    padding: 0px 5px 0px 3px;
+}
+
+.grid-row-hover
+{
+    background-color: #c8cdd7;
+}
+
+.BoxDropDown
+{
+    border: 1px solid #bebebe;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    _cursor: hand;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    font-size: 11px;
+
+    color: #414141;
+    height: 18px; /*filter: progid:DXImageTransform.Microsoft.Shadow(direction=140,color=#666666,strength=4);*/
+}
+
+
+
+
+
+
+
+
+
+/*above styles from grid.css*/
+
+/*below styles from CountyAutoCompleteUserControl.ascx*/
+
+.AutoExtender
+{
+  
+    font-size: .8em;
+    font-weight: normal;
+    border: solid 1px #006699;
+    line-height: 20px;
+    padding: 10px;
+    background-color: White;
+    margin-left: 10px;
+}
+.AutoExtenderList
+{
+    border-bottom: dotted 2px #006699;
+    cursor: pointer;
+    color: Black;
+}
+.AutoExtenderHighlight
+{
+    color: White;
+    background-color: #006699;
+    cursor: pointer;
+}
+#divwidth
+{
+    width: 150px !important;
+}
+#divwidth div
+{
+    width: 150px !important;
+}
+
+/*above styles from CountyAutoCompleteUserControl.ascx*/
+
+
+.sampletree
+{
+    margin-left: -16px;
+}
+
+.grid_head2
+{
+
+    font-size: 12px;
+    padding-bottom: 5px;
+    color: #048ada;
+    font-weight: bold;
+    background-image: url(Images/line.gif);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/* bellow calendar styles  */
+.MyCalendar table
+{
+    border-collapse: collapse;
+}
+
+.MyCalendar th
+{
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+
+    font-size: 11px;
+}
+
+.MyCalendar td
+{
+    padding: 0px 0px 0px 0px;
+
+    font-size: 11px;
+    color: #000000;
+}
+
+
+.MyCalendar .ajax__calendar_container
+{
+    border: 1px solid #045e97;
+    background-color: #f6fbfc;
+    color: #045e97;
+    z-index: 99994;
+}
+.MyCalendar .ajax__calendar_other .ajax__calendar_day, .MyCalendar .ajax__calendar_other .ajax__calendar_year
+{
+    color: #b8d5db;
+    z-index: 99998;
+    height: 15px;
+}
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day, .MyCalendar .ajax__calendar_hover .ajax__calendar_month, .MyCalendar .ajax__calendar_hover .ajax__calendar_year
+{
+    color: black;
+    z-index: 99999;
+    background-color: #ffffff;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day, .MyCalendar .ajax__calendar_active .ajax__calendar_month, .MyCalendar .ajax__calendar_active .ajax__calendar_year
+{
+    color: #d51010;
+    font-weight: bold;
+    z-index: 99995;
+}
+
+.MyCalendarSerMap .ajax__calendar_container
+{
+    margin-top: 20px;
+    border: 1px solid #045e97;
+    background-color: #f6fbfc;
+    color: #045e97;
+    z-index: 99999;
+}
+.MyCalendarSerMap .ajax__calendar_other .ajax__calendar_day, .MyCalendarSerMap .ajax__calendar_other .ajax__calendar_year
+{
+    color: #b8d5db;
+    z-index: 99998;
+}
+.MyCalendarSerMap .ajax__calendar_hover .ajax__calendar_day, .MyCalendarSerMap .ajax__calendar_hover .ajax__calendar_month, .MyCalendarSerMap .ajax__calendar_hover .ajax__calendar_year
+{
+    color: black;
+    z-index: 99997;
+}
+.MyCalendarSerMap .ajax__calendar_active .ajax__calendar_day, .MyCalendarSerMap .ajax__calendar_active .ajax__calendar_month, .MyCalendarSerMap .ajax__calendar_active .ajax__calendar_year
+{
+    color: #d51010;
+    font-weight: bold;
+    z-index: 99996;
+}
+
+
+/*tooltip styles starts here*/
+#text
+{
+    margin: 50px auto;
+    width: 500px;
+}
+.hotspot
+{
+    color: #900;
+    padding-bottom: 1px;
+    border-bottom: 0px dotted #900;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+#tt
+{
+    position: absolute;
+    display: block;
+    background: url(Images/tt_left.gif) top left no-repeat;
+    z-index: 99999;
+}
+#tttop
+{
+    display: block;
+    height: 5px;
+    margin-left: 5px;
+    background: url(Images/tt_top.gif) top right no-repeat;
+    overflow: hidden;
+    z-index: 99999;
+}
+#ttcont
+{
+    display: block;
+    padding: 2px 12px 3px 7px;
+    margin-left: 5px;
+    background: #666;
+    color: #FFF;
+    z-index: 99999;
+}
+#ttbot
+{
+    display: block;
+    height: 5px;
+    margin-left: 5px;
+    background: url(Images/tt_bottom.gif) top right no-repeat;
+    overflow: hidden;
+    z-index: 99999;
+}
+/*tooltip styles ends here*/
+.bgcolor
+{
+    background-color: White;
+}
+
+.viewtext
+{
+    color: #2b2b3d;
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+
+a.nl
+{
+    color: #666666;
+    text-decoration: none;
+
+    font-size: 11px;
+}
+a.nl:hover
+{
+    color: #505050;
+}
+div.menu2
+{
+    background: #f5f5f5;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    border-bottom: solid 1px #cccccc;
+}
+div.menu2:hover
+{
+    background: #ffffff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    border-bottom: solid 1px #cccccc;
+}
+div.nav2
+{
+    font: 60% tahoma;
+    background: #f5f5f5;
+    top: 1px;
+    border: solid 0px #cccccc;
+    border-bottom: solid 0px #cccccc;
+}
+
+
+div.menu3
+{
+    background: #f5f5f5;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    border: solid 1px #cccccc;
+}
+div.menu3:hover
+{
+    background: #ffffff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    border: solid 1px #cccccc;
+}
+div.nav3
+{
+    font: 60% tahoma;
+    background: #f5f5f5;
+    top: 1px;
+    border: solid 0px #cccccc;
+    border-bottom: solid 0px #cccccc;
+}
+.vmenubg2
+{
+    background-color: #f5f5f5;
+}
+
+.view
+{
+    text-align: left;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+.edit
+{
+    text-align: left;
+
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.Consultant_bg
+{
+    background-image: url(Images/Consultation_bg.gif);
+    background-repeat: no-repeat;
+    width: 273px;
+    height: 26px;
+    background-position: center;
+}
+
+.Consultant_head
+{
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #01305c;
+    padding: 0 0 0 5px;
+}
+
+.Consultant_head:hover
+{
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #0099FF;
+    padding: 0 0 0 5px;
+}
+
+/*Above Styles Belongs to ResultEntry.aspx*/
+
+/* above styles ends under stpi040 */
+
+
+
+.Dashbordbut
+{
+    background-image: url(Images/Dasbordbut.gif);
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 26px;
+    background-position: center;
+}
+.Dashbordbut_img2
+{
+    background-image: url(Images/Dasbordbut2.gif);
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 26px;
+    background-position: center;
+}
+.Dashbordbut_img3
+{
+    background-image: url(Images/Dasbordbut3.gif);
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 26px;
+    background-position: center;
+}
+.Dashbordbut_img4
+{
+    background-image: url(Images/Dasbordbut4.gif);
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 26px;
+    background-position: center;
+}
+.Dashbordbut_img5
+{
+    background-image: url(Images/Dasbordbut5.gif);
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 26px;
+    background-position: center;
+}
+.Dashbordbut_img6
+{
+    background-image: url(Images/Dasbordbut6.gif);
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 26px;
+    background-position: center;
+}
+
+
+.healthchek
+{
+    background-image: url(Images/DashPackBg.gif);
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 23px;
+    background-position: center;
+    padding-left: 10px;
+}
+
+.healthcheklnk
+{
+
+    font-size: 14px;
+    padding: 5px 0px 0px 7px;
+    font-weight: bold;
+    color: #333333;
+}
+.healthcheklnk:hover
+{
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #999999;
+    padding: 5px 0px 0px 7px;
+}
+
+
+
+.TranseAccordHeader
+{
+    color: #21536A;
+
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 0px;
+    margin-top: 2px;
+    padding-right: 15px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background-color: #f8f7f7;
+    height: 20px;
+    background-image: url(Images/Img-plusicon_9x9.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 3px 50%;
+    text-align: left;
+}
+*html .TranseAccordHeader
+{
+    color: #21536A;
+
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 2px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background-color: #9fc0f1;
+    background-image: url(Images/Img-plusicon_9x9.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 3px 50%;
+    height: 20px;
+    text-align: left;
+}
+*html .TranseAccordHeaderSel
+{
+    color: #006699;
+
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 2px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background-color: #f8f7f7;
+    background-image: url(Images/Img-minusicon_9x9.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: White;
+    background-position: 3px 50%;
+    text-align: left;
+    border-bottom: 0px;
+    height: 20px;
+}
+
+.TranseAccordHeaderSel
+{
+    color: #006699;
+
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 0px;
+    margin-top: 2px;
+    padding-right: 15px;
+    cursor: pointer;
+    border-bottom: 0px;
+    background-color: #f8f7f7;
+    border: 1px solid #cccccc;
+    height: 20px;
+    vertical-align: top;
+    background-image: url(Images/Img-minusicon_9x9.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: White;
+    background-position: 3px 50%;
+    text-align: left;
+    border-bottom: 0px;
+}
+.TranseAccordContent
+{
+    margin-top: 0px;
+    color: #000000;
+    text-align: left;
+    border: 1px solid #cccccc;
+    border-top: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: url(Images/formunderline.gif) no-repeat #ffffff;
+    background-position: top left;
+
+    font-size: 11px;
+}
+
+
+.GridTbl
+{
+
+    border-collapse: collapse;
+    border-style: none;
+    border-width: 0px;
+}
+
+
+.GridTbl th
+{
+    background: url(Images/grid_tophead1.gif) repeat-x;
+    color: #054b6f;
+    height: 24px;
+    border: 1px solid #d7d7de;
+    padding-top: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 0px;
+    text-align: left;
+    font-size: 11px;
+    color: #054b6f;
+}
+
+.GridTbl td
+{
+    border: 1px solid #d7d7de;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 11px;
+    color: #666666;
+}
+
+.border
+{
+    border: 0px solid #ccc;
+}
+
+
+
+
+
+#master_content .ajax__combobox_itemlist
+{
+    margin: 0px;
+}
+
+.AjaxToolkitStyle .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input
+{
+    background-image: url(ComboBox/images/toolkit-bg.gif);
+    background-position: top left;
+    border: 0px none;
+    color: #FFFFFF;
+    padding: 4px 0px 3px 5px;
+    font-size: 13px;
+    height: 16px;
+    width: 240px;
+}
+.AjaxToolkitStyle .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button
+{
+    background-image: url(ComboBox/images/toolkit-arrow.gif);
+    background-position: top left;
+    border: 0px none;
+    height: 23px;
+    width: 23px;
+}
+.AjaxToolkitStyle .ajax__combobox_itemlist
+{
+    border-color: #0F2543;
+    background-color: #EFEFEF;
+}
+
+.AquaStyle .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input
+{
+    margin: 0;
+    background-image: url(ComboBox/images/aqua-bg.gif);
+    background-position: top left;
+    border: 0px none;
+    padding: 2px 0px 0px 8px;
+    font-size: 11px;
+    height: 17px;
+    width: 150px;
+}
+.AquaStyle .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button
+{
+    background-image: url(ComboBox/images/aqua-arrow.gif);
+    background-position: top left;
+    border: 0px none;
+    height: 19px;
+    width: 19px;
+}
+.AquaStyle .ajax__combobox_itemlist
+{
+    border-color: #000000;
+    background-color: #FFFFFF;
+}
+.WindowsStyle .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input
+{
+    margin: 0;
+    border: solid 1px #7F9DB9;
+    border-right: 0px none;
+    padding: 1px 0px 0px 5px;
+    font-size: 13px;
+    height: 18px;
+}
+.WindowsStyle .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(ComboBox/images/windows-arrow.gif);
+    background-position: top left;
+    border: 0px none;
+    height: 21px;
+    width: 21px;
+}
+.WindowsStyle .ajax__combobox_itemlist
+{
+    border-color: #7F9DB9;
+}
+
+/*below styles from simpletree.css*/
+
+.treeview ul
+{
+    /*CSS for Simple Tree Menu*/
+    margin: 0;
+    padding: 0;
+    background-color: White;
+
+    font-size: 12px;
+    color: #575757;
+    float: left;
+}
+
+.treeview li
+{
+    /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+    background: white url(list.gif) no-repeat left center;
+    list-style-type: none;
+    padding-left: 22px;
+    margin-bottom: 3px;
+
+    font-size: 11px;
+    color: #575757;
+}
+.treeview li a
+{
+    /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+    background: white url(list.gif) no-repeat left center;
+    list-style-type: none;
+    margin-bottom: 3px;
+
+    font-size: 11px;
+    color: #575757;
+}
+
+.treeview li a:hover
+{
+    /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+    background: white url(list.gif) no-repeat left center;
+    list-style-type: none;
+    margin-bottom: 5px;
+
+    font-size: 11px;
+    color: #D3D3D3;
+}
+
+.treeview li.submenu
+{
+    /* Style for LI that contains sub lists (other ULs). */
+    background: white url(closed.gif) no-repeat left 1px;
+    cursor: hand !important;
+    cursor: pointer !important;
+}
+
+
+.treeview li.submenu ul
+{
+    /*Style for ULs that are children of LIs (submenu) */
+    display: none; /*Hide them by default. Don't delete. */
+}
+
+.treeview .submenu ul li
+{
+    /*Style for LIs of ULs that are children of LIs (submenu) */
+    cursor: default;
+}
+
+.textatr
+{
+    color: #fdfda5;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

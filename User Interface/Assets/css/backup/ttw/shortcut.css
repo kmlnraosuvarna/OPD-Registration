@@ -1,0 +1,116 @@
+﻿.clearfix:after, .clearfix:before{
+    display: table;
+    content: " ";
+    clear:both;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul,li{margin:0px; padding:0px; list-style:none;}
+
+.bookmark>i{} 
+.bookmark:hover>i{}
+#bookmarkdiv{display:none;}
+
+.bookmarkdiv{display: block !important;position: fixed;background: #fff;top: 49px;bottom: 30px;left: 0px;right: 0px;padding: 30px;} 
+#addloc_bkmrks{height: 300px;}
+ #addloc_bkmrks li{display: block;
+    overflow: hidden;
+    width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px 8px;}  
+.closebookmark{    float: right;font-size: 29px;color: #afafaf;}
+    
+.closebookmark:hover{color:#ff6666; cursor:pointer;}
+.bookmark-top{    border-bottom: 1px solid #cacaca;
+    padding-bottom: 20px;}     
+.bookmark-top ul{float:left;border: 1px solid #cacaca;margin-right: 10px;border-radius: 0 0 5px 5px;
+    border-width: 0 1px 3px;
+    border-bottom: 3px solid #01a2d8;
+    background: #fcfcfc;
+    -moz-box-shadow: 0 3px 6px 2px #999;
+    -webkit-box-shadow: 0 3px 6px 2px #999;
+    box-shadow: 0 3px 6px 2px #999;}  
+.bookmark-top ul li{float:left;padding: 3px 5px;border-bottom: 1px dotted #cacaca;} 
+.bookmark-top ul li:hover{    background: #93b8f5;color: #fff; cursor:pointer;} 
+.bookmark-top ul li.select{    background: #4286f7;color: #fff;}
+.bookmark-top ul li:last-child{border-right:0px;}
+.bookmark-top ul li i{} 
+.bookmarh-search{float:left; margin-right:10px;position:relative;}
+.bookmarh-search input[type="text"]{    padding: 3px 5px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #cacaca;position:relative;}
+.bookmark-top h1{margin: 0;padding: 30px 0 15px 0;font-size: 17px;border-bottom: 1px solid #cacaca;} 
+.bookmark-list{/* margin-left: -6px; *//* margin-right: -6px; */margin-top: 17px;}
+
+
+.bookmark-list .dragpanel-list>.drag-doc-panel{
+                                              position: relative;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;
+                                               -ms-transition: all .3s ease-out;-o-transition: all .3s ease-out;        }
+                                                
+.bookmark-list .dragpanel-list.panel-sortable>.drag-doc-panel:hover {border: 1px dashed #4286F7; cursor:pointer;}
+
+  
+
+.drag-doc-panel .iconlist{font-size: 17px;text-align: right;padding: 8px 10px;position: absolute;right: 0;width: 100%;display: block; opacity:0; top:0px; transform:translateX(0px) translateY(-10px); transition:transform 400ms;} 
+.drag-doc-panel .iconlist i{margin-left: 15px;}
+.drag-doc-panel:hover .iconlist{display:block;opacity:1;  transform:translateX(0px) translateY(0px); transition:transform 400ms;} 
+.drag-doc-panel:hover .iconlist i{ background:#fff; border-radius:50%; padding:5px; display:inline-block;}
+
+.drag-doc-panel .drag-doc-body{display: table;height:100%;width:100%;border-radius: 4px;}
+
+.drag-doc-panel .drag-doc-body .doc-name{height: 130px;display: table-row;vertical-align: middle;text-align: center;width: 100% !important;}
+.drag-doc-panel .drag-doc-body .doc-name h2{display: table-cell;vertical-align: middle;text-align: center;font-size: 27px;border-radius: 4px 4px 0 0;word-break: break-all;}
+.drag-doc-panel .drag-doc-body .doc-submodule{display: table-row;background: #f9f9f9;}
+.drag-doc-panel .drag-doc-body .doc-submodule h2{display: table-cell;vertical-align: middle;text-align: left;border-radius: 0 0 4px 4px;font-size: 20px;padding: 0 5px;}
+.drag-doc-panel .drag-doc-body .doc-submodule h2 label{    font-size: 13px;    padding-left: 5px;    color: #333;}
+    
+.bookmark-list.large .dragpanel-list>.drag-doc-panel{width: 270px; height: 170px;float:left; background: #fff;border: 1px solid #dad9d9;margin: 0.5%;border-radius: 4px;} 
+.bookmark-list.large .dragpanel-list>.drag-doc-panel .drag-doc-body .doc-name{}
+.bookmark-list.small .dragpanel-list>.drag-doc-panel{width: 180px;height: 170px;float:left; background: #fff;border: 1px solid #dad9d9;margin: 0.5%;border-radius: 4px;}  
+
+.drag-doc-panel:nth-child(1) .drag-doc-body .doc-name{background:#ffad00; color:#fff;}
+.drag-doc-panel:nth-child(2) .drag-doc-body .doc-name{background:#d9212a;color:#fff;}  
+.drag-doc-panel:nth-child(3) .drag-doc-body .doc-name{background:#55931f;color:#fff;} 
+.drag-doc-panel:nth-child(4) .drag-doc-body .doc-name{background:#863ab4;color:#fff;} 
+.drag-doc-panel:nth-child(5) .drag-doc-body .doc-name{background:#58bbdb;color:#fff;} 
+.drag-doc-panel:nth-child(6) .drag-doc-body .doc-name{background:#963a97;color:#fff;} 
+.drag-doc-panel:nth-child(7) .drag-doc-body .doc-name{background:#184d6e;color:#fff;} 
+.drag-doc-panel:nth-child(8) .drag-doc-body .doc-name{background:#d91a14;color:#fff;} 
+.drag-doc-panel:nth-child(9) .drag-doc-body .doc-name{background:#3a88b4;color:#fff;} 
+.drag-doc-panel:nth-child(10) .drag-doc-body .doc-name{background:#f59e00;color:#fff;} 
+.drag-doc-panel:nth-child(11) .drag-doc-body .doc-name{background:green;color:#fff;}  
+
+.bookmark-list.list .dragpanel-list{border: 1px solid #bfbebe;border-radius: 9px;}
+.bookmark-list.list .dragpanel-list>.drag-doc-panel{width: 100%;float:left;border-bottom: 1px solid #bfbebe;}
+                                                
+.bookmark-list.list .dragpanel-list.panel-sortable>.drag-doc-panel:hover {border: 0px dashed #4286F7;cursor:pointer;background:#e4e4e4;} 
+
+.list .drag-doc-panel .iconlist{font-size: 17px;text-align: right;padding: 6px 10px;position: absolute;right: 0;width: 100%;} 
+.list .drag-doc-panel .iconlist i{margin-left: 15px;}
+.list .drag-doc-panel:hover .iconlist{display:block;} 
+.list .drag-doc-panel:hover .iconlist i{background:#fff;border-radius:50%;padding: 3px;}
+
+.list .drag-doc-panel .drag-doc-body{display: block;height:inherit;width:100%;border-radius: 4px;float: left;padding: 8px 5px 8px 45px;position: relative;}
+
+.list .drag-doc-panel .drag-doc-body:after,.list .drag-doc-panel .drag-doc-body:before{display: table; content: " ";}
+
+.list .drag-doc-panel .drag-doc-body .doc-name{height: inherit;display: block;vertical-align: middle;text-align: left;width: auto !important;float: left;width: 30% !important;}
+.list .drag-doc-panel .drag-doc-body .doc-name h2{display:block;vertical-align: middle;text-align: left;font-size: 12px;border-radius: 4px 4px 0 0;margin: 0;color: #000;}
+
+.list .drag-doc-panel .drag-doc-body .doc-submodule{display: block;background:none;float:left;/* width:50%; */}
+.list .drag-doc-panel .drag-doc-body .doc-submodule h2{display: block;vertical-align: middle;text-align: left;border-radius: 0 0 4px 4px;font-size: 13px;padding: 0;margin: 0;}
+.list .drag-doc-panel .drag-doc-body .doc-submodule h2 i{
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    font-size: 16px;
+    color: #6e5486;
+}
+.list .drag-doc-panel .drag-doc-body .doc-submodule h2 label{font-size: 12px;/* padding-left: 5px; */color: #000;}
+.list .drag-doc-panel .drag-doc-body .doc-name{background:none !important; color:#333 !important;}

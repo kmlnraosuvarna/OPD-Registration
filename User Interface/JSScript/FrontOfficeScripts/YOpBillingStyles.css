@@ -1,0 +1,61 @@
+﻿        .col-hide tr td:nth-child(1)
+        {width: auto !important;}
+        .col-hide tr td:nth-child(2)
+        {width: 83px !important;}
+        .col-hide tr td:nth-child(3)
+        {width: 83px !important;}
+        .col-hide tr td:nth-child(4)
+        {width: 83px !important;}
+        .col-hide tr td:nth-child(3)
+        {display: table-cell;}
+        .col-hide tr td:nth-child(4)
+        {display: table-cell;}
+        .monthtxt
+        {width: 30%;}
+        .daytxt
+        {width: 30%;}
+        .lefrCol
+        {width: 65%;}
+        .RightCol
+        {width: 35%;}
+        .col1
+        {width: 23%;}
+        .col11
+        {width: 23%;}
+        .col21
+        {width: 34%;}
+        .col21txt
+        {width: 85%;}
+        .col2
+        {width: 20%;}
+        .col2txt
+        {width: 85%;}
+        .col2txtdiv
+        {width: 85%;}
+        .col3
+        {width: 23%;}
+        .col4
+        {width: 34%;}
+        .col4txt
+        {width: 85%;}
+        .col4txtdiv
+        {width: 89%;}
+        .col22
+        {width: 77%;}
+        .col22txt
+        {width: 94%;}
+
+        .inputtext
+        {width: 254px;height: 44px;}
+        .disabletextbox
+        {   height: 14px;border: solid 1px #818d98;background-color: #333333;
+            font-family: Tahoma;font-size: 11px;cursor: text;padding-left: 2px;
+        }
+        #divPackageConsultations table.grid
+        {width: 100% !important;}
+        #divPackageConsultations table.grid th[name="cols0"], #divPackageConsultations table.grid td[name="cols0"]
+        {width: 200px !important;text-align: left !important;}
+        #divPackageConsultations table.grid th[name="cols1"], #divPackageConsultations table.grid td[name="cols1"]
+        {width: 100px !important;text-align: left !important;}
+        #divPackageConsultations table.grid th[name="cols2"], #divPackageConsultations table.grid td[name="cols2"]
+        {width: 100px !important;text-align: left !important;}

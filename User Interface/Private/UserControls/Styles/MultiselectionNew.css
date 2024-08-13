@@ -1,0 +1,292 @@
+
+    .slction
+    {
+        width: 20%;
+        border-right: 1px solid #bcbcbc;
+        float: left;
+        height: 260px;
+    }
+    .slction ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .slction ul li
+    {
+        padding: 4px 15px;
+    }
+    .slction ul li:hover
+    {
+        background: #03abd5;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+    .slct
+    {
+    }
+    .slct ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .slct ul li
+    {
+        padding: 4px 15px;
+    }
+    .slct ul li:hover
+    {
+        background: #03abd5;
+        color: #fff;
+        cursor: pointer;
+    }
+    .inactv
+    {
+        background: #d8d5dd;
+        color: #084610;
+        cursor: pointer;
+    }
+    .delte
+    {
+        background: #e7c7e7;
+        color: #d20808;
+        cursor: pointer;
+    }
+    .lege-div > div.recrdStuscolor
+    {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 4px;
+        width: 100px;
+    }
+    .lege-div > div.recrdStuscolor
+    {
+        position: absolute;
+        top: 20px;
+        right: 4px;
+        width: 200px;
+    }
+    .lege-div > div.recrdStuscolor > div
+    {
+        height: 33px;
+        display: block;
+        clear: both;
+        border-bottom: 1px solid #cacaca;
+        padding: 0px 6px;
+    }
+    .lege-div > div.recrdStuscolor > div:last-child
+    {
+        border-bottom: 1px solid #cacaca;
+    }
+    .lege-div > div.recrdStuscolor > div label
+    {
+        float: left;
+        padding: 8px 1px;
+    }
+    .lege-div:hover > div.recrdStuscolor
+    {
+        width: 115px;
+        background: #fff;
+        z-index: 999;
+        border: 1px solid #cacaca;
+        display: block;
+        box-shadow: 0 3px 6px 2px #999;
+        z-index: 9999999;
+    }
+    div.recrdStuscolor:before
+    {
+        content: "";
+        top: -14px;
+        right: 2px;
+        position: absolute;
+        border: 7px solid transparent;
+        border-bottom-color: #cacaca;
+        width: 0;
+        height: 0;
+    }
+    .lgnd_span
+    {
+        width: 8px;
+        height: 12px;
+        border-radius: 50%;
+        float: left;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+
+    .raidoselct
+    {
+        padding: 2px 0px 0px 0px;
+        float: left;
+    }
+    .chcksel
+    {
+        width: 80%;
+        float: left;
+    }
+    .titl
+    {
+        padding: 7px 8px;
+        background: #F1F1F1;
+        color: #fff;
+    }
+    .chck_li
+    {
+        margin: 0;
+        padding: 0;
+        color: #c76363;
+        list-style: none;
+    }
+    .chck_li li
+    {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .fltr_sec
+    {
+        width: 100%;
+        padding: 0 5px 5px 5px;
+        z-index: 9;
+        height: calc(100% - 16px);
+        float: left;
+    }
+    .in_srch
+    {
+        position: absolute;
+        right: 6px;
+        top: 4px;
+        padding: 3px;
+        color: #000;
+        font-size: 14px;
+    }
+    .Roletypee ul
+    {
+        margin: 5px -13px;
+        padding: 0px;
+        list-style: none;
+    }
+    .Roletypee_bkup ul li
+    {
+        display: inline-block;
+        border-radius: 4px;
+        margin-bottom: 6px;
+        position: relative;
+        width: 185px;
+        margin-right: 2px;
+    }
+    .Roletypee ul li
+    {
+        display: inline-flex;
+        border-radius: 4px;
+        margin-bottom: 3px;
+        position: relative;
+        width: 248px;
+        margin-right: 3px;
+    }
+    .ser_ch
+    {
+        position: relative;
+        float: left;
+        color: #000;
+        width: 225px;
+    }
+    .ser_ch input[type=text]
+    {
+        padding: 0px 22px 0px 5px;
+        border-radius: 2px;
+        border: 1px solid #bcbcbc;
+        height: 29px;
+    }
+    .ion_cncl
+    {
+        color: #000;
+        font-size: 17px;
+        padding: 1px;
+        cursor: pointer;
+    }
+    .activeli
+    {
+        background: #03abd5;
+        color: #fff;
+    }
+    .roledata .frameborder
+    {
+        border: 1px solid #e1e1e1;
+        border-radius: 3px;
+        background: #FFFFFF;
+        padding: 1px 7px 1px 7px;
+    }
+    .roledata ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .roledata ul li
+    {
+        display: inline-block;
+        background: #f9f9f9;
+        margin: 0 5px 0px 0;
+        border-radius: 10px;
+        border: 1px solid #D2D2D2;
+        color: #454545;
+        overflow: hidden;
+        position: relative;
+    }
+    .roledata ul li span
+    {
+        font-size: 11px;
+        padding: 0px 25px 1px 7px;
+        text-align: center;
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 100px;
+    }
+    .roledata ul li i
+    {
+        padding: 3px 1px 2px 1px;
+        background: #95A0A0;
+        color: #fff;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        cursor: pointer;
+    }
+    .mainDiv
+    {
+        width: 99%;
+        border: 1px solid grey;
+        margin-left: 6px;
+    }
+    .noRecs
+    {
+        padding: 176px;
+    }
+    .selct_set
+    {
+        height: 200px;
+        float: left;
+        width: 100%;
+    }
+    .actvRinAcv
+    {
+        width: 3%;
+        height: 30px;
+        float: left;
+        margin: -4px 0px 0px 13px;
+    }
+    .fltr_sec ul li label
+    {
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 200px;
+    }

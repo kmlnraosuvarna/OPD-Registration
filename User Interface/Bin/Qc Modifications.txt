@@ -1,0 +1,11 @@
+DATE:07-09-2016   
+-----------------
+
+Changes In Quality control Module:
+
+1.Add Color Coding For result value in Graph(Tabular Data and QC Results)
+2.Control Names not getting Properly in Qc Results
+3.Lot Filterations In QC Results
+4.Graph Changes based on Lot Filteration
+5.LoT Edit OPerations in LOt Creation
+6.Working on Advance Search (in case of Searching on Multiple popups)

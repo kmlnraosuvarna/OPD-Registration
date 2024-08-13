@@ -1,0 +1,103 @@
+﻿list 
+{
+ border: 1px solid #090;
+ list-style-type: none;
+ margin: 0px;
+ background-color: #FFF;
+ text-align: right;
+}
+ ul.list li 
+ {
+  padding: 2px 5px;
+ }
+ .listitem 
+ {
+	color: #090;
+ }
+ .hoverlistitem 
+ {
+  background-color: window;
+  font-family :Tahoma; 
+ }
+.list2 
+{
+ border: 1px solid #009;
+ list-style-type: none;
+ margin: 0px;
+ background-color: #FFF;
+ text-align: right;
+}
+ ul.list2 li 
+ {
+  padding: 2px 5px;
+ }
+ .listitem2 
+ {
+  color: #00A;
+ }
+ .hoverlistitem2 
+ {
+  background-color: #F0F8FF;
+ }
+/*
+.completionListElement 
+{  
+    visibility : hidden; 
+    margin : 0px! important; 
+    background-color : inherit; 
+    color : white; 
+    border : solid 1px gray; 
+    cursor : pointer; 
+    text-align : left; 
+    list-style-type : none; 
+    font-family : Verdana; 
+    font-size: 11px; 
+    padding : 0; 
+} 
+.listItem 
+{ 
+    background-color: white; 
+    padding : 1px; 
+}      
+.highlightedListItem 
+{ 
+    background-color: #c3ebf9; 
+    padding : 1px; 
+}
+*/
+/*AutoComplete flyout */
+.autocomplete_completionListElement 
+{  
+    visibility : hidden;
+    margin : 0px!important;
+    background-color : #41627E;
+    color : windowtext;
+    border : buttonshadow;
+    border-width : 1px;
+    border-style : solid;
+    cursor : 'default';
+    overflow : auto;
+    height : 160px;
+    text-align : left; 
+    list-style-type : none;
+    background: #FFF;
+}
+/* AutoComplete highlighted item */
+.autocomplete_highlightedListItem
+{
+    background-color: #A0CFEC;
+    color: black;
+    padding: 1px;
+}
+/* AutoComplete item */
+.autocomplete_listItem 
+{
+    background-color : #659EC7;
+    color : windowtext;
+    padding : 1px;
+}
+.AutoComplete_ListItemHiliteText
+{
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,466 @@
+﻿body 
+{
+}
+
+  .res_600 .kr-tb1-1 table > tbody > tr
+        {
+            display: block;
+            width: 100%;
+        }
+        .res_600 .kr-tb1-1 table > tbody > tr > td
+        {
+            display: block;
+            float: left;
+        }
+        .res_600 .kr-tb1-1 table > tbody > tr > td:nth-child(even)
+        {
+            width: 31% !important;
+        }
+        .res_600 .kr-tb1-1 table > tbody > tr > td:nth-child(odd)
+        {
+            width: 19%;
+        }
+        
+        .res_750 .kr-tb1-1 table > tbody > tr
+        {
+            display: block;
+            width: 100%;
+        }
+        .res_750 .kr-tb1-1 table > tbody > tr > td
+        {
+            display: block;
+            float: left;
+        }
+        .res_750 .kr-tb1-1 table > tbody > tr > td:nth-child(even)
+        {
+            width: 32% !important;
+        }
+        .res_750 .kr-tb1-1 table > tbody > tr > td:nth-child(odd)
+        {
+            width: 18% !important;
+        }
+        
+        .res_800 .kr-tb1-1 table > tbody > tr
+        {
+            display: block;
+            width: 100%;
+        }
+        .res_800 .kr-tb1-1 table > tbody > tr > td
+        {
+            display: block;
+            float: left;
+        }
+        .res_800 .kr-tb1-1 table > tbody > tr > td:nth-child(even)
+        {
+            width: 35% !important;
+        }
+        .res_800 .kr-tb1-1 table > tbody > tr > td:nth-child(odd)
+        {
+            width: 15% !important;
+        }
+        
+        .res_950 .kr-tb1-1 table > tbody > tr
+        {
+            display: block;
+            width: 100%;
+        }
+        .res_950 .kr-tb1-1 table > tbody > tr > td
+        {
+            display: block;
+            float: left;
+        }
+        .res_950 .kr-tb1-1 table > tbody > tr > td:nth-child(even)
+        {
+            width: 37% !important;
+        }
+        .res_950 .kr-tb1-1 table > tbody > tr > td:nth-child(odd)
+        {
+            width: 13% !important;
+        }
+        
+        
+        .res_1000 .kr-tb1-1 table > tbody > tr > td:nth-child(1)
+        {
+            width: 8%;
+        }
+        .res_1000 .kr-tb1-1 table > tbody > tr > td:nth-child(3)
+        {
+            width: 9%;
+        }
+        .res_1000 .kr-tb1-1 table > tbody > tr > td:nth-child(5)
+        {
+            width: 11%;
+        }
+        .res_1000 .kr-tb1-1 table > tbody > tr > td:nth-child(7)
+        {
+            width: 9%;
+        }
+           .res_1000 .kr-tb1-1 table > tbody > tr > td:nth-child(even)
+        {
+            width: 20% !important;
+        }
+        .res_1000 .kr-tb1-1 table > tbody > tr > td:nth-child(odd)
+        {
+            width: 11% !important;
+        }
+            .res_1000 .kr-tb1-1 table > tbody > tr
+        {
+            display: block;
+            width: 100%;
+        }
+        .res_1000 .kr-tb1-1 table > tbody > tr > td
+        {
+            display: block;
+            float: left;
+        }
+.res_1000 .opd-address {
+    width: 99.2% !important;
+}
+.label_col{display:none;}
+
+#re_check_detail{display:none;float: left;
+    margin: 12px;}
+
+
+  @media screen and (min-width:700px) and (max-width:1024px)
+{.regi_pd-cntnt {
+    display: block !important;
+    width: 100%;
+}
+    .dv-legend{
+    display: flex;
+    margin-top: -5px;
+}
+#ctl00_versioncaption{display:none !important;}
+    .field-set{margin-top:5px}
+    .field-set legend.title {
+    background: #FFFFFF;
+    padding: 0;
+    border-radius: 5px;
+    margin-left: 0;
+    position: inherit;
+    top: -6x;
+    left: 0;
+    border: 1px solid #cacaca;
+    margin-right: 5px;
+    flex: 1;
+}
+.field-set legend.icons{position:inherit;top: 0;right: 0;}
+.icons ul{display:flex}
+.icons ul li {
+    margin: 0px;
+    list-style: none;
+    padding: 10px 5px;
+    float: left;
+    border-right: 1px solid #cacaca;
+    flex: 1;
+}
+.t-col-flex{display:flex;}
+.t-col-flex>div{}
+.t-col-flex>i{}
+    .t-col-lbl{display:block;font-size: 10px;}
+    .m-col,.t-col{display:none !important;}
+    .ptype{
+    padding: 0 5px 3px 5px !important;
+}
+    .ptype>table>tbody>tr>td{}
+   .dv-fieldset{} 
+   .dv-fieldset>.oppat-photo, .ippat-photo{
+    display: none;
+}
+.ipdetails {
+    margin-right: 0px;
+    padding: 0px;
+    border-right: 0px solid #cacaca;
+}
+
+.dv-fieldset>.opdetails{
+    margin: 0;
+}
+
+.dv-fieldset > div.opdetails > table > tbody > tr > td{}
+.dv-fieldset > div.opdetails > table,
+.dv-fieldset > div.opdetails > table > tbody,
+.dv-fieldset > div.opdetails > table > tbody > tr,
+.dv-fieldset > div.opdetails > table > tbody > tr > td{display:block !important}
+.dv-fieldset > div.opdetails > table > tbody > tr{display: flex !important;margin-bottom: 3px;}
+ div.ipdetails > table > tbody > tr{display: flex !important;margin-bottom: 3px;}
+.dv-fieldset > div.opdetails > table > tbody > tr > td{}
+
+.dv-fieldset > div.opdetails > table > tbody > tr > td{}
+
+.dv-fieldset>.opdetails .lbl-col,.dv-fieldset>.opdetails .lbl-name{
+    display: none !important;
+}
+
+.ipdetails .lbl-col,.ipdetails .lbl-name{
+    display: none !important;
+}
+.m-view{display:block;font-weight:normal;color:#333;font-size: 11px;}
+.pat-opbanner .viewtable tr td:nth-child(3) {
+   width: 20%; 
+}
+.pat-opbanner .viewtable tr td:nth-child(6) {
+    width: 40%;
+}
+
+.pat-opbanner .viewtable tr td:nth-child(9) {
+    width: 20%;
+}
+
+.pat-opbanner .viewtable tr td:nth-child(12) {
+    width: 20%;
+}
+
+
+.ipbanner .viewtable tr td:nth-child(3) {
+   width: 20%; 
+}
+.ipbanner .viewtable tr td:nth-child(6) {
+    width: 40%;
+}
+
+.ipbanner .viewtable tr td:nth-child(9) {
+    width: 20%;
+}
+
+.ipbanner .viewtable tr td:nth-child(12) {
+    width: 20%;
+}
+.ipdetails .viewtable tr .lbl-val{width:25% !important}
+.viewtable td.lbl-val > span{height:inherit}
+}
+@media screen and (min-width:980px) and (max-width:1279px)
+{
+    
+    
+  
+}
+
+@media screen and (min-width:1025px)
+{
+    .t-col-lbl,.m-view{display:none;}
+    .mobiletbl tr td .m-view{display:none;}
+    
+    }
+    
+    
+    
+    @media screen and (min-width:700px) and (max-width:1024px)
+{
+    .leftmenu {height: 20% !important;width: 100% !important;
+    top: 60px;
+  
+}.opd-address{width:99% !important;}
+.main-form-div2{width:100% !important;    overflow: auto;}
+.right-main-div{width: 100% !important;  margin-top: 160px !important;  margin-left: 0px !important;}
+
+    #ctl00_ContentPlaceHolder1_headerControl1_tdindicares{display:none !important;}
+ .res_1000 ._registration .ucAddress-body {min-height: 150px !important;}
+ .res_1000 ._registration .ucAddress-div {width: 55.2% !important;}
+.res_1000 ._registration .reg-contact-div {width: 43.2% !important;}
+.ucReferal-div{width:49.2% !important}
+.ucAddress-div{    width: 55.2% !important;}
+.res_1000 ._registration .reg-contact-body {
+    overflow: auto !important;}
+    .res_1000 ._opbilling .ucReferal-div {
+    width: 54.2% !important;
+}
+.res_1000 .CompanyInfo {
+    width: 44.2% !important;
+}
+.res_1000 ._opbilling .order-invest {
+    width: 99.2% !important;
+}
+#tdindicares{display:none !important;}
+.mlc_details{width: 38.2% !important;overflow: auto;}
+.incdnt_details{    width: 60.2% !important;}
+.clncl_details{width: 46.2% !important;}
+#divremarks{    width: 52.2% !important;}
+#tdindicares{display:none !important;}
+.ptnt_details{ width: 99.2% !important;}
+.reg-contact-div{width: 43.2% !important;}
+.res_1000 ._registration .reg-contact-body {
+    height: 150px !important;}
+    .tbl_srvs{width:99.2% !important;height: 300px !important;}
+    .patdtls{width:99.2% !important;}
+    .admdetails{width: 48.7% !important;}
+    .condetails{width: 49.2% !important;}
+    .beddetails{width: 35% !important;}
+    .other{width: 30.7% !important;}
+    .ReferalUser{ width: 31.7% !important;}
+    #divAddress{width: 49.2% !important;}
+    .label_name{display:none;}
+.label_col{display:block;}
+.res_1000 ._registration .reff-panelH {
+    height: 103px !important;
+}
+    /*screens*/
+    
+    
+    
+    /*table*/
+     .mformtbl,.mformtbl >  tbody,.mformtbl >  tbody >  tr,.mformtbl  > tbody  > tr >  td{display:block}
+     .mformtbl,.mformtbl tbody,.mformtbl tbody tr{width:100%;}
+      .mformtbl >  tbody{}
+      .mformtbl  > tbody  > tr{}
+      .mformtbl  > tbody >  tr >  td:nth-child(odd){    width: 10%;float: left;}
+        .mformtbl >  tbody >  tr >  td:nth-child(even){    width: 23%;float: left;}
+       .mformtbl >  tbody tr >  td[colsapn="2"]{}
+        .mformtbl  > tbody  > tr >  td[colsapn="4"]{}
+     /*table*/
+     
+     
+    /*banner*/
+    .mobiletbl,.mobiletbl > tbody,.mobiletbl > tbody > tr,.mobiletbl > tbody > tr > td{display:block}
+    .mobiletbl > tbody > tr{display:flex;}
+
+    .mobiletbl > tbody > tr > td{}
+    .t-col{}
+     .mobiletbl > tbody > tr > td.m-col-1{
+    width: 20% !important;
+}
+     .mobiletbl > tbody > tr > td.m-col-2{
+    width: 25% !important;
+}
+     .mobiletbl > tbody > tr > td.m-col-3{
+    width: 18% !important;
+}
+     .mobiletbl > tbody > tr > td.m-col-4{
+    width: 18% !important;
+}
+     .mobiletbl > tbody > tr > td.m-col-5{
+    width: 19% !important;
+}
+     .mobiletbl > tbody > tr > td.m-col-4-2{
+    width: 37% !important;
+}
+    .m-tb-2 input{width: 47% !important;}
+    
+    
+    .lookupmodal{width: initial;
+    position: fixed;
+    left: 1%;
+    margin-left: 0;
+    margin-top: 20px;
+    z-index: 999999;
+    outline: 0;
+    border-radius: 5px;
+    right: 1%;}
+.lk_table_find.lrow-14 > table > tbody > tr > td:nth-child(2){width:120px}
+.lk_table_find.lrow-14 > table > tbody > tr > td:nth-child(3){width:100px}
+
+.clientpopup{width: initial !important;
+    height: 450px;
+    margin-left: 0 !important;
+    margin-top: -225px;
+    left: 2% !important;
+    right: 2% !important;}
+
+
+    ._quick-div{
+    width: 40%;
+}
+._mdisc{overflow: hidden;}
+#payitem1{}
+#payitem1 .quick_left{
+    width: 100%;
+}
+#payitem1 .quick_right{
+    width: 100%;
+}
+#payitem2{}
+
+.quick_right table > tbody > tr > td:nth-child(1)
+{
+    width: 15% !important;
+}
+.quick_right table > tbody > tr > td:nth-child(2)
+{
+    width: 35% !important;
+}
+.quick_right table > tbody > tr > td:nth-child(3)
+{
+    width: 15% !important;
+}
+.quick_right table > tbody > tr > td:nth-child(4)
+{
+    width: 35% !important;
+}
+
+   .quick_right > .FormsCtrl > tbody > tr > td.m-col-1{
+    width: 15% !important;
+}
+     .quick_right > .FormsCtrl > tbody > tr > td.m-col-2{
+    width: 35% !important;
+}
+     .quick_right > .FormsCtrl > tbody > tr > td.m-col-3{
+    width: 15% !important;
+}
+     .quick_right > .FormsCtrl > tbody > tr > td.m-col-4{
+    width: 35% !important;
+}
+
+#divpaymentinfo{}
+.adv_pay{
+    width: 100% !important;
+}
+
+.adv_pay > table.FormsCtrl,
+.adv_pay > table.FormsCtrl > tbody,
+.adv_pay > table.FormsCtrl > tbody > tr,
+.adv_pay > table.FormsCtrl > tbody > tr > td{display: block;}
+.adv_pay > table.FormsCtrl > tbody > tr {display: flex;/* clear: both; */margin-bottom: 5px;flex-wrap: wrap;}
+.adv_pay > table.FormsCtrl > tbody > tr > td:nth-child(odd){}
+.adv_pay > table.FormsCtrl > tbody > tr > td:nth-child(even){}
+.adv_pay > table.FormsCtrl > tbody > tr > td{
+    /* float: left; */
+    width: 25% !important;
+}
+.adv_pay > table.FormsCtrl > tbody > tr > td.m-col-1{
+    width: 22%;
+}
+.adv_pay > table.FormsCtrl > tbody > tr > td.m-col-2{
+    width: 22%;
+}
+.adv_pay > table.FormsCtrl > tbody > tr > td.m-col-3{}
+.adv_pay > table.FormsCtrl > tbody > tr > td.m-col-4{}
+.adv_pay > table.FormsCtrl > tbody > tr > td.m-col-5{}
+.adv_pay > table.FormsCtrl > tbody > tr > td.m-col-5-2{
+    width: 47.6% !important;
+}
+.adv_pay > table.FormsCtrl > tbody > tr > td.m-col-6{}
+.reciept_info{
+    width: 100% !important;
+}
+    
+}
+
+
+  
+    @media screen and (min-width:400px) and (max-width:768px)
+{
+.CompanyInfo {width: 49.2% !important;overflow: auto;}
+.order-invest{    width: 99.2% !important;}
+._quick-div {width: 30% !important;}
+.res_750 .regi_pd-2 {width: 61.2% !important;}
+.ucReferal-div {width: 37.2% !important;}
+.res_750 ._registration .tabs .tabed-div {padding-left: 0 !important;}
+#ctl00_ContentPlaceHolder1_PageHeaderControl1_tdindicares{display:none !important;}
+#ctl00_ContentPlaceHolder1_UCHeaderControl_tdindicares{display:none !important;}
+.referal_info{width: 49.2% !important;}
+.referal_info{width: 49.2% !important;}
+.bill_grid{width: 62% !important;}
+.bill_details{width: 37.2% !important;}
+#re_check_detail{display:block}
+.re_check_list{display:none;background: #ffffff;
+    margin: 28px 10px 9px 104px;
+    z-index: 99999;
+    position: absolute;
+    padding: 1px 11px 9px 11px;
+    box-shadow: 1px 1px 3px 1px;}
+    }
+    
+    
+    
+   /*ChangeReferalDetails_Centralized.aspx*/

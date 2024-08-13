@@ -1,0 +1,114 @@
+﻿
+	@font-face {
+        font-family: "Open Sans";
+        src: url('../fonts/opensans/121185303-OpenSans-Regular.eot');
+        src: url('../fonts/opensans/121185303-OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans/121185303-OpenSans-Regular.svg#Open Sans') format('svg'),
+        url('../fonts/opensans/121185303-OpenSans-Regular.woff') format('woff'),
+        url('../fonts/opensans/121185303-OpenSans-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{background: #eee; color:#000;}
+.Disc_report{width: 793px; min-height:1120px; margin: 0 auto;background:#fff;
+/*background:url(../img/a4-2.png) #fff center top repeat-y;*/padding: 5px;  box-shadow: 0px 2px 4px 0px #333;}
+
+body{margin: 0px;padding: 0px;font-family: "Open Sans" ,Verdana,arial;font-size: 12px; direction: ltr;}
+
+
+p,h1,h2,h3{padding:0px; margin:0px;}
+.logo img						{height: 70px;}
+.companyInfo					{text-align: center; vertical-align:top}
+.companyInfo span				{display: block; }
+.companyInfo span.title			{font-size:20px;}
+
+.lbltitle						{text-align: center;padding: 2px;font-size: 18px;}
+
+td.Investblock > .InvTitle{padding:5px 5px 0px 5px; font-weight:bold; display:block; margin:0px;background:#f9f9f9;}
+td.Investblock > .InvNotes{padding:0px 5px 5px 5px;display:block; margin:0px;}
+
+td.Investblock > .investigationtbl{width:100%; border-collapse:collapse;}
+td.Investblock > .investigationtbl > tbody > tr > td{padding:3px 5px;}
+td.Investblock > .investigationtbl > tbody > tr.InvestHeader{background:#eee; font-weight:bold;}
+td.Investblock > .investigationtbl > tbody > tr > td.InvestDt{padding-top:10px;}
+td.Investblock > .investigationtbl > tbody > tr > td.InvestName{text-decoration:underline; font-weight:bold; padding:0px 5px;background:#f9f9f9;}
+
+.MedicTitle{padding:5px 5px 0px 5px; font-weight:bold; display:block; margin:0px;background:#f9f9f9; }
+.MedicNotes{padding:0px 5px 5px 5px;display:block; margin:0px;}
+
+.medicationtbl{width:100%; border-collapse:collapse;}
+.medicationtbl > tbody > tr > td{padding:3px 5px;}
+.medicationtbl > tbody > tr.MedicHeader{background:#eee; font-weight:bold;}
+.medicationtbl > tbody > tr > td.MedicDt{padding-top:10px;}
+.medicationtbl > tbody > tr > td.MedicName{text-decoration:underline; font-weight:bold; padding:0px 5px; background:#f9f9f9;}
+
+.medicationtbl > tbody > tr > td.medic1{width:30px;}
+.medicationtbl > tbody > tr > td.medic2{}
+.medicationtbl > tbody > tr > td.medic3{}
+.medicationtbl > tbody > tr > td.medic4{text-align:center; width:42px;}
+
+.consultTitle{padding:5px 5px 0px 5px; font-weight:bold; display:block; margin:0px;background:#f9f9f9;}
+.consultNotes,.consultList{padding:0px 5px 5px 5px;display:block; margin:0px;}
+.consultList > div{display:flex;}
+.consultList > div > div.doccell{float:left; width:31.5%; margin:5px;  padding:5px;font-weight:bold;}
+
+.cTitle{padding:5px 5px 0px 5px; font-weight:bold; display:block; margin:0px;background:#f9f9f9;}
+.cNotes{padding:0px 5px 5px 5px;display:block; margin:0px;}
+
+.icdTitle{padding:5px 5px 0px 5px; font-weight:bold; display:block; margin:0px; text-decoration:underline}
+.icdNotes{padding:0px 5px 5px 5px;display:block; margin:0px;}
+
+.icdtbl{width:100%; border-collapse:collapse;}
+.icdtbl > tbody > tr > td{padding:3px 5px;}
+.icdtbl > tbody > tr.icdHeader{background:#eee; font-weight:bold;}
+
+
+.icdtbl > tbody > tr > td.icd1{width:30px;}
+.icdtbl > tbody > tr > td.icd2{}
+.icdtbl > tbody > tr > td.icd3{}
+
+.pdetails td					{padding: 0 0 2px 5px; vertical-align:text-bottom;}
+.txtlbl,.col					{font-weight:bold;}
+.pdetails tr > td:nth-child(1)	{width:80px}
+.pdetails tr > td:nth-child(2)	{width:5px}
+.pdetails tr > td:nth-child(3)	{width:auto}
+.pdetails tr > td:nth-child(4)	{width:100px}
+.pdetails tr > td:nth-child(5)	{width:5px}
+.pdetails tr > td:nth-child(6)	{width:155px}
+.pdetails tr > td:nth-child(7)	{width:80px}
+.pdetails tr > td:nth-child(8)	{width:5px}
+.pdetails tr > td:nth-child(9)	{width:120px}
+
+.tdnote{ padding:5px 0 10px 0; }
+.signature{padding:15px 0 20px 0;}
+.signdocs{float:right; margin-left:15px;}
+.signdocs > span{display:block;}
+.mofficer{float:left; }
+.rgo{float:left; margin-left:15px; }
+.printDetails{background:#f9f9f9;}
+.printDetails > div{width:33.3%; float:left;}
+.printDetails > div:nth-child(2){ text-align:center;}
+.printDetails > div:nth-child(3){float:right; text-align:right;}
+
+.lbltitle{border-top: 1px solid #e1e1e1;}
+td.Investblock{ border-bottom:1px solid #e1e1e1;}
+td.Investblock > .investigationtbl > tbody > tr.InvestHeader{border-top:1px solid #e1e1e1;}
+td.Investblock > .investigationtbl > tbody > tr > td.InvestDt{border-top:1px solid #e1e1e1;}
+td.Medicblock{ border-bottom:1px solid #e1e1e1;}
+.medicationtbl{border-bottom:1px solid #e1e1e1;}
+.medicationtbl > tbody > tr.MedicHeader{border-top:1px solid #e1e1e1; }
+.medicationtbl > tbody > tr > td.MedicDt{border-top:1px solid #e1e1e1;}
+.consultcell{border-bottom:1px solid #e1e1e1;}
+.consultList > div > div.doccell{border:1px solid #e1e1e1;}
+.tdcol{border-bottom:1px solid #e1e1e1;}
+.icdtbl{border-bottom:1px solid #e1e1e1;}
+.icdtbl > tbody > tr.icdHeader{border-top:1px solid #e1e1e1;}
+.pdetails {border: 1px solid #e1e1e1;}
+
+@media (max-width: 479px)  
+{
+		.Disc_report{width: 100%;}
+} 

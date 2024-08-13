@@ -1,0 +1,80 @@
+﻿/* All in one Registrations.aspx*/
+
+/*
+#div_Registrations .grid{border-collapse: collapse;min-width: 1620px !important; width: 110% !important;}
+#div_Registrations .grid th[name="sno"], #div_Registrations .grid td[name="sno"]{width: 30px !important;text-align: left;}
+#div_Registrations .grid th[name="check"], #div_Registrations .grid td[name="check"]{width: 30px !important;text-align: left;}
+#div_Registrations .grid th[name="cols0"], #div_Registrations .grid td[name="cols0"]{width: 100px !important;text-align: left;}
+#div_Registrations .grid th[name="cols1"], #div_Registrations .grid td[name="cols1"]{width: 100px !important;text-align: left;}
+#div_Registrations .grid th[name="cols2"], #div_Registrations .grid td[name="cols2"]{width: 250px !important;text-align: left;}
+#div_Registrations .grid th[name="cols3"], #div_Registrations .grid td[name="cols3"]{width: 100px !important;text-align: left;}
+#div_Registrations .grid th[name="cols4"], #div_Registrations .grid td[name="cols4"]{width: 80px !important;text-align: right;}
+#div_Registrations .grid th[name="cols5"], #div_Registrations .grid td[name="cols5"]{width: 100px !important;text-align: left;}
+#div_Registrations .grid th[name="cols6"], #div_Registrations .grid td[name="cols6"]{width: 170px !important;text-align: left;}
+#div_Registrations .grid th[name="cols7"], #div_Registrations .grid td[name="cols7"]{width: 100px !important;text-align: left;}
+#div_Registrations .grid th[name="cols8"], #div_Registrations .grid td[name="cols8"]{width: 100px !important;text-align: left;}
+#div_Registrations .grid th[name="cols9"], #div_Registrations .grid td[name="cols9"]{width: 160px !important;text-align: left;}
+#div_Registrations .grid th[name="cols10"], #div_Registrations .grid td[name="cols10"]{width: 160px !important;text-align: left;}
+#div_Registrations .grid th[name="cols11"], #div_Registrations .grid td[name="cols11"]{width:140px !important;text-align: left;}
+
+
+
+#div_Registrations .grid .childtbl{min-width: 1000px !important;width: auto !important ;}
+#div_Registrations .grid .childtbl th:nth-child(1), #div_Registrations .grid .childtbl td:nth-child(1){width:40px;}
+#div_Registrations .grid .childtbl th, #div_Registrations .grid .childtbl td{white-space:nowrap;}
+#div_Registrations .grid .childtbl th:nth-child(8), #div_Registrations .grid .childtbl td:nth-child(8){text-align: right;}
+#div_Registrations .grid .childtbl .grid{min-width: 1000px !important;width: auto !important ;}
+#div_Registrations .grid .childtbl th .grid th:nth-child(7), #div_Registrations .grid .childtbl td .grid td:nth-child(7){text-align: right;}
+*/
+
+/* All in one New Registrations.aspx*/
+
+
+.doblbl{display: none;}
+
+.pay-save, #ctl00_ContentPlaceHolder1_TransactionUserControl1_imgBtnSave{display: none;}  
+      
+#tbl_divEmpRelation{width: 100% !important;}
+#tbl_divMobileValidate{width: 100% !important;}
+
+.gv_Ind_Services-Width{min-width: 820px !important;width: 100%;}
+.chk{width: 30px !important;text-align: left !important;}
+.ordId{width: 70px !important;text-align: left !important;}
+.orddt{width: 100px !important;text-align: left !important;}
+.patname{min-width: 180px !important;width: auto !important;text-align: left !important;}
+.ordtype{width: 120px !important;text-align: left !important;}
+.Docname{width: 200px !important;text-align: left !important;}
+.visDt{width: 120px !important;text-align: left !important;}
+.opdregi_photo{z-index:9999;}
+
+.opdregi_photo .photosign {
+  height: 66px;
+  background: #fff;
+}
+.opdregi_photo .photo  {
+  height: 33px;
+  width: 47px;
+}
+
+
+.opdregi_photo .photo .img {
+  height: 32px;
+  width: 45px; right:1px}
+.opdregi_photo .sign{margin-top: 0px;
+  height: 28px;
+  margin-left: 0;
+  float: left; border-left:0px;}
+.opdregi_photo .sign i {
+  padding: 1px 4px 1px 4px;
+  font-size: 11px;
+  color: #20A5E1;
+  cursor: pointer;
+  float: left;
+height:15px; line-height:12px;
+}
+.opdregi_photo .sign i:hover {
+ border-radius:3px;
+ background:#20A5E1;
+ color:#fff;
+ 
+}

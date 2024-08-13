@@ -1,0 +1,63 @@
+﻿var maingriddiv;var maingriddivW;
+function setdesign()
+    { 
+    
+         var height1=$(window).height()-100;$('.nav-menu-drop').css("min-height","500px"); 
+         $('.nav-menu-drop').css("max-height",height1);
+         $('.nav-menu-drop table td').css({height:$(".nav-menu-drop").height()+"px"});
+         $('.submodule-list,.document-list').css({height:$(".nav-menu-drop").height()-3+"px"});
+         var height2=$(window).height()-70; $('#contentbody').css("height",height2);     
+         $('.main-form-div').css({height:$("#contentbody").height()-40+"px",width:$("#contentbody").width()+"px"});
+         $('.mainscrol1').css({height:$(".main-form-div").height()+"px",width:$(".main-form-div").width()-2+"px"});
+         $('.main-grid-div').css({height:$("#contentbody").height()-58+"px"});
+         maingriddiv=parseInt($(".main-grid-div").height())-70;	$('.grid-panel-body').css("height",maingriddiv);
+         maingriddivW=parseInt($(".main-grid-div").width())-0;	$('.grid-panel-body').css("width",maingriddivW);
+
+         //$('.grid-panel-body').css({height:$(".main-grid-div").height()-70+"px",width:$(".main-grid-div").width()+"px"});
+         //$('.gridscrol1').css({height:$(".grid-panel-body").height()+"px",width:$(".grid-panel-body").width()+"px"});
+         //$('.grid tr:odd').css("background","#ababab");"
+         //alert($(".main-grid-div").width());
+    }
+ 
+$(document).ready(function()
+  {
+    setdesign(); 
+ }); 
+ 
+$(window).resize(function()
+{
+        setdesign(); 
+});
+
+
+
+
+
+       
+//$(function(){
+//    var overlay = $('<div id="mask-overlay"></div>');
+//    $('.close').click(function(){
+//    $('.modal-popup').hide();
+//    overlay.appendTo(document.body).remove();
+//    return false;
+//});
+
+//$('.x').click(function(){
+//    $('.modal-popup').hide();
+//    overlay.appendTo(document.body).remove();
+//    return false;
+//});
+
+//$('.click').click(function(){
+//    overlay.show();
+//    overlay.appendTo(document.body);
+//    $('.modal-popup').show();
+//    return false;
+//    });
+//});
+
+//$(document).keyup(function(e) {
+//  
+//  if (e.keyCode == 27) { $('.x').click(); }
+//});
+

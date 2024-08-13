@@ -1,0 +1,134 @@
+﻿body { margin:0px; padding:0px;  background:url('../images/bg_subar1.jpg') left top no-repeat #f2f6f9;  background-size:cover;
+       font-family:'Roboto Lt', Verdana; background-size:120% !important; box-sizing:border-box; height:100%;
+}
+.main_div{ margin:0px; padding:0px;}
+.sub_maincls{ margin:0 auto; width:100%; padding:0px;}
+.sub_logo{ margin:41px 20px 0 0; padding:0px; float:right; }
+.sub_logo img{ margin:0px; padding:0px; width:280px;} 
+.sub_logo ul {margin:0px; padding:0px;}
+
+.sub_logo ul li {display:block !important; margin:0; padding:0px; 
+                          background:url('../images/sub1_logoimg.png'); background-repeat:no-repeat;  z-index:999999;}
+.sub_logo ul li.sub_logoimg{background-position:-0px -120px;  margin:0 0 1px 0; height:94px; width:300px; float:right; }
+.sub_logo ul li.sub_logocaption{background-position:25px 0px;  margin:0px 0 1px 0; position:absolute; top:200px; 
+                                padding:0 0 0 0; height:130px; width:800px; z-index:0 !important; }
+
+
+                            
+.sub_loginbox .textbox{margin: 0px 10px 0px 30px; padding: 12px 0px 0px;}    
+
+
+           
+
+.right_box{ margin:10px 0 0 0; padding:0px;}
+
+
+
+.right_box .sub_loginbox{ margin:310px 0 0 0px; padding:0px; width:250px; background:#eff3f6; float:right; right:330px; position:fixed;  border-radius:10px;
+                            box-shadow:inset 1px 1px 20px 1px #ccc;
+                            background-repeat:no-repeat;
+                background: -moz-Radial-gradient(top, #f8f8f8 50%, #edf2f6 100%);
+                background: -webkit-gradient(Radial, left top, left bottom, color-stop(50%,#f8f8f8), color-stop(100%,#edf2f6));
+                background: -webkit-Radial-gradient(top, #f8f8f8 50%,#edf2f6 100%);
+                background: -o-Radial-gradient(top, #f8f8f8 50%,#edf2f6 100%);
+                background: -ms-Radial-gradient(top, #f8f8f8 50%,#edf2f6 100%);
+                background: Radial-gradient(to bottom, #f8f8f8 50%,#edf2f6 100%);
+                
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edf2f6',GradientType=0 )}
+
+.right_box .sub_loginbox .sub_logtitle{margin:0px; padding:0px; border-radius:10px 0 0 0; border-bottom:2px solid #e3e1e3;
+                                    }
+.right_box .sub_loginbox .sub_logtitle h1{ font-size:16px; color:#962986; font-weight:normal; padding:8px 5px 8px 5px; margin:0px; text-align:center; 
+                                    }
+.right_box .sub_loginbox .sub_logfield{ margin:0px; z-index:0; padding:0px; height:180px; width:250px; 
+                        }
+                         
+                         
+                         
+                         
+                         
+.right_box .sub_logfield input[type="text"]{ height:35px; margin:0px 0 0 0px; border:1px solid #ccc; padding:0px 0 0 5px; width:85%; box-shadow: 1px 1px 10px 1px #ccc;  }
+.right_box .sub_logfield input[type="Password"]{ height:35px; margin:0px 0 0 0px; border:1px solid #ccc; padding:0px 0 0 5px; width:85%; box-shadow: 1px 1px 10px 1px #ccc;  }
+.right_box .sub_logfield .checkbox{font-size:10px; color:#fff; margin:35px 0 0 29px; width:100px; float:left;}
+.right_box .sub_logfield .input[type="checkbox"]{ margin:0px; padding:0px; background:#03aca9; border:0px;}
+.right_box .sub_logfield .button{ padding:0px; margin:0px; text-align:center;  }
+.right_box .sub_logfield .button input[type="button"]{ border:0px; background:#03aca9; color:#fff;  
+                                            padding:5px 8px 5px 8px; margin:20px 25px 0 50px;}
+
+
+.right_box .bot_vision{ margin:35px 0 0 0; padding:0px; clear:both;  }
+.right_box .bot_vision .vision{  padding:5px 0 5px 0; margin:0px; border-radius:5px 5px 0 0;  height:161px; float:left;}
+.right_box .bot_vision .vision h2{ margin:0px; padding:0px 0 0 0;font-size:16px; font-weight:normal; color:White; text-align:center;}
+.right_box .bot_vision .vision_body{ margin:5px 0 0 0; padding:0px; background:#eff3f6;  width:280px; height:140px; float:left; box-shadow:1px 0px 5px 0px #797979;}
+.right_box .bot_vision .vision_body ul{ margin:0px 10px 10px 25px; padding:10px 0 0 0; width:auto;}
+.right_box .bot_vision .vision_body ul li{ margin:0px 0 10px 0; padding:0px; font-size:10px; color:#797979;
+                                }
+ 
+/*.right_box .bot_values{ margin:0px; padding:0px; position:absolute; top:265px; right:0px; }
+.right_box .bot_values .vision{  padding:5px 0 5px 0; margin:0px; border-radius:5px 5px 0 0; height:161px; float:left;}
+.right_box .bot_values .vision h2{ margin:0px; padding:0px 0 0 0;font-size:16px; font-weight:normal; color:White; text-align:center;}
+.right_box .bot_values .vision_body{ margin:5px 0 0 0; padding:0px; background:#eff3f6; height:140px; float:left;  width:280px; box-shadow:1px 0px 5px 0px #797979;}
+.right_box .bot_values .vision_body ul{ margin:0px 10px 10px 25px; padding:10px 0 0 0; width:auto;}
+.right_box .bot_values .vision_body ul li{ margin:0px 0 10px 0; padding:0px; font-size:10px; color:#797979;
+                                }
+ 
+ .right_box .bot_mission{ margin:0px; padding:0px; position:absolute; top:420px;right:0px;  }
+.right_box .bot_mission .vision{padding:5px 0 5px 0; margin:0px; border-radius:5px 5px 0 0;  height:161px; float:left;}
+.right_box .bot_mission .vision h2{ margin:0px; padding:0px 0 0 0;font-size:16px; font-weight:normal; color:White; text-align:center;}
+.right_box .bot_mission .vision_body{ margin:5px 0 0 0; padding:0px; background:#eff3f6; height:140px; float:left;  width:280px; box-shadow:1px 0px 5px 0px #797979;}
+.right_box .bot_mission .vision_body ul{ margin:0px 10px 10px 25px; padding:10px 0 0 0; width:auto;}
+.right_box .bot_mission .vision_body ul li{ margin:0px 0 10px 0; padding:0px; font-size:10px; color:#797979;
+                                }*/
+        
+ .paneheader{ box-shadow:1px 1px 5px 2px #797979; border:1px solid #bdbdb; }
+   .paneheader h1{ 
+                 background: #ededed; 
+              background: -moz-linear-gradient(top, #f6f6f6 50%, #ededed 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#f6f6f6), color-stop(100%,#ededed));
+              background: -webkit-linear-gradient(top, #f6f6f6 50%,#ededed 100%);
+              background: -o-linear-gradient(top, #f6f6f6 50%,#ededed 100%);
+              background: -ms-linear-gradient(top, #f6f6f6 50%,#ededed 100%);
+              background: linear-gradient(to bottom, #f6f6f6 50%,#ededed 100%);
+                    font-size:22px; color:#000000; font-family:'Segoe UI'; font-weight:normal; margin:0px; padding:5px; border-bottom:1px solid #ccc;}
+   .modalBackground{background:#797979; opacity:0.5; position:fixed; top:0px; left:0px; z-index:999999; }     
+ .forget{ margin:0px; padding:10px;   }
+
+  .forget h2{ font-size:12px; color:#797979; font-family:Roboto Lt !important; font-weight:normal;}
+  .forget table tr td input[type="text"]{ height:23px; border:1px solid #ccc;}
+  .forget table tr td .dropdown{ height:25px; border:1px solid #ccc;}
+  
+  .Dfooter{ clear:both; position:absolute; bottom:0px; right:0px; padding:2px; width:99.5%; }
+  
+  
+  
+  
+  
+  
+  
+    
+
+.res_700 .sub_logo{ margin:15px 20px 0 0;}
+.res_700 .sub_logo img{width:200px;} 
+
+.res_750 .sub_logo{ margin:15px 20px 0 0;}
+.res_750 .sub_logo img{width:220px;} 
+
+.res_800 .sub_logo{ margin:15px 20px 0 0;}
+.res_800 .sub_logo img{width:240px;} 
+
+.res_850 .sub_logo{ margin:15px 20px 0 0;}
+.res_850 .sub_logo img{width:260px;} 
+
+.res_900 .sub_logo{ margin:15px 20px 0 0;}
+.res_900 .sub_logo img{width:280px;} 
+
+.res_950 .sub_logo{ margin:15px 20px 0 0;}
+
+
+.res_1000 .sub_logo{ margin:15px 20px 0 0;}
+
+
+.res_1050 .sub_logo{ margin:15px 20px 0 0;}
+
+
+.res_1100 .sub_logo{ margin:15px 20px 0 0;}

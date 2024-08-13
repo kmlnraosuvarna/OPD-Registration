@@ -1,0 +1,313 @@
+@topnavbgcolorstart: #f6e992;
+@topnavbgcolorend: #f6e992;
+@topnavbordercolor: #e2d26b;
+@inputfocusbordercolor: #f6e992;
+@inputfocusbordercolor: #e2d36d;
+@lookupbuttonbgcolor: #b3b3b3;
+@flagbgcolor: #b3b3b3;
+@boxshadowcolor: 1px 0px 7px #000000;
+@lookupheaderbgcolorstart: #ffffff;
+@lookupheaderbgcolorend: #ebebeb;
+@themecolor: #f6e992;
+@themecolorStart: #e0cb41;
+@themecolorend: #f6e992;
+@border: #CACACA;
+@boxshadowinsetcolor: #a5910c;
+@bodeybg: #ffffff; 
+@paneltitlecolor: #a5910c;
+@panelheadingcolor: #505050;
+
+
+
+div#topnav
+{
+	border-top:2px solid @topnavbordercolor;
+	background: @topnavbgcolorend;
+	background: -moz-linear-gradient(top, @topnavbgcolorstart 0%, @topnavbgcolorend 100%);
+	background: -webkit-linear-gradient(top, @topnavbgcolorstart 0%,@topnavbgcolorend 100%);
+	background: -o-linear-gradient(top, @topnavbgcolorstart 0%,@topnavbgcolorend 100%);
+	background: -ms-linear-gradient(top, @topnavbgcolorstart 0%,@topnavbgcolorend 100%);
+	background: linear-gradient(to bottom, @topnavbgcolorstart 0%,@topnavbgcolorend 100%); 
+}
+
+div#logo,div#Clogo {background-color: #ffffff;}
+
+div#logo,div#Clogo {margin: 5px 10px 5px 5px;padding: 3px 13px 10px 13px ; border-radius: 3px;position:relative;}
+
+div#logo b,div#Clogo b				{position:absolute; left:0px; bottom:0px; font-size:6pt; letter-spacing:0.3pt; font-weight:normal;width:100%;  text-align:center;}
+
+div#logo img,div#Clogo img			{height: 25px;}
+div#snav						{margin: 11px 5px 8px 10px; height: 29px;}
+div#snav a						{color: #fff;padding: 5px 9px;margin:0 5px 0 0;}  
+div#snav a:hover				{color: #fff;background: #f6e992;border-radius: 3px 3px 5px 5px; -moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;
+								 -webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;}  
+div#snav a.active				{color:#ffffff;background: @themecolor; border-radius: 3px 3px 5px 5px; -moz-box-shadow:inset 0 0 2px 1px @boxshadowinsetcolor;
+                                 -webkit-box-shadow:inset 0 0 2px 1px  @boxshadowinsetcolor;box-shadow:inset 0 0 2px 1px  @boxshadowinsetcolor;}
+ div#snav span:hover {color: #fff;background: #f6e992;border-radius: 3px 3px 5px 5px;-moz-box-shadow: inset 0 2px 2px 1px #a5910c;-webkit-box-shadow: inset 0 2px 2px 1px #a5910c;
+                                    box-shadow: inset 0 2px 2px 1px #a5910c;}
+
+
+div#mnav				{ width: 38px;padding: 3px 4px 3px 4px;background-color: @themecolor ;background-position:-2px -138px;height: 27px;border-radius: 3px 3px 3px 3px; margin-top:11px;
+                                        -moz-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;
+                                         box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;}
+div#mnav>i              {font-size: 20px;color: #fff;}
+                
+div#mnav:hover			{ -moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;
+                                         box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor; }
+                
+div#mnav .nav-menu-drop			{ width:723px;}
+div#mnav:hover .nav-menu-drop	{ left: -61px; top: 21px;padding: 16px 0 0 0px;}
+.nav-menu-drop b				{ top:2px; left:72px; position:absolute; border: 7px solid transparent;	border-bottom-color: #ffffff; width:0px; height:0px; z-index:auto }
+
+#gsearch input[type="text"] { border: 1px solid #A8A8A8!important;border-radius:4px 0 0 4px; box-shadow: inset 0px 0px 4px 1px #bababa;width:190px; float:left; padding:4px ; margin:0px;}
+#gsearch input[type="text"]:focus {border: 1px solid #A8A8A8!important;border-radius:4px 0 0 4px; outline:none;}							
+#gsearch select					{ border: 1px solid @border; width:100px;float:left; padding:3px;  margin:0px 2px 0px 0px;}
+#gsearch button					{ color: #FFFFFF; border: 0px; background-color: @themecolor; border-radius:3px;  height:27px; width:28px; margin:0 2px 0 0;}                   
+#gsearch button.search			{ background-position:-5px -33px;border-radius: 0px 3px 3px 0px;-moz-box-shadow:inset -1px 0px 2px 1px  @boxshadowinsetcolor;
+								 -webkit-box-shadow:inset -1px 0px 2px 1px  @boxshadowinsetcolor; box-shadow:inset -1px 0px 2px 1px  @boxshadowinsetcolor;}
+#gsearch button.search:hover	{ -moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;	-webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;	
+								  box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;}
+#gsearch button.ntab			{ background-position:-32px -110px;border-radius: 3px;	-moz-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;	
+								 -webkit-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;	box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;}
+#gsearch button.ntab:hover		{ -moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;	-webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;	
+								  box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;}
+#gsearch input[type="button"]	{ color: #FFFFFF; border: 0px !important;background: url(../../img/Blue-sprite2.png) @themecolor no-repeat;background-position: -80px -34px; border-radius:3px;
+								  padding: 4px 10px;height: 27px;width: 26px;-moz-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;
+								  box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;}	
+#gsearch input[type="button"]:hover{-moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;
+                                    box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;}
+div#location,div#Tlocation{color: #000000;}
+div#usettings{padding: 0px 8px 0px 8px;margin: 11px 4px 6px 7px;height: 27px;width: 38px;border-radius: 3px 3px 3px 3px; background-color: @themecolor ;background-position:-34px -168px;-moz-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;	}
+div#usettings:hover{border-radius: 3px 3px 5px 5px;  -moz-box-shadow:inset 0px 2px 2px 1px @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 2px 2px 1px @boxshadowinsetcolor;box-shadow:inset 0px 2px 2px 1px @boxshadowinsetcolor;}
+div#usettingsdiv{top: 27px; padding-top:9px}
+div#usettingsdiv i{top:-5px; right:63px; position:absolute;border: 7px solid transparent;border-bottom-color: #ffffff;width:0px; height:0px; z-index:auto	}
+div#usettingslist{border-radius:0 0 5px 5px;border-width: 0px 1px 3px 1px;border-bottom: 3px solid @themecolor;border-color:@themecolor;background: #fcfcfc;-moz-box-shadow: 0px 3px 6px 2px #999;-webkit-box-shadow: 0px 3px 6px 2px #999;box-shadow: 0px 3px 6px 2px #999;}
+div#usettingslist ul li				{border-bottom:1px dotted @border;}
+div#usettingslist ul li a			{color: @panelheadingcolor;}  
+div#usettingslist ul li:hover a		{background: @themecolor;cursor:pointer;color:#ffffff} 
+.usettingslist {
+    border-bottom: 3px solid #a5910c;
+    border-color: #a5910c;
+}
+div.qmenu, div#usettings, #gsearch button, .lookupcontrolbutton input, .tb_Btn.calendar, .ui-datepicker-trigger, .searchbtn, .document-list li a[name=newtab], .pagebut input[type=image], .quickadd, .Lmenu:hover a, .menus a, .Lmenu a, .grid td a.fileattach, .jtblgrid td a.fileattach {
+    background-image: url(./img/lightyellow.png)!important;
+    background-repeat: no-repeat;
+} 
+div#snav span .usettingslist ul li:hover {box-shadow: none;border-radius: 0;color: #fff;background: #594857;} 
+div#mnav:hover .mask{top: 49px;left: 0px;background-color: black;filter: alpha(opacity=20);opacity: 0.2; }
+
+.support{float:right; position:relative;    padding: 6px 4px;margin: 11px 4px 6px 7px;height: 27px;width: 32px;border-radius: 3px;background-color: #f6e992;   
+    -moz-box-shadow: inset 0 0 2px 1px #a5910c;-webkit-box-shadow: inset 0 0 2px 1px #a5910c;box-shadow: inset 0 0 2px 1px #a5910c;}     
+.support>i{font-size: 17px;color: #fff;}
+.supportlist{display:none;}
+.support:hover{cursor:pointer;}
+.support:hover .supportlist{display:block;position:absolute;right:0px;top:36px;    width: 300px;background: #fff;z-index: 999999;padding: 10px;
+                       border-radius: 0 0 5px 5px;border-width: 0 1px 3px;border-bottom: 3px solid #a5910c;border-color: #01a2d8;
+                       background: #fcfcfc;-moz-box-shadow: 0 3px 6px 2px #999;-webkit-box-shadow: 0 3px 6px 2px #999;box-shadow: 0 3px 6px 2px #999;}
+.support:hover .supportlist:after { content: ""; height:0; width:0px; border:5px solid transparent;    border-bottom: 5px solid #ffffff;position: absolute;top: -10px;right: 8px;}
+.supportlist h2{margin: 0;text-align: center;border-bottom: 1px solid #cacaca;padding-bottom: 5px;}
+.supportblock{border-bottom: 1px solid #cacaca;padding: 5px;font-size: 14px;}
+.supportblock h3{margin: 0;padding: 6px;font-weight: normal;color: #a5910c;}
+.supportblock label{font-size: 14px;}
+                                 
+
+.lk_header						{ margin: 3px 5px 0px 5px;}
+.lk_header td input[type="text"]{ border: 1px solid @border;} 
+.lk_header input[type="button"]	{ border: 0px solid @themecolor; color:#fff;background-color: @themecolor;	background-position:-32px -110px;border-radius: 3px;
+								 -moz-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;
+								 box-shadow:inset 0px 0px 2px 1px @boxshadowinsetcolor;}
+.lk_header input[type="button"]:hover { -moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;
+										box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;}
+.lk_header table tbody tr td input.rSearch{margin-right:5px;margin-top:5px;}
+.lk_body						{ margin-top:0px;}
+.btn-search-group input			{ padding:1px 4px;border: 1px solid #bababa;background: #cccccc;background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+								  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+								  background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%);background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+								  background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%);background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);}
+.btn-search-group input:hover	{ background: #ffffff;background: -moz-linear-gradient(top, #ebebeb 0%, #ffffff 100%);
+								  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#ffffff));
+								  background: -webkit-linear-gradient(top, #ebebeb 0%,#ffffff 100%);background: -o-linear-gradient(top, #ebebeb 0%,#ffffff 100%);
+                                  background: -ms-linear-gradient(top, #ebebeb 0%,#ffffff 100%);}  
+                                  
+.lookuptextbox					{ border: 1px solid red; }
+.lookuptextbox:focus			{ border: 1px solid @inputfocusbordercolor;
+								  box-shadow: 0 0 2px @inputfocusbordercolor;}
+.lookupcontrolbutton input		{ height:19px; width:25px;border-radius: 2px; border: 0px solid @lookupbuttonbgcolor; background-color: @lookupbuttonbgcolor; color: #FFFFFF;
+                          		  background-position:-7px -37px;}
+.lookupcontrolbutton input:hover{ background-color: @themecolor;-moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;
+								  box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;}                          		 
+                           
+.lookupmodal					{ background: @bodeybg; -moz-box-shadow: @boxshadowcolor; -webkit-box-shadow: @boxshadowcolor; 
+            					  box-shadow: @boxshadowcolor; }  
+               
+.lookup-header					{ height: 36px; border-radius: 5px 5px 0 0;background: @lookupheaderbgcolorend;border-bottom: 1px solid #d1d1d1;
+              					  background: -moz-linear-gradient(top, @lookupheaderbgcolorstart 0%, @lookupheaderbgcolorend 100%);
+              					  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@lookupheaderbgcolorstart), color-stop(100%,@lookupheaderbgcolorend));
+              					  background: -webkit-linear-gradient(top, @lookupheaderbgcolorstart 0%,@lookupheaderbgcolorend 100%);
+              					  background: -o-linear-gradient(top, @lookupheaderbgcolorstart 0%,@lookupheaderbgcolorend 100%);
+              					  background: -ms-linear-gradient(top, @lookupheaderbgcolorstart 0%,@lookupheaderbgcolorend 100%);
+              					  background: linear-gradient(to bottom, @lookupheaderbgcolorstart 0%,@lookupheaderbgcolorend 100%);}
+.lookup-header h1				{ padding:0px; margin: 7px 8px 2px 5px;color: @panelheadingcolor;} 
+.lookup-header input			{ float: right;min-width: 25px;margin: 6px 8px 3px 3px;}
+.lookup-body					{ border-top: 1px solid #ffffff;background: #ffffff;background: -moz-linear-gradient(top, #efefef 0%, #ffffff 100%);
+								  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#ffffff));
+								  background : -webkit-linear-gradient(top, #efefef 5%,#ffffff 100%);
+								  background: -o-linear-gradient(top, #efefef 5%,#ffffff 100%);
+								  background: -ms-linear-gradient(top, #efefef 5%,#ffffff 100%);
+                                  background: linear-gradient(to bottom, #efefef 0%,#ffffff 100%);} 
+
+.lookupico:hover {background: #f6e992;cursor: pointer;}
+.lookupico {border-radius: 2px;border: 0 solid #b3b3b3;background-color: #b3b3b3;color: #FFF;float: left;font-size: 15px;padding: 2px 0px;margin-left: 2px;}                              
+ 
+.icons ul li:hover {background: #f6e992;cursor: pointer;}
+.icons ul li {margin: 0px;list-style: none;padding: 3px 5px;float: left;border-right: 1px solid #cacaca;}
+
+i.updown:hover,i.updown.select{background:#f6e992; cursor:pointer; color:#fff;}
+.tb_Btn:hover,.ui-datepicker-trigger:hover{ background-color: @themecolor !important;-moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor !important;
+        -webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor !important;
+        box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor !important;}
+
+ a.formlnk,a.lnkbtn,.button	{ text-transform: none; margin: 0px;padding: 2px 4px;cursor: pointer;display: inline-block;text-align: center; vertical-align: middle;
+            white-space: nowrap; border-radius: 0px; text-decoration:none;color: #FFFFFF; border: 0px !important; background: @themecolor; border-radius:3px;
+            background-position:-5px -33px;border-radius: 3px 3px 3px 3px;-moz-box-shadow:inset -1px 0px 2px 1px  @boxshadowinsetcolor;
+            -webkit-box-shadow:inset -1px 0px 2px 1px  @boxshadowinsetcolor;box-shadow:inset -1px 0px 2px 1px  @boxshadowinsetcolor;}
+a:hover.alnk	{border-radius: 3px 3px 4px 4px; -moz-box-shadow:inset 0 0 2px 1px @boxshadowinsetcolor;-webkit-box-shadow:inset 0 0 2px 1px  @boxshadowinsetcolor;
+                box-shadow:inset 0 0 2px 1px  @boxshadowinsetcolor;}
+a.formlnk:hover,a.lnkbtn:hover,.button:over{-moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;
+                    box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;}
+
+input[type="submit"]:hover{-moz-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;-webkit-box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;
+                box-shadow:inset 0px 2px 2px 1px  @boxshadowinsetcolor;}
+
+.ippat-photo {float: right;width: 80px;background: #f6e992;box-shadow: inset -1px 0 2px 1px #a5910c;height: 85px;padding: 22px 10px 10px 10px;border-radius: 0 5px 5px 0;}
+
+.Micon .docs,.nMicon .docs{position:absolute; display:none; left:0%; margin-left:-55px; top:60px; height:250px; width:190px;}
+.Micon:hover .docs{position:absolute; display:block; z-index:33333;}
+.ie7 .Micon,.ie7 .nMicon{ width:40px; height:40px;padding:12px 12px 12px 12px;}
+.ie7 .Micon:hover,.ie7 .nMicon:hover,.ie8 .Micon:hover,.ie8 .nMicon:hover{border:1px solid #648cb4;background: #e3e3e2;}
+ul#modulelist li .Micon img,ul#modulelist li .nMicon img{height:54px;}
+.large ul#modulelist li{margin: 1.4%;width: 9.6%;}
+.medium ul#modulelist ul{margin:0% 1.2%;}
+.medium ul#modulelist li{margin: 1.4% 2% 1.4% 2%;width: 10.28%;}
+.Smedium ul#modulelist ul{margin:0% 1.2%;}
+.Smedium ul#modulelist li{margin:1.4% 2.6% 1.4% 2.6%;width: 11.4%;}
+.small ul#modulelist li{margin: 1% 2.8% 1% 2.8%;width: 13.8%;}
+.vsmall ul#modulelist li{margin: 1.4%;width: 9.6%;}
+.Micon, .nMicon {border: 1px solid #dedbdb;width: 80px;height: 80px;padding: 12px 12px 12px 12px;margin: 0 auto;text-overflow: ellipsis;text-align: center;vertical-align: middle;border-radius: 100px;
+    background: #e3e3e2;background: -moz-linear-gradient(top, #DDF3FF 0%, #FDFEFF 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffad8), color-stop(100%, #FDFEFF));
+    background: -webkit-linear-gradient(top, #fffada 0%, #FDFEFF 100%);background: -o-linear-gradient(top, #DDF3FF 0%, #FDFEFF 100%);background: -ms-linear-gradient(top, #DDF3FF 0%, #FDFEFF 100%);
+    background: linear-gradient(to bottom, #fffbdf 0%, #FDFEFF 100%);position: relative;cursor: pointer;}
+.Micon:hover, .nMicon:hover {border: 0px solid #bae6bb;width: 80px;height: 80px;padding: 13px 13px 13px 13px;background: #ebebeb;background: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fcfcfc));background: -webkit-linear-gradient(top, #ffffff 0%,#fcfcfc 100%);background: -o-linear-gradient(top, #ffffff 0%,#fcfcfc 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#fcfcfc 100%);background: linear-gradient(to bottom, #ffffff 0%,#fcfcfc 100%);-moz-box-shadow: inset 0px 2px 12px 0px #28a5e8;-webkit-box-shadow: inset 0px 2px 12px 0px #f6e992;
+    box-shadow: inset 0px 2px 12px 0px #f6e992;
+} 
+
+div.listpop {
+
+    background-color: #f6e992;
+    -moz-box-shadow: inset 0 0 2px 1px #a5910c;
+    -webkit-box-shadow: inset 0 0 2px 1px #a5910c;
+    box-shadow: inset 0 0 2px 1px #a5910c;
+  
+}
+#qsoptions ul li.highlight {
+    background: #f6e992;
+    color: #fff;
+    box-shadow: inset 0 3px 5px 0 gray;
+}
+#qsoptions ul li:hover {
+    background: #f6e992;
+    cursor: pointer;
+    color: #fff;
+}
+#qsoptions {
+    border-bottom: 3px solid #f6e992;
+}
+.root:hover {
+    border-left: 3px solid #f6e992;
+}
+.train {
+    color: white;
+    text-shadow: 0px 1px 0 #fff;
+}
+.module-icon {
+
+    background: url(./img/lightyellow1.png) no-repeat;
+}
+
+.Module-152 {
+    background-position: -378px -162px;
+}
+.Asset, .Module-314 {
+    background-position: -54px 0px;
+}
+.bloodbank, .Module-319 {
+    background-position: -107px 0px;
+}
+.company, .Module-102 {
+    background-position: -162px 0px;
+}
+.cssd, .Module-291 {
+    background-position: -216px 0px;
+}
+.Module-334, .Module-333 {
+    background-position: -378px 0px;
+}
+.LabRadiology, .Module-11, .Module-263, .Module-261 {
+    background-position: -54px -108px;
+}
+.diet, .Module-325 {
+    background-position: -486px 0px;
+}
+.er, .Module-355, .Module-345 {
+    background-position: -107px -54px;
+}
+.feedback, .Module-352, .Module-339 {
+    background-position: -161px -54px;
+}
+.FrontOffice, .Module-16 {
+    background-position: -270px -54px;
+}
+.healthcard, .Module-232, .Module-212 {
+    background-position: -324px -54px;
+}
+.loginfo, .Module-69 {
+    background-position: -270px -108px;
+}
+.mastersicon, .Module-5 {
+    background-position: -324px -108px;
+}
+.mrd, .Module-346, .Module-342 {
+    background-position: -488px -108px;
+}
+.nursestation, .Module-146 {
+    background-position: -109px -163px;
+}
+.otmodule, .Module-322 {
+    background-position: -163px -163px;
+}
+.patientDashboard, .Module-267 {
+    background-position: -270px -1px;
+}
+.adminreports, .Module-30, .Module-152 {
+    background-position: -378px -162px;
+}
+.ris, .Module-377, .Module-381 {
+    background-position: -323px -165px;
+}
+.security, .Module-15 {
+    background-position: -432px -165px;
+}
+.services, .Module-13 {
+    background-position: -489px -165px;
+}
+.stores, .Module-157 {
+    background-position: -55px -214px;
+}
+.tally, .Module-413 {
+    background-position: -330px -221px;
+}
+.Transport, .Module-287 {
+    background-position: -270px -217px;
+}

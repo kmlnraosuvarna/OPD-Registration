@@ -1,0 +1,27 @@
+D:\manju\SHIMS\Dll's\EzHms.BusinessObject.dll
+D:\manju\SHIMS\Dll's\EzHms.BusinessObject.pdb
+D:\WorkFiles\SHIMS\Dll's\EzHms.BusinessObject.dll
+D:\WorkFiles\SHIMS\Dll's\EzHms.BusinessObject.pdb
+D:\WorkFiles\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.dll
+D:\WorkFiles\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.pdb
+D:\WorkFiles\SHIMS\APP\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+D:\Projects\SHIMS\Dll's\EzHms.BusinessObject.dll
+D:\Projects\SHIMS\Dll's\EzHms.BusinessObject.pdb
+D:\Projects\SHIMS\APP\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+D:\Projects\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.dll
+D:\Projects\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.pdb
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\Dll's\EzHms.BusinessObject.dll
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\Dll's\EzHms.BusinessObject.pdb
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.dll
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.pdb
+E:\SHIMS\Dll's\EzHms.BusinessObject.dll
+E:\SHIMS\Dll's\EzHms.BusinessObject.pdb
+E:\SHIMS\APP\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+E:\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.dll
+E:\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.pdb
+C:\Users\naresh p\Desktop\OPD\SHIMS\Dll's\EzHms.BusinessObject.dll
+C:\Users\naresh p\Desktop\OPD\SHIMS\Dll's\EzHms.BusinessObject.pdb
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.dll
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\BusinessObject\obj\Debug\EzHms.BusinessObject.pdb

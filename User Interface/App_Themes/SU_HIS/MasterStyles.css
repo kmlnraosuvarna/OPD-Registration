@@ -1,0 +1,243 @@
+﻿	
+body,td,th,ul,ol,li,
+h1,h2,h3,h4,h5,h6,p	{ font-family: Segoe UI, Helvetica, Verdana, sans-serif; font-size: 11px; color: #000000;}
+
+
+a					{ font-family:  Segoe UI, Helvetica,Verdana, sans-serif;font-size: 11px; }
+a:link				{ text-decoration:none;}
+a:hover				{ text-decoration:none; }
+h1,h2,h3,h4,h5,h6	{ font-family: Segoe UI; }
+h1					{  }
+h2					{  }
+h3					{  }
+p.clr, .clr			{ clear:both; padding:0; margin:0; background:none; }
+
+
+.TopMenubg			{ background: url(   'Imgs/topmenubg12.png' ) #1299eb; background-repeat: repeat-x; 
+          			  background-position: bottom; width: 100%; height: 25px; border-bottom:1px solid #015b92; }
+ul.navlist					{ margin: 0; padding: 0; list-style-type: none; white-space: nowrap; height: 26px; }
+
+ul.navlist li				{ float: left;  margin: 0; padding: 5px 0 5px 0;  }
+
+.navlist a, .navlist a:link { margin: 0; padding: 5px 9px 5px 9px;font-size: 12px; color: #ffffff; border-left: 0px solid #ffffff; border-right: 1px solid #f9f9f9;  text-decoration: none; }
+
+ul.navlist li.navlistS		{ color: #ffffff; background: url('Imgs/topmenubgH1.jpg') #e5f594 repeat-x ; }
+ul.navlist li.navlistS a		{ color: #333333;  }
+.navlist a:hover			{ color: #333333; background: url('Imgs/topmenubgH1.jpg') #e5f594 repeat-x ; }
+
+
+.TopBlock{padding: 0px 0px 0px 5px;}
+.TopBlock1{padding: 2px 30px 0px 5px}
+.LogBlock{padding: 0px 0px 0px 0px; width:125px;}
+.LogBlock1{padding: 0px 0px 0px 0px; width:125px; vertical-align:top; }
+.profileblock{padding: 0px 0px 0px 0px;}
+.history{border-left: 0px solid #576a85; padding-left:5px;}
+.center{text-align: center;}
+
+/* Left menu panel styles start */
+ 
+.lftmenupad							 { background: url(  "Imgs/FoleftBg.png" ) repeat; float: left; width: 100%;  height: 100%; margin: 0 0 0 0px; overflow: hidden}
+.lftrndt_head_top				  	 { background: url(  "Imgs/headtopbg.png" ) #e5f594 right top; border-right: 1px solid #394962; text-align:right; height:16px; padding: 3px 0px 5px 0px;}  
+.lftrndt_Rnd_top					 { display: block;    background: none;display:none;    font-size: 0px; }
+.lftrndt_head_top1				  	 { background: url(  "Imgs/headtopbg.png" ) right top; border-right: 1px solid #394962;  text-align:right; height:19px; padding: 0px 0px 5px 0px;}  
+
+.lftrndt_Rnd_b1, .lftrndt_Rnd_b2,
+.lftrndt_Rnd_b3, .lftrndt_Rnd_b4	 { display:none;    overflow: hidden; }
+
+.lftrndt_Rnd_b1,
+.lftrndt_Rnd_b2, .lftrndt_Rnd_b3	 { height: 0px;display:none; }
+
+.lftrndt_Rnd_b2, 
+.lftrndt_Rnd_b3,.lftrndt_Rnd_b4		 { background: #FFFFFF;    border-left: 0px solid #e0dfdf;    border-right: 0px solid #e0dfdf;}
+.lftrndt_Rnd_b1						 { margin: 0 0px; display:none;   background: #FFFFFF; }
+.lftrndt_Rnd_b2						 { margin: 0 0px; display:none;   border-width: 0 0px; }
+.lftrndt_Rnd_b3						 { margin: 0 0px; display:none; }
+.lftrndt_Rnd_b4						 { height: 0px; display:none;   margin: 0 0px;display:none; }
+
+.lftrnd_Rnd_bot						 { display: block;background: none;font-size: 0px;}
+.lftrnd_Rnd_b1, .lftrnd_Rnd_b2,
+.lftrnd_Rnd_b3, .lftrnd_Rnd_b4		 { display: block; overflow: hidden;}
+.lftrnd_Rnd_b1, 
+.lftrnd_Rnd_b2, .lftrnd_Rnd_b3		 { height: 0px; }
+.lftrnd_Rnd_b2, 
+.lftrnd_Rnd_b3, .lftrnd_Rnd_b4		 { background: #FFFFFF; border-left: 0px solid #e0dfdf; border-right: 0px solid #e0dfdf; }
+.lftrnd_Rnd_b1						 { margin: 0 0px;  background: #FFFFFF; }
+.lftrnd_Rnd_b2						 { margin: 0 0px;  border-width: 0 0px; }
+.lftrnd_Rnd_b3						 { margin: 0 0px; }
+.lftrnd_Rnd_b4						 { height: 0px; margin: 0 0px; }
+
+.lftrnd_Rnd_content					 { display: block;  padding: 0px; padding-top:0px;border-right: 1px solid #dfdfdf;
+                   					   width: 99.5%; height: 96.5%; margin-top:0px; overflow: auto;  }
+                   					   
+.lftrnd_Rnd_content1				 { display: block;  padding: 0px; padding-top:0px;border-right: 1px solid #dfdfdf;
+                   					   width: 99%; height: 94.8%; margin-top:1px; overflow: auto; direction:rtl;  }
+
+.lftrnd_Rnd_content2				 { display: block; border: 0 solid #7399b1; font-size:12px; border-width: 0 0px 0 0px; padding: 0px; background-color: #ffffff;
+                    				   width: 100%; padding: 0px; height: 93%; overflow: auto; }
+.Quick_Rnd_content					 { display: block;  padding: 0px; padding-top:0px;border-right: 1px solid #dfdfdf;
+                   					   width: 99%; height: 94.8%; margin-top:1px; overflow: hidden; }
+ 
+.LftHeadTopPad						 { padding-top: 10px; }
+.MenuLftHead						 { background-image: url(Images/DashTabbg.gif); background-repeat: repeat-x; background-position: top left; }
+
+.LeftMenuStyle                       { width:100%;  padding:0px 0 0px 0; margin:0; float:left; line-height: normal;border-top: 0px solid red; border-bottom:0px solid #b5b8bd;  }
+.LeftMenuStyle div                   { float: left;  margin: 0; width:100%; padding: 0px 0 0px 0px; text-decoration: none; }
+.LeftMenuStyle div img               { float: left; margin: 0; margin-top: 0px; padding: 3px 0 3px 0px;  width: 20px; background: none; }
+.LeftMenuStyle div span              { float: left; display: block;  width:89%; color: #000000; }
+.LeftMenuStyle div span a            { float: left; display: block;  width:89%;  padding: 2px 5px 7px 6px; color: #0070bf;font-size:9pt; }
+.LeftMenuStyle div:hover             {  background:red; }
+.LeftMenuStyle div:hover span        {  }
+.LeftMenuStyle div:hover span a:hover{ color:white; }
+
+
+
+.menutd								{ border-bottom: 2px solid green; color: #ffffff; padding: 3px 2px 8px 2px; background-color: Black;
+       								  text-align:left;vertical-align: top; }
+div.menu2							{ background: #f5f5f5; padding-bottom: 5px;padding-top: 5px;text-align: center;border-bottom: solid 1px #cccccc; }
+div.menu2:hover						{ background: #ffffff; padding-bottom: 5px;padding-top: 5px;text-align: center; border-bottom: solid 1px #cccccc; }
+a.MenuLnk							{ text-decoration: none;font-size: 12px;color: #1ea3e1; padding-left:0px; padding-top: 0px;
+         							  vertical-align: top; font-weight: normal; }
+a.MenuLnk:link						{ text-decoration: none;font-size: 12px;color: #1ea3e1; padding-left:0px; padding-top: 0px;
+              						  vertical-align: top; }
+a.MenuLnk:visited					{ text-decoration: none; }
+a.MenuLnk:hover						{ text-decoration: none; color: #000000; }
+a.MenuLnk:active					{ text-decoration: none; }
+.menu								{ background: #ffffff; padding-bottom: 5px; padding-top: 5px; border-bottom: solid 1px #cccccc;}
+.menu:hover							{ background: #eae9e9; padding-bottom: 5px; padding-top: 5px; border-bottom: solid 1px #cccccc; }
+.imgmenu							{ padding-right: 10px; padding-left: 0px; width: 17px; vertical-align: top; }
+
+.accordionHeader					{ color: #000000;  font-size: 9pt; font-weight:normal; padding: 7px 0 0 5px; cursor: pointer;
+                					  background: url(Imgs/accordbg.png)  no-repeat right; margin-top:2px; height:25px;  }
+                				   
+*html .accordionHeader				{ color: #000000;  font-size: 9pt; font-weight:normal; padding: 7px 0 0 5px; cursor: pointer;
+                					  background: url(Imgs/accordbg.png)  no-repeat right; margin-top:2px; height:25px; }
+
+.accordionHeaderSelected			{ color: #ffffff;  font-size: 9pt; font-weight:normal; padding: 7px 0 0 10px; cursor: pointer;
+                					  background: url(Imgs/accordbgH.png)  no-repeat left; margin-top:2px; height:25px; }
+
+
+.accordionContent					{ margin: 0px 0px 0px 5px; padding:0;}
+
+    	
+
+
+.popupicons_bg						{ background: url(Imgs/Butheaderbg.png) repeat-x bottom;height: 25px;color: #003399;
+              						  font-size: 11px;border-collapse: collapse;}
+/* Left menu panel  styles end             						 
+.grid								{ border-collapse: collapse; border-style: none; border-width: 0px; }
+.grid th							{ background: url(Images/grid_tophead1.gif) repeat-x; color: #054b6f; padding: 0px; height: 24px; }
+.grid th a							{ display: block; text-decoration: none; color: #054b6f; padding: 0px; }
+.grid th							{ border: 0px solid #c5c5cd; border-width:0 1px 1px 1px; padding: 0px; padding-left: 3px; text-align: left; font-size: 12px; color: #054b6f; }
+.grid td							{ border: 0px solid #c5c5cd; border-width:0 1px 1px 1px; padding: 0px;  color:#444444; padding-left: 3px; text-align: left; font-size: 9pt; }
+
+.gridrow							{ background-color: #F4F4F4; color: #444444; text-align: left; height: 24px; }
+.gridAlternaterow					{ background-color: #ffffff;  color: #444444; height: 24px; } */
+              						 
+.gridtext						{ color: #01305c;font-size: 12px;font-weight: bold;}
+
+.grid							{ border-collapse: collapse; font-style:normal; font-variant:normal;font-size: 11px; border-style: none; border-width: 0px; }
+.grid th						{ background:url(Imgs/GridHeader1.png) #eeeeee repeat-x ; height:22px; color: #000000; padding: 4px 3px 0px 3px;
+               					  font-size: 11px;   border:1px solid #bddffc; border-width:0 0 0 1px;  vertical-align:top; }
+
+.grid th a						{ text-decoration: none; color: #000000;font-size: 11px;  padding: 0px 0px 0px 0px; vertical-align:top; }
+.grid th a:link, a:active		{ text-decoration: none; color: #000000;  }
+.grid th a:hover				{ text-decoration: none; color: #0089ab;  }
+
+.grid td						{ border-top:1px solid #bddffc; font-size: 11px;  border-bottom:0px solid #d8d9dc; border-right:0px solid #dcdbdb;  border-left:1px solid #bddffc;  padding: 4px 2px 4px 3px; color:#444444;}
+.grid td a						{ text-decoration: none; color: #0089ab; font-size: 11px;  vertical-align:top; }
+.grid td a:link, a:active		{ text-decoration: none; color: #0089ab;  }
+.grid td a:hover				{ text-decoration: none; color: #ff9900;  }               							  
+
+.grid td table td				{ border: 0px solid #dcdbdb; border-width:0 1px 1px 1px; padding:4px 2px 4px 3px; color:#444444;}
+
+.gridAlternaterow				{ border: 0px solid #c5c5cd; border-width:0 0px 0px 0px;vertical-align:top; background:#fafafa}
+.gridrow						{ border: 0px solid #c5c5cd; border-width:0 0px 0px 0px;vertical-align:top; background:#ffffff}
+
+
+.UremrGrid table { }
+.UremrGrid table tbody tr { }
+.UremrGrid th {height:22px; color: #000000; padding: 4px 3px 0px 3px; text-align:left; border-left:1px solid #bddffc; background:url(Imgs/GridHeader1.png) #eeeeee repeat-x ; }
+.UremrGrid table  tr td { padding: 5px; border-left:1px solid #bddffc; border-top:1px solid #bddffc; background-color:white  }
+
+
+.UremrGridAlternaterow				{ border: 0px solid #c5c5cd; border-width:0 0px 0px 0px;vertical-align:top; background:#fafafa}
+.UremrGridrow						{ border: 0px solid #c5c5cd; border-width:0 0px 0px 0px;vertical-align:top; background:#ffffff}  
+ 
+  
+.SubModuleStyle                       { width:96%; padding:0px 0 0px 0; margin:5px 5px 5px 5px; float:left; line-height: normal;background:url(Imgs/SubModTextBg.png) no-repeat right ; height:45px; }
+.SubModuleStyle div                   { float: left;  margin: 0; width:100%; padding: 0px 0 0px 0px; text-decoration: none;background:url(Imgs/SubImgBg.png) no-repeat left ;height:45px; }
+.SubModuleStyle div input             { float: left; margin: 0; margin-top: 0px; padding: 10px 15px 11px 6px;  width:24px; height:24px; }
+.SubModuleStyle div img	              { float: left; margin: 0; margin-top: 0px; padding: 10px 15px 11px 6px;  width:24px; height:24px; }
+
+.SubModuleStyle div span              { float: left; display: block;font-size:9pt;   width:70%; color: #000000;height:45px;}
+.SubModuleStyle div span a:link		  { float: left; display: block; font-size:9pt; width:97%; height:36px;  padding: 2px 3px 7px 0px; color: #0070bf;font-size:9pt; outline:none; }
+.SubModuleStyle div span a:visited    { float: left; display: block; font-size:9pt;   width:97%; height:36px;  padding: 2px 3px 7px 0px;color:#0070bf;font-size:9pt; outline:none;}
+
+.SubModuleStyle:hover 			      { background:url(Imgs/SubModTextBgH.png) no-repeat right ;font-size:9pt; color:#ffffff;  }
+.SubModuleStyle:hover span a:link     { color:#ffffff; font-size:9pt;}
+
+              						 
+
+
+ 
+
+ 
+.QuickLinkStyle                       { width:96%; padding:0px 0 0px 0; margin:5px 3px 5px 3px; float:left; line-height: normal;background:url(Imgs/SubModTextBg.png) no-repeat right ; height:45px; }
+.QuickLinkStyle div                   { float: left; margin: 0; width:100%; padding: 0px 0 0px 0px; text-decoration: none;background:url(Imgs/SubImgBg.png) no-repeat left ;height:45px; }
+.QuickLinkStyle div input             { float: left; margin: 0; margin-top: 0px; padding: 10px 15px 11px 6px;  width:24px; height:24px; }
+.QuickLinkStyle div img	              { float: left; margin: 0; margin-top: 0px; padding: 10px 15px 11px 6px;  width:24px; height:24px; }
+
+.QuickLinkStyle div span              { float: left; display: block; font-size:9pt; width:60%; height:45px; color: #0070bf; vertical-align:middle;}
+.QuickLinkStyle div span a:link		  { float: left; display: block; font-size:9pt; width:97%; height:36px; color: #0070bf; vertical-align:middle; padding: 0px 3px 7px 0px;outline:none;}
+.QuickLinkStyle div span a:visited    { float: left; display: block; font-size:9pt; width:97%; height:36px; color: #0070bf; vertical-align:middle; padding: 0px 3px 7px 0px;outline:none;}
+
+.QuickLinkStyle:hover			      { background:url(Imgs/SubModTextBgH.png) no-repeat right ; font-size:9pt;   }
+.QuickLinkStyle:hover span a:link     { color:#ffffff; font-size:9pt; vertical-align:middle; }
+.QuickLinkStyle div span a:hover	  { color:white; height:36px; }  
+
+/*
+
+         						 
+.SubModuleStyle                     { border: solid 1px #cdcfce; background: #ffffff; margin: 5px; padding:5px; background-image: url(Images/Hims.png); float:left;width:85%; }
+.SubModuleStyle div                 { float: left;  margin: 0; width:100%;text-align:center; padding: 0px 0 0px 0px; text-decoration: none;background: url(Images/Hims.png) #f1f2f4; }
+.SubModuleStyle div input           { margin: 0 auto; margin-top: 0px; width:48px; padding: 3px 0 3px 0px; }
+.SubModuleStyle div span            { float: left; display: block;  width:100%; text-align:center; color: #000000;height:57px;}
+.SubModuleStyle div span a:link     { float: left; display: block;  width:100%;text-align:center;  padding: 2px 0px 7px 0px; color: #0070bf;font-size:9pt; }
+.SubModuleStyle div:hover				{ background: #f8f8f8; background-image: url(Images/Hims.png);  }
+.SubModuleStyle div:hover span a:link	{  color:#ff9900;  }
+.SubModuleStyle div span a:hover	{ height:48px; }  
+
+*/   
+.treestyle { padding: 0px; }
+.treestyle table { width: 100%; margin-bottom: 1px; background: url(Images/accordbg.png) #015970 repeat;
+                   border-bottom: 0px white solid; }
+
+.treestyle table td:first-child { width: 18px !important;  vertical-align: middle;}
+
+.treestyle table td:first-child  img			{background-color:#ffff99; text-decoration:none; outline:none; outline-width:0px; 
+                       			 margin-left:2px; border-radius: 3px; -moz-border-radius: 3px; 
+                       			 -webkit-border-radius: 3px; }
+                       			 
+.treestyle table td:first-child  img:hover	{background-color:#ffffff; text-decoration:none; outline:none; outline-width:0px; 
+                             	 margin-left:2px;border-radius: 3px; -moz-border-radius: 3px; 
+                             	 -webkit-border-radius: 3px; }
+                             	 
+.treestyle table td:first-child + td		{ width: 90%; margin: 0px; padding: 5px; color: White; }
+
+.treestyle table td:first-child + td a:link		{ width: 100%;color: White; }
+
+.treestyle div table			{ background: none; background: none;margin-top: 0px; }
+.treestyle div table td:first-child div	{ width: 0px !important; }
+.treestyle div table td:first-child { width: 0px !important; }
+.treestyle div table td:first-child + td { width: 10px !important; padding-left:5px; }
+.treestyle div table td:first-child + td + td { width: 90% !important;  }
+
+.treestyle div table td:first-child + td img { background:none;}
+.treestyle div table td:first-child + td + td a:link  { color: #004986; }
+.treestyle div table td:first-child + td + td a:active  { color: red; }
+.treestyle div table td:first-child + td + td a:visited  { color:#004986; }
+.treestyle div table td:first-child + td + td a:hover{  color: red; font-weight:bold; }      
+
+
+
+     						 

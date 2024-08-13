@@ -1,0 +1,1803 @@
+Before :: <root><PATIENT PATIENT_ID=$0$ PHOTO=$$ UMR_NO=$APEX0025300$ TITILE_REV_NO=$1$ GENDER_REV_NO=$1$ MARITAL_STATUS_REV_NO=$1$ AGE_UOM_REV_NO=$1$ PATIENT_TYPE_REV_NO=$1$ PATIENT_TYPE_REFERENCE_REV_NO=$1$ PATIENT_CATEGORY_REV_NO=$1$ OCCUPATION_REV_NO=$1$ NATIONALITY_REV_NO=$1$ BLOOD_GROUP_REV_NO=$1$ RELIGION_REV_NO=$1$ EDUCATION_REV_NO=$1$ DIET_TYPE_REV_NO=$1$ ETHNICITY_ID_REV_NO=$1$ LANGUAGE_REV_NO=$1$ RES_PERSON_REL_REV_NO=$1$ METHOD_OF_COMM_REV_NO=$1$ DISPLAY_NAME_REV_NO=$1$ TITILE_ID=$1$ FIRST_NAME=$RAVI$ MIDDLE_NAME=$$ LAST_NAME=$F$ DISPLAY_NAME=$RAVI F$ GENDER_ID=$1$ MOTHER_MAIDEN_NAME=$$ DOB=$01-Apr-1989$ AGE=$32,0,16,0,0$ PATIENT_TYPE_ID=$1$ DISPLAY_NAME_ID=$0$ MOBILE_NO1=$6456456345$ MOBILE_NO2=$$ BLOOD_GROUP_ID=$0$ EMAIL_ID=$$ IS_VIP=$R$ IS_NEW_BORN=$N$ ETHNICITY_ID=$0$ NATIONALITY_ID=$1$ IS_OLD=$N$ RES_PERSON_REL_ID=$6$ RES_PERSON_NAME=$DFG$ MARITAL_STATUS_ID=$2$ OCCUPATION_ID=$0$ RELIGION_ID=$0$ METHOD_OF_COMM_ID=$$ IS_OSP=$N$ ID_PROOF_TYPE_ID=$0$ ID_PROOF_TYPE_NAME=$$ VIP_TYPE_ID=$0$ VIP_NOTE=$$ IS_STOP_ALERT=$Y$ AGE_SOURCE=$A$ IS_SENIOR_CITIZEN=$N$ EMPLOYEE_ID=$0$ EMPLOYEE_RELATION_ID=$0$ NOTES=$$ PASSPORT_NO=$$ ISSUED_AT_ID=$0$ ISSUED_AT_DESC=$$ ISSUE_DT=$$ EXPIRY_DT=$$ PARENT_UMR_NO=$$ IS_MLC=$N$ NEAREST_PS=$$ DISCHRG_STATUS=$N$ EMPLOYEE_DEPENDENTS_ID=$0$ REC_TYPE_ID=$1$ FOREIGN_CATEGORY_ID=$1$/><FO_REG REG_ID=$0$ UMR_NO=$APEX0025300$ PATIENT_ID=$0$ MOBILE_NO1=$6456456345$ MOBILE_NO2=$$ TREATMENT_BY_ID=$63$ REFERENCE_TYPE_ID=$1$ REG_PATIENT_TYPE_ID=$1$ NATIONALITY_ID=$1$ EMAIL_ID=$$ IS_EXPIRED=$N$ PATIENT_REV_NO=$1$ REFERAL_SOURCE_ID=$1$ REFERRED_DOCTOR_ID=$0$ REFERAL_SOURCE_REV_NO=$1$ REFERRED_DOCTOR_TYPE_REV_NO=$1$ REFERRED_DOCTOR_REV_NO=$1$ PATIENT_CLASS_REV_NO=$1$ EXPIRY_DT=$24-Mar-2121$ PATIENT_CLASS_ID=$2$ QUESTIONARY_ID=$0$ REG_TYPE_ID=$2$ PRE_REG_ID=$$ IS_QUICK_REG=$N$ REG_REFERENCE_TYPE_ID=$0$ TRN_SOURCE_ID=$0$ REC_TYPE_ID=$1$/><PAT_REFRL_DTLS PAT_RFRL_DTL_ID=$0$ PAT_RFRL_DTL_REV_NO=$$ UMR_NO=$APEX0025300$ ADMN_NO=$$ REFERENCE_ID=$0$ REFERENCE_TYPE_ID=$0$ REFERAL_SOURCE_ID=$1$ REFERL_ID=$0$ REFERL_NAME=$$ REFERAL_CAT_ID=$0$ REFERAL_CAT_TYPE_ID=$0$ REFERED_TO=$0$ IS_SMS=$N$ IS_LETTER=$N$ REMARKS=$$ RECORD_STATUS=$A$ REC_TYPE_ID=$1$ RECORD_SNO=$1$/><MA.ADDRESS ADDRESS_ID=$0$ ADDRESS1=$VDFG$ ADDRESS2=$$ AREA_ID=$255133$ ADDR_TYPE_ID=$12$ CITY_ID=$57686$ STATE_ID=$112$ COUNTRY_ID=$106$ DISTRICT=$52$ ZIPCODE=$331505$ MOBILE_PHONE=$6456456345$ HOME_PHONE=$$ OFFICE_PHONE=$$ EMAIL_ID=$$ REFERENCE_TYPE_ID=$1$ AREA_REV_NO=$1$ CITY_REV_NO=$1$ STATE_REV_NO=$1$ COUNTRY_REV_NO=$1$ ADDRESS_REV_NO=$1$ REFERENCE_TYPE_REV_NO=$1$ REFERENCE_REV_NO=$1$ ADDR_GRP_ID=$2$ REC_TYPE_ID=$1$/><FO_BILL BILL_ID=$0$ BILL_DT=$$ UMR_NO=$APEX0025300$ ADMN_NO=$0$ REFERAL_SOURCE_ID=$1$ REFERAL_DOCTOR_ID=$0$ REFERAL_NAME=$$ REFERAL_TYPE_ID=$0$ REFERAL_REF_ID=$0$ DOCTOR_ID=$63$ EMPLOYEE_ID=$0$ CREDIT_TYPE_ID=$0$ CONCESSION_ON_ID=$0$ CONCESSION_MODE_ID=$1$ CONCESSION_TYPE_ID=$0$ CONCESSION_TO_ID=$0$ BILLCONCESSION_AUTH_ID=$0$ DUE_AUTH_ID=$0$ COMPANY_DUE=$0$ COMPANY_DUE_AUTH_ID=$0$ COMPANY_CONCESSION_AMOUNT=$0$ COMPANY_AMOUNT=$0$ DUE_VERIFY_ID=$0$ DUE_VERIFY_DT=$$ DUE_APPROVE_ID=$0$ DUE_APPROVE_DT=$$ DUE_AUTH_DT=$$ CONCESSION_VERIFY_ID=$0$ CONCESSION_VERIFY_DT=$$ CONCESSION_APPROVE_ID=$0$ CONCESSION_APPROVE_DT=$$ CONCESSION_AUTH_ID=$0$ CONCESSION_AUTH_DT=$$ PRINT_COUNT=$0$ CONCESSION=$0$ BILL_AMOUNT=$100$ CONCESSION_AMOUNT=$0$ NET_AMOUNT=$100$ PAID_AMOUNT=$100$ ADVANCE_AMOUNT=$0$ DUE_AMOUNT=$0$ DUE_RECOVERED=$0$ OUTSTANDING_DUE=$0$ BILL_AMOUNT_EXC_GST =$100$ NET_AMOUNT_EXC_GST =$100$ GST_AMOUNT =$0$ SGST_AMOUNT =$0$ CGST_AMOUNT=$0$ POST_DISCOUNT=$0$ TOTAL_DISCOUNT=$0$ CANCEL_AMOUNT=$0$ REFUND_AMOUNT=$0$ EXCESS_AMOUNT=$0$ CA_BILL_AMT=$0$ CMP_CNCSN_AMT=$0$ CMP_CNCSN_PCT=$0$ CMP_DUE_AMT=$0$ CMP_GROSS_AMT=$0$ CMP_NET_AMT=$0$ CMP_PAID_AMT=$0$ CMP_TAX_AMT=$0$ CMP_TAX_PCT=$0$ CR_BILL_AMT=$0$ CR_CMP_AMT=$0$ CR_CMP_PCT=$0$ CR_PAT_AMT=$0$ CR_PAT_PCT=$0$ EXC_PHA_AMT=$0$ GROSS_PHA_AMT=$0$ INC_PHA_AMT=$0$ IS_DSCHRG_WITHOUT_BILL=$0$ PAT_CNCSN_AMT=$0$ PAT_CNCSN_PCT=$0$ PAT_DUE_AMT=$0$ PAT_GROSS_AMT=$100$ PAT_NET_AMT=$100$ PAT_PAID_AMT=$100$ PAT_OUTSTANDING_DUE=$0$ PAT_DUE_RECOVERED=$0$ PAT_TAX_AMT=$0$ PAT_TAX_PCT=$0$ PERFORMED_PROCS=$0$ PKG_BILL_AMT=$0$ PKG_CNCSN_AMT=$0$ PKG_DUE_AMT=$0$ PKG_EXC_AMT=$0$ PKG_GROSS_AMT=$0$ PKG_INC_AMT=$0$ PKG_NET_AMT=$0$ PKG_PAID_AMT=$0$ PKG_POSTDSC_AMT=$0$ REMARKS=$$ IS_SHINK=$0$ PKG_TOTAL_RECEIVED_AMT=$0$ REF_ID=$0$ ACC_CMP_ID=$0$ ACC_CMP_AMT=$0$ ACC_CMP_PCT=$0$ ACC_CMP_LVL_ID=$0$ IS_REFERAL=$0$ PKG_EXCESS_AMT=$0$ PCKG_CONV_ID=$0$ PAT_EXCESS_AMT=$0$ CMPNY_REFERAL_LETTER_ID=$0$ PREREFUND=$0$ CORP_ADMN_DT=$$ CORP_DISCHR_DT=$$ PATIENT_CLASS_ID=$0$ OLD_BILL_TYPE_ID=$0$ PKG_RFND_AMT=$0$ PACKAGE_STATUS=$0$ CMP_OUTSTANDING_DUE=$0$ CMP_DUE_RECOVERED=$0$ DISALLOWANCE_AMT=$0$ TDS_AMT=$0$ IS_CORP_APPBILL=$0$ SAMPLE_COLLETED_DATE=$0$ CLINLICAL_SUMMARY=$0$ DISC_REQ_REASON=$0$ PKG_EF_FRM_TODT=$$ PKG_DUE_RECOVERED=$0$ CLINLICAL_SUMMARY_FILE=$0$ REFERAL_CUSTMER=$0$ EMP_NARATION=$0$ CNCSN_NARATION=$0$ IS_POST_CONSULT=$0$ BILL_NO=$0$ REFERAL_CUSTOMER_ID=$0$ CENTER_ID=$0$ TOKEN_NO=$$ REG_CONS_BILL_ID=$0$ REG_ID=$0$ RECORD_STATUS=$A$ CMP_ID=$0$ BILL_TYPE_ID=$0$ BILL_TYPE_REV_NO=$1$ REFERAL_SOURCE_REV_NO=$1$ REFERAL_TYPE_REV_NO=$1$ REFERAL_DOCTOR_REV_NO=$1$ REFERAL_REF_REV_NO=$1$ DOCTOR_REV_NO=$1$ EMPLOYEE_REV_NO=$1$ CREDIT_TYPE_REV_NO=$1$ CONCESSION_ON_REV_NO=$1$ CONCESSION_MODE_REV_NO=$1$ CONCESSION_TYPE_REV_NO=$1$ CONCESSION_AUTH_REV_NO=$1$ DUE_AUTH_REV_NO=$1$ ACC_CMP_REV_NO=$1$ ACC_CMP_LVL_REV_NO=$1$ GRP_REV_NO=$1$ ORG_REV_NO=$1$ PATIENT_TYPE_ID=$1$ TPA_ID=$0$ CC_CARD_AMT =$0$ DC_CARD_AMT=$0$ CHEQUE_AMT=$0$ DEBIT_AMOUNT=$0$ CREDIT_AMOUNT=$0$ EXCESS_FUND_AMOUNT=$0$ TRN_SOURCE_ID=$0$ DT_AMOUNT=$0$ CANCEL_CONCESSION=$0$ PAT_SHOWN_AMT=$0$ ROUND_ERR=$0$ DMS_UPLOAD=$N$ TRN_DOCUMENT_ID=$64$ REC_TYPE_ID=$1$/><FO_BILL_SRV BILL_ID=$0$ BILL_SRV_ID=$0$ BILL_SRV_REV_NO=$0$ UMR_NO=$APEX0025300$ SERVICE_TYPE_ID=$5$ SERVICE_ID=$1$ RATE=$100$ AMOUNT=$100$ NET_AMOUNT=$100$ DOCTOR_ID=$63$ APPT_NO=$0$ IS_RECEIVED=$N$ IS_SENT=$N$ VAR_BAR_CD=$ $ TO_LOC_ID=$0$ CONSULTATION_TYPE_ID=$1$ QUANTITY=$1$ TREATED_BY_ID=$63$ DEPARTMENT_ID=$8$ CONCESSION=$0$ CONCESSION_AMOUNT=$0$ IS_FOREIGN_SERVICE =$N$ COMPANY_TARIFF_ID =$0$ COMPANY_CNCSN_AMT =$0$ COMPANY_CNCSN_PCT =$0$ COMPANY_NET_AMT =$0$ CONCESSION_AMT =$0$ CONCESSION_PCT =$0$ RECORD_SNO =$0$ IS_CASH =$N$ TARIFF_ID =$0$ IS_EMERGENCY =$N$ TRN_SOURCE_ID =$0$ DOCTOR_PCT =$0$ ORG_PCT =$0$ REC_TYPE_ID=$1$ RATE_EXC_GST =$100$ TAX_PCT =$0$ TAX_AMOUNT =$0$ SGST_PCT =$0$ SGST_AMOUNT =$0$ CGST_PCT  =$0$ CGST_AMOUNT  =$0$ SAC_CD  =$ $/><FO_BILL_CNCSN BILL_CNCSN_ID=$0$ BILL_CNCSN_REV_NO=$1$ BILL_ID=$0$ CONCESSION_TYPE_ID=$1$ CONCESSION_AMOUNT=$0$ RECORD_STATUS=$A$ CNCSN_RULE_ID=$$ CNCSN_AUTH_ID=$0$ CNCSN_REF_NO=$$ CONCESSION_PERCENT=$0$ CONCESSION_MODE_ID=$1$ CARD_NO=$$ REMARKS=$$/><FO_BILL_SRV_CNCSN BILL_SRV_CNCSN_ID=$0$ BILL_SRV_ID=$0$ BILL_CNCSN_ID=$0$ CONCESSION_TYPE_ID=$1$ CONCESSION_AMOUNT=$0$ PAT_CONC_PER=$0$ PAT_CONC_AMT=$0$ HC_PERC=$0$ HC_AMT=$0$ MG_PERC=$0$ MG_AMT=$0$ STAFF_PERC=$0$ STAFF_AMT=$0$ EB_PERC=$0$ EB_AMT=$0$ CNCSNRULEPERC=$0$ CNCSNRULEAMT=$0$ DOCTOR_ID=$0$ RECORD_STATUS=$A$ CONCESSION_PERCENT=$0$/><FO_RECPAY  TRANSACTION_ID=$0$ TRANSACTION_NO=$RG210000001$ TRANSACTION_DT=$17-Apr-2021$ TRANSACTION_TYPE=$R$ UMR_NO=$$ ADMN_NO=$$ AMOUNT=$100$ EMPLOYEE_ID=$0$ APPROVE_BY=$0$ APPROVE_DT=$$ REMARKS=$$ CURR_ID=$104$ PAYMENT_TYPE_ID=$2$ SESSION_ID=$375925$ REC_TYPE_ID=$1$ TRN_SOURCE_ID=$1$ /><FO_RECPAY_REF  RECPAY_REF_ID=$0$ APPROVE_BY=$0$ APPROVE_DT=$$ AMOUNT=$100$ PAYMENT_TYPE_ID=$2$ CURR_ID=$104$ REFERENCE_TYPE_ID=$$ SESSION_ID=$375925$ TRN_SOURCE_ID=$0$ NET_ADVANCE_AMT=$0$ REC_TYPE_ID=$1$ /><FO_RECPAY_DET  TRANSACTION_ID=$0$ TRANSACTION_DET_ID=$0$ TRANSACTION_NO=$0$ TRANSACTION_DT=$$ TRANSACTION_TYPE=$$ AMOUNT=$100$ TENDERED_AMOUNT=$100$ ENTERED_AMOUNT=$100$ CHANGE_AMOUNT=$0$ REMARKS=$$ EMPLOYEE_ID=$0$ REFERENCE_ID=$0$ PAYMENT_MODE_ID=$1$ UMR_NO=$$ CURR_ID=$104$ EX_RATE=$1$ SESSION_ID=$375925$ DC_AUTH_CD=$$ REC_TYPE_ID=$1$/></root> -- Success :: 0 -- 10/27/2022 10:06:08 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+10/27/2022 10:57:54 AMbtnlogin click USER_ID bfr: 1 -- 
+10/27/2022 10:57:54 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+10/27/2022 10:58:40 AMbtnlogin click USER_ID bfr: 1 -- 
+10/27/2022 10:58:40 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+10/27/2022 11:02:29 AMbtnlogin click USER_ID bfr: 1 -- 
+10/27/2022 11:02:29 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+11/1/2022 9:21:51 AMbtnlogin click USER_ID bfr: 1 -- 
+11/1/2022 9:21:51 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+11/14/2022 4:36:33 PMbtnlogin click USER_ID bfr: 1 -- 
+11/14/2022 4:36:34 PMbtnlogin click USER_ID aftr dbcall: 1 -- 
+11/15/2022 10:57:01 AMbtnlogin click USER_ID bfr: 1 -- 
+11/15/2022 10:57:01 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+11/22/2022 2:29:37 PMbtnlogin click USER_ID bfr: 1 -- 
+11/22/2022 2:29:37 PMbtnlogin click USER_ID aftr dbcall: 1 -- 
+12/13/2022 10:17:21 AMbtnlogin click USER_ID bfr: 1 -- 
+12/13/2022 10:17:21 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+12/13/2022 2:53:44 PMbtnlogin click USER_ID bfr: 1 -- 
+12/13/2022 2:53:45 PMbtnlogin click USER_ID aftr dbcall: 1 -- 
+12/20/2022 10:09:50 AMbtnlogin click USER_ID bfr: 1 -- 
+12/20/2022 10:09:51 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+1/24/2023 10:10:46 AMbtnlogin click USER_ID bfr: 1 -- 
+1/24/2023 10:10:46 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+2/6/2023 10:37:55 AMbtnlogin click USER_ID bfr: 1 -- 
+2/6/2023 10:37:55 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+2/8/2023 9:17:07 AMbtnlogin click USER_ID bfr: 1 -- 
+2/8/2023 9:17:08 AMbtnlogin click USER_ID aftr dbcall: 1 -- 
+3/3/2023 11:37:50 AMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 11:37:50 AMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 11:37:50 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 12:03:45 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 12:03:45 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 12:03:45 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 12:04:00 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 12:04:00 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 12:04:00 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 12:12:35 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 12:12:35 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 12:12:35 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 12:22:30 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 12:22:30 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 12:22:30 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 12:47:54 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 12:47:54 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 12:47:54 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 2:08:50 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 2:08:50 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 2:08:50 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 2:15:15 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 2:15:15 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 2:15:15 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 2:16:57 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 2:16:57 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 2:16:57 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 2:53:43 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 2:53:43 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 2:53:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 3:35:08 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 3:35:08 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 3:35:08 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 3:35:45 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 3:35:45 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 3:35:45 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 3:56:05 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 3:56:05 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 3:56:05 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 3:56:11 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 3:56:11 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 3:56:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 4:04:47 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 4:04:47 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 4:04:47 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 4:06:17 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 4:06:17 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 4:06:17 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 4:22:46 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 4:22:46 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 4:22:47 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 5:05:11 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 5:05:11 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 5:05:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 5:10:07 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 5:10:07 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 5:10:07 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/3/2023 5:12:07 PMUSer OKclick USER_ID bfr: 1 -- 
+3/3/2023 5:12:07 PMUSer OKclick USER_ID aftr: 1 -- 
+3/3/2023 5:12:07 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 9:50:56 AMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 9:50:56 AMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 9:50:56 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 10:03:41 AMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 10:03:41 AMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 10:03:41 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 12:20:48 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 12:20:48 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 12:20:48 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 2:57:43 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 2:57:43 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 2:57:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 3:54:38 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 3:54:38 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 3:54:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 4:15:14 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 4:15:14 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 4:15:14 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 4:20:42 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 4:20:42 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 4:20:42 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 4:53:16 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 4:53:16 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 4:53:16 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 5:55:10 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 5:55:10 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 5:55:10 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 5:58:55 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 5:58:55 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 5:58:55 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 6:05:41 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 6:05:41 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 6:05:41 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 6:18:41 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 6:18:41 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 6:18:42 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 6:30:47 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 6:30:47 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 6:30:48 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 6:33:36 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 6:33:36 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 6:33:36 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/6/2023 6:44:27 PMUSer OKclick USER_ID bfr: 1 -- 
+3/6/2023 6:44:27 PMUSer OKclick USER_ID aftr: 1 -- 
+3/6/2023 6:44:27 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 10:18:19 AMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 10:18:19 AMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 10:18:19 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 10:30:09 AMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 10:30:09 AMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 10:30:10 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 10:39:16 AMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 10:39:16 AMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 10:39:16 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 10:40:56 AMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 10:40:56 AMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 10:40:56 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 10:52:45 AMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 10:52:45 AMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 10:52:46 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 11:38:11 AMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 11:38:11 AMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 11:38:11 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 11:57:44 AMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 11:57:44 AMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 11:57:44 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 12:02:12 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 12:02:12 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 12:02:12 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 12:04:15 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 12:04:15 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 12:04:15 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 12:25:09 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 12:25:09 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 12:25:09 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 12:40:51 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 12:40:51 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 12:40:51 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 12:59:55 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 12:59:55 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 12:59:55 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 2:16:51 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 2:16:51 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 2:16:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 2:48:02 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 2:48:02 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 2:48:02 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 3:06:52 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 3:06:52 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 3:06:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 3:52:29 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 3:52:29 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 3:52:29 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 5:04:22 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 5:04:22 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 5:04:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 5:18:22 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 5:18:22 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 5:18:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/7/2023 6:33:12 PMUSer OKclick USER_ID bfr: 1 -- 
+3/7/2023 6:33:12 PMUSer OKclick USER_ID aftr: 1 -- 
+3/7/2023 6:33:13 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/9/2023 9:35:34 AMUSer OKclick USER_ID bfr: 1 -- 
+3/9/2023 9:35:34 AMUSer OKclick USER_ID aftr: 1 -- 
+3/9/2023 9:35:34 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/9/2023 12:31:45 PMUSer OKclick USER_ID bfr: 1 -- 
+3/9/2023 12:31:45 PMUSer OKclick USER_ID aftr: 1 -- 
+3/9/2023 12:31:45 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/9/2023 12:31:55 PMUSer OKclick USER_ID bfr: 1 -- 
+3/9/2023 12:31:55 PMUSer OKclick USER_ID aftr: 1 -- 
+3/9/2023 12:31:56 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/10/2023 2:05:06 PMUSer OKclick USER_ID bfr: 1 -- 
+3/10/2023 2:05:06 PMUSer OKclick USER_ID aftr: 1 -- 
+3/10/2023 2:05:06 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/10/2023 2:44:31 PMUSer OKclick USER_ID bfr: 1 -- 
+3/10/2023 2:44:31 PMUSer OKclick USER_ID aftr: 1 -- 
+3/10/2023 2:44:31 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/10/2023 3:06:41 PMUSer OKclick USER_ID bfr: 1 -- 
+3/10/2023 3:06:41 PMUSer OKclick USER_ID aftr: 1 -- 
+3/10/2023 3:06:41 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/10/2023 3:08:48 PMUSer OKclick USER_ID bfr: 1 -- 
+3/10/2023 3:08:48 PMUSer OKclick USER_ID aftr: 1 -- 
+3/10/2023 3:08:48 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/10/2023 3:09:10 PMUSer OKclick USER_ID bfr: 1 -- 
+3/10/2023 3:09:10 PMUSer OKclick USER_ID aftr: 1 -- 
+3/10/2023 3:09:10 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/10/2023 5:39:22 PMUSer OKclick USER_ID bfr: 1 -- 
+3/10/2023 5:39:22 PMUSer OKclick USER_ID aftr: 1 -- 
+3/10/2023 5:39:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/13/2023 9:35:56 AMUSer OKclick USER_ID bfr: 1 -- 
+3/13/2023 9:35:56 AMUSer OKclick USER_ID aftr: 1 -- 
+3/13/2023 9:35:56 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/13/2023 10:09:29 AMUSer OKclick USER_ID bfr: 1 -- 
+3/13/2023 10:09:29 AMUSer OKclick USER_ID aftr: 1 -- 
+3/13/2023 10:09:29 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/13/2023 11:38:52 AMUSer OKclick USER_ID bfr: 1 -- 
+3/13/2023 11:38:52 AMUSer OKclick USER_ID aftr: 1 -- 
+3/13/2023 11:38:52 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/13/2023 11:39:08 AMUSer OKclick USER_ID bfr: 1 -- 
+3/13/2023 11:39:08 AMUSer OKclick USER_ID aftr: 1 -- 
+3/13/2023 11:39:08 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/13/2023 12:14:05 PMUSer OKclick USER_ID bfr: 1 -- 
+3/13/2023 12:14:05 PMUSer OKclick USER_ID aftr: 1 -- 
+3/13/2023 12:14:05 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/13/2023 12:14:22 PMUSer OKclick USER_ID bfr: 1 -- 
+3/13/2023 12:14:22 PMUSer OKclick USER_ID aftr: 1 -- 
+3/13/2023 12:14:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/13/2023 3:08:17 PMUSer OKclick USER_ID bfr: 1 -- 
+3/13/2023 3:08:17 PMUSer OKclick USER_ID aftr: 1 -- 
+3/13/2023 3:08:17 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/14/2023 10:40:40 AMUSer OKclick USER_ID bfr: 1 -- 
+3/14/2023 10:40:40 AMUSer OKclick USER_ID aftr: 1 -- 
+3/14/2023 10:40:40 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/14/2023 11:58:10 AMUSer OKclick USER_ID bfr: 1 -- 
+3/14/2023 11:58:10 AMUSer OKclick USER_ID aftr: 1 -- 
+3/14/2023 11:58:10 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/15/2023 10:04:42 AMUSer OKclick USER_ID bfr: 1 -- 
+3/15/2023 10:04:42 AMUSer OKclick USER_ID aftr: 1 -- 
+3/15/2023 10:04:42 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/15/2023 10:07:05 AMUSer OKclick USER_ID bfr: 1 -- 
+3/15/2023 10:07:05 AMUSer OKclick USER_ID aftr: 1 -- 
+3/15/2023 10:07:05 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/15/2023 11:34:33 AMUSer OKclick USER_ID bfr: 1 -- 
+3/15/2023 11:34:33 AMUSer OKclick USER_ID aftr: 1 -- 
+3/15/2023 11:34:33 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/15/2023 12:05:21 PMUSer OKclick USER_ID bfr: 1 -- 
+3/15/2023 12:05:21 PMUSer OKclick USER_ID aftr: 1 -- 
+3/15/2023 12:05:21 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/15/2023 12:07:13 PMUSer OKclick USER_ID bfr: 1 -- 
+3/15/2023 12:07:13 PMUSer OKclick USER_ID aftr: 1 -- 
+3/15/2023 12:07:13 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/15/2023 12:44:08 PMUSer OKclick USER_ID bfr: 1 -- 
+3/15/2023 12:44:08 PMUSer OKclick USER_ID aftr: 1 -- 
+3/15/2023 12:44:09 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/15/2023 12:44:21 PMUSer OKclick USER_ID bfr: 1 -- 
+3/15/2023 12:44:21 PMUSer OKclick USER_ID aftr: 1 -- 
+3/15/2023 12:44:21 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/16/2023 3:42:41 PMUSer OKclick USER_ID bfr: 1 -- 
+3/16/2023 3:42:41 PMUSer OKclick USER_ID aftr: 1 -- 
+3/16/2023 3:42:41 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 10:08:25 AMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 10:08:25 AMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 10:08:25 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 11:13:42 AMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 11:13:42 AMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 11:13:42 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 11:22:00 AMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 11:22:00 AMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 11:22:00 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 11:28:15 AMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 11:28:15 AMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 11:28:15 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 11:59:33 AMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 11:59:33 AMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 11:59:33 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 2:49:41 PMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 2:49:41 PMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 2:49:41 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 3:16:56 PMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 3:16:56 PMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 3:16:56 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 3:17:44 PMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 3:17:44 PMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 3:17:44 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/17/2023 6:33:01 PMUSer OKclick USER_ID bfr: 1 -- 
+3/17/2023 6:33:01 PMUSer OKclick USER_ID aftr: 1 -- 
+3/17/2023 6:33:01 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/20/2023 9:48:10 AMUSer OKclick USER_ID bfr: 1 -- 
+3/20/2023 9:48:10 AMUSer OKclick USER_ID aftr: 1 -- 
+3/20/2023 9:48:11 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/20/2023 10:04:57 AMUSer OKclick USER_ID bfr: 1 -- 
+3/20/2023 10:04:57 AMUSer OKclick USER_ID aftr: 1 -- 
+3/20/2023 10:04:57 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/20/2023 10:28:36 AMUSer OKclick USER_ID bfr: 1 -- 
+3/20/2023 10:28:36 AMUSer OKclick USER_ID aftr: 1 -- 
+3/20/2023 10:28:36 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/20/2023 3:23:22 PMUSer OKclick USER_ID bfr: 1 -- 
+3/20/2023 3:23:22 PMUSer OKclick USER_ID aftr: 1 -- 
+3/20/2023 3:23:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/20/2023 6:25:00 PMUSer OKclick USER_ID bfr: 1 -- 
+3/20/2023 6:25:00 PMUSer OKclick USER_ID aftr: 1 -- 
+3/20/2023 6:25:00 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/24/2023 10:22:22 AMUSer OKclick USER_ID bfr: 1 -- 
+3/24/2023 10:22:22 AMUSer OKclick USER_ID aftr: 1 -- 
+3/24/2023 10:22:22 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/24/2023 10:51:31 AMUSer OKclick USER_ID bfr: 1 -- 
+3/24/2023 10:51:31 AMUSer OKclick USER_ID aftr: 1 -- 
+3/24/2023 10:51:31 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/24/2023 10:58:09 AMUSer OKclick USER_ID bfr: 1 -- 
+3/24/2023 10:58:09 AMUSer OKclick USER_ID aftr: 1 -- 
+3/24/2023 10:58:09 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/24/2023 11:22:41 AMUSer OKclick USER_ID bfr: 1 -- 
+3/24/2023 11:22:41 AMUSer OKclick USER_ID aftr: 1 -- 
+3/24/2023 11:22:41 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/24/2023 3:15:30 PMUSer OKclick USER_ID bfr: 1 -- 
+3/24/2023 3:15:30 PMUSer OKclick USER_ID aftr: 1 -- 
+3/24/2023 3:15:30 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/24/2023 3:53:23 PMUSer OKclick USER_ID bfr: 1 -- 
+3/24/2023 3:53:23 PMUSer OKclick USER_ID aftr: 1 -- 
+3/24/2023 3:53:23 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/27/2023 11:05:11 AMUSer OKclick USER_ID bfr: 1 -- 
+3/27/2023 11:05:11 AMUSer OKclick USER_ID aftr: 1 -- 
+3/27/2023 11:05:11 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/27/2023 11:08:06 AMUSer OKclick USER_ID bfr: 1 -- 
+3/27/2023 11:08:06 AMUSer OKclick USER_ID aftr: 1 -- 
+3/27/2023 11:08:06 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/27/2023 11:49:46 AMUSer OKclick USER_ID bfr: 1 -- 
+3/27/2023 11:49:46 AMUSer OKclick USER_ID aftr: 1 -- 
+3/27/2023 11:49:46 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/27/2023 11:56:37 AMUSer OKclick USER_ID bfr: 1 -- 
+3/27/2023 11:56:37 AMUSer OKclick USER_ID aftr: 1 -- 
+3/27/2023 11:56:37 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/27/2023 2:05:39 PMUSer OKclick USER_ID bfr: 1 -- 
+3/27/2023 2:05:39 PMUSer OKclick USER_ID aftr: 1 -- 
+3/27/2023 2:05:39 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/27/2023 2:34:36 PMUSer OKclick USER_ID bfr: 1 -- 
+3/27/2023 2:34:36 PMUSer OKclick USER_ID aftr: 1 -- 
+3/27/2023 2:34:36 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/28/2023 7:00:33 PMUSer OKclick USER_ID bfr: 1 -- 
+3/28/2023 7:00:33 PMUSer OKclick USER_ID aftr: 1 -- 
+3/28/2023 7:00:33 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/29/2023 9:58:03 AMUSer OKclick USER_ID bfr: 1 -- 
+3/29/2023 9:58:03 AMUSer OKclick USER_ID aftr: 1 -- 
+3/29/2023 9:58:03 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/29/2023 10:04:33 AMUSer OKclick USER_ID bfr: 1 -- 
+3/29/2023 10:04:33 AMUSer OKclick USER_ID aftr: 1 -- 
+3/29/2023 10:04:33 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/29/2023 3:19:38 PMUSer OKclick USER_ID bfr: 1 -- 
+3/29/2023 3:19:38 PMUSer OKclick USER_ID aftr: 1 -- 
+3/29/2023 3:19:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/29/2023 3:19:41 PMUSer OKclick USER_ID bfr: 1 -- 
+3/29/2023 3:19:41 PMUSer OKclick USER_ID aftr: 1 -- 
+3/29/2023 3:19:41 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/29/2023 3:34:01 PMUSer OKclick USER_ID bfr: 1 -- 
+3/29/2023 3:34:01 PMUSer OKclick USER_ID aftr: 1 -- 
+3/29/2023 3:34:01 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/30/2023 4:34:30 PMUSer OKclick USER_ID bfr: 1 -- 
+3/30/2023 4:34:30 PMUSer OKclick USER_ID aftr: 1 -- 
+3/30/2023 4:34:30 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/31/2023 11:40:15 AMUSer OKclick USER_ID bfr: 1 -- 
+3/31/2023 11:40:15 AMUSer OKclick USER_ID aftr: 1 -- 
+3/31/2023 11:40:15 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/31/2023 2:29:49 PMUSer OKclick USER_ID bfr: 1 -- 
+3/31/2023 2:29:49 PMUSer OKclick USER_ID aftr: 1 -- 
+3/31/2023 2:29:49 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/31/2023 2:37:54 PMUSer OKclick USER_ID bfr: 1 -- 
+3/31/2023 2:37:54 PMUSer OKclick USER_ID aftr: 1 -- 
+3/31/2023 2:37:54 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/31/2023 6:39:50 PMUSer OKclick USER_ID bfr: 1 -- 
+3/31/2023 6:39:50 PMUSer OKclick USER_ID aftr: 1 -- 
+3/31/2023 6:39:50 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 10:49:04 AMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 10:49:04 AMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 10:49:04 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 10:56:21 AMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 10:56:21 AMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 10:56:21 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 11:04:17 AMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 11:04:17 AMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 11:04:17 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 12:20:01 PMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 12:20:01 PMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 12:20:01 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 12:20:25 PMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 12:20:25 PMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 12:20:25 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 12:23:39 PMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 12:23:39 PMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 12:23:39 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 12:33:11 PMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 12:33:11 PMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 12:33:12 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 12:37:32 PMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 12:37:32 PMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 12:37:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 2:27:35 PMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 2:27:35 PMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 2:27:35 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 6:37:28 PMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 6:37:28 PMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 6:37:28 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/3/2023 6:40:22 PMUSer OKclick USER_ID bfr: 1 -- 
+4/3/2023 6:40:22 PMUSer OKclick USER_ID aftr: 1 -- 
+4/3/2023 6:40:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/4/2023 9:43:11 AMUSer OKclick USER_ID bfr: 1 -- 
+4/4/2023 9:43:11 AMUSer OKclick USER_ID aftr: 1 -- 
+4/4/2023 9:43:11 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/4/2023 10:51:29 AMUSer OKclick USER_ID bfr: 1 -- 
+4/4/2023 10:51:29 AMUSer OKclick USER_ID aftr: 1 -- 
+4/4/2023 10:51:29 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/4/2023 12:19:47 PMUSer OKclick USER_ID bfr: 1 -- 
+4/4/2023 12:19:47 PMUSer OKclick USER_ID aftr: 1 -- 
+4/4/2023 12:19:47 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/4/2023 6:58:58 PMUSer OKclick USER_ID bfr: 1 -- 
+4/4/2023 6:58:58 PMUSer OKclick USER_ID aftr: 1 -- 
+4/4/2023 6:58:58 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 9:49:01 AMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 9:49:01 AMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 9:49:01 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 2:17:57 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 2:17:57 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 2:17:57 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 4:01:53 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 4:01:53 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 4:01:53 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 4:02:35 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 4:02:35 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 4:02:35 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 4:08:20 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 4:08:20 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 4:08:20 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 4:11:02 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 4:11:02 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 4:11:02 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 4:46:31 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 4:46:31 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 4:46:31 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 4:47:55 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 4:47:55 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 4:47:55 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 6:30:41 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 6:30:41 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 6:30:41 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/5/2023 6:41:58 PMUSer OKclick USER_ID bfr: 1 -- 
+4/5/2023 6:41:58 PMUSer OKclick USER_ID aftr: 1 -- 
+4/5/2023 6:41:58 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/6/2023 10:07:10 AMUSer OKclick USER_ID bfr: 1 -- 
+4/6/2023 10:07:10 AMUSer OKclick USER_ID aftr: 1 -- 
+4/6/2023 10:07:10 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/6/2023 11:21:48 AMUSer OKclick USER_ID bfr: 1 -- 
+4/6/2023 11:21:48 AMUSer OKclick USER_ID aftr: 1 -- 
+4/6/2023 11:21:48 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/6/2023 12:31:53 PMUSer OKclick USER_ID bfr: 1 -- 
+4/6/2023 12:31:53 PMUSer OKclick USER_ID aftr: 1 -- 
+4/6/2023 12:31:53 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/6/2023 2:51:26 PMUSer OKclick USER_ID bfr: 1 -- 
+4/6/2023 2:51:26 PMUSer OKclick USER_ID aftr: 1 -- 
+4/6/2023 2:51:26 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/6/2023 3:57:13 PMUSer OKclick USER_ID bfr: 1 -- 
+4/6/2023 3:57:13 PMUSer OKclick USER_ID aftr: 1 -- 
+4/6/2023 3:57:13 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/6/2023 4:12:05 PMUSer OKclick USER_ID bfr: 1 -- 
+4/6/2023 4:12:05 PMUSer OKclick USER_ID aftr: 1 -- 
+4/6/2023 4:12:05 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/7/2023 10:41:08 AMUSer OKclick USER_ID bfr: 1 -- 
+4/7/2023 10:41:08 AMUSer OKclick USER_ID aftr: 1 -- 
+4/7/2023 10:41:08 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/7/2023 10:44:44 AMUSer OKclick USER_ID bfr: 1 -- 
+4/7/2023 10:44:44 AMUSer OKclick USER_ID aftr: 1 -- 
+4/7/2023 10:44:44 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/7/2023 12:37:54 PMUSer OKclick USER_ID bfr: 1 -- 
+4/7/2023 12:37:54 PMUSer OKclick USER_ID aftr: 1 -- 
+4/7/2023 12:37:54 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/7/2023 4:34:25 PMUSer OKclick USER_ID bfr: 1 -- 
+4/7/2023 4:34:25 PMUSer OKclick USER_ID aftr: 1 -- 
+4/7/2023 4:34:25 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/7/2023 7:13:03 PMUSer OKclick USER_ID bfr: 1 -- 
+4/7/2023 7:13:03 PMUSer OKclick USER_ID aftr: 1 -- 
+4/7/2023 7:13:03 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 10:39:24 AMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 10:39:24 AMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 10:39:24 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 10:49:26 AMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 10:49:26 AMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 10:49:26 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 10:49:47 AMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 10:49:47 AMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 10:49:47 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 10:50:02 AMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 10:50:02 AMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 10:50:02 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 10:50:10 AMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 10:50:10 AMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 10:50:10 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 10:50:25 AMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 10:50:25 AMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 10:50:25 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 10:55:11 AMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 10:55:11 AMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 10:55:11 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 1:43:11 PMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 1:43:11 PMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 1:43:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 1:50:29 PMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 1:50:29 PMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 1:50:29 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2023 1:51:36 PMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2023 1:51:36 PMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2023 1:51:36 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/10/2023 10:52:24 AMUSer OKclick USER_ID bfr: 1 -- 
+4/10/2023 10:52:24 AMUSer OKclick USER_ID aftr: 1 -- 
+4/10/2023 10:52:24 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/10/2023 11:15:42 AMUSer OKclick USER_ID bfr: 1 -- 
+4/10/2023 11:15:42 AMUSer OKclick USER_ID aftr: 1 -- 
+4/10/2023 11:15:42 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/10/2023 2:31:25 PMUSer OKclick USER_ID bfr: 1 -- 
+4/10/2023 2:31:25 PMUSer OKclick USER_ID aftr: 1 -- 
+4/10/2023 2:31:25 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2023 9:39:58 AMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2023 9:39:58 AMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2023 9:39:58 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2023 10:24:22 AMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2023 10:24:22 AMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2023 10:24:22 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2023 2:46:44 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2023 2:46:44 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2023 2:46:44 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2023 3:14:10 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2023 3:14:10 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2023 3:14:10 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2023 3:42:06 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2023 3:42:06 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2023 3:42:06 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2023 4:03:30 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2023 4:03:30 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2023 4:03:30 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2023 6:06:16 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2023 6:06:16 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2023 6:06:16 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/13/2023 5:07:07 PMUSer OKclick USER_ID bfr: 1 -- 
+4/13/2023 5:07:07 PMUSer OKclick USER_ID aftr: 1 -- 
+4/13/2023 5:07:07 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/13/2023 5:35:08 PMUSer OKclick USER_ID bfr: 1 -- 
+4/13/2023 5:35:08 PMUSer OKclick USER_ID aftr: 1 -- 
+4/13/2023 5:35:08 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/13/2023 6:55:33 PMUSer OKclick USER_ID bfr: 1 -- 
+4/13/2023 6:55:33 PMUSer OKclick USER_ID aftr: 1 -- 
+4/13/2023 6:55:33 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/14/2023 2:34:23 PMUSer OKclick USER_ID bfr: 1 -- 
+4/14/2023 2:34:23 PMUSer OKclick USER_ID aftr: 1 -- 
+4/14/2023 2:34:23 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/14/2023 3:01:32 PMUSer OKclick USER_ID bfr: 1 -- 
+4/14/2023 3:01:32 PMUSer OKclick USER_ID aftr: 1 -- 
+4/14/2023 3:01:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/14/2023 3:01:51 PMUSer OKclick USER_ID bfr: 1 -- 
+4/14/2023 3:01:51 PMUSer OKclick USER_ID aftr: 1 -- 
+4/14/2023 3:01:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/14/2023 5:11:04 PMUSer OKclick USER_ID bfr: 1 -- 
+4/14/2023 5:11:04 PMUSer OKclick USER_ID aftr: 1 -- 
+4/14/2023 5:11:04 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2023 9:32:22 AMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2023 9:32:22 AMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2023 9:32:23 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2023 10:23:54 AMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2023 10:23:54 AMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2023 10:23:54 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2023 6:37:28 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2023 6:37:28 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2023 6:37:28 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2023 7:13:20 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2023 7:13:20 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2023 7:13:20 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2023 7:24:05 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2023 7:24:05 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2023 7:24:05 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/18/2023 9:33:32 AMUSer OKclick USER_ID bfr: 1 -- 
+4/18/2023 9:33:32 AMUSer OKclick USER_ID aftr: 1 -- 
+4/18/2023 9:33:32 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/18/2023 9:34:34 AMUSer OKclick USER_ID bfr: 1 -- 
+4/18/2023 9:34:34 AMUSer OKclick USER_ID aftr: 1 -- 
+4/18/2023 9:34:34 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/18/2023 9:37:24 AMUSer OKclick USER_ID bfr: 1 -- 
+4/18/2023 9:37:24 AMUSer OKclick USER_ID aftr: 1 -- 
+4/18/2023 9:37:24 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/18/2023 9:53:56 AMUSer OKclick USER_ID bfr: 1 -- 
+4/18/2023 9:53:56 AMUSer OKclick USER_ID aftr: 1 -- 
+4/18/2023 9:53:56 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/18/2023 10:35:50 AMUSer OKclick USER_ID bfr: 1 -- 
+4/18/2023 10:35:50 AMUSer OKclick USER_ID aftr: 1 -- 
+4/18/2023 10:35:50 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/19/2023 9:48:09 AMUSer OKclick USER_ID bfr: 1 -- 
+4/19/2023 9:48:09 AMUSer OKclick USER_ID aftr: 1 -- 
+4/19/2023 9:48:09 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/19/2023 10:19:14 AMUSer OKclick USER_ID bfr: 1 -- 
+4/19/2023 10:19:14 AMUSer OKclick USER_ID aftr: 1 -- 
+4/19/2023 10:19:14 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/19/2023 6:44:32 PMUSer OKclick USER_ID bfr: 1 -- 
+4/19/2023 6:44:32 PMUSer OKclick USER_ID aftr: 1 -- 
+4/19/2023 6:44:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/19/2023 6:46:44 PMUSer OKclick USER_ID bfr: 1 -- 
+4/19/2023 6:46:44 PMUSer OKclick USER_ID aftr: 1 -- 
+4/19/2023 6:46:44 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/21/2023 10:37:37 AMUSer OKclick USER_ID bfr: 1 -- 
+4/21/2023 10:37:37 AMUSer OKclick USER_ID aftr: 1 -- 
+4/21/2023 10:37:37 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/21/2023 10:48:20 AMUSer OKclick USER_ID bfr: 1 -- 
+4/21/2023 10:48:20 AMUSer OKclick USER_ID aftr: 1 -- 
+4/21/2023 10:48:20 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/24/2023 12:03:00 PMUSer OKclick USER_ID bfr: 1 -- 
+4/24/2023 12:03:00 PMUSer OKclick USER_ID aftr: 1 -- 
+4/24/2023 12:03:00 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/24/2023 12:12:43 PMUSer OKclick USER_ID bfr: 1 -- 
+4/24/2023 12:12:43 PMUSer OKclick USER_ID aftr: 1 -- 
+4/24/2023 12:12:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/24/2023 2:36:17 PMUSer OKclick USER_ID bfr: 1 -- 
+4/24/2023 2:36:17 PMUSer OKclick USER_ID aftr: 1 -- 
+4/24/2023 2:36:17 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/24/2023 6:03:22 PMUSer OKclick USER_ID bfr: 1 -- 
+4/24/2023 6:03:22 PMUSer OKclick USER_ID aftr: 1 -- 
+4/24/2023 6:03:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/26/2023 11:12:55 AMUSer OKclick USER_ID bfr: 1 -- 
+4/26/2023 11:12:55 AMUSer OKclick USER_ID aftr: 1 -- 
+4/26/2023 11:12:55 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/26/2023 11:16:47 AMUSer OKclick USER_ID bfr: 1 -- 
+4/26/2023 11:16:47 AMUSer OKclick USER_ID aftr: 1 -- 
+4/26/2023 11:16:47 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/26/2023 11:28:10 AMUSer OKclick USER_ID bfr: 1 -- 
+4/26/2023 11:28:10 AMUSer OKclick USER_ID aftr: 1 -- 
+4/26/2023 11:28:10 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/26/2023 2:24:32 PMUSer OKclick USER_ID bfr: 1 -- 
+4/26/2023 2:24:32 PMUSer OKclick USER_ID aftr: 1 -- 
+4/26/2023 2:24:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/27/2023 12:07:49 PMUSer OKclick USER_ID bfr: 1 -- 
+4/27/2023 12:07:49 PMUSer OKclick USER_ID aftr: 1 -- 
+4/27/2023 12:07:49 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/28/2023 6:09:47 PMUSer OKclick USER_ID bfr: 1 -- 
+4/28/2023 6:09:47 PMUSer OKclick USER_ID aftr: 1 -- 
+4/28/2023 6:09:47 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/1/2023 10:42:09 AMUSer OKclick USER_ID bfr: 1 -- 
+5/1/2023 10:42:09 AMUSer OKclick USER_ID aftr: 1 -- 
+5/1/2023 10:42:09 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/2/2023 10:18:10 AMUSer OKclick USER_ID bfr: 1 -- 
+5/2/2023 10:18:10 AMUSer OKclick USER_ID aftr: 1 -- 
+5/2/2023 10:18:11 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/2/2023 10:25:02 AMUSer OKclick USER_ID bfr: 1 -- 
+5/2/2023 10:25:02 AMUSer OKclick USER_ID aftr: 1 -- 
+5/2/2023 10:25:02 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/4/2023 2:05:15 PMUSer OKclick USER_ID bfr: 1 -- 
+5/4/2023 2:05:15 PMUSer OKclick USER_ID aftr: 1 -- 
+5/4/2023 2:05:15 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/4/2023 6:43:38 PMUSer OKclick USER_ID bfr: 1 -- 
+5/4/2023 6:43:38 PMUSer OKclick USER_ID aftr: 1 -- 
+5/4/2023 6:43:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/4/2023 7:17:38 PMUSer OKclick USER_ID bfr: 1 -- 
+5/4/2023 7:17:38 PMUSer OKclick USER_ID aftr: 1 -- 
+5/4/2023 7:17:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/4/2023 7:51:43 PMUSer OKclick USER_ID bfr: 1 -- 
+5/4/2023 7:51:43 PMUSer OKclick USER_ID aftr: 1 -- 
+5/4/2023 7:51:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/9/2023 12:05:11 PMUSer OKclick USER_ID bfr: 1 -- 
+5/9/2023 12:05:11 PMUSer OKclick USER_ID aftr: 1 -- 
+5/9/2023 12:05:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/9/2023 12:55:43 PMUSer OKclick USER_ID bfr: 1 -- 
+5/9/2023 12:55:43 PMUSer OKclick USER_ID aftr: 1 -- 
+5/9/2023 12:55:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/9/2023 2:28:36 PMUSer OKclick USER_ID bfr: 1 -- 
+5/9/2023 2:28:36 PMUSer OKclick USER_ID aftr: 1 -- 
+5/9/2023 2:28:36 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/9/2023 2:48:52 PMUSer OKclick USER_ID bfr: 1 -- 
+5/9/2023 2:48:52 PMUSer OKclick USER_ID aftr: 1 -- 
+5/9/2023 2:48:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/9/2023 3:01:28 PMUSer OKclick USER_ID bfr: 1 -- 
+5/9/2023 3:01:28 PMUSer OKclick USER_ID aftr: 1 -- 
+5/9/2023 3:01:28 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/10/2023 1:48:40 PMUSer OKclick USER_ID bfr: 1 -- 
+5/10/2023 1:48:40 PMUSer OKclick USER_ID aftr: 1 -- 
+5/10/2023 1:48:40 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/11/2023 3:23:25 PMUSer OKclick USER_ID bfr: 1 -- 
+5/11/2023 3:23:25 PMUSer OKclick USER_ID aftr: 1 -- 
+5/11/2023 3:23:25 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/11/2023 3:25:33 PMUSer OKclick USER_ID bfr: 1 -- 
+5/11/2023 3:25:33 PMUSer OKclick USER_ID aftr: 1 -- 
+5/11/2023 3:25:33 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/12/2023 11:22:13 AMUSer OKclick USER_ID bfr: 1 -- 
+5/12/2023 11:22:13 AMUSer OKclick USER_ID aftr: 1 -- 
+5/12/2023 11:22:13 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/12/2023 11:28:33 AMUSer OKclick USER_ID bfr: 1 -- 
+5/12/2023 11:28:33 AMUSer OKclick USER_ID aftr: 1 -- 
+5/12/2023 11:28:33 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/12/2023 11:57:16 AMUSer OKclick USER_ID bfr: 1 -- 
+5/12/2023 11:57:16 AMUSer OKclick USER_ID aftr: 1 -- 
+5/12/2023 11:57:16 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/12/2023 12:04:13 PMUSer OKclick USER_ID bfr: 1 -- 
+5/12/2023 12:04:13 PMUSer OKclick USER_ID aftr: 1 -- 
+5/12/2023 12:04:13 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/12/2023 2:58:06 PMUSer OKclick USER_ID bfr: 1 -- 
+5/12/2023 2:58:06 PMUSer OKclick USER_ID aftr: 1 -- 
+5/12/2023 2:58:06 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/12/2023 3:47:34 PMUSer OKclick USER_ID bfr: 1 -- 
+5/12/2023 3:47:34 PMUSer OKclick USER_ID aftr: 1 -- 
+5/12/2023 3:47:34 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/15/2023 9:45:17 AMUSer OKclick USER_ID bfr: 1 -- 
+5/15/2023 9:45:17 AMUSer OKclick USER_ID aftr: 1 -- 
+5/15/2023 9:45:17 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/19/2023 12:02:54 PMUSer OKclick USER_ID bfr: 1 -- 
+5/19/2023 12:02:54 PMUSer OKclick USER_ID aftr: 1 -- 
+5/19/2023 12:02:54 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/19/2023 2:44:44 PMUSer OKclick USER_ID bfr: 1 -- 
+5/19/2023 2:44:44 PMUSer OKclick USER_ID aftr: 1 -- 
+5/19/2023 2:44:44 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/22/2023 10:30:23 AMUSer OKclick USER_ID bfr: 1 -- 
+5/22/2023 10:30:23 AMUSer OKclick USER_ID aftr: 1 -- 
+5/22/2023 10:30:23 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/22/2023 2:05:36 PMUSer OKclick USER_ID bfr: 1 -- 
+5/22/2023 2:05:36 PMUSer OKclick USER_ID aftr: 1 -- 
+5/22/2023 2:05:36 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/22/2023 6:54:39 PMUSer OKclick USER_ID bfr: 1 -- 
+5/22/2023 6:54:39 PMUSer OKclick USER_ID aftr: 1 -- 
+5/22/2023 6:54:39 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/23/2023 10:01:35 AMUSer OKclick USER_ID bfr: 1 -- 
+5/23/2023 10:01:35 AMUSer OKclick USER_ID aftr: 1 -- 
+5/23/2023 10:01:35 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/23/2023 11:52:41 AMUSer OKclick USER_ID bfr: 1 -- 
+5/23/2023 11:52:41 AMUSer OKclick USER_ID aftr: 1 -- 
+5/23/2023 11:52:41 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/30/2023 9:58:27 AMUSer OKclick USER_ID bfr: 1 -- 
+5/30/2023 9:58:27 AMUSer OKclick USER_ID aftr: 1 -- 
+5/30/2023 9:58:27 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/30/2023 5:53:03 PMUSer OKclick USER_ID bfr: 1 -- 
+5/30/2023 5:53:03 PMUSer OKclick USER_ID aftr: 1 -- 
+5/30/2023 5:53:03 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/30/2023 7:03:14 PMUSer OKclick USER_ID bfr: 1 -- 
+5/30/2023 7:03:14 PMUSer OKclick USER_ID aftr: 1 -- 
+5/30/2023 7:03:14 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/31/2023 10:04:00 AMUSer OKclick USER_ID bfr: 1 -- 
+5/31/2023 10:04:00 AMUSer OKclick USER_ID aftr: 1 -- 
+5/31/2023 10:04:00 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/31/2023 6:18:03 PMUSer OKclick USER_ID bfr: 1 -- 
+5/31/2023 6:18:03 PMUSer OKclick USER_ID aftr: 1 -- 
+5/31/2023 6:18:03 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/1/2023 9:40:36 AMUSer OKclick USER_ID bfr: 1 -- 
+6/1/2023 9:40:36 AMUSer OKclick USER_ID aftr: 1 -- 
+6/1/2023 9:40:36 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2023 11:19:05 AMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2023 11:19:05 AMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2023 11:19:05 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/6/2023 3:09:24 PMUSer OKclick USER_ID bfr: 1 -- 
+6/6/2023 3:09:24 PMUSer OKclick USER_ID aftr: 1 -- 
+6/6/2023 3:09:24 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/6/2023 3:34:26 PMUSer OKclick USER_ID bfr: 1 -- 
+6/6/2023 3:34:26 PMUSer OKclick USER_ID aftr: 1 -- 
+6/6/2023 3:34:26 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/6/2023 4:49:30 PMUSer OKclick USER_ID bfr: 1 -- 
+6/6/2023 4:49:30 PMUSer OKclick USER_ID aftr: 1 -- 
+6/6/2023 4:49:30 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/6/2023 4:53:57 PMUSer OKclick USER_ID bfr: 1 -- 
+6/6/2023 4:53:57 PMUSer OKclick USER_ID aftr: 1 -- 
+6/6/2023 4:53:57 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/6/2023 5:52:04 PMUSer OKclick USER_ID bfr: 1 -- 
+6/6/2023 5:52:04 PMUSer OKclick USER_ID aftr: 1 -- 
+6/6/2023 5:52:04 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/7/2023 12:10:24 PMUSer OKclick USER_ID bfr: 1 -- 
+6/7/2023 12:10:24 PMUSer OKclick USER_ID aftr: 1 -- 
+6/7/2023 12:10:24 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/7/2023 2:12:59 PMUSer OKclick USER_ID bfr: 1 -- 
+6/7/2023 2:12:59 PMUSer OKclick USER_ID aftr: 1 -- 
+6/7/2023 2:12:59 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/7/2023 3:07:12 PMUSer OKclick USER_ID bfr: 1 -- 
+6/7/2023 3:07:12 PMUSer OKclick USER_ID aftr: 1 -- 
+6/7/2023 3:07:12 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/8/2023 4:43:53 PMUSer OKclick USER_ID bfr: 1 -- 
+6/8/2023 4:43:53 PMUSer OKclick USER_ID aftr: 1 -- 
+6/8/2023 4:43:53 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/9/2023 12:37:27 PMUSer OKclick USER_ID bfr: 1 -- 
+6/9/2023 12:37:27 PMUSer OKclick USER_ID aftr: 1 -- 
+6/9/2023 12:37:27 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/12/2023 10:15:37 AMUSer OKclick USER_ID bfr: 1 -- 
+6/12/2023 10:15:37 AMUSer OKclick USER_ID aftr: 1 -- 
+6/12/2023 10:15:37 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/12/2023 11:42:51 AMUSer OKclick USER_ID bfr: 1 -- 
+6/12/2023 11:42:51 AMUSer OKclick USER_ID aftr: 1 -- 
+6/12/2023 11:42:51 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/12/2023 11:45:47 AMUSer OKclick USER_ID bfr: 1 -- 
+6/12/2023 11:45:47 AMUSer OKclick USER_ID aftr: 1 -- 
+6/12/2023 11:45:47 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/12/2023 12:46:42 PMUSer OKclick USER_ID bfr: 1 -- 
+6/12/2023 12:46:42 PMUSer OKclick USER_ID aftr: 1 -- 
+6/12/2023 12:46:42 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/12/2023 2:28:23 PMUSer OKclick USER_ID bfr: 1 -- 
+6/12/2023 2:28:23 PMUSer OKclick USER_ID aftr: 1 -- 
+6/12/2023 2:28:23 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/12/2023 3:13:03 PMUSer OKclick USER_ID bfr: 1 -- 
+6/12/2023 3:13:03 PMUSer OKclick USER_ID aftr: 1 -- 
+6/12/2023 3:13:03 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/12/2023 4:06:04 PMUSer OKclick USER_ID bfr: 1 -- 
+6/12/2023 4:06:04 PMUSer OKclick USER_ID aftr: 1 -- 
+6/12/2023 4:06:04 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/13/2023 9:40:49 AMUSer OKclick USER_ID bfr: 1 -- 
+6/13/2023 9:40:49 AMUSer OKclick USER_ID aftr: 1 -- 
+6/13/2023 9:40:49 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/13/2023 6:24:34 PMUSer OKclick USER_ID bfr: 1 -- 
+6/13/2023 6:24:34 PMUSer OKclick USER_ID aftr: 1 -- 
+6/13/2023 6:24:34 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/13/2023 6:26:46 PMUSer OKclick USER_ID bfr: 1 -- 
+6/13/2023 6:26:46 PMUSer OKclick USER_ID aftr: 1 -- 
+6/13/2023 6:26:46 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/13/2023 6:27:51 PMUSer OKclick USER_ID bfr: 1 -- 
+6/13/2023 6:27:51 PMUSer OKclick USER_ID aftr: 1 -- 
+6/13/2023 6:27:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/13/2023 6:28:37 PMUSer OKclick USER_ID bfr: 1 -- 
+6/13/2023 6:28:37 PMUSer OKclick USER_ID aftr: 1 -- 
+6/13/2023 6:28:37 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/14/2023 4:01:19 PMUSer OKclick USER_ID bfr: 1 -- 
+6/14/2023 4:01:19 PMUSer OKclick USER_ID aftr: 1 -- 
+6/14/2023 4:01:19 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/14/2023 4:10:10 PMUSer OKclick USER_ID bfr: 1 -- 
+6/14/2023 4:10:10 PMUSer OKclick USER_ID aftr: 1 -- 
+6/14/2023 4:10:10 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/14/2023 4:10:40 PMUSer OKclick USER_ID bfr: 1 -- 
+6/14/2023 4:10:40 PMUSer OKclick USER_ID aftr: 1 -- 
+6/14/2023 4:10:40 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/14/2023 4:18:56 PMUSer OKclick USER_ID bfr: 1 -- 
+6/14/2023 4:18:56 PMUSer OKclick USER_ID aftr: 1 -- 
+6/14/2023 4:18:56 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/14/2023 4:20:26 PMUSer OKclick USER_ID bfr: 1 -- 
+6/14/2023 4:20:26 PMUSer OKclick USER_ID aftr: 1 -- 
+6/14/2023 4:20:26 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/15/2023 10:55:36 AMUSer OKclick USER_ID bfr: 1 -- 
+6/15/2023 10:55:36 AMUSer OKclick USER_ID aftr: 1 -- 
+6/15/2023 10:55:36 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/19/2023 2:24:24 PMUSer OKclick USER_ID bfr: 1 -- 
+6/19/2023 2:24:24 PMUSer OKclick USER_ID aftr: 1 -- 
+6/19/2023 2:24:24 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2023 9:58:09 AMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2023 9:58:09 AMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2023 9:58:09 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2023 10:09:42 AMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2023 10:09:42 AMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2023 10:09:42 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2023 2:12:00 PMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2023 2:12:00 PMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2023 2:12:00 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2023 3:53:27 PMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2023 3:53:27 PMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2023 3:53:27 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2023 4:34:32 PMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2023 4:34:32 PMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2023 4:34:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2023 11:20:07 AMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2023 11:20:07 AMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2023 11:20:07 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2023 4:08:24 PMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2023 4:08:24 PMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2023 4:08:24 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2023 4:28:49 PMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2023 4:28:49 PMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2023 4:28:49 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2023 5:14:17 PMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2023 5:14:17 PMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2023 5:14:17 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2023 10:34:46 AMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2023 10:34:47 AMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2023 10:34:48 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2023 10:37:41 AMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2023 10:37:41 AMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2023 10:37:41 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2023 12:17:04 PMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2023 12:17:04 PMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2023 12:17:05 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2023 12:47:07 PMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2023 12:47:07 PMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2023 12:47:07 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2023 2:16:43 PMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2023 2:16:43 PMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2023 2:16:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2023 6:38:19 PMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2023 6:38:19 PMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2023 6:38:19 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/6/2023 10:48:16 AMUSer OKclick USER_ID bfr: 1 -- 
+7/6/2023 10:48:16 AMUSer OKclick USER_ID aftr: 1 -- 
+7/6/2023 10:48:16 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/6/2023 11:03:06 AMUSer OKclick USER_ID bfr: 1 -- 
+7/6/2023 11:03:06 AMUSer OKclick USER_ID aftr: 1 -- 
+7/6/2023 11:03:07 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/6/2023 2:00:27 PMUSer OKclick USER_ID bfr: 1 -- 
+7/6/2023 2:00:27 PMUSer OKclick USER_ID aftr: 1 -- 
+7/6/2023 2:00:27 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/6/2023 4:55:28 PMUSer OKclick USER_ID bfr: 1 -- 
+7/6/2023 4:55:28 PMUSer OKclick USER_ID aftr: 1 -- 
+7/6/2023 4:55:28 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/6/2023 6:38:18 PMUSer OKclick USER_ID bfr: 1 -- 
+7/6/2023 6:38:18 PMUSer OKclick USER_ID aftr: 1 -- 
+7/6/2023 6:38:18 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/7/2023 10:31:38 AMUSer OKclick USER_ID bfr: 1 -- 
+7/7/2023 10:31:38 AMUSer OKclick USER_ID aftr: 1 -- 
+7/7/2023 10:31:38 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/7/2023 11:38:35 AMUSer OKclick USER_ID bfr: 1 -- 
+7/7/2023 11:38:35 AMUSer OKclick USER_ID aftr: 1 -- 
+7/7/2023 11:38:35 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/7/2023 2:11:11 PMUSer OKclick USER_ID bfr: 1 -- 
+7/7/2023 2:11:11 PMUSer OKclick USER_ID aftr: 1 -- 
+7/7/2023 2:11:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/10/2023 2:38:55 PMUSer OKclick USER_ID bfr: 1 -- 
+7/10/2023 2:38:55 PMUSer OKclick USER_ID aftr: 1 -- 
+7/10/2023 2:38:55 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/10/2023 2:38:56 PMUSer OKclick USER_ID bfr: 1 -- 
+7/10/2023 2:38:56 PMUSer OKclick USER_ID aftr: 1 -- 
+7/10/2023 2:38:56 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/10/2023 5:24:14 PMUSer OKclick USER_ID bfr: 1 -- 
+7/10/2023 5:24:14 PMUSer OKclick USER_ID aftr: 1 -- 
+7/10/2023 5:24:14 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/10/2023 5:25:40 PMUSer OKclick USER_ID bfr: 1278 -- 
+7/10/2023 5:25:40 PMUSer OKclick USER_ID aftr: 1278 -- 
+7/10/2023 5:25:40 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+7/11/2023 12:09:42 PMUSer OKclick USER_ID bfr: 1 -- 
+7/11/2023 12:09:42 PMUSer OKclick USER_ID aftr: 1 -- 
+7/11/2023 12:09:42 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/11/2023 3:14:43 PMUSer OKclick USER_ID bfr: 1 -- 
+7/11/2023 3:14:43 PMUSer OKclick USER_ID aftr: 1 -- 
+7/11/2023 3:14:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/11/2023 5:52:12 PMUSer OKclick USER_ID bfr: 1278 -- 
+7/11/2023 5:52:12 PMUSer OKclick USER_ID aftr: 1278 -- 
+7/11/2023 5:52:12 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+7/12/2023 10:25:54 AMUSer OKclick USER_ID bfr: 1 -- 
+7/12/2023 10:25:54 AMUSer OKclick USER_ID aftr: 1 -- 
+7/12/2023 10:25:54 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/12/2023 11:27:04 AMUSer OKclick USER_ID bfr: 1 -- 
+7/12/2023 11:27:04 AMUSer OKclick USER_ID aftr: 1 -- 
+7/12/2023 11:27:04 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/12/2023 3:50:42 PMUSer OKclick USER_ID bfr: 1 -- 
+7/12/2023 3:50:42 PMUSer OKclick USER_ID aftr: 1 -- 
+7/12/2023 3:50:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/12/2023 4:37:26 PMUSer OKclick USER_ID bfr: 1 -- 
+7/12/2023 4:37:26 PMUSer OKclick USER_ID aftr: 1 -- 
+7/12/2023 4:37:26 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/12/2023 5:39:51 PMUSer OKclick USER_ID bfr: 1 -- 
+7/12/2023 5:39:51 PMUSer OKclick USER_ID aftr: 1 -- 
+7/12/2023 5:39:51 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/13/2023 10:39:21 AMUSer OKclick USER_ID bfr: 1 -- 
+7/13/2023 10:39:21 AMUSer OKclick USER_ID aftr: 1 -- 
+7/13/2023 10:39:21 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/13/2023 5:47:39 PMUSer OKclick USER_ID bfr: 1 -- 
+7/13/2023 5:47:39 PMUSer OKclick USER_ID aftr: 1 -- 
+7/13/2023 5:47:39 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/14/2023 12:04:13 PMUSer OKclick USER_ID bfr: 1 -- 
+7/14/2023 12:04:13 PMUSer OKclick USER_ID aftr: 1 -- 
+7/14/2023 12:04:13 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/17/2023 10:23:33 AMUSer OKclick USER_ID bfr: 1 -- 
+7/17/2023 10:23:33 AMUSer OKclick USER_ID aftr: 1 -- 
+7/17/2023 10:23:33 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/17/2023 10:44:19 AMUSer OKclick USER_ID bfr: 1 -- 
+7/17/2023 10:44:19 AMUSer OKclick USER_ID aftr: 1 -- 
+7/17/2023 10:44:19 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/17/2023 11:03:25 AMUSer OKclick USER_ID bfr: 1 -- 
+7/17/2023 11:03:25 AMUSer OKclick USER_ID aftr: 1 -- 
+7/17/2023 11:03:25 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/21/2024 4:33:57 PMUSer OKclick USER_ID bfr: 1 -- 
+3/21/2024 4:33:58 PMUSer OKclick USER_ID aftr: 1 -- 
+3/21/2024 4:33:58 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/21/2024 5:10:57 PMUSer OKclick USER_ID bfr: 1 -- 
+3/21/2024 5:10:57 PMUSer OKclick USER_ID aftr: 1 -- 
+3/21/2024 5:10:57 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/21/2024 7:02:35 PMUSer OKclick USER_ID bfr: 1 -- 
+3/21/2024 7:02:35 PMUSer OKclick USER_ID aftr: 1 -- 
+3/21/2024 7:02:35 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/22/2024 10:05:55 AMUSer OKclick USER_ID bfr: 1 -- 
+3/22/2024 10:05:55 AMUSer OKclick USER_ID aftr: 1 -- 
+3/22/2024 10:05:55 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/22/2024 12:08:09 PMUSer OKclick USER_ID bfr: 1 -- 
+3/22/2024 12:08:09 PMUSer OKclick USER_ID aftr: 1 -- 
+3/22/2024 12:08:09 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/22/2024 1:03:09 PMUSer OKclick USER_ID bfr: 1 -- 
+3/22/2024 1:03:09 PMUSer OKclick USER_ID aftr: 1 -- 
+3/22/2024 1:03:09 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/25/2024 9:57:12 AMUSer OKclick USER_ID bfr: 1 -- 
+3/25/2024 9:57:12 AMUSer OKclick USER_ID aftr: 1 -- 
+3/25/2024 9:57:12 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/25/2024 11:04:46 AMUSer OKclick USER_ID bfr: 1 -- 
+3/25/2024 11:04:46 AMUSer OKclick USER_ID aftr: 1 -- 
+3/25/2024 11:04:46 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/25/2024 12:44:40 PMUSer OKclick USER_ID bfr: 1 -- 
+3/25/2024 12:44:40 PMUSer OKclick USER_ID aftr: 1 -- 
+3/25/2024 12:44:40 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/25/2024 1:52:29 PMUSer OKclick USER_ID bfr: 1 -- 
+3/25/2024 1:52:29 PMUSer OKclick USER_ID aftr: 1 -- 
+3/25/2024 1:52:29 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/25/2024 2:53:57 PMUSer OKclick USER_ID bfr: 1 -- 
+3/25/2024 2:53:57 PMUSer OKclick USER_ID aftr: 1 -- 
+3/25/2024 2:53:57 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/25/2024 3:40:47 PMUSer OKclick USER_ID bfr: 1 -- 
+3/25/2024 3:40:47 PMUSer OKclick USER_ID aftr: 1 -- 
+3/25/2024 3:40:47 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/25/2024 5:21:01 PMUSer OKclick USER_ID bfr: 1 -- 
+3/25/2024 5:21:01 PMUSer OKclick USER_ID aftr: 1 -- 
+3/25/2024 5:21:01 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/25/2024 5:26:06 PMUSer OKclick USER_ID bfr: 1 -- 
+3/25/2024 5:26:06 PMUSer OKclick USER_ID aftr: 1 -- 
+3/25/2024 5:26:06 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+3/28/2024 10:36:12 AMUSer OKclick USER_ID bfr: 1 -- 
+3/28/2024 10:36:12 AMUSer OKclick USER_ID aftr: 1 -- 
+3/28/2024 10:36:12 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/1/2024 10:55:41 AMUSer OKclick USER_ID bfr: 1 -- 
+4/1/2024 10:55:42 AMUSer OKclick USER_ID aftr: 1 -- 
+4/1/2024 10:55:42 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/1/2024 12:04:58 PMUSer OKclick USER_ID bfr: 2159 -- 
+4/1/2024 12:04:58 PMUSer OKclick USER_ID aftr: 2159 -- 
+4/1/2024 12:04:58 PMUSer OKclick USER_ID aftr dbcall: 2159 -- 
+4/1/2024 12:07:04 PMUSer OKclick USER_ID bfr: 2159 -- 
+4/1/2024 12:07:04 PMUSer OKclick USER_ID aftr: 2159 -- 
+4/1/2024 12:07:04 PMUSer OKclick USER_ID aftr dbcall: 2159 -- 
+4/1/2024 12:08:29 PMUSer OKclick USER_ID bfr: 2351 -- 
+4/1/2024 12:08:29 PMUSer OKclick USER_ID aftr: 2351 -- 
+4/1/2024 12:08:29 PMUSer OKclick USER_ID aftr dbcall: 2351 -- 
+4/1/2024 12:11:27 PMUSer OKclick USER_ID bfr: 2159 -- 
+4/1/2024 12:11:27 PMUSer OKclick USER_ID aftr: 2159 -- 
+4/1/2024 12:11:27 PMUSer OKclick USER_ID aftr dbcall: 2159 -- 
+4/1/2024 12:13:55 PMUSer OKclick USER_ID bfr: 2159 -- 
+4/1/2024 12:13:55 PMUSer OKclick USER_ID aftr: 2159 -- 
+4/1/2024 12:13:56 PMUSer OKclick USER_ID aftr dbcall: 2159 -- 
+4/1/2024 12:25:17 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/1/2024 12:25:17 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/1/2024 12:25:17 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/1/2024 6:15:05 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/1/2024 6:15:05 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/1/2024 6:15:05 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/2/2024 2:00:19 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/2/2024 2:00:19 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/2/2024 2:00:19 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/5/2024 10:37:53 AMUSer OKclick USER_ID bfr: 1278 -- 
+4/5/2024 10:37:53 AMUSer OKclick USER_ID aftr: 1278 -- 
+4/5/2024 10:37:53 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/5/2024 11:14:26 AMUSer OKclick USER_ID bfr: 1278 -- 
+4/5/2024 11:14:26 AMUSer OKclick USER_ID aftr: 1278 -- 
+4/5/2024 11:14:26 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/8/2024 10:32:05 AMUSer OKclick USER_ID bfr: 1278 -- 
+4/8/2024 10:32:05 AMUSer OKclick USER_ID aftr: 1278 -- 
+4/8/2024 10:32:05 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/8/2024 10:32:36 AMUSer OKclick USER_ID bfr: 1 -- 
+4/8/2024 10:32:36 AMUSer OKclick USER_ID aftr: 1 -- 
+4/8/2024 10:32:36 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/8/2024 3:56:17 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/8/2024 3:56:17 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/8/2024 3:56:17 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/10/2024 5:06:51 PMUSer OKclick USER_ID bfr: 1 -- 
+4/10/2024 5:06:51 PMUSer OKclick USER_ID aftr: 1 -- 
+4/10/2024 5:06:51 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/10/2024 5:28:02 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/10/2024 5:28:02 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/10/2024 5:28:02 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/12/2024 10:25:54 AMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2024 10:25:54 AMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2024 10:25:54 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2024 10:27:28 AMUSer OKclick USER_ID bfr: 1278 -- 
+4/12/2024 10:27:28 AMUSer OKclick USER_ID aftr: 1278 -- 
+4/12/2024 10:27:28 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/12/2024 5:18:10 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2024 5:18:22 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2024 5:18:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2024 5:18:31 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/12/2024 5:18:31 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/12/2024 5:18:31 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/12/2024 5:25:07 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2024 5:25:07 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2024 5:25:07 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2024 5:25:24 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/12/2024 5:25:24 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/12/2024 5:25:24 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/12/2024 5:25:59 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2024 5:25:59 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2024 5:25:59 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2024 5:26:13 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/12/2024 5:26:13 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/12/2024 5:26:13 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/12/2024 5:28:45 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2024 5:28:45 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2024 5:28:45 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2024 5:29:02 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/12/2024 5:29:02 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/12/2024 5:29:02 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/12/2024 5:36:52 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2024 5:36:52 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2024 5:36:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/12/2024 6:31:20 PMUSer OKclick USER_ID bfr: 1 -- 
+4/12/2024 6:31:20 PMUSer OKclick USER_ID aftr: 1 -- 
+4/12/2024 6:31:20 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2024 10:14:26 AMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2024 10:14:26 AMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2024 10:14:26 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2024 11:48:19 AMUSer OKclick USER_ID bfr: 1278 -- 
+4/17/2024 11:48:19 AMUSer OKclick USER_ID aftr: 1278 -- 
+4/17/2024 11:48:19 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/17/2024 12:19:03 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2024 12:19:03 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2024 12:19:03 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2024 12:19:15 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/17/2024 12:19:15 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/17/2024 12:19:15 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+4/17/2024 12:32:38 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2024 12:32:38 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2024 12:32:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2024 4:08:11 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2024 4:08:11 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2024 4:08:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2024 4:10:48 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2024 4:10:48 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2024 4:10:48 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2024 4:19:06 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2024 4:19:06 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2024 4:19:06 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2024 4:23:48 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2024 4:23:48 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2024 4:23:48 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/17/2024 6:00:47 PMUSer OKclick USER_ID bfr: 1 -- 
+4/17/2024 6:00:47 PMUSer OKclick USER_ID aftr: 1 -- 
+4/17/2024 6:00:47 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/18/2024 3:58:21 PMUSer OKclick USER_ID bfr: 1 -- 
+4/18/2024 3:58:21 PMUSer OKclick USER_ID aftr: 1 -- 
+4/18/2024 3:58:21 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/22/2024 9:59:48 AMUSer OKclick USER_ID bfr: 1 -- 
+4/22/2024 9:59:48 AMUSer OKclick USER_ID aftr: 1 -- 
+4/22/2024 9:59:48 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/22/2024 6:22:29 PMUSer OKclick USER_ID bfr: 1 -- 
+4/22/2024 6:22:29 PMUSer OKclick USER_ID aftr: 1 -- 
+4/22/2024 6:22:29 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/23/2024 10:15:05 AMUSer OKclick USER_ID bfr: 1 -- 
+4/23/2024 10:15:05 AMUSer OKclick USER_ID aftr: 1 -- 
+4/23/2024 10:15:05 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/24/2024 10:58:32 AMUSer OKclick USER_ID bfr: 1 -- 
+4/24/2024 10:58:32 AMUSer OKclick USER_ID aftr: 1 -- 
+4/24/2024 10:58:32 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/26/2024 10:16:26 AMUSer OKclick USER_ID bfr: 1 -- 
+4/26/2024 10:16:30 AMUSer OKclick USER_ID aftr: 1 -- 
+4/26/2024 10:16:30 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/29/2024 11:46:13 AMUSer OKclick USER_ID bfr: 1 -- 
+4/29/2024 11:46:13 AMUSer OKclick USER_ID aftr: 1 -- 
+4/29/2024 11:46:14 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+4/30/2024 4:04:05 PMUSer OKclick USER_ID bfr: 1278 -- 
+4/30/2024 4:04:05 PMUSer OKclick USER_ID aftr: 1278 -- 
+4/30/2024 4:04:05 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/1/2024 6:36:53 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/1/2024 6:36:53 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/1/2024 6:36:53 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/2/2024 10:35:24 AMUSer OKclick USER_ID bfr: 1 -- 
+5/2/2024 10:35:24 AMUSer OKclick USER_ID aftr: 1 -- 
+5/2/2024 10:35:24 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/2/2024 10:37:40 AMUSer OKclick USER_ID bfr: 1 -- 
+5/2/2024 10:37:40 AMUSer OKclick USER_ID aftr: 1 -- 
+5/2/2024 10:37:40 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/2/2024 1:05:10 PMUSer OKclick USER_ID bfr: 1 -- 
+5/2/2024 1:05:10 PMUSer OKclick USER_ID aftr: 1 -- 
+5/2/2024 1:05:10 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/2/2024 5:15:05 PMUSer OKclick USER_ID bfr: 1 -- 
+5/2/2024 5:15:05 PMUSer OKclick USER_ID aftr: 1 -- 
+5/2/2024 5:15:05 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/3/2024 8:46:38 AMUSer OKclick USER_ID bfr: 1 -- 
+5/3/2024 8:46:38 AMUSer OKclick USER_ID aftr: 1 -- 
+5/3/2024 8:46:38 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/3/2024 3:47:42 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/3/2024 3:47:42 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/3/2024 3:47:42 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/6/2024 9:22:39 AMUSer OKclick USER_ID bfr: 1 -- 
+5/6/2024 9:22:39 AMUSer OKclick USER_ID aftr: 1 -- 
+5/6/2024 9:22:39 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/6/2024 2:40:12 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/6/2024 2:40:12 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/6/2024 2:40:12 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/6/2024 3:18:04 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/6/2024 3:18:04 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/6/2024 3:18:04 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/7/2024 9:41:27 AMUSer OKclick USER_ID bfr: 1 -- 
+5/7/2024 9:41:27 AMUSer OKclick USER_ID aftr: 1 -- 
+5/7/2024 9:41:27 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/7/2024 12:37:14 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/7/2024 12:37:14 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/7/2024 12:37:14 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/7/2024 2:12:49 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/7/2024 2:12:49 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/7/2024 2:12:49 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/7/2024 2:55:59 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/7/2024 2:55:59 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/7/2024 2:55:59 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/7/2024 3:30:56 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/7/2024 3:30:56 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/7/2024 3:30:56 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/7/2024 3:54:40 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/7/2024 3:54:40 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/7/2024 3:54:40 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/8/2024 12:32:27 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/8/2024 12:32:27 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/8/2024 12:32:27 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/9/2024 10:44:15 AMUSer OKclick USER_ID bfr: 1 -- 
+5/9/2024 10:44:15 AMUSer OKclick USER_ID aftr: 1 -- 
+5/9/2024 10:44:15 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/9/2024 12:00:53 PMUSer OKclick USER_ID bfr: 1 -- 
+5/9/2024 12:00:53 PMUSer OKclick USER_ID aftr: 1 -- 
+5/9/2024 12:00:53 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/10/2024 10:13:00 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/10/2024 10:13:00 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/10/2024 10:13:00 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/10/2024 10:36:16 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/10/2024 10:36:16 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/10/2024 10:36:16 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/10/2024 10:38:21 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/10/2024 10:38:21 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/10/2024 10:38:21 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/10/2024 12:50:54 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/10/2024 12:50:54 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/10/2024 12:50:54 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/10/2024 12:52:54 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/10/2024 12:52:54 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/10/2024 12:52:54 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/10/2024 12:56:08 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/10/2024 12:56:08 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/10/2024 12:56:08 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/10/2024 1:04:35 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/10/2024 1:04:35 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/10/2024 1:04:35 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/10/2024 1:06:07 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/10/2024 1:06:07 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/10/2024 1:06:07 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/10/2024 2:08:05 PMUSer OKclick USER_ID bfr: 1 -- 
+5/10/2024 2:08:05 PMUSer OKclick USER_ID aftr: 1 -- 
+5/10/2024 2:08:05 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/14/2024 9:26:23 AMUSer OKclick USER_ID bfr: 1 -- 
+5/14/2024 9:26:23 AMUSer OKclick USER_ID aftr: 1 -- 
+5/14/2024 9:26:23 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/14/2024 2:06:49 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/14/2024 2:06:49 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/14/2024 2:06:49 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/14/2024 2:29:45 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/14/2024 2:29:45 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/14/2024 2:29:45 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/14/2024 4:30:33 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/14/2024 4:30:33 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/14/2024 4:30:33 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/14/2024 4:30:53 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/14/2024 4:30:53 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/14/2024 4:30:53 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/14/2024 4:31:09 PMUSer OKclick USER_ID bfr: 1 -- 
+5/14/2024 4:31:09 PMUSer OKclick USER_ID aftr: 1 -- 
+5/14/2024 4:31:09 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/14/2024 4:32:12 PMUSer OKclick USER_ID bfr: 1 -- 
+5/14/2024 4:32:12 PMUSer OKclick USER_ID aftr: 1 -- 
+5/14/2024 4:32:12 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/14/2024 4:33:08 PMUSer OKclick USER_ID bfr: 1 -- 
+5/14/2024 4:33:08 PMUSer OKclick USER_ID aftr: 1 -- 
+5/14/2024 4:33:08 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/14/2024 4:35:35 PMUSer OKclick USER_ID bfr: 1 -- 
+5/14/2024 4:35:35 PMUSer OKclick USER_ID aftr: 1 -- 
+5/14/2024 4:35:35 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/15/2024 10:07:47 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/15/2024 10:07:47 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/15/2024 10:07:47 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/15/2024 12:30:33 PMUSer OKclick USER_ID bfr: 1 -- 
+5/15/2024 12:30:33 PMUSer OKclick USER_ID aftr: 1 -- 
+5/15/2024 12:30:33 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/16/2024 9:35:25 AMUSer OKclick USER_ID bfr: 1 -- 
+5/16/2024 9:35:25 AMUSer OKclick USER_ID aftr: 1 -- 
+5/16/2024 9:35:26 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/16/2024 10:06:40 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/16/2024 10:06:40 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/16/2024 10:06:40 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/16/2024 11:25:13 AMUSer OKclick USER_ID bfr: 1 -- 
+5/16/2024 11:25:13 AMUSer OKclick USER_ID aftr: 1 -- 
+5/16/2024 11:25:13 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/16/2024 11:52:30 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/16/2024 11:52:30 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/16/2024 11:52:30 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/16/2024 12:44:45 PMUSer OKclick USER_ID bfr: 1 -- 
+5/16/2024 12:44:45 PMUSer OKclick USER_ID aftr: 1 -- 
+5/16/2024 12:44:45 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/17/2024 9:14:11 AMUSer OKclick USER_ID bfr: 1 -- 
+5/17/2024 9:14:11 AMUSer OKclick USER_ID aftr: 1 -- 
+5/17/2024 9:14:11 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/17/2024 10:35:54 AMUSer OKclick USER_ID bfr: 1 -- 
+5/17/2024 10:35:54 AMUSer OKclick USER_ID aftr: 1 -- 
+5/17/2024 10:35:54 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/18/2024 4:56:19 PMUSer OKclick USER_ID bfr: 1 -- 
+5/18/2024 4:56:19 PMUSer OKclick USER_ID aftr: 1 -- 
+5/18/2024 4:56:19 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/20/2024 10:19:52 AMUSer OKclick USER_ID bfr: 1 -- 
+5/20/2024 10:19:52 AMUSer OKclick USER_ID aftr: 1 -- 
+5/20/2024 10:19:52 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/20/2024 10:39:57 AMUSer OKclick USER_ID bfr: 1 -- 
+5/20/2024 10:39:57 AMUSer OKclick USER_ID aftr: 1 -- 
+5/20/2024 10:39:57 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/20/2024 2:49:37 PMUSer OKclick USER_ID bfr: 1 -- 
+5/20/2024 2:49:37 PMUSer OKclick USER_ID aftr: 1 -- 
+5/20/2024 2:49:37 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/21/2024 4:54:00 PMUSer OKclick USER_ID bfr: 1 -- 
+5/21/2024 4:54:00 PMUSer OKclick USER_ID aftr: 1 -- 
+5/21/2024 4:54:00 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/21/2024 4:54:42 PMUSer OKclick USER_ID bfr: 1 -- 
+5/21/2024 4:54:42 PMUSer OKclick USER_ID aftr: 1 -- 
+5/21/2024 4:54:42 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/23/2024 9:06:00 AMUSer OKclick USER_ID bfr: 1 -- 
+5/23/2024 9:06:00 AMUSer OKclick USER_ID aftr: 1 -- 
+5/23/2024 9:06:00 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/24/2024 9:07:16 AMUSer OKclick USER_ID bfr: 1 -- 
+5/24/2024 9:07:16 AMUSer OKclick USER_ID aftr: 1 -- 
+5/24/2024 9:07:16 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/24/2024 9:07:24 AMUSer OKclick USER_ID bfr: 1 -- 
+5/24/2024 9:07:24 AMUSer OKclick USER_ID aftr: 1 -- 
+5/24/2024 9:07:24 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/24/2024 9:21:19 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/24/2024 9:21:19 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/24/2024 9:21:19 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/24/2024 6:01:47 PMUSer OKclick USER_ID bfr: 1 -- 
+5/24/2024 6:01:47 PMUSer OKclick USER_ID aftr: 1 -- 
+5/24/2024 6:01:47 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/27/2024 9:33:40 AMUSer OKclick USER_ID bfr: 1 -- 
+5/27/2024 9:33:40 AMUSer OKclick USER_ID aftr: 1 -- 
+5/27/2024 9:33:40 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/27/2024 4:37:07 PMUSer OKclick USER_ID bfr: 1 -- 
+5/27/2024 4:37:07 PMUSer OKclick USER_ID aftr: 1 -- 
+5/27/2024 4:37:07 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/28/2024 9:13:43 AMUSer OKclick USER_ID bfr: 1 -- 
+5/28/2024 9:13:43 AMUSer OKclick USER_ID aftr: 1 -- 
+5/28/2024 9:13:44 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/28/2024 11:43:51 AMUSer OKclick USER_ID bfr: 1 -- 
+5/28/2024 11:43:51 AMUSer OKclick USER_ID aftr: 1 -- 
+5/28/2024 11:43:51 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/28/2024 2:30:11 PMUSer OKclick USER_ID bfr: 1 -- 
+5/28/2024 2:30:11 PMUSer OKclick USER_ID aftr: 1 -- 
+5/28/2024 2:30:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/29/2024 2:42:44 PMUSer OKclick USER_ID bfr: 1 -- 
+5/29/2024 2:42:44 PMUSer OKclick USER_ID aftr: 1 -- 
+5/29/2024 2:42:44 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/30/2024 9:17:46 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/30/2024 9:17:46 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/30/2024 9:17:46 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/30/2024 9:40:44 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/30/2024 9:40:44 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/30/2024 9:40:44 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/30/2024 9:40:54 AMUSer OKclick USER_ID bfr: 1278 -- 
+5/30/2024 9:40:54 AMUSer OKclick USER_ID aftr: 1278 -- 
+5/30/2024 9:40:54 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/30/2024 2:17:50 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/30/2024 2:17:50 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/30/2024 2:17:50 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/30/2024 2:21:27 PMUSer OKclick USER_ID bfr: 1 -- 
+5/30/2024 2:21:28 PMUSer OKclick USER_ID aftr: 1 -- 
+5/30/2024 2:21:28 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+5/30/2024 5:10:33 PMUSer OKclick USER_ID bfr: 1278 -- 
+5/30/2024 5:10:33 PMUSer OKclick USER_ID aftr: 1278 -- 
+5/30/2024 5:10:33 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+5/31/2024 11:54:13 AMUSer OKclick USER_ID bfr: 1 -- 
+5/31/2024 11:54:13 AMUSer OKclick USER_ID aftr: 1 -- 
+5/31/2024 11:54:13 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/3/2024 9:40:06 AMUSer OKclick USER_ID bfr: 1 -- 
+6/3/2024 9:40:06 AMUSer OKclick USER_ID aftr: 1 -- 
+6/3/2024 9:40:06 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/3/2024 10:58:58 AMUSer OKclick USER_ID bfr: 1 -- 
+6/3/2024 10:58:58 AMUSer OKclick USER_ID aftr: 1 -- 
+6/3/2024 10:58:58 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/3/2024 5:20:05 PMUSer OKclick USER_ID bfr: 1 -- 
+6/3/2024 5:20:05 PMUSer OKclick USER_ID aftr: 1 -- 
+6/3/2024 5:20:05 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/4/2024 9:23:56 AMUSer OKclick USER_ID bfr: 1 -- 
+6/4/2024 9:23:57 AMUSer OKclick USER_ID aftr: 1 -- 
+6/4/2024 9:23:57 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/4/2024 2:08:13 PMUSer OKclick USER_ID bfr: 1 -- 
+6/4/2024 2:08:13 PMUSer OKclick USER_ID aftr: 1 -- 
+6/4/2024 2:08:13 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/4/2024 2:08:24 PMUSer OKclick USER_ID bfr: 1 -- 
+6/4/2024 2:08:24 PMUSer OKclick USER_ID aftr: 1 -- 
+6/4/2024 2:08:24 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/4/2024 2:35:28 PMUSer OKclick USER_ID bfr: 1 -- 
+6/4/2024 2:35:28 PMUSer OKclick USER_ID aftr: 1 -- 
+6/4/2024 2:35:28 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/4/2024 3:26:52 PMUSer OKclick USER_ID bfr: 1 -- 
+6/4/2024 3:26:52 PMUSer OKclick USER_ID aftr: 1 -- 
+6/4/2024 3:26:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2024 11:25:19 AMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2024 11:25:19 AMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2024 11:25:19 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2024 11:46:34 AMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2024 11:46:34 AMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2024 11:46:34 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2024 11:59:35 AMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2024 11:59:35 AMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2024 11:59:35 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2024 4:14:37 PMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2024 4:14:37 PMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2024 4:14:37 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2024 4:18:31 PMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2024 4:18:31 PMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2024 4:18:31 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2024 4:20:34 PMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2024 4:20:34 PMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2024 4:20:34 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2024 4:24:19 PMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2024 4:24:19 PMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2024 4:24:19 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/5/2024 6:08:14 PMUSer OKclick USER_ID bfr: 1 -- 
+6/5/2024 6:08:14 PMUSer OKclick USER_ID aftr: 1 -- 
+6/5/2024 6:08:14 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/7/2024 12:30:43 PMUSer OKclick USER_ID bfr: 1 -- 
+6/7/2024 12:30:43 PMUSer OKclick USER_ID aftr: 1 -- 
+6/7/2024 12:30:43 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/10/2024 9:23:44 AMUSer OKclick USER_ID bfr: 1 -- 
+6/10/2024 9:23:44 AMUSer OKclick USER_ID aftr: 1 -- 
+6/10/2024 9:23:44 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/10/2024 2:21:56 PMUSer OKclick USER_ID bfr: 1 -- 
+6/10/2024 2:21:56 PMUSer OKclick USER_ID aftr: 1 -- 
+6/10/2024 2:21:56 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/10/2024 3:03:54 PMUSer OKclick USER_ID bfr: 1 -- 
+6/10/2024 3:03:54 PMUSer OKclick USER_ID aftr: 1 -- 
+6/10/2024 3:03:54 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/10/2024 5:14:38 PMUSer OKclick USER_ID bfr: 1 -- 
+6/10/2024 5:14:38 PMUSer OKclick USER_ID aftr: 1 -- 
+6/10/2024 5:14:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/11/2024 9:13:54 AMUSer OKclick USER_ID bfr: 1 -- 
+6/11/2024 9:13:54 AMUSer OKclick USER_ID aftr: 1 -- 
+6/11/2024 9:13:54 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/17/2024 10:12:27 AMUSer OKclick USER_ID bfr: 1 -- 
+6/17/2024 10:12:27 AMUSer OKclick USER_ID aftr: 1 -- 
+6/17/2024 10:12:27 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/17/2024 11:37:43 AMUSer OKclick USER_ID bfr: 1 -- 
+6/17/2024 11:37:43 AMUSer OKclick USER_ID aftr: 1 -- 
+6/17/2024 11:37:43 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/17/2024 1:41:55 PMUSer OKclick USER_ID bfr: 1 -- 
+6/17/2024 1:41:55 PMUSer OKclick USER_ID aftr: 1 -- 
+6/17/2024 1:41:55 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/17/2024 5:55:51 PMUSer OKclick USER_ID bfr: 1 -- 
+6/17/2024 5:55:51 PMUSer OKclick USER_ID aftr: 1 -- 
+6/17/2024 5:55:51 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/17/2024 6:35:37 PMUSer OKclick USER_ID bfr: 1 -- 
+6/17/2024 6:35:37 PMUSer OKclick USER_ID aftr: 1 -- 
+6/17/2024 6:35:37 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/17/2024 7:52:31 PMUSer OKclick USER_ID bfr: 1 -- 
+6/17/2024 7:52:31 PMUSer OKclick USER_ID aftr: 1 -- 
+6/17/2024 7:52:31 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 9:13:38 AMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 9:13:38 AMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 9:13:38 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 9:29:13 AMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 9:29:13 AMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 9:29:13 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 10:20:24 AMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 10:20:24 AMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 10:20:24 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 10:30:33 AMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 10:30:33 AMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 10:30:33 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 11:33:20 AMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 11:33:20 AMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 11:33:20 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 11:45:27 AMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 11:45:27 AMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 11:45:27 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 12:00:32 PMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 12:00:32 PMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 12:00:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 12:06:55 PMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 12:06:55 PMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 12:06:55 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 12:08:03 PMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 12:08:03 PMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 12:08:03 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 2:55:38 PMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 2:55:38 PMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 2:55:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 4:12:22 PMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 4:12:22 PMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 4:12:22 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/18/2024 6:41:52 PMUSer OKclick USER_ID bfr: 1 -- 
+6/18/2024 6:41:52 PMUSer OKclick USER_ID aftr: 1 -- 
+6/18/2024 6:41:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/19/2024 9:37:17 AMUSer OKclick USER_ID bfr: 1 -- 
+6/19/2024 9:37:17 AMUSer OKclick USER_ID aftr: 1 -- 
+6/19/2024 9:37:17 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/19/2024 10:29:40 AMUSer OKclick USER_ID bfr: 1 -- 
+6/19/2024 10:29:40 AMUSer OKclick USER_ID aftr: 1 -- 
+6/19/2024 10:29:40 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/19/2024 10:58:52 AMUSer OKclick USER_ID bfr: 1 -- 
+6/19/2024 10:58:52 AMUSer OKclick USER_ID aftr: 1 -- 
+6/19/2024 10:58:52 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/19/2024 12:17:48 PMUSer OKclick USER_ID bfr: 1 -- 
+6/19/2024 12:17:48 PMUSer OKclick USER_ID aftr: 1 -- 
+6/19/2024 12:17:48 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/19/2024 12:20:51 PMUSer OKclick USER_ID bfr: 1 -- 
+6/19/2024 12:20:51 PMUSer OKclick USER_ID aftr: 1 -- 
+6/19/2024 12:20:51 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/19/2024 2:54:11 PMUSer OKclick USER_ID bfr: 1 -- 
+6/19/2024 2:54:11 PMUSer OKclick USER_ID aftr: 1 -- 
+6/19/2024 2:54:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/19/2024 4:30:38 PMUSer OKclick USER_ID bfr: 1 -- 
+6/19/2024 4:30:38 PMUSer OKclick USER_ID aftr: 1 -- 
+6/19/2024 4:30:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 11:08:53 AMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 11:08:53 AMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 11:08:53 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 11:50:53 AMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 11:50:53 AMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 11:50:53 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 12:03:58 PMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 12:03:58 PMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 12:03:58 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 12:08:06 PMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 12:08:06 PMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 12:08:06 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 12:26:57 PMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 12:26:57 PMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 12:26:57 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 1:56:37 PMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 1:56:37 PMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 1:56:37 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 2:38:11 PMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 2:38:11 PMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 2:38:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 4:46:06 PMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 4:46:06 PMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 4:46:06 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 4:50:36 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/20/2024 4:50:36 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/20/2024 4:50:36 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/20/2024 5:39:32 PMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 5:39:32 PMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 5:39:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/20/2024 7:20:29 PMUSer OKclick USER_ID bfr: 1 -- 
+6/20/2024 7:20:29 PMUSer OKclick USER_ID aftr: 1 -- 
+6/20/2024 7:20:29 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2024 11:41:57 AMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2024 11:41:57 AMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2024 11:41:57 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2024 12:07:11 PMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2024 12:07:11 PMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2024 12:07:11 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2024 4:31:57 PMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2024 4:31:57 PMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2024 4:31:57 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2024 4:32:09 PMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2024 4:32:09 PMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2024 4:32:09 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/21/2024 5:57:46 PMUSer OKclick USER_ID bfr: 1 -- 
+6/21/2024 5:57:46 PMUSer OKclick USER_ID aftr: 1 -- 
+6/21/2024 5:57:47 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/22/2024 10:27:15 AMUSer OKclick USER_ID bfr: 1 -- 
+6/22/2024 10:27:15 AMUSer OKclick USER_ID aftr: 1 -- 
+6/22/2024 10:27:15 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/22/2024 12:08:17 PMUSer OKclick USER_ID bfr: 1 -- 
+6/22/2024 12:08:17 PMUSer OKclick USER_ID aftr: 1 -- 
+6/22/2024 12:08:17 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/22/2024 12:08:23 PMUSer OKclick USER_ID bfr: 1 -- 
+6/22/2024 12:08:23 PMUSer OKclick USER_ID aftr: 1 -- 
+6/22/2024 12:08:23 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/22/2024 12:46:23 PMUSer OKclick USER_ID bfr: 1 -- 
+6/22/2024 12:46:23 PMUSer OKclick USER_ID aftr: 1 -- 
+6/22/2024 12:46:23 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/22/2024 1:01:14 PMUSer OKclick USER_ID bfr: 1 -- 
+6/22/2024 1:01:14 PMUSer OKclick USER_ID aftr: 1 -- 
+6/22/2024 1:01:15 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/22/2024 2:14:09 PMUSer OKclick USER_ID bfr: 1 -- 
+6/22/2024 2:14:09 PMUSer OKclick USER_ID aftr: 1 -- 
+6/22/2024 2:14:09 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/22/2024 2:48:03 PMUSer OKclick USER_ID bfr: 1 -- 
+6/22/2024 2:48:03 PMUSer OKclick USER_ID aftr: 1 -- 
+6/22/2024 2:48:03 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/23/2024 10:24:40 AMUSer OKclick USER_ID bfr: 1 -- 
+6/23/2024 10:24:40 AMUSer OKclick USER_ID aftr: 1 -- 
+6/23/2024 10:24:40 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/23/2024 10:26:51 AMUSer OKclick USER_ID bfr: 1278 -- 
+6/23/2024 10:26:51 AMUSer OKclick USER_ID aftr: 1278 -- 
+6/23/2024 10:26:51 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/23/2024 11:24:16 AMUSer OKclick USER_ID bfr: 1 -- 
+6/23/2024 11:24:16 AMUSer OKclick USER_ID aftr: 1 -- 
+6/23/2024 11:24:16 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/23/2024 11:24:24 AMUSer OKclick USER_ID bfr: 1278 -- 
+6/23/2024 11:24:24 AMUSer OKclick USER_ID aftr: 1278 -- 
+6/23/2024 11:24:24 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/23/2024 1:42:20 PMUSer OKclick USER_ID bfr: 1 -- 
+6/23/2024 1:42:20 PMUSer OKclick USER_ID aftr: 1 -- 
+6/23/2024 1:42:20 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/23/2024 1:42:28 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/23/2024 1:42:28 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/23/2024 1:42:28 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/23/2024 1:44:23 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/23/2024 1:44:23 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/23/2024 1:44:23 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/23/2024 3:08:48 PMUSer OKclick USER_ID bfr: 1 -- 
+6/23/2024 3:08:48 PMUSer OKclick USER_ID aftr: 1 -- 
+6/23/2024 3:08:48 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/23/2024 3:08:58 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/23/2024 3:08:58 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/23/2024 3:08:58 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/24/2024 9:53:27 AMUSer OKclick USER_ID bfr: 1278 -- 
+6/24/2024 9:53:27 AMUSer OKclick USER_ID aftr: 1278 -- 
+6/24/2024 9:53:27 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/24/2024 11:29:13 AMUSer OKclick USER_ID bfr: 1 -- 
+6/24/2024 11:29:13 AMUSer OKclick USER_ID aftr: 1 -- 
+6/24/2024 11:29:13 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/24/2024 11:29:27 AMUSer OKclick USER_ID bfr: 1278 -- 
+6/24/2024 11:29:27 AMUSer OKclick USER_ID aftr: 1278 -- 
+6/24/2024 11:29:27 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/24/2024 11:52:27 AMUSer OKclick USER_ID bfr: 1 -- 
+6/24/2024 11:52:27 AMUSer OKclick USER_ID aftr: 1 -- 
+6/24/2024 11:52:27 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/24/2024 11:52:38 AMUSer OKclick USER_ID bfr: 1278 -- 
+6/24/2024 11:52:38 AMUSer OKclick USER_ID aftr: 1278 -- 
+6/24/2024 11:52:38 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/24/2024 12:46:18 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/24/2024 12:46:18 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/24/2024 12:46:18 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/24/2024 2:08:42 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/24/2024 2:08:42 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/24/2024 2:08:42 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/24/2024 2:37:05 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/24/2024 2:37:05 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/24/2024 2:37:05 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/24/2024 2:51:49 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/24/2024 2:51:49 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/24/2024 2:51:49 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/24/2024 6:38:09 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/24/2024 6:38:09 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/24/2024 6:38:09 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/25/2024 9:25:47 AMUSer OKclick USER_ID bfr: 1 -- 
+6/25/2024 9:25:48 AMUSer OKclick USER_ID aftr: 1 -- 
+6/25/2024 9:25:48 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/25/2024 9:36:03 AMUSer OKclick USER_ID bfr: 1278 -- 
+6/25/2024 9:36:03 AMUSer OKclick USER_ID aftr: 1278 -- 
+6/25/2024 9:36:03 AMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/25/2024 12:09:14 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/25/2024 12:09:14 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/25/2024 12:09:14 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/25/2024 12:24:01 PMUSer OKclick USER_ID bfr: 1278 -- 
+6/25/2024 12:24:01 PMUSer OKclick USER_ID aftr: 1278 -- 
+6/25/2024 12:24:01 PMUSer OKclick USER_ID aftr dbcall: 1278 -- 
+6/26/2024 9:28:17 AMUSer OKclick USER_ID bfr: 1 -- 
+6/26/2024 9:28:17 AMUSer OKclick USER_ID aftr: 1 -- 
+6/26/2024 9:28:17 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/26/2024 2:02:56 PMUSer OKclick USER_ID bfr: 1 -- 
+6/26/2024 2:02:56 PMUSer OKclick USER_ID aftr: 1 -- 
+6/26/2024 2:02:56 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/26/2024 2:08:13 PMUSer OKclick USER_ID bfr: 1 -- 
+6/26/2024 2:08:13 PMUSer OKclick USER_ID aftr: 1 -- 
+6/26/2024 2:08:13 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/27/2024 9:57:59 AMUSer OKclick USER_ID bfr: 1 -- 
+6/27/2024 9:57:59 AMUSer OKclick USER_ID aftr: 1 -- 
+6/27/2024 9:58:00 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/27/2024 11:04:41 AMUSer OKclick USER_ID bfr: 1 -- 
+6/27/2024 11:04:41 AMUSer OKclick USER_ID aftr: 1 -- 
+6/27/2024 11:04:41 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/27/2024 11:06:17 AMUSer OKclick USER_ID bfr: 1 -- 
+6/27/2024 11:06:17 AMUSer OKclick USER_ID aftr: 1 -- 
+6/27/2024 11:06:17 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/27/2024 12:05:41 PMUSer OKclick USER_ID bfr: 1 -- 
+6/27/2024 12:05:41 PMUSer OKclick USER_ID aftr: 1 -- 
+6/27/2024 12:05:41 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/27/2024 12:14:08 PMUSer OKclick USER_ID bfr: 1 -- 
+6/27/2024 12:14:08 PMUSer OKclick USER_ID aftr: 1 -- 
+6/27/2024 12:14:08 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/27/2024 12:32:18 PMUSer OKclick USER_ID bfr: 1 -- 
+6/27/2024 12:32:18 PMUSer OKclick USER_ID aftr: 1 -- 
+6/27/2024 12:32:18 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/27/2024 12:44:38 PMUSer OKclick USER_ID bfr: 1 -- 
+6/27/2024 12:44:38 PMUSer OKclick USER_ID aftr: 1 -- 
+6/27/2024 12:44:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+6/27/2024 12:58:42 PMUSer OKclick USER_ID bfr: 1 -- 
+6/27/2024 12:58:42 PMUSer OKclick USER_ID aftr: 1 -- 
+6/27/2024 12:58:42 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/1/2024 11:52:15 AMUSer OKclick USER_ID bfr: 1 -- 
+7/1/2024 11:52:15 AMUSer OKclick USER_ID aftr: 1 -- 
+7/1/2024 11:52:15 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/1/2024 12:08:48 PMUSer OKclick USER_ID bfr: 1 -- 
+7/1/2024 12:08:48 PMUSer OKclick USER_ID aftr: 1 -- 
+7/1/2024 12:08:48 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/1/2024 12:49:19 PMUSer OKclick USER_ID bfr: 1 -- 
+7/1/2024 12:49:19 PMUSer OKclick USER_ID aftr: 1 -- 
+7/1/2024 12:49:19 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/1/2024 1:00:52 PMUSer OKclick USER_ID bfr: 1 -- 
+7/1/2024 1:00:52 PMUSer OKclick USER_ID aftr: 1 -- 
+7/1/2024 1:00:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/1/2024 6:46:10 PMUSer OKclick USER_ID bfr: 1 -- 
+7/1/2024 6:46:10 PMUSer OKclick USER_ID aftr: 1 -- 
+7/1/2024 6:46:10 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/1/2024 6:57:52 PMUSer OKclick USER_ID bfr: 1 -- 
+7/1/2024 6:57:52 PMUSer OKclick USER_ID aftr: 1 -- 
+7/1/2024 6:57:52 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 9:52:08 AMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 9:52:08 AMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 9:52:08 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 10:09:54 AMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 10:09:54 AMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 10:09:54 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 1:51:19 PMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 1:51:19 PMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 1:51:19 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 5:24:00 PMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 5:24:00 PMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 5:24:00 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 5:29:29 PMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 5:29:29 PMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 5:29:29 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 6:02:33 PMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 6:02:33 PMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 6:02:33 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 6:05:10 PMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 6:05:10 PMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 6:05:10 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 6:08:56 PMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 6:08:56 PMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 6:08:56 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/2/2024 6:14:31 PMUSer OKclick USER_ID bfr: 1 -- 
+7/2/2024 6:14:31 PMUSer OKclick USER_ID aftr: 1 -- 
+7/2/2024 6:14:31 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 10:24:13 AMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 10:24:13 AMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 10:24:13 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 11:22:11 AMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 11:22:11 AMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 11:22:11 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 11:52:35 AMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 11:52:35 AMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 11:52:35 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 12:47:49 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 12:47:49 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 12:47:49 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 2:01:32 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 2:01:32 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 2:01:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 2:33:38 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 2:33:38 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 2:33:38 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 3:41:53 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 3:41:53 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 3:41:53 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 4:02:40 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 4:02:40 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 4:02:40 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 4:03:02 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 4:03:02 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 4:03:02 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 4:32:10 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 4:32:10 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 4:32:10 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 4:46:37 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 4:46:37 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 4:46:37 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 5:08:46 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 5:08:46 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 5:08:46 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 5:16:24 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 5:16:24 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 5:16:24 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 5:31:12 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 5:31:12 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 5:31:12 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 5:40:50 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 5:40:50 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 5:40:50 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 5:48:32 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 5:48:32 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 5:48:32 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 5:56:00 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 5:56:00 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 5:56:01 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 6:03:41 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 6:03:41 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 6:03:41 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 6:09:46 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 6:09:46 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 6:09:46 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 6:47:55 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 6:47:55 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 6:47:55 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 6:52:42 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 6:52:42 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 6:52:42 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/3/2024 6:54:03 PMUSer OKclick USER_ID bfr: 1 -- 
+7/3/2024 6:54:03 PMUSer OKclick USER_ID aftr: 1 -- 
+7/3/2024 6:54:03 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2024 9:18:52 AMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2024 9:18:52 AMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2024 9:18:52 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2024 10:11:18 AMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2024 10:11:18 AMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2024 10:11:18 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2024 11:51:07 AMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2024 11:51:07 AMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2024 11:51:07 AMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2024 1:52:06 PMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2024 1:52:06 PMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2024 1:52:06 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/4/2024 1:54:15 PMUSer OKclick USER_ID bfr: 1 -- 
+7/4/2024 1:54:15 PMUSer OKclick USER_ID aftr: 1 -- 
+7/4/2024 1:54:15 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2024 2:41:17 PMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2024 2:41:17 PMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2024 2:41:17 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2024 3:19:01 PMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2024 3:19:01 PMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2024 3:19:01 PMUSer OKclick USER_ID aftr dbcall: 1 -- 
+7/5/2024 6:10:50 PMUSer OKclick USER_ID bfr: 1 -- 
+7/5/2024 6:10:50 PMUSer OKclick USER_ID aftr: 1 -- 
+7/5/2024 6:10:50 PMUSer OKclick USER_ID aftr dbcall: 1 -- 

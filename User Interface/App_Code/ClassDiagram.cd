@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HIMS.NET.AdvanceSearch" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAQAABACAAAQAAAAAAAACABAA=</HashCode>
+      <FileName>App_Code\Common\AdvanceSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIMS.NET.ListItemsCollection" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAACAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Common\AdvanceSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIMS.NET.ListElement" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAgCAAAAAA=</HashCode>
+      <FileName>App_Code\Common\AdvanceSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseClass" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAgAAAAA=</HashCode>
+      <FileName>App_Code\Common\BaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SuperClass" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCgBAAAIACAFAAAARAgAAgAAIAgBOAQBBFAGCgAiAEI=</HashCode>
+      <FileName>App_Code\Common\BaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="webuser" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAQAAAAAAAAAAAEAABABAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Common\BaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompressViewState" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAABAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Common\BaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterClass" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCgBEEAIACAFihCAzAgAAgEAYAgBOARDBVAWCiAiAMM=</HashCode>
+      <FileName>App_Code\Common\BaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PARAMETER_NAMES" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>v+//u1/v9/9//703739f/+j2333/W+/s///v/5/99rc=</HashCode>
+      <FileName>App_Code\Common\PARAMETER_NAME.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PARAMETER_CODES" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>v++/+//vt3///7u//3///6z2/f3/2//N/v/v/4/95/8=</HashCode>
+      <FileName>App_Code\Common\PARAMETER_NAME.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSRSLocalReporting" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAQAKAAAAAAAAAAAAAEBAACAYAEAAAAAAAA=</HashCode>
+      <FileName>App_Code\Common\SSRSLocalReporting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSRSLOCALSubreportRendering" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAQgKAAAAAAAAAAAAAEBAACAYAEAAAAAAAA=</HashCode>
+      <FileName>App_Code\Common\SSRSLOCALSubreportRendering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSRSLOCALSubreportRendering_Lis" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAQgKAAAAAAAAAAAAAEBAACAYAEAAAAAAAA=</HashCode>
+      <FileName>App_Code\Common\SSRSLOCALSubreportRendering_Lis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSRSManager" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAQAAAAAAAAAAAAAAAAAAQAAAAASAAAAAAg=</HashCode>
+      <FileName>App_Code\Common\SSRSManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TabIndex" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAE=</HashCode>
+      <FileName>App_Code\Common\TabIndex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomGridview" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>App_Code\Common\TabIndex.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TCPCommunication" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAACAAAAI=</HashCode>
+      <FileName>App_Code\Common\TCPCommunication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIMEZONEDATE" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>App_Code\Common\TIMEZONEDATE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserLog" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Common\UserLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicOperationService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAIBAAAAAAAAAAIABAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>App_Code\DynamicOperationService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GridService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IGCJAmgUUWFEKZBrBEAAAiUArJgImkILGIQQADDHIhA=</HashCode>
+      <FileName>App_Code\GridService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LookupWebservice" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>App_Code\LookupconfigWebservice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LookupService" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABIEAAAAABA=</HashCode>
+      <FileName>App_Code\LookupService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrxnGridService" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAgAAAAAAEEgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\TrxnGridService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SessionHandler" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>q/7/mZNxLe+/4tqReyYUVQvrsqy31D//7T6/b5Hzcs8=</HashCode>
+      <FileName>App_Code\WebServices\SessionManage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EzHms.Services.LookupAutoService" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAIAAgAgAAAChgCQIEAAEgBAAogRBgAKAAQAE=</HashCode>
+      <FileName>App_Code\LookupAutoService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EzHms.Services.AutoGenerateCD" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAIIAAAAgAAAAAAAgAAAAAAAAAAASAAAAA=</HashCode>
+      <FileName>App_Code\WebServices\AutoGenerateCD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EzHms.Services.DynamicMasterService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIwAAACACAwCAgEAAAAAUAAAAAAUCOAACAIAA=</HashCode>
+      <FileName>App_Code\WebServices\DynamicMasterService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MarkItUp.SingleUserBlog.Web.WebParts.XmlFileSharedPersonalizationProvider" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAEAAQAACAEADAEAEQAAAAAEAAAABAACAAEQAAIABA=</HashCode>
+      <FileName>App_Code\XmlFileSharedPersonalizationProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="EzHms.Abstract.IAutoGenerateCD" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\IAutoGenerateCD.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

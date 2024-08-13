@@ -1,0 +1,463 @@
+/*@font-face {
+    font-family: 'arialnarrowb';
+    src: url('arial_narrow_bold.woff2') format('woff2'),
+         url('arial_narrow_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+font-family: 'arialnarrow';
+src: url('arialn-webfont.woff2') format('woff2'), url('arialn-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+*/
+
+
+@media print
+{
+    body
+    {
+        font-size: 13pt;
+        font-family: Arial !important;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+body
+{
+    font-size: 13pt;
+    font-family: Arial !important;
+    padding: 0px;
+    margin: 0px;
+}
+.lbltitle
+{
+    font-size: 20pt !important;
+    font-family: Arial;
+}
+.pat-header tr:nth-child(1) td:nth-child(3)
+{
+    font-weight: bold;
+}
+b, strong
+{
+}
+.reporttitle
+{
+    font-size: 14pt;
+    text-decoration: underline;
+    font-family: Arial !important;
+}
+
+
+p, h1, h2, h3, div, span
+{
+    padding: 0px;
+    margin: 0px;
+}
+p, div
+{
+    margin-bottom: 0pt;
+}
+td
+{
+    vertical-align: top;
+}
+p
+{
+    text-align: justify;
+}
+
+.header
+{
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: Arial !important;
+}
+
+.header-logo
+{
+}
+.header-logo img
+{
+    width: 100%;
+}
+.lbltitle
+{
+    font-weight: bold;
+    border-bottom: 0px solid #000;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.lbltitle span
+{
+    display: block;
+}
+.pdetails
+{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.pat-header table
+{
+}
+.pat-header td
+{
+    padding: 5px 0px;
+    font-size: 14pt;
+}
+.pat-header table td span
+{
+}
+.col-1
+{
+    width: 128px;
+}
+.col-2, .col-5, .col-8
+{
+    width: 10px;
+}
+.col-3
+{
+}
+.col-4
+{
+    width: 160px;
+}
+
+.col-6
+{
+    width: 163px;
+}
+.col-7
+{
+    width: 70px;
+}
+
+.col-9
+{
+    width: 80px;
+}
+
+
+
+
+.histopdetails
+{
+    border: 1px solid #000;
+}
+.histpat-header table
+{
+}
+.histpat-header td
+{
+    padding: 5px 0px;
+    font-size: 14pt;
+}
+.histpat-header table td span
+{
+}
+.hcol-1
+{
+    width: 170px;
+    font-weight: bold;
+}
+.hcol-2, .hcol-5
+{
+    width: 10px;
+}
+.hcol-3
+{
+}
+.hcol-4
+{
+    width: 105px;
+}
+
+.hcol-6
+{
+}
+
+/*.pat-header table{}
+.pat-header td{padding: 5px 0px; font-size: 15pt;font-family: 'arialnarrowb';}
+.pat-header table td span{ }
+.col-1{width:125px;}
+.col-2,.col-5,.col-8{width:10px;}
+.col-3{}
+.col-4{width:120px;}
+
+.col-6{width:60px;}
+.col-7{width:100px;}
+
+.col-9{width:90px;}
+.pat-header tr:nth-child(1) td:nth-child(9){text-align:right;}
+*/
+
+
+.twodiecho
+{
+}
+.twodiecho > tbody > tr > td
+{
+    padding-bottom: 8pt;
+    vertical-align: top;
+}
+.twodiecho > tbody > tr > td > P
+{
+}
+.resultdata
+{
+    padding: 10px 0px 0px 0px;
+    position: relative;
+}
+.tblfont
+{
+}
+.componenttitle
+{
+    font-weight: bold;
+}
+.componentvalue
+{
+}
+.signaturetbl
+{
+}
+.sign
+{
+    height: 60px;
+}
+.signaturetbl td span
+{
+    display: block;
+}
+
+.myfont
+{
+}
+
+
+.pdfffoter
+{
+    border-top: 0px solid black;
+    margin: 0px;
+}
+.pdfffoter table
+{
+    font-size: 11pt;
+}
+.pfooter
+{
+    padding: 5px 0px 5px 0px;
+}
+
+
+body.cardiology
+{
+    font-family: font-family: Arial !important;
+}
+.cardiology .lbltitle
+{
+    font-weight: bold;
+    font-family: font-family: Arial !important;
+}
+.cardiology .pat-header tr:nth-child(1) td:nth-child(3)
+{
+    font-weight: bold;
+    font-family: font-family: Arial !important;
+}
+.cardiology b, .cardiology strong
+{
+    font-weight: bold;
+    font-family: font-family: Arial !important;
+}
+.cardiology .reporttitle
+{
+    font-size: 14pt;
+    text-decoration: underline;
+    font-family: font-family: Arial !important;
+}
+/*.cardiology .twodiecho{}.twodiecho > tbody > tr > td{padding-bottom: 12pt;vertical-align: top;}
+.cardiology .twodiecho > tbody > tr > td > P{}*/
+.cardiology .pat-header td
+{
+    font-size: 15pt;
+}
+.cardiology .col-1
+{
+    width: 170px;
+}
+.cardiology .col-2, .col-5, .col-8
+{
+    width: 10px;
+}
+.col-3
+{
+}
+.cardiology .col-4
+{
+    width: 160px;
+}
+
+.cardiology .col-6
+{
+    width: 80px;
+}
+.cardiology .col-7
+{
+    width: 70px;
+}
+
+.cardiology .col-9
+{
+    width: 80px;
+}
+
+body.histopathology
+{
+    font-family: Arial !important;
+}
+.histopathology .lbltitle
+{
+    font-weight: bold;
+    font-family: Arial !important;
+}
+.histopathology .pat-header tr:nth-child(1) td:nth-child(3)
+{
+    font-weight: bold;
+    font-family: Arial !important;
+}
+.histopathology b, .histopathology strong
+{
+    font-weight: bold;
+    font-family: Arial;
+}
+.histopathology .reporttitle
+{
+    font-size: 14pt;
+    text-decoration: underline;
+    font-family: Arial;
+}
+/*.histopathology .twodiecho{}.twodiecho > tbody > tr > td{padding-bottom: 12pt;vertical-align: top;}
+.histopathology .twodiecho > tbody > tr > td > P{}*/
+.histopathology .pat-header td
+{
+    font-size: 15pt;
+}
+.histopathology .col-1
+{
+    width: 170px;
+}
+.histopathology .col-2, .col-5, .col-8
+{
+    width: 10px;
+}
+.col-3
+{
+}
+.histopathology .col-4
+{
+    width: 164px;
+}
+
+.histopathology .col-6
+{
+    width: 80px;
+}
+.histopathology .col-7
+{
+    width: 70px;
+}
+
+.histopathology .col-9
+{
+    width: 80px;
+}
+
+
+.emptydiv
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 818px;
+    background: red;
+    display: none;
+}
+
+
+
+.masking
+{
+    display: none;
+    z-index: 999999;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    position: fixed;
+}
+
+.cmask
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+    background: #292929;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    opacity: 0.95;
+}
+.loader1
+{
+    z-index: 999999;
+    top: 50%;
+    left: 50%;
+    background: white;
+    margin-left: -25px;
+    margin-top: -25px;
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    border-radius: 3px;
+    position: absolute;
+}
+.ClientPdf
+{
+    border: 1px solid;
+}
+
+
+
+
+@font-face
+{
+    font-family: roboto_font;
+    src: url(../../Assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+form#form1 *
+{
+    font-family: roboto_font;
+}

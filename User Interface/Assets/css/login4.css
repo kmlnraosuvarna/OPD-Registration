@@ -1,0 +1,38 @@
+﻿@font-face{font-family: "Open Sans";src: url('../fonts/opensans/121185303-OpenSans-Regular.eot' );src: url('../fonts/opensans/121185303-OpenSans-Regular.eot?#iefix' ) format('embedded-opentype' ), url('../fonts/opensans/121185303-OpenSans-Regular.svg#Open Sans' ) format('svg' ), url('../fonts/opensans/121185303-OpenSans-Regular.woff' ) format('woff' ), url('../fonts/opensans/121185303-OpenSans-Regular.ttf' ) format('truetype' );font-weight: normal;font-style: normal;}html{height:100%; width:100%}body{margin: 0px;padding: 0px;font-family: "Open Sans" ,calibri,arial;font-size: 12px;background-image: url("../login/uhwibg5.PNG");background-size: cover;background-repeat: no-repeat;background-position: top center;height: 100%;width: 100%;}.clr			{clear:both;}.login-div    {	width: 420px;background-color: rgba(255,255,255,0.5);position:fixed;right:0px; top:0px;-moz-box-shadow:    7px 3px 15px 4px #231f20;-webkit-box-shadow: 7px 3px 15px 4px #231f20;box-shadow:         7px 3px 15px 4px #231f20;padding:30px;     height: 100%; z-index:4; }.logo-div      { position:relative; margin-top:40px;}.logo-div img  {position:absolute;top:0;left:-95px; height:133px; width:133px;}.logo-div  h1  {margin: 0px;padding: 37px 57px 0px 50px;font-size: 25px;color: #15217c;font-weight: 600;}.login-credential	  {margin-top: 45px;}.login-credential ul  {margin: 0px;padding: 0px;}.login-credential ul li .label{display:none}.login-credential ul li{ list-style-type:none;  margin: 28px 0 0 0;}.login-credential ul li img{ float:left;}.login-credential ul li h2 {padding: 0px;margin: 0px 0 0 40px;color: #e61136;font-weight: 100;font-size: 27px;}.login-credential li input {padding: 15px;width: 92%;font-size: 17px;}input[type="text"]::-webkit-input-placeholder {color:#d0d0d0;}input[type="text"]:-moz-placeholder  {color:#d0d0d0;}input[type="text"]::-moz-placeholder {color:#d0d0d0;}input[type="text"]:-ms-input-placeholder {color: #d0d0d0;}.login-credential li input[type="checkbox"] {padding: 0px;margin: 0px;float: left;width: 15px;}.rembr-me		{ float:left;}.rembr-me label{color: #2f2f2f;font-size: 14px;margin-left: 5px;} .rembr-me a		{color: #191d71;font-size: 15px;font-weight: 700;margin-top: 5px;display: block;}.login-credential li input[type="submit"] {padding: 15px 25px;margin: 0px; background-color:#191d71; outline:none; border:1px solid #bdb7ad; color:#fff; float:right; width:30%;}.login-credential li input[type="submit"]:hover { background-color:#fff; color:#191d71; cursor:pointer;}.main1{width: 450px;padding: 10px;border-radius: 10px;border: 0px solid #65A2D5;background: #dae6ee;font-size: 14px;background: -moz-linear-gradient(top, rgba(246, 245, 245, 0.72) 0%, rgba(132, 190, 229, 0.97) 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f5f5), color-stop(100%,rgba(132, 190, 229, 0.97)));background: -webkit-linear-gradient(top, rgba(246, 245, 245, 0.72) 0%,rgba(132, 190, 229, 0.97) 100%);background: -o-linear-gradient(top, rgba(246, 245, 245, 0.72) 0%,rgba(132, 190, 229, 0.97) 100%);background: -ms-linear-gradient(top, rgba(246, 245, 245, 0.72) 0%,rgba(132, 190, 229, 0.97) 100%);background: linear-gradient(to bottom, rgba(246, 245, 245, 0.72) 0%,rgba(132, 190, 229, 0.97) 100%);}.forget input[type="text"], .forget select{width: 330px !important;}.textbox{margin: 20px 10px 15px 10px;}.textbox1{margin: 10px 22px 15px 22px;}.button{padding: 8px 8px;cursor: pointer;font-size: 13px;text-align: center;vertical-align: middle;text-decoration: none;color: #FFFFFF;width:180px;border: 0px !important;border-radius:10px;background: #01a2d8;-moz-box-shadow: inset -1px 0px 2px 1px #066f92;-webkit-box-shadow: inset -1px 0px 2px 1px #066f92;box-shadow: inset -1px 0px 2px 1px #066f92;}.button:hover{-moz-box-shadow: inset 0px 2px 2px 1px #066f92;-webkit-box-shadow: inset 0px 2px 2px 1px #066f92;box-shadow: inset 0px 2px 2px 1px #066f92;}
+.forget
+{
+    left: 73.9% !important;
+    top: 24% !important;
+    height: 404px;
+    width: 422px;
+    padding: 0px;
+    margin-left: 50px;
+    background: #ebebeb;
+     -webkit-box-shadow: 1px 0 15px #000;
+    /*border: 3px solid #65A2D5;
+    border-radius: 30% 0% 30% 0%;
+    background: -moz-linear-gradient(top, #ffffff 0%, #dae6ee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f5f5), color-stop(100%,#dae6ee));
+    background: -webkit-linear-gradient(top, #f6f5f5 0%,#dae6ee 100%);
+    background: -o-linear-gradient(top, #f6f5f5 0%,#dae6ee 100%);
+    background: -ms-linear-gradient(top, #f6f5f5 0%,#dae6ee 100%);
+    background: linear-gradient(to bottom, #f6f5f5 0%,#dae6ee 100%);
+    -moz-box-shadow: inset 0px 2px 7px 0px #28a5e8;
+    -webkit-box-shadow: inset 0px 2px 7px 0px #28a5e8;
+    box-shadow: inset 0px 2px 7px 0px #28a5e8;*/
+    position: fixed;
+    font-size: 14px;
+ }
+ .uat{margin-top:45px;}
+ .su_brand img {
+    height: 30px;
+}.foottxt {
+    float: left;
+    width: auto;
+    padding: 17px;
+}
+ .bottomlogo{display:none}
+ .nfc_logo-div{display:none}
+ .bottom-logo{display:none;}
+ .logheader{display:none}
+ .forget h1{font-size: 22px;color: #000;padding: 13px 0 0 0px;text-align: center;}.forget input[type="submit"]{text-transform: none;margin: 0px auto;padding: 8px 8px;cursor: pointer;text-align: center;vertical-align: middle;white-space: nowrap;border-radius: 0px;text-decoration: none;color: #FFFFFF;border: 0px !important;background: #01a2d8;-moz-box-shadow: inset -1px 0px 2px 1px #066f92;-webkit-box-shadow: inset -1px 0px 2px 1px #066f92;box-shadow: inset -1px 0px 2px 1px #066f92;border-radius: 4px;width: 100px;border-radius: 3px 3px 3px 3px;}.forget input[type="submit"]:hover{-moz-box-shadow: inset 0px 2px 2px 1px #066f92;-webkit-box-shadow: inset 0px 2px 2px 1px #066f92;box-shadow: inset 0px 2px 2px 1px #066f92;}.Dfooter{position: fixed;z-index: 99;bottom: 0px;left: 0px;color:#333333;width: 100%;padding: 5px;}.ourlogo{position:fixed; z-index:99999; right:0px; bottom:0px; padding:10px;    background: #fff;}.modalBackground{position: fixed;width: 100%;height: 100%;left: 0px;top: 0px;z-index:9999; background:gray;filter: alpha(opacity=50); -moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5;}.oldver{position: absolute; position: absolute;left: 15px;bottom: 0;height: 150px;width: 183px;padding: 0 10px;background-color: #056C8B; background: url(../login/old.png) rgba(0, 0, 0, 0.48) bottom center no-repeat;border-radius: 10px;}

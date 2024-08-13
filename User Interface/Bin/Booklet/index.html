@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>Suvarana technosoft</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Moleskine Notebook with jQuery Booklet" />
+    <meta name="keywords" content="jquery, book, flip, pages, moleskine, booklet, plugin, css3 " />
+    <!--  <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>-->
+
+    <script type="text/javascript" src="booklet/jquery-1.4.4.min.js"></script>
+
+    <script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+
+    <script src="booklet/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>
+
+    <link href="booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div class="topmenu" style="height: 38px; width: 100%;">
+        <div class="img" style="height: 25px; width: 25px; float: left;">
+        </div>
+        <div class="head">
+            Help Document</div>
+        <div class="home">
+            <a href="../Public/View/PatientLogin.aspx" style="text-decoration: none;">Home</a></div>
+        <div class="homebutton" style="width: 20px; height: 20px; float: right;">
+        </div>
+    </div>
+    <div class="book_wrapper">
+        <a id="next_page_button"></a><a id="prev_page_button"></a>
+        <div id="loading" class="loading">
+            Loading pages...</div>
+        <div id="mybook" style="display: none; position: relative;">
+            <h1 style="font-size: 22px !important; position: absolute; top: 45%; left: 12%;">
+                Forgot Password
+            </h1>
+            <div class="b-load">
+                <div class="page1" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>1. </strong>If the User forgot the login Password, please click on "Forgot
+                        Password" option<br />
+                        <br />
+                        <strong>2. </strong>Forgot Password screen will be displyed with required fields.<br />
+                    </p>
+                    <img src="images/fp0.jpg" alt="" height="320px" />
+                </div>
+                <div class="page2" style="padding: 8px;">
+                    <h1>
+                        Enter UMR Number:
+                    </h1>
+                    <br />
+                    <p>
+                        <strong>1. </strong>Enter the Patient SID in UMR field, which is given at the time
+                        of Patient Regisration<br />
+                        <br />
+                        <strong>2. </strong>Then Click on "Continue" button<br />
+                        <br />
+                        <strong>3. </strong>If the given SID Number is wrong it will display message "The
+                        entered UMR Number is wrong, please try again"<br />
+                    </p>
+                </div>
+                <div class="page3" style="padding: 8px;">
+                    <img src="images/Fp1.jpg" alt="" height="380px" />
+                </div>
+                <div class="page4" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>*</strong>After entering the SID Number, when the user will clicked on Continue
+                        button, it will display respective fields to reset the password<br />
+                        <br />
+                        <strong>1. </strong>Get Verification code on my Phone<br />
+                        <br />
+                        <strong>2. </strong>Get a Hint Question<br />
+                    </p>
+                    <br />
+                    <h1>
+                        Get Verification code on my phone:
+                    </h1>
+                    <p>
+                        <strong>*</strong>This option is used to get the verification code on patient mobile<br />
+                        <br />
+                        <strong>1. </strong>When the user will select this option, it will display “Enter
+                        Registered mobile number” field with Continue button.
+                    </p>
+                    <br />
+                    <br />
+                    <h1>
+                        Get a Hint Question:
+                    </h1>
+                    <p>
+                        <strong>*</strong>This option is used to get the Hint question, which is selected
+                        at the time of patient changing the Password.<br />
+                        <br />
+                        <strong>1. </strong>When the user will select this option,it should display Hint
+                        Question and Answer fields.
+                    </p>
+                </div>
+                <div class="page5" style="padding: 8px;">
+                    <img src="images/fp2.jpg" alt="" height="380px" />
+                </div>
+                <div class="page6" style="padding: 8px;">
+                    <h1>
+                        For the selection of first option:
+                        <br /><br />
+                        Get a Verification code on mobile phone:
+                    </h1>
+                    <br />
+                    <p>
+                        <strong>1. </strong>Select "Get a Verification code on my Phone" radio button<br />
+                        <br />
+                        <strong>2. </strong>"Enter Registered mobile number" field will de displayed<br />
+                        <br />
+                        <strong>3. </strong>Enter the Patient Regsiered mobile Number in "Enter Mobile Number"
+                        field<br />
+                        <br />
+                        <strong>4. </strong>Click on "Continue" button<br />
+                    </p>
+                </div>
+                <div class="page7" style="padding: 8px;">
+                    <img src="images/fp3.jpg" alt="" height="450px" />
+                </div>
+                <div class="page8" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>1. </strong>"We sent a verification code via text message (SMS) to your
+                        mobile" message will be dispalyed at the bottom<br />
+                        <br />
+                        <strong>2. </strong>And along with this "Verification Code" field will be displayed
+                        with "Continue" button<br />
+                    </p>
+                </div>
+                <div class="page9" style="padding: 8px;">
+                    <img src="images/fp4.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>1. </strong>If the given mobile number is correct, then only it will display
+                        "Verification Code" field with Continue button.<br />
+                        <br />
+                        <strong>2. </strong>Enter "Verification Code" (Which is sent to your Registered
+                        Mobile Number) in Verification Code field<br />
+                        <br />
+                        <strong>3. </strong>Click on "Continue" button<br />
+                        <br />
+                        <strong>4. </strong>When the user will click on "Continue" button, New Password
+                        respective fields will be displayed<br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp5.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <h1>
+                        Wrong Mobile Number Entry:
+                    </h1>
+                    <br />
+                    <p>
+                        <strong>1. </strong>If the given Mobile Number is wrong, it will display a pop up
+                        message with last 3 digits of patient registered mobile number<br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp6.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <h1>
+                        User Account Locking:
+                    </h1>
+                    <br />
+                    <p>
+                        <strong>1. </strong>If the User will enter the Wrong Mobile number 3 times, then
+                        it will lock the process for 2hrs. with a pop up message saying that “Your account
+                        has been locked due to security reasons, please try after 2 hrs”.<br />
+                        <br />
+                        <strong>2. </strong>After locking the process, if the user will try to do process
+                        before 2 hrs, it will display same pop up message with updated time.<br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp7.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <h1>
+                        For the selection of second option:
+                        <br /> <br />
+                        Get a Hint Question:
+                    </h1>
+                    <br />
+                    <p>
+                        <strong>1. </strong>Select the "Get a Hint Question" radio button<br />
+                        <br />
+                        <strong>2. </strong>Hint Question field will be displayed with the selected Hint
+                        Question, which is selected at the time of New Password creation.<br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp8.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>1. </strong>Enter the the Answer in Answer field, which is given at the
+                        time of New Password creation.<br />
+                        <br />
+                        <strong>2. </strong>Click on "Continue" button<br />
+                        <br />
+                        <strong>3. </strong>When the user will click on Continue button it will verify the
+                        entered Answer is correct or not<br />
+                        <br />
+                        <strong>4. </strong>If the given details are matched, it will display the New Password
+                        respective fields<br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp9.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <h1>
+                        Creating the New Password:
+                    </h1>
+                    <br />
+                    <p>
+                        <strong>1. </strong>Enter New Password in “New Password” field<br />
+                        <br />
+                        <strong>2. </strong>Enter same Password in “Confirm Password” field<br />
+                        <br />
+                        <strong>3. </strong>Select required Hint Question from the “Hint Question” drop
+                        down<br />
+                        <br />
+                        <strong>4. </strong>Enter hint Answer in “Answer” field (which is useful to get
+                        the password in future, if the user will forget the Password again)<br />
+                        <br />
+                        <strong>5. </strong>Click on "Submit" button<br />
+                        <br />
+                        <strong>6. </strong>"Password Changed Successfully" message will be displayed.<br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp10.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <div>
+                        <h1 style="margin-top: 200px; padding-left: 50px; font-size: 22px;">
+                             Pop up Blocker Document</h1>
+                    </div>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                   
+                    <br />
+                    <p>
+                        <strong>1. </strong>If the Report is not opening and showing some message at the
+                        top (see in attachment), please follow the below steps<br />
+                        <br />
+                    </p>
+                    <img src="images/fp11.png" alt="" height="300px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>1. </strong>Click on Popup blocker message
+                        <br />
+                        <br />
+                        <strong>2. </strong>One window will be opened with 2 options<br />
+                        <br />
+                        <strong>3. </strong>Select “Always allow pop up for this site” option (Please see
+                        below attachment)<br />
+                        <br />
+                        <strong>4. </strong>Click on “Done” button<br />
+                        <br />
+                    </p>
+                    <p style="text-align: center; margin-top: 15px;">
+                        (OR)</p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp12.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>1. </strong>Click on Right side corner Image icon<br />
+                        <br />
+                        <strong>2. </strong>One pop up window will be opened with list of options<br />
+                        <br />
+                        <strong>3. </strong>Select “Settings” option from the list<br />
+                        <br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp13.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>1. </strong>Settings window will be opened with list of settings options<br />
+                        <br />
+                        <strong>2. </strong>Scroll down and Click on “Content Settings” button in “Privacy”
+                        Settings (Please see below attachment)<br />
+                        <br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp14.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <br />
+                    <p>
+                        <strong>1. </strong>Content Settings window will be opened with list of options<br />
+                        <br />
+                        <strong>2. </strong>Go to Pop-ups option and click on “Allow all sites to show pop-ups”
+                        option
+                        <br />
+                        <br />
+                        <strong>3. </strong>Click on “Done” button<br />
+                        <br />
+                        <strong>4. </strong>Now click on Print button, required Report will be opened<br />
+                        <br />
+                        <strong>5. </strong>Click on Printer icon and take the Report.<br />
+                        <br />
+                    </p>
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <img src="images/fp15.jpg" alt="" height="450px" />
+                </div>
+                <div class="page10" style="padding: 8px;">
+                    <div>
+                        <h1 style="margin-top: 200px; padding-left: 125px; font-size: 22px;">
+                            The End</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The JavaScript -->
+
+    <script type="text/javascript">
+        $(function() {
+            var $mybook = $('#mybook');
+            var $bttn_next = $('#next_page_button');
+            var $bttn_prev = $('#prev_page_button');
+            var $loading = $('#loading');
+            var $mybook_images = $mybook.find('img');
+            var cnt_images = $mybook_images.length;
+            var loaded = 0;
+            //preload all the images in the book,
+            //and then call the booklet plugin
+
+            $mybook_images.each(function() {
+                var $img = $(this);
+                var source = $img.attr('src');
+                $('<img/>').load(function() {
+                    ++loaded;
+                    if (loaded == cnt_images) {
+                        $loading.hide();
+                        $bttn_next.show();
+                        $bttn_prev.show();
+                        $mybook.show().booklet({
+                            name: null,                            // name of the booklet to display in the document title bar
+                            width: 865,                             // container width
+                            height: 525,                             // container height
+                            speed: 600,                             // speed of the transition between pages
+                            direction: 'LTR',                           // direction of the overall content organization, default LTR, left to right, can be RTL for languages which read right to left
+                            startingPage: 0,                               // index of the first page to be displayed
+                            easing: 'easeInOutQuad',                 // easing method for complete transition
+                            easeIn: 'easeInQuad',                    // easing method for first half of transition
+                            easeOut: 'easeOutQuad',                   // easing method for second half of transition
+
+                            closed: true,                           // start with the book "closed", will add empty pages to beginning and end of book
+                            closedFrontTitle: null,                            // used with "closed", "menu" and "pageSelector", determines title of blank starting page
+                            closedFrontChapter: null,                            // used with "closed", "menu" and "chapterSelector", determines chapter name of blank starting page
+                            closedBackTitle: null,                            // used with "closed", "menu" and "pageSelector", determines chapter name of blank ending page
+                            closedBackChapter: null,                            // used with "closed", "menu" and "chapterSelector", determines chapter name of blank ending page
+                            covers: false,                           // used with  "closed", makes first and last pages into covers, without page numbers (if enabled)
+
+                            pagePadding: 10,                              // padding for each page wrapper
+                            pageNumbers: true,                            // display page numbers on each page
+
+                            hovers: false,                            // enables preview pageturn hover animation, shows a small preview of previous or next page on hover
+                            overlays: false,                            // enables navigation using a page sized overlay, when enabled links inside the content will not be clickable
+                            tabs: false,                           // adds tabs along the top of the pages
+                            tabWidth: 60,                              // set the width of the tabs
+                            tabHeight: 20,                              // set the height of the tabs
+                            arrows: false,                           // adds arrows overlayed over the book edges
+                            cursor: 'pointer',                       // cursor css setting for side bar areas
+
+                            hash: false,                           // enables navigation using a hash string, ex: #/page/1 for page 1, will affect all booklets with 'hash' enabled
+                            keyboard: true,                            // enables navigation with arrow keys (left: previous, right: next)
+                            next: $bttn_next,          			// selector for element to use as click trigger for next page
+                            prev: $bttn_prev,          			// selector for element to use as click trigger for previous page
+
+                            menu: null,                            // selector for element to use as the menu area, required for 'pageSelector'
+                            pageSelector: false,                           // enables navigation with a dropdown menu of pages, requires 'menu'
+                            chapterSelector: false,                           // enables navigation with a dropdown menu of chapters, determined by the "rel" attribute, requires 'menu'
+
+                            shadows: true,                            // display shadows on page animations
+                            shadowTopFwdWidth: 166,                             // shadow width for top forward anim
+                            shadowTopBackWidth: 166,                             // shadow width for top back anim
+                            shadowBtmWidth: 50,                              // shadow width for bottom shadow
+
+                            before: function() { },                    // callback invoked before each page turn animation
+                            after: function() { }                     // callback invoked after each page turn animation
+                        });
+                        Cufon.refresh();
+                    }
+                }).attr('src', source);
+            });
+
+        });
+    </script>
+
+</body>
+</html>

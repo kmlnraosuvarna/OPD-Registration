@@ -1,0 +1,36 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:ImageButton  runat="server" ImageUrl="~/App_Themes/Classic/Images/logout.gif" SkinID="Logout"  />
+<asp:ImageButton  runat="server" ImageUrl="~/App_Themes/Classic/Images/changepassword.gif" SkinID="ChangePasswaord"  />
+<asp:ImageButton  runat="server" ImageUrl="~/App_Themes/Classic/Images/myprofile.gif" SkinID="MyProfile"  />
+<asp:ImageButton  runat="server" ImageUrl="~/App_Themes/Classic/Images/searchbgbut.PNG" SkinID="searchbgbut"  />
+
+<asp:DataList Width="100%" CellPadding="0" CellSpacing="0" RepeatColumns="4" runat="server" SkinID="DashData">
+<ItemStyle Width="25%" VerticalAlign="Top" HorizontalAlign="Left" />
+<AlternatingItemStyle VerticalAlign="Top" Width="25%" HorizontalAlign="Left" />
+</asp:DataList>
+<asp:ImageButton  runat="server" Height="40px" ImageAlign="Left" SkinID="DashImg"  />
+<asp:ImageButton  runat="server" Height="28px" SkinID="SubModuleImg"  />
+
+
+<asp:DataList Width="100%" CellPadding="0" CellSpacing="0" RepeatColumns="5" runat="server" SkinID="SubModuleData">
+   <ItemStyle Width="20%" VerticalAlign="Top"  />
+   <AlternatingItemStyle VerticalAlign="Top" Width="20%" />
+
+  </asp:DataList>
+
+            

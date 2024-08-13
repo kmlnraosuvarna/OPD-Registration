@@ -1,0 +1,571 @@
+.vd-main-left-col                  {width:250px !important;}
+
+.visit-top-calc                    { background:#e5e5e5; padding:5px; border-bottom:1px solid #cbcbcb; text-align:center; width:100%; float:left;
+                                     background: -moz-linear-gradient(top, #fafafa 0%, #e5e5e5 100%);
+                                     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#e5e5e5));
+                                     background: -webkit-linear-gradient(top, #fafafa 0%,#e5e5e5 100%);
+                                     background: -o-linear-gradient(top, #fafafa 0%,#e5e5e5 100%);
+                                     background: -ms-linear-gradient(top, #fafafa 0%,#e5e5e5 100%);
+                                     background: linear-gradient(to bottom, #fafafa 0%,#e5e5e5 100%);}
+                                     
+
+.visit-top-calc i                  { font-size:17px; color:#666666; cursor:pointer;}
+.visit-top-calc i:hover            { color:#9d9f9f;} 
+
+.pat-count-div                     { height:30px; background:#fff; width:100%; float:left; border-bottom:1px solid #cbcbcb;}
+.pat-count-div ul                  { margin:4px 0 0 3.5%;}
+.pat-count-div ul li               { display:inline-block; margin: 0 3.8% 0 0; text-align:center; line-height:18px; height:20px; width:29.5%; color:#000; font-weight:bold; border-right:1px solid #cbcbcb;}
+.pat-count-div ul li:last-child    { margin-right:0px; border-right:none;}
+
+.count-icon label                  {height:18px; width:18px; border-radius:3px; background:#C0C0C0; color:#fff; float:left; font-weight:400;}
+.count-icon label.su-rupee         {padding:2px 3px 2px 3px;}
+
+
+
+
+/*.pat-count-div ul li.payment-count{background:#5ABFE4;}
+.pat-count-div ul li.wait-count{background:#7BC276;}
+.pat-count-div ul li.pending-count{background:#FF8EA6;}*/
+
+
+.vd-main-right-col                 {/*margin-left:267px;*/}
+.VD-doc-profile-div                {width:250px !important; height:107px !important;}
+
+.doctor_list                       {display:none;  position:absolute; top:60px; left:0px; background:#fff; border:1px solid #cbcbcb; border-width:1px 1px 0 1px; z-index:99999; width:250px; 
+                                    -webkit-box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.40);   box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.40); }
+.doc_bglist                        {border-top:1px solid #cbcbcb; width:100%; height:350px; overflow:auto;-webkit-overflow-scrolling:touch;}              
+	 
+.doc_bglist ul li                  {color:#797979; width:99%; height:50px; background:#f8f8f8; cursor:pointer; border-bottom:1px solid #cbcbcb; border-left:2px solid transparent;}
+.doc_bglist ul li                  {text-decoration:none;  color:#797979;  margin:0px; padding:0;}
+
+
+.doc_bglist ul li .PD-doc-img      {height:35px; width:35px; float:left; text-align:center; margin:5px 10px 0px 5px;}
+.doc_bglist ul li  img             {height:35px; width:35px;}
+.doc_bglist ul li h1               {float:left; font-size:15px; color:#00417f; font-weight: 400; width:75%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:4px;}
+.doc_bglist ul li span             {font-size:11px; color:#797979; width:75%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; float:left;}
+.doc_bglist ul li:hover            {background:#dddddd; border-left:2px solid #be6d0e; margin:0px;}
+.doc_bglist ul li.active1          {background:#cfe9f5; border-left:1px solid #fe9797; margin:0px;}                                    
+                                    
+                                    	
+
+.Visit-dls-top-menu                { border-bottom:1px solid #c6c6c6; background:#f2f2f2; position:relative; height:42px; padding-left:40px;
+                                     background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+                                     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2));
+                                     background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%);
+                                     background: -o-linear-gradient(top, #ffffff 0%,#f2f2f2 100%);
+                                     background: -ms-linear-gradient(top, #ffffff 0%,#f2f2f2 100%);
+                                     background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%);}
+                                     
+                                 
+                                  
+.Visit-dls-top-menu ul li          {display:inline-block; font-family:'Roboto'; font-size:0.9em; font-style:italic; font-weight:bold;
+                                    padding:0px 7px; cursor:pointer; border-bottom:2px solid transparent; border-top:2px solid transparent;}
+.Visit-dls-top-menu ul li.active   {font-size:1.1em;}
+
+
+
+.vd-menu.vd-menu-down              {padding-top:19px;}
+.vd-menu-down li, .vd-menu-top li  {padding:0 25px !important;}
+.vd-menu-down .active-bot       {/*font-size:1.2em;*/ border-bottom:2px solid #1D7FC6 !important;}
+.vd-menu-top .active-top       {/*font-size:1.2em;*/ border-top:2px solid #1D7FC6 !important;}
+
+.dash-home                         {position:absolute; font-size:18px; left:0px; top:4px; background: #D4D3D3;
+                                    padding: 4px 7px; border-radius: 4px; cursor:pointer; border:1px solid #C0BBBB;
+                                    background: -moz-linear-gradient(top, #FEFEFE 0%, #E6E6E6 100%);
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E6E6E6));
+                                    background: -webkit-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: -o-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: -ms-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: linear-gradient(to bottom, #FEFEFE 0%,#E6E6E6 100%);}
+
+
+.visit-dls-content                 {height:100%; position:relative;}
+.Dashboard-main-div                {overflow:auto; height:100%; -webkit-overflow-scrolling:touch;}
+
+.visit-pat-dls                     { padding:0px 185px 5px 0px; width:100%; border-bottom: 1px solid #c6c6c6; position:relative;}
+/*.visit-pat-dls table               { color:#484747; font-family:'Roboto Medium'}  */
+
+
+.visit-pat-img                     {float:left; width:50px; height:50px; overflow:hidden; text-align:center;}
+.visit-pat-img img                 {width:50px; height:50px;}
+.visit-pat-txt                     {position:relative; clear:right; margin-left:40px;}
+
+.visit-pat-icons                   {position: absolute; top: 0px; right: 0px; padding:4px; background: #D4D3D3; border-radius: 3px; color: #555; border:1px solid #C0BBBB;
+                                    background: -moz-linear-gradient(top, #FEFEFE 0%, #E6E6E6 100%);
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E6E6E6));
+                                    background: -webkit-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: -o-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: -ms-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: linear-gradient(to bottom, #FEFEFE 0%,#E6E6E6 100%);}
+                                    
+.visit-pat-icons:hover             {color:#000; background:#fff;}                                    
+.visit-pat-icons i                 {font-size:17px; cursor:pointer;}
+.visit-pat-icons-pad               {padding:4px 4px 1px 4px;}
+
+.vd-dms-icon                       {position:absolute; right:32px; top:0px; padding:4px 4px 1px 4px; background: #D4D3D3; border-radius: 3px; color: #555; border:1px solid #C0BBBB;
+                                    background: -moz-linear-gradient(top, #FEFEFE 0%, #E6E6E6 100%);
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E6E6E6));
+                                    background: -webkit-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: -o-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: -ms-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                    background: linear-gradient(to bottom, #FEFEFE 0%,#E6E6E6 100%);}
+                                    
+.vd-dms-icon:hover                 {color:#000; background:#fff;}
+.vd-dms-icon i                     {font-size:17px; cursor:pointer;}
+
+
+.visit-mic-icon                    {position: absolute; top: 0px; right:28px; width:150px;}
+.visit-mic-icon img                {width:28px; height:28px; cursor:pointer; margin-right:10px;}
+.visit-mic-icon i                  {font-size:14px; cursor:pointer; float: right; margin-top:8px; margin-right: 4px;}
+
+
+
+
+.visit-pat-list                    {position:absolute;   right:-1px; top:19px; z-index:99999; padding:20px 0 0 15px; display:none;  }
+
+.visit-pat-list-div                {width:170px; height:auto; border:1px solid #cbcbcb; background:#fff; -webkit-box-shadow:-5px 6px 12px -6px rgba(0, 0, 0, 0.40);  box-shadow: -5px 6px 12px -6px rgba(0, 0, 0, 0.40);}      
+                              
+.visit-pat-list-div:after, .visit-pat-list-div:before{ right:4px; top:9px; border: solid transparent; content:""; height:0px; width:0px; position:absolute; pointer-events:none; z-index:99999;}           
+.visit-pat-list-div:after                        { border-color: rgba(255, 255, 255, 0); border-bottom-color:#ffffff; border-width:10px; margin-top:-7px;}           
+.visit-pat-list-div:before                       { border-color: rgba(203, 203, 203, 0); border-bottom-color:#cbcbcb; border-width:10px; margin-top:-9px;}                                     
+                                    
+                               
+.visit-pat-list-div ul li              {padding:7px 5px; border-bottom:1px solid #cbcbcb; cursor:pointer; color: gray;}
+.visit-pat-list-div ul li:hover        {background:#f2f2f2;}
+
+.visit-pat-icons:hover .visit-pat-list{display:block;  /*-webkit-transition: 0.50s; -moz-transition: 0.50s;transition: 0.50s;*/}
+
+.visit-dls-history-divs            {position:relative; overflow:auto; padding-top:5px;-webkit-overflow-scrolling:touch;}  
+.visit-tab                         {height:100%;}  
+.visit-tab-line                    {height:28px;}
+.visit-tab-line .visit-tab-date    { font-size:16px; font-family:'Roboto condensed'; font-weight:bold; float:left; margin-top:5px;} 
+.visit-tab-line i                  {color:#599d6a; font-size:18px; margin-left:10px;}
+.visit-medicen-stock, .visit-medicen-stock:active{margin-left:20px; text-decoration: none; font-size: 15px; color:#289F18; font-family:'Roboto Condensed';}
+.visit-medicen-count               { padding:1px 10px; background:#7DBF7D; border-radius:4px; color:#fff; margin-left:6px;}
+
+
+.visit-failds                      {}
+.VD-gird-height                    {/*max-height:220px; overflow:auto;*/}
+
+                                   /********Styled by rajesh    ******/
+                                   
+ table.vital-signss2               {border-collapse:collapse; width:100%; margin-bottom:10px;}
+ table.vital-signss2 td            {padding:6px ; border:1px solid #cbcbcb; }
+.tr-title                          {background: #F4F4F4;
+                                    background: -moz-linear-gradient(top, #DFDFDF 1%, #F4F4F4 100%);
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#DFDFDF), color-stop(100%,#F4F4F4));
+                                    background: -webkit-linear-gradient(top, #DFDFDF 1%,#F4F4F4 100%);
+                                    background: -o-linear-gradient(top, #DFDFDF 1%,#F4F4F4 100%);
+                                    background: -ms-linear-gradient(top, #DFDFDF 1%,#F4F4F4 100%);
+                                    background: linear-gradient(to bottom, #DFDFDF 1%,#F4F4F4 100%);
+                                    }
+ .tr-title h2                      {font-size: 15px;  color: #03abd4;    font-weight: 200;}
+                                      
+.bp-green                          {color:Green; font-size:18px !important;  vertical-align: middle;}
+.bp-red                            {color:Red; font-size:18px !important;   vertical-align: middle;}
+.bp-black                          {color:black; font-size:18px !important;   vertical-align: middle;}
+
+
+
+
+
+
+.bmi-icon i                        {font-size:18px !important;   vertical-align: middle; cursor:pointer;}
+.bmi-uw                            {color:#2608d8;} 
+.bmi-nw                            {color:#84ed00;} 
+.bmi-no                            {color:#ffe121;}
+.bmi-ow                            {color:#cd0600;}
+
+.temp-icon i                       {font-size:18px !important;   vertical-align: middle; cursor:pointer;}
+.temp-up                           {color:red;}
+.temp-down                         {color:#0ac41b;} 
+.med-row                           {color:#F56666 !important;}
+
+
+ 
+/*.vital-signss td                   {padding:0 5px;} 
+.vital-signss td .BP-textbox       {border:1px solid #d7d7d7; width:100%; position:relative; padding:0 65px 0 30px; height:31px; border-radius:3px;} 
+.vital-signss td .BP-textbox input[type="text"] {padding:2px 2px 2px 2px; outline:none; width:100%; border:none; height: 29px;}
+.vital-signss td .BP-textbox input[type="button"]:focus{ border:0px solid #ccc;}
+.vital-signss td  input[type="checkbox"]{vertical-align:middle; margin:-2px 5px 0 0;}
+.vital-signss td .BP-textbox i     {position:absolute; left:4px; top:3px; font-size:21px;}
+.vital-signss td .BP-textbox span  {color:#b1b1b1; position:absolute; top:7px; right:4px;}
+
+.vital-signss td .BP-textbox input[type="button"]{ background:#efefef; padding:8px; border:0px solid #ccc; color:#000000; outline:none; position:absolute; right:-3px; border-radius: 0 3px 3px 0; cursor:pointer;
+                                                   background: -moz-linear-gradient(top, #ededed 0%, #bdbdbd 100%);
+                                                   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#bdbdbd));
+                                                   background: -webkit-linear-gradient(top, #ededed 0%,#bdbdbd 100%);
+                                                   background: -o-linear-gradient(top, #ededed 0%,#bdbdbd 100%);
+                                                   background: -ms-linear-gradient(top, #ededed 0%,#bdbdbd 100%);
+                                                   background: linear-gradient(to bottom, #ededed 0%,#bdbdbd 100%);}
+
+.vital-signss td .BP-textbox .kg   {font-size:11px; color:Green; position:absolute; top:0px; right:2px;}
+.vital-signss td .BP-textbox .lb   {display:none; position:absolute; right:0px; cursor:pointer;}
+.vital-signss td .BP-textbox2      {border:none;} 
+.vital-signss td .BP-lable         {margin:8px 0 0 0px; text-align:right; float:left; width:100%;}*/
+
+
+
+
+.visit-date-wise                   { }
+.visit-date-wise-icons             {}
+.visit-date-wise-icons a i         {font-size:15px; color:gray;}
+
+
+.date-wise-title                   {position:relative; margin:45px 0px;}
+.date-wise-title hr                {border:1px solid #eaeaea; width:80%;}
+.date-wise-title .icon-chart-bar   {font-size:15px; color:Green; cursor:pointer;} 
+
+.item-edit                         {  position: absolute; right:50px; top: -10px; background: #E1EEFF; padding: 2px 10px; border-radius: 5px; 
+                                      border: 1px solid #cbcbcb; cursor: pointer;
+                                      background:#A2C8E0; 
+                                      background: -moz-linear-gradient(top, #D6EDFF 1%, #A2C8E0 100%);
+                                      background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#D6EDFF), color-stop(100%,#A2C8E0));
+                                      background: -webkit-linear-gradient(top, #D6EDFF 1%,#A2C8E0 100%);
+                                      background: -o-linear-gradient(top, #D6EDFF 1%,#A2C8E0 100%);
+                                      background: -ms-linear-gradient(top, #D6EDFF 1%,#A2C8E0 100%);
+                                      background: linear-gradient(to bottom, #D6EDFF 1%,#A2C8E0 100%);
+                                      }
+
+.item-email                        {right: 18px; padding: 1px 4px 0px 4px; font-size: 15px; border-radius: 4px; color: #5C5C5C;} 
+                                      
+.visit-ck-editor .cke_contents     {height:250px !important;}
+
+.visit-ck-editor .cke_1.cke_chrome {width:99% !important;}
+
+
+.date-wise-title-text              {text-align:center; height:20px; width:180px; line-height:20px; padding:0px 5px; cursor:pointer;  border-radius:10px; position:absolute; left:50%; top:-7px; margin-left:-80px;
+                                    background:#A2C8E0; 
+                                    background: -moz-linear-gradient(top, #D6EDFF 1%, #A2C8E0 100%);
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#D6EDFF), color-stop(100%,#A2C8E0));
+                                    background: -webkit-linear-gradient(top, #D6EDFF 1%,#A2C8E0 100%);
+                                    background: -o-linear-gradient(top, #D6EDFF 1%,#A2C8E0 100%);
+                                    background: -ms-linear-gradient(top, #D6EDFF 1%,#A2C8E0 100%);
+                                    background: linear-gradient(to bottom, #D6EDFF 1%,#A2C8E0 100%);}
+                                    
+.date-wise-title-text:hover       { background:#D6EDFF;} 
+.date-wise-title-text-active      { text-align:center; height:20px; line-height:20px; width:180px; padding:0px 5px; cursor:pointer; border-radius:10px; position:absolute; left:50%; top:-7px; margin-left:-80px;
+                                    background:#54ac54; 
+                                    background: -moz-linear-gradient(top, #b5d9b5 1%, #54ac54 100%);
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#b5d9b5), color-stop(100%,#54ac54));
+                                    background: -webkit-linear-gradient(top, #b5d9b5 1%,#54ac54 100%);
+                                    background: -o-linear-gradient(top, #b5d9b5 1%,#54ac54 100%);
+                                    background: -ms-linear-gradient(top, #b5d9b5 1%,#54ac54 100%);
+                                    background: linear-gradient(to bottom, #b5d9b5 1%,#54ac54 100%);}
+                         
+.date-wise-title-text-active label{ width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; float:left; color:#000;}                         
+                         
+                                    
+.date-wise-title-text span        { font-size:11px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:100%; float:left; color:#000;}                                    
+.date-wise-title-text label       { width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; float:left;}                                     
+                                    
+.data-modified-date               {text-align:right; color:#C0BFBF; font-size:10px; margin-top:5px; padding:0 5px;}
+.data-modified-date2               {padding: 0px 3px 0px 3px; font-size: 10px !important; color:#C0BFBF !important;}
+
+
+
+.visit-top-radio-buts             {margin-bottom:5px; /*height:20px;*/}
+.visit-top-radio-buts input[type="radio"]{margin:0px 5px 0px 0px;}
+/*.visit-top-radio-buts span        {margin-right:10px;}*/
+
+.vd-legends-div{float:left; margin-left:50px;}
+
+
+
+.vd-legends                    {padding:3px 5px 3px 5px; border-left: 1px solid #000; border-right: 1px solid #000; border-radius:5px}
+.Chief                            {border-bottom: 2px solid #93df65}
+.Present                          {border-bottom: 2px solid #aebdff;}
+.Past                             {border-bottom: 2px solid #ffbac4;}
+.visit-top-radio-buts input[type="text"]{padding:3px; border-radius:3px; vertical-align:top; border:1px solid #cbcbcb; margin-top:-3px;}
+
+
+.currentvisit                     { border-bottom: 2px solid #aebdff}
+.nextvisit                        { border-bottom: 2px solid #ffbac4}
+
+
+
+.visit-myfavoritesDIV             { position:absolute; height:auto; width:718px; right:0px; top:26px; border-radius:3px;  
+                                    padding:12px 0px 0px 0px;  cursor:auto;  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175); 
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, .175); z-index:99; cursor:default; display:none;}  
+           
+.myfavorites-arrow                 {position:relative;}           
+           
+.myfavorites-arrow:after, .myfavorites-arrow:before {right:108px; top:-8px; border: solid transparent; content:""; height:0px; width:0px; position:absolute; pointer-events:none; z-index:99999;} 
+.myfavorites-arrow:before           {border-color: rgba(203, 203, 203, 0); border-bottom-color:#cbcbcb; border-width:10px; margin-top:-12px;} 
+.myfavorites-arrow:after           {border-color: rgba(255, 255, 255, 0); border-bottom-color:#fff; border-width:10px; margin-top:-10px;}           
+     
+           
+           
+
+     
+
+ 
+.visit-myfavcontent               { height:275px; background:#fff; border: 1px solid #c2c0c0; overflow:auto;-webkit-overflow-scrolling:touch; padding:7px;}
+.visit-myfavcontent ul            { float:left; width:100%;}
+.visit-myfavcontent ul li         { width:49%; float:left; margin:3px 1px 3px 5px;}
+.visit-myfavcontent ul li input[type="checkbox"] {vertical-align:middle; margin-right:5px; margin-top:1px;}
+.visit-myfavcontent ul li label   { margin-top:2px; float:left; width:90%; font-size:11px; overflow:hidden; text-overflow:ellipsis;}
+.visit-myfavoritesbuttons         { padding: 0px 10px 10px 10px; border: 1px solid #c2c0c0; border-width:0 1px 1px 1px; background:#F0F0F0;}
+.visit-myfavoritesbuttons input[type="button"]{margin-top:10px; cursor:pointer;}
+
+
+
+.visit-myprofilesDIV              { position:absolute; height:auto; width:718px;  right:0px; top:26px; border-radius:3px;  
+                                    padding:12px 0px 0px 0px; cursor:auto;  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175); 
+                                   box-shadow: 0 6px 12px rgba(0, 0, 0, .175); z-index:99; cursor:default; display:none;}  
+
+.PH-myprofilesDIV                 { width:100%;}
+                                   
+.myprofiles-arrow                 {position:relative; border:1px solid #c2c0c0;}
+.myprofiles-arrow:after, .myprofiles-arrow:before {right:34px; top:-8px; border: solid transparent; content:""; height:0px; width:0px; position:absolute; pointer-events:none; z-index:99999;} 
+.myprofiles-arrow:before           {border-color: rgba(203, 203, 203, 0); border-bottom-color:#cbcbcb; border-width:10px; margin-top:-12px;} 
+.myprofiles-arrow:after           {border-color: rgba(255, 255, 255, 0); border-bottom-color:#fff; border-width:10px; margin-top:-10px;}
+.visit-myprocontent-DIV           {width:100%; height:290px; background:#fff; overflow:auto;-webkit-overflow-scrolling:touch; float:left; border-radius:3px; padding:0% 1% 1% 1%;}
+.visit-myprocontent-DIV  ul li    {float:left; width:100%;}
+.visit-myprocontent-header        {padding:5px 0; margin-top:5px; background:#EBEFEF; border:1px solid #cbcbcb; float:left; width:100%;}
+.visit-myprocontent-header label  {margin-left: 10px; width:75%; font-weight:bold;}
+.visit-myprocontent-header i      {font-size:17px; color:gray; cursor:pointer;}
+.visit-myprocontent               {height:auto; width:100%; border:0px solid #cbcbcb; border-width:0 1px 1px 1px; padding:1%; float: left;}
+.visit-myprocontent ul li         {padding:3px 0px; float: left; width: 100%; list-style:disc inside;}
+.visit-myprocontent p             {text-align: justify;}
+
+
+
+
+
+
+
+
+.cheif_dot                        { background:#93df65; padding:1px 3px; border-radius:3px; color:#fff;} 
+.Present_dot                      { background:#aebdff; padding:1px 3px; border-radius:3px; color:#fff;} 
+.Past_dot                         { background:#ffbac4; padding:1px 3px; border-radius:3px; color:#fff;}  
+
+
+
+.active-status                    { background:#ffbac4; padding:1px 3px; border-radius:3px; color:#fff;}
+.passive-status                   { background:#aebdff; padding:1px 3px; border-radius:3px; color:#fff;}
+
+
+
+
+.outside-medc                     { background:#C37916; padding:1px 3px; border-radius:3px; color:#fff;}
+.inside-medc                      { background:#aebdff; padding:1px 5px; border-radius:3px; color:#fff;}
+
+.stock-out                        { border: 1px solid #f89494 !important; box-shadow: 1px 1px 8px 1px #ffc2c2 inset !important; color:Red;}
+
+
+.visit-dls-grid     			  { border-collapse: collapse; font-style:normal; font-variant:normal;font-size: 12px; border-style: none; border-width: 0px;}
+.visit-dls-grid th			      { height:25px; vertical-align:middle; background:#e4f4fa; padding: 3px 3px 3px 3px; color:#5C5B5B;}
+.visit-dls-grid td                { padding: 3px 3px 0px 3px; color: gray;font-size: 12px; vertical-align:middle;}
+.visit-dls-grid td i              { font-size:15px; cursor:pointer; color: #9a5a2f ;}
+
+.visit-Instruction                { position:relative;}
+.visit-Instruction i              { font-size:15px; color:Gray; vertical-align:middle;}
+/*.visit-Instruction:hover .visit-Instruction-div{display:block;}*/
+
+.visit-Instruction-div            { background:#fff; border:1px solid #d7d7d7; padding:7px; z-index:99999; position:absolute; top:32px; right:0px; width:350px; -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.35); box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.35);  display:block;}
+.visit-Instruction-div  table     { margin:0px; padding:0px;}
+.visit-Instruction-div  table tr td{ list-style:none; font-size:12px; color:#797979; display:list-item; margin-left:1px; padding:5px 5px 8px 5px; width:auto; border:0px solid #ededed; border-width:0px 0px 0px 0px;}
+.visit-Instruction-div  span      { margin:0 0 0 5px; text-align:right;}
+  
+.inv-table-icons                  { font-size:20px !important;}
+.VD-textarea                      {height:80px;}
+
+.visit-saveprofile                { margin-top:10px;}
+.visit-saveprofile-but            {position:relative; float:right; margin-right:5px;}
+.visit-saveprofile-div            { background:#fff; border:1px solid #d7d7d7; padding:7px; z-index:99999; position:absolute; top:-115px; right:0px; width:350px;
+                                    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.35); box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.35);  display:block;}
+.ph-saveprofile                   { top:40px; right: 0px; width: 250px;}
+
+.ph-saveprofile:after, .ph-saveprofile:before  {right:6px; top:-10px;  border:11px solid transparent; content:""; height:0px; width:0px; position:absolute; pointer-events:none;} 
+.ph-saveprofile:after             { border-color: rgba(255, 255, 255, 0); border-bottom-color:#fff; margin-top:-11px;} 
+.ph-saveprofile:before            { border-color: rgba(49, 49, 49, 0); border-bottom-color:#cbcbcb; margin-top:-13px;}   
+
+
+
+.visit-saveprofile-div table      {}
+.visit-saveprofile-div table tr td{ list-style:none; font-size:12px; color:#797979; display:list-item; margin-left:1px; padding:5px 5px 8px 5px; width:auto; border:0px solid #ededed; border-width:0px 0px 0px 0px;}               
+.visit-saveprofile-div table td i {font-size:20px !important; cursor:pointer;}  
+
+.wiki-tag                         {position:relative;}
+.wiki-tag:after                   {content: "W"; position: absolute; top: -3px; right: -13px; color: #fff; font-size: 7px;
+                                   padding: 1px 3px; background: #939393; border-radius:2px; cursor:pointer;}
+                                   
+.grid-wiki-tag                    {color:#fff; font-size:8px; position:absolute; right:35px; top:6px; padding:1px 3px; background: #939393; border-radius:2px; cursor:pointer;}
+.grid-med-count                   {color:#fff; font-size:11px; position:absolute; right:7px; top:6px; padding:1px 5px; background: #FC5050; border-radius:2px; cursor:pointer;}
+              
+.rec-add-icon                     {padding: 4px 4px 1px 4px; background: #D4D3D3; border-radius: 3px; color: #555; border: 1px solid #C0BBBB; margin:0 0 0 5px; 
+                                   margin-right:0px !important; display:inline-block; font-size:15px; cursor:pointer;
+                                   background: -moz-linear-gradient(top, #FEFEFE 0%, #E6E6E6 100%);
+                                   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E6E6E6));
+                                   background: -webkit-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                   background: -o-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                   background: -ms-linear-gradient(top, #FEFEFE 0%,#E6E6E6 100%);
+                                   background: linear-gradient(to bottom, #FEFEFE 0%,#E6E6E6 100%);}              
+              
+              
+              	
+/*.visit-saveprofile-but:hover .visit-saveprofile-div{display:block;}*/
+
+.diagnosis-save input[type="button"]{margin-left:5px; margin-top:10px;}
+.diagnosis-save-dls table td i    {font-size:20px !important; cursor:pointer;}
+ 
+.Diagnosis-save-dls               {} 
+.Diagnosis-save-dls li            {margin-bottom:10px;}
+.Diagnosis-save-dls li span       {font-weight:bold; font-family:'Roboto condensed'; font-size:14px;} 
+.Diagnosis-save-dls li p span     {color:gray; font-size:12px; font-family:'Roboto';} 
+ 
+ 
+ 
+.pat-his-div                      { /*margin-top:10px; background:#fafbfa;*/ float:left; margin-right:1%; width:32.65%; height:200px;}
+.pat-his-header                   {border-bottom:1px solid #cbcbcb; height:36px; background: #fafbfa; /* padding:8px 5px;*/
+                                    border:1px solid #cbcbcb; border-width:1px 1px 0 1px; position:relative;}
+.pat-his-header .ph-textbox       {margin: 4px 3px 3px 3px; width:150px; padding:5px; color: #555; border-radius:3px;  border:1px solid #ccc;} 
+ 
+.pat-his-header i                {font-size:16px; margin:8px 10px 1px 1px; color: #848383; cursor:pointer;}
+ 
+ 
+                                    
+.pat-his-header label             {font-size:14px; font-family:Roboto; margin:8px; float:left; cursor:pointer;} 
+.pat-his-div textarea             {height:164px;}
+
+
+
+.visit-doctor-list                { display:none;  position:absolute; top:30px; right:0px; background:#fff; border:1px solid #cbcbcb; border-width:1px 1px 0 1px; z-index:99999; width:244px; 
+                                    -webkit-box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.40);  box-shadow: 4px 5px 12px 0px rgba(0, 0, 0, 0.40); }
+                                    
+.visit-doc-bglist                 { background:#E7E7E7;}      
+
+
+
+.visit-doc-history                  {height:320px; overflow:auto;-webkit-overflow-scrolling:touch; padding:5px;}  	 
+.visit-doc-history  ul li           { background:#fff; cursor:pointer; border-left:2px solid transparent; padding:3px 3px 3px 10px; overflow:hidden; 
+                                      text-overflow:ellipsis; white-space:nowrap; margin-bottom:5px; position:relative;}
+.visit-doc-history ul li h1        { font-size:13px; color:#5D5E5F; font-weight:bold; width:100%; font-family:'Roboto';}
+.visit-doc-history ul li span      { color:#797979; width:100%; float:left; font-size:11px;}
+.visit-doc-history ul li:hover     { background:#f7f7f7; border-left:2px solid #be6d0e;}
+.visit-doc-history ul li.active1   { background:#cfe9f5; border-left:1px solid #fe9797;}  
+.visit-doc-history  ul li i.dms-view { position:absolute; top:5px; right:5px; font-size:18px;}
+
+
+.doc-bglist-header                 { padding:5px 10px; border-bottom: 1px solid #cbcbcb;
+                                    background: -moz-linear-gradient(top, #ffffff 0%, #DEE3EB  100%);
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#DEE3EB ));
+                                    background: -webkit-linear-gradient(top, #ffffff 0%,#DEE3EB  100%);
+                                    background: -o-linear-gradient(top, #ffffff 0%,#DEE3EB  100%);
+                                    background: -ms-linear-gradient(top, #ffffff 0%,#DEE3EB  100%);
+                                    background: linear-gradient(top, #ffffff 0%,#DEE3EB  100%);}
+
+
+.doc-bglist-header label           {font-size:12px; font-weight:bold;}
+.doc-bglist-header input[type="checkbox"]{vertical-align:middle; margin-right:5px;}
+
+
+
+
+
+
+
+.grid-textbox-div                 {position:relative;}
+.grid-textbox-icon                {position:absolute; right:12px; top:3px;}
+
+.form-checkboxs                    {float:left; width:100%; margin-top:10px;}                                                                        
+.form-checkboxs label{margin-right:20px;}
+.form-checkboxs input[type="checkbox"]{vertical-align:middle;}
+
+.rehab-Management                 {float: left; width: 100%; margin-top: 10px; margin-bottom: 10px;}
+.rehab-Management h2              {font-size:18px; color:#000; font-weight:bold; margin-bottom:10px; font-family:'Roboto Condensed'}
+.rehab-Management ul              {list-style: inherit; list-style-position: inside;}
+.rehab-Management ul li label     {}
+
+.vd-doc-up                        {position:absolute; top:8px; right:14px; color:Gray; cursor:pointer;}
+.vd-doc-down                      {position:absolute; top:18px; right:14px; color:Gray; cursor:pointer;}
+.vd-ass-top-icons .ass-top-icon-right i{color:gray; font-size: 18px; margin-left: 10px; cursor:pointer;}
+.ass-top-icon-right               {float:right;}
+
+
+
+.VD-print-dls 			           { border-collapse: collapse; font-style:normal; font-variant:normal;font-size: 12px;}
+.VD-print-dls th			       { color: #000000; height:35px; padding:7px 15px 7px 5px;  border: 0px solid #88D1E0; border-width:0px 0px 0px 0px; vertical-align:top;}
+.VD-print-dls td			       { padding: 5px; color:#333333;}
+.VD-save-pro-buts                  { text-decoration:none; color:gray; margin-left:15px;}
+
+
+
+
+.vd-ass-top-icons                   {height:28px;}
+.ass-next-prv                       { float:left; height:28px; width:200px; border-radius:3px; border:1px solid #cbcbcb; text-align:center; background:#B9F3FF; margin-left:10px; position:relative;}
+.ass-next-prv i                     { position:absolute;  font-size:15px;}
+
+.ass-next-prv span                  { outline:none; line-height:26px;}                                     
+.ass-prv                            { cursor:pointer; top:5px; left:3px;}
+.ass-next                           { cursor:pointer; top:5px; right:3px;}
+
+.ass-reload-icon                    { float:left; float:left; margin-left:10px; padding: 3px 7px 0px 5px; background: #f2f2f2; border: 1px solid #cbcbcb; border-radius: 3px;}
+.ass-reload-icon i                  { font-size:18px; cursor:pointer;}
+
+
+.no-data-maindiv                    {height:auto; width:100%; padding-top:20px;}
+.no-data-padding                    {padding-top:150px !important;}
+.no-data-div                        {height:165px; width:750px; margin:0px auto; text-align:left;}
+
+.left-icon-div                      {width:120px; height:100%; text-align:center; border-right:1px solid #cbcbcb; padding:10px; 
+                                     display:table; float:left;}
+                                     
+.left-icon-img                      { height:80px; width:80px;}                                    
+.vital-position                     {background-position:top -80px left -320px;} 
+.alg-position                       {background-position:top 0px left -80px;} 
+.inv-position                       {background-position:top 0px left -400px;}  
+.med-position                       {background-position:top -80px left -80px;} 
+.ph-position                        {background-position:top -80px left -160px;} 
+.compl-position                     {background-position:top 0px left 0px;}
+.hc-position                        {background-position:top 0px left -240px;}
+.dx-position                        {background-position:top 0px left -160px;}
+.rec-position                       {background-position:top -80px left -240px;}
+.rv-position                        {background-position:top -80px left -240px;}
+ 
+                                     
+/*.left-icon-div i                  {font-size:85px; color:#5088B6; display: table-cell; vertical-align: middle;}*/
+.left-icon-div img                  {height:85px; width:85px; display:none;}
+
+
+
+.right-icon-div                     {clear:right; margin-left:130px;  padding:10px 15px;} 
+.right-icon-div label               {font-family:'Roboto thin'; font-size:40px; font-weight:400; font-style:normal; cursor:pointer;}
+.right-icon-div label span          {color:#0390b3; position:relative;}
+.right-icon-div label span:after    {content: "W"; position: absolute; top:1px; font-weight: bold; right:-6px; color: #fff;
+                                     font-size:9px; padding: 2px 4px; background:#939393; border-radius:3px;}
+.right-icon-div p                   {color:#949494; margin:0px; overflow:hidden; text-overflow: ellipsis; -webkit-box-orient: vertical;
+                                     -webkit-line-clamp:3; display: -webkit-box;}
+                                     
+.right-icon-div .cancel-office-ol   {margin:5px 0 0 0; padding: 0 0 0 17px; color:#949494;}
+
+
+
+
+/**************************26-6-15****************************/
+
+.RR_history{ margin:25px 0 0 0; padding:0px;}
+.RR_Header_text{ background:#f1f1f1; padding:3px; margin:0px;}
+.RR_Header_text h1{ margin:0px; padding:0px; font-weight:normal;}
+.RR_history table{ margin:10px 0 10px 0;}
+.RR_history table tr td input[type="checkbox"]{ margin: 0 0 0 10px;}
+
+.RR_Assess_summery table{margin:10px 0 10px 0;}
+.RR_hist_icon{ font-size:20px; color:#999696; margin:0px 0 0 10px;}
+.RR_calender{ font-size:25px; color:#999696;   vertical-align: middle;}
+/*.StplGrid label{color: #6b6b6b;}*/
+.RR-reports{ margin:0px; padding:0px !important;}
+.RR-reports table tr td{ padding:0px !important;}
+.RR-chrono{font-size:35px; color:#999696; }
+
+/***********************************************************print***********************************************/
+.prin-page-bg                  {background:#fff;}
+.visit-patdls-print            { margin:5px 0 0 0;  width:100%;}
+.visit-patdls-print h1         {font-size:14px; padding:5px 0 5px 5px; background:#EBEBEB;   outline:none;}
+.visit-patdls-print h2         {font-size:14px; padding:5px 5px 5px 5px;}
+.visit-ass-report              {width:100%; margin-top:10px;}
+
+.pat-document{padding-right:30px;}
+.pat-document i{position:absolute; right: 6px; top: 2px; font-size: 15px;}
+.pat-document .PC-count{position:absolute; right: 6px; top: 21px; padding: 1px 11px; font-family: 'Roboto condensed'; font-size: 11px; background: #6E8CB6; color: #fff; border-radius: 10px;}

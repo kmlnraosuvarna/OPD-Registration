@@ -1,0 +1,26 @@
+D:\manju\SHIMS\Dll's\EzHms.ModelEntity.dll
+D:\manju\SHIMS\Dll's\EzHms.ModelEntity.pdb
+D:\WorkFiles\SHIMS\Dll's\EzHms.ModelEntity.dll
+D:\WorkFiles\SHIMS\Dll's\EzHms.ModelEntity.pdb
+D:\WorkFiles\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.dll
+D:\WorkFiles\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.pdb
+D:\WorkFiles\SHIMS\APP\ModelEntity\obj\Debug\ModelEntity.csprojResolveAssemblyReference.cache
+D:\Projects\SHIMS\Dll's\EzHms.ModelEntity.dll
+D:\Projects\SHIMS\Dll's\EzHms.ModelEntity.pdb
+D:\Projects\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.dll
+D:\Projects\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.pdb
+D:\Projects\SHIMS\APP\ModelEntity\obj\Debug\ModelEntity.csprojResolveAssemblyReference.cache
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\Dll's\EzHms.ModelEntity.dll
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\Dll's\EzHms.ModelEntity.pdb
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.dll
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.pdb
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\ModelEntity\obj\Debug\ModelEntity.csprojResolveAssemblyReference.cache
+E:\SHIMS\APP\ModelEntity\obj\Debug\ModelEntity.csprojResolveAssemblyReference.cache
+E:\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.dll
+E:\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.pdb
+E:\SHIMS\Dll's\EzHms.ModelEntity.dll
+E:\SHIMS\Dll's\EzHms.ModelEntity.pdb
+C:\Users\naresh p\Desktop\OPD\SHIMS\Dll's\EzHms.ModelEntity.dll
+C:\Users\naresh p\Desktop\OPD\SHIMS\Dll's\EzHms.ModelEntity.pdb
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.dll
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\ModelEntity\obj\Debug\EzHms.ModelEntity.pdb

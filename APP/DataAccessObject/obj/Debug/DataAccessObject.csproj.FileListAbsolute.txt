@@ -1,0 +1,27 @@
+D:\manju\SHIMS\Dll's\EzHms.DataAccessObject.dll
+D:\manju\SHIMS\Dll's\EzHms.DataAccessObject.pdb
+D:\WorkFiles\SHIMS\Dll's\EzHms.DataAccessObject.dll
+D:\WorkFiles\SHIMS\Dll's\EzHms.DataAccessObject.pdb
+D:\WorkFiles\SHIMS\APP\DataAccessObject\obj\Debug\DataAccessObject.csprojResolveAssemblyReference.cache
+D:\WorkFiles\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.dll
+D:\WorkFiles\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.pdb
+D:\Projects\SHIMS\Dll's\EzHms.DataAccessObject.dll
+D:\Projects\SHIMS\Dll's\EzHms.DataAccessObject.pdb
+D:\Projects\SHIMS\APP\DataAccessObject\obj\Debug\DataAccessObject.csprojResolveAssemblyReference.cache
+D:\Projects\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.dll
+D:\Projects\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.pdb
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\Dll's\EzHms.DataAccessObject.dll
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\Dll's\EzHms.DataAccessObject.pdb
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\DataAccessObject\obj\Debug\DataAccessObject.csprojResolveAssemblyReference.cache
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.dll
+C:\Users\naresh p\Desktop\HIS2024\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.pdb
+E:\SHIMS\APP\DataAccessObject\obj\Debug\DataAccessObject.csprojResolveAssemblyReference.cache
+E:\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.dll
+E:\SHIMS\Dll's\EzHms.DataAccessObject.dll
+E:\SHIMS\Dll's\EzHms.DataAccessObject.pdb
+E:\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.pdb
+C:\Users\naresh p\Desktop\OPD\SHIMS\Dll's\EzHms.DataAccessObject.dll
+C:\Users\naresh p\Desktop\OPD\SHIMS\Dll's\EzHms.DataAccessObject.pdb
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\DataAccessObject\obj\Debug\DataAccessObject.csprojResolveAssemblyReference.cache
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.dll
+C:\Users\naresh p\Desktop\OPD\SHIMS\APP\DataAccessObject\obj\Debug\EzHms.DataAccessObject.pdb

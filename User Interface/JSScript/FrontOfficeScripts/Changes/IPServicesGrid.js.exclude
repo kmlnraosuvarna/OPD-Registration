@@ -1,0 +1,994 @@
+﻿
+var gridControl;
+var arrServiceIds = new Array();
+var arrServiceDocIds = new Array();
+function OnServicesSearchLookup(ev) {
+    if (document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_ucUmrNo_txtSearchControl').value == '') {
+        $(".stoast").toastText("Info", "Please select admitted patient.", 5, 2);
+        sender._popupBehavior._parentElement.value = '';
+        document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_ucUmrNo_txtSearchControl').focus();
+        return false;
+    }
+    var CurrentRowIndex = 0;
+    var Post_Cons_Style = '';
+    CurrentRowIndex = typeof (ev.parentElement.parentElement.parentElement.parentElement.rowIndex) == 'number' ? ev.parentElement.parentElement.parentElement.parentElement.rowIndex : ev.parentElement.parentElement.parentElement.parentElement.rowIndex;
+    CurrentRowIndex = CurrentRowIndex == 0 || CurrentRowIndex == '' || CurrentRowIndex == undefined ? 1 : CurrentRowIndex;
+    var _selectedDoctorID = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('input[type=hidden][id*=hdnDoctorID]').val();
+    var _selectedSrvID = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('input[type=hidden][id*=hdnServiceID]').val();
+    if (_selectedDoctorID == null || _selectedDoctorID == undefined || _selectedDoctorID == '') { _selectedDoctorID = "0"; }
+    if (_selectedSrvID == null || _selectedSrvID == undefined || _selectedSrvID == '') { _selectedSrvID = "0"; }
+    var ddlNotes = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('[id*=ddlNotes]').val();
+    var ddltype = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('[id*=ddltype]').val();
+
+    $('[id*=PanelSrvsLup]')[0].style.display = 'block';
+    var SrvType = 0;
+    var ward = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnWardGrpID').value;
+    var VisitType = 0;
+    var _GenderID = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnGenderID').value;
+    var CompanyId = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnCompID').value;
+    if (CompanyId == null || CompanyId == undefined || CompanyId == '') { CompanyId = "0"; }
+    if (ward == null || ward == undefined || ward == '') { CompawardnyId = "0"; }
+    if (_GenderID == null || _GenderID == undefined || _GenderID == '') { _GenderID = "4"; }
+    Emrg_Price_flag = 'N';
+    var prefix_text = '';
+    var _count = "0";
+    var patientClassID = 1;
+    var tatiffid = 1;
+    var dbtValue = 0, billId = 0; ;
+    var Flag = ',IMRPOST';
+    if (ddlNotes == '1') {
+        dbtValue = 'CREDIT';
+        billId = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnAdmnNo').value;
+        Flag = ',ADMISSION';
+    }
+    else if (ddlNotes == '2') {
+        dbtValue = 'DEBIT';
+
+    }
+    var defpagesize = $('[id*=hdninitialgridpagecount]').val();
+    var Contextkey = SrvType + "," + ward + "," + VisitType + Flag + "," + Emrg_Price_flag + "," + _GenderID + ',' + tatiffid + ',' + 1 + ',' + CompanyId + "," + billId;
+    var param = param || {};
+    param.dataKey = "Service_cd";
+    param.pageSize = defpagesize;
+    param.pageNum = 1;
+    var AdvSrc = '';
+    param.defaultWSParams = { prefixText: prefix_text, count: _count, contextKey: Contextkey, _advSrch: '', pageNum: 1
+    };
+    param.wsPath = "ServiceMasterWebService.asmx/GetAllIPServiceAutoLookup";
+    param.wsFilterPath = "ServiceMasterWebService.asmx/GetAllIPServiceAutoLookup";
+    param.template = ["SERVICE_NAME*SERVICE_NAME"
+                , "Service_cd*SERVICE_CD"
+                , "Service_group*SERVICE_GROUP"
+                , "Price*PRICE"];
+    param.header = [{ col: "Service Name", sort: false, filter: true }
+                                , { col: "Service Code", sort: false, filter: true }
+                                , { col: "Service Group Name", sort: false, filter: true }
+                                , { col: "Price", sort: false, filter: true}];
+    param.enablePaging = true;
+    param.enableTrace = false;
+    param.enableFilter = true;
+    param.enableCheckbox = false;
+    param.enableSorting = true;
+    param.RowNo = true; param.tableTemplate = true; param.likeLookup = true;
+    param.rowClick = function (key) {
+        var _txt_srvName = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('input[type=text][id*=txtServiceName]');
+        OnItemSelection(_txt_srvName, key);
+        $('[id*=PanelSrvsLup]')[0].style.display = "none";
+    };
+    gridControl = $("#divSrvsCons").jtable(param);
+}
+var ChildArray = new Array();
+var NamesArray = new Array();
+var Childcount = 0;
+var pkgCount = 0;
+
+var ServicePostFlag = 'N';
+function ServicesAutoContextKey(ddlNotes, ddltype) {
+    var SrvType = 0;
+    var ward = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnWardGrpID').value;
+    var VisitType = 0;
+    var _GenderID = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnGenderID').value;
+    var CompanyId = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnCompID').value;
+    if (CompanyId == null || CompanyId == undefined || CompanyId == '') { CompanyId = "0"; }
+    if (ward == null || ward == undefined || ward == '') { CompawardnyId = "0"; }
+    if (_GenderID == null || _GenderID == undefined || _GenderID == '') { _GenderID = "4"; }
+    Emrg_Price_flag = 'N';
+    var patientClassID = 1;
+    var tatiffid = 1;
+    var dbtValue = 0, billId = 0; ;
+    var _isadt = ",IMRPOST";
+    if (ddlNotes == '1') {
+        dbtValue = 'CREDIT';
+        _isadt = ",ADMISSION";
+    }
+    else if (ddlNotes == '2') {
+        dbtValue = 'DEBIT';
+        billId = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnAdmnNo').value;
+    }
+    GetAsync(
+                "Private/FrontOffice/IPBilling/Changes/SupplementaryBill.aspx/ddlChangeNotes",
+                { ddlNotes: ddlNotes },
+                function (JData) {
+                },
+                function (jqXHR, textStatus, errorThrown) {
+                });
+    var patientId = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_ucAdmission__hiddenID').value;
+    var admnNo = document.getElementById('ctl00_hdnDMSAdmnNo').value;
+    var Contextkey = SrvType + "," + ward + "," + VisitType + _isadt + "," + Emrg_Price_flag + "," + _GenderID + ',' + tatiffid + ',' + 1 + ',' + CompanyId + "," + admnNo + ',' + patientId; ;
+
+    var Index = $('[id$=hdnRowIndex]').val();
+    var Length = $('table[id*=gvServices] tr:has(td)').length;
+    if (Length == '1')
+        Index = 1;
+    else {
+        Index = Index;
+    }
+    var Id = '';
+
+    if (Index == '1') {
+        var OrgId = ($("#ctl00_ContentPlaceHolder1_UCServices_gvServices tbody tr:eq(" + Index + ") td:eq(3) input").attr("id"));
+        if (OrgId == 'ctl00_ContentPlaceHolder1_UCServices_gvServices_ctl02_txtServiceName') {
+            Id = ($("#ctl00_ContentPlaceHolder1_UCServices_gvServices tbody tr:eq(" + Index + ") td:eq(3) input").attr("id")).replace("txtServiceName", "autoComplete1_completionListElem");
+            var n = Id.lastIndexOf("_");
+            Id = Id.substring(0, n);
+        }
+        else {
+            var IDCount = OrgId.lastIndexOf("_") + 1;
+            var autocomp = OrgId.substring(IDCount, OrgId.length);
+            Id = autocomp.replace("txtServiceName", "autoComplete1");
+        }
+    }
+    else {
+        Id = ($("#ctl00_ContentPlaceHolder1_UCServices_gvServices tbody tr:eq(" + Index + ") td:eq(3) input").attr("id"));
+        var txtID = Id.lastIndexOf("_") + 1;
+        var autocomp = Id.substring(txtID, Id.length);
+        Id = autocomp.replace("txtServiceName", "autoComplete1");
+    }
+    var autoId = Id;
+    if ($find(autoId) != null && $find(autoId) != undefined) {
+        $find(Id).set_contextKey(Contextkey);
+    }
+}
+var AdtImrSrvID = 0;
+function OnItemSelection(sender, eventArgs) {
+    var results = ''; var _sender = '';
+    if (sender._popupBehavior == undefined) {
+        results = eventArgs;
+        _sender = sender;
+    }
+    else {
+        results = eval('(' + eventArgs.get_value() + ')');
+        _sender = sender._popupBehavior._parentElement;
+    }
+    AdtImrSrvID = results.ADT_IMR_SRV_ID;
+    var gvServices = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_gvServices');
+    /* added for limti supp bill on 27.09.2016 */
+    /* var noofsuppbills = 5;
+    var rowIndex = gvServices.rows.length;
+    if (rowIndex - 1 > noofsuppbills) {
+    $(".stoast").toastText("Info", "is not valid up to setting", 5, 2);
+    sender.value = '';
+    document.getElementById('ctl00_ContentPlaceHolder1_UCServices_gvServices_ctl02_txtServiceName0').value = '';
+    return false;
+    }*/
+    /* up to here */
+    var SrvType = 0;
+    var checkRowIndex = '';
+    var SERVICE_ID = results.SERVICE_ID;
+    if (SERVICE_ID == '' || SERVICE_ID == undefined || SERVICE_ID == null) { SERVICE_ID = 0; }
+    var _doctorId = results.DOCTOR_ID;
+    if (_doctorId == '' || _doctorId == undefined || _doctorId == null) { _doctorId = 0; }
+    if (parseInt(_doctorId) > 0 && SERVICE_ID == 2) {
+        if (results.Service_type_id == '1' || results.Service_type_id == '11') {
+            SERVICE_ID = _doctorId; SrvType = 1;
+        }
+    }
+    if (SERVICE_ID == null || SERVICE_ID == '' || SERVICE_ID == undefined) { SERVICE_ID = 0; }
+    //document.getElementById('ctl00_ContentPlaceHolder1_ucleftMenuServices_hdnSrvTypeId').value;
+    var ward = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnWardGrpID').value;
+    var VisitType = 0; // document.getElementById('ctl00_ContentPlaceHolder1_ucleftMenuServices_hdnVisitType').value;
+    var _GenderID = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnGenderID').value;
+    var CompanyId = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnCompID').value;
+    if (CompanyId == null || CompanyId == undefined || CompanyId == '') { CompanyId = "0"; }
+    if (ward == null || ward == undefined || ward == '') { CompawardnyId = "0"; }
+    if (_GenderID == null || _GenderID == undefined || _GenderID == '') { _GenderID = "4"; }
+    var Emrg_Price_flag = '';
+
+    //    GetAsync(
+    //            "Private/FrontOffice/IPBilling/Changes/IPServiceEntry.aspx/CompanySelection",
+    //            { COMPANY_ID: CompanyId },
+    //            function (JData) {
+    //            },
+    //            function (jqXHR, textStatus, errorThrown) {
+    //            });
+    //            if ($('#ctl00_ContentPlaceHolder1_chkEmrgPrice')[0].checked == true) {
+    //                Emrg_Price_flag = 'Y';
+    //                VisitType = '2';
+    //            }
+    //            else {
+    Emrg_Price_flag = 'N';
+    //            }
+    var patientClassID = 1;
+    var tatiffid = 1;
+    var patientId = document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_ucAdmission__hiddenID').value;
+    var admnNo = document.getElementById('ctl00_hdnDMSAdmnNo').value;
+    if (admnNo == undefined || admnNo == null) { admnNo = ''; }
+    if (patientId == undefined || patientId == null || patientId == '') { patientId = '0'; }
+    var referal_letter_id = '0';
+    var Contextkey = SrvType + "," + ward + "," + VisitType + ",IMRPOST" + "," + Emrg_Price_flag + "," + _GenderID + ',' + tatiffid + ',' + 1 + ',' + CompanyId + ',' + SERVICE_ID + ',' + admnNo + ',' + patientId + ',' + referal_letter_id;
+    var _count = "0";
+    GetNonAsync("ServiceMasterWebService.asmx/NewGetIPAutoCompleteServiceInfo",
+                        { prefixText: '', count: parseInt(_count), contextKey: Contextkey },
+                        function (jdata) {
+                            if (jdata.d.length == 0) {
+                                $(".stoast").toastText("warning", "This Service Is Not Applocable For IP Patients", 5, 3);
+                                return false;
+                            }
+                            else {
+                                OnAssignSerice(_sender, jdata.d[0]);
+                                $("table[id$=gvServices] tr:has(td)").each(function (e) {
+                                    var txtServiceName = $(this).closest('tr').find('[id*=txtServiceName]').val();
+                                    if (txtServiceName == '' || txtServiceName == null || txtServiceName == undefined) { txtServiceName = ''; }
+                                    if (txtServiceName != '' && txtServiceName != '--Enter Test Name Here--') {
+                                        $(this).closest('tr').find('input[type=text]').prop('disabled', true);
+                                    }
+                                });
+                            }
+                        }, function () {
+                        });
+}
+var S_Gen_ID = '';
+function OnAssignSerice(sender, results) {
+    if (document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_ucUmrNo_txtSearchControl').value == '') {
+        $(".stoast").toastText("Info", "Please select Bill no.", 5, 2);
+        sender.value = '';
+        document.getElementById('ctl00_ContentPlaceHolder1_IPPatientDtls1_ucUmrNo_txtSearchControl').focus();
+        return false;
+    }
+    var AC = '';
+    if (results.Text != null) {
+        var SrvText = results.Text.split('$');
+        if (SrvText.length > 0) {
+            results.Text = SrvText[0];
+        }
+    }
+    if (results.NO_NEED_SRV == 'Y') {
+        $(".stoast").toastText("Info", "This Service is Already Posted No Need To Post According To Service Configarations", 5, 2);
+        sender.value = '';
+        sender.focus();
+        return false;
+    }
+
+    if (results.CHARGE_SETUP_DONE == 'N') {
+        $(".stoast").toastText("warning", "Consultation Charge Setup Was Not Done For This Company  " + $('#ctl00_ContentPlaceHolder1_CmpLookup_txtSearchControl').val() + " ", 5, 3);
+        return false;
+    }
+    if (results.Dcotor_id > 0) {
+        _value = results.Doctor_id;
+    }
+    else {
+        _value = results.Value;
+    }
+    if (results.Dcotor_id > 0) {
+        if ($.inArray(parseInt(_value), arrServiceIds) != -1) {
+            $(".stoast").toastText("Info", "This Doctor is Already Exists", 5, 2);
+            sender.value = '';
+            sender.focus();
+            return false;
+        }
+    }
+    else if ($.inArray(parseInt(_value), arrServiceIds) != -1) {
+        //        $("table[id$=gvServices] tr:has(td)").each(function (e) {
+        //            var ddlNotes = $(this).closest('tr').find("[id*=ddlNotes]").val();
+        //            var hdnServiceID = $(this).closest('tr').find("[id*=hdnServiceID]").val();
+        //            var GlblddlNote = $(this).filter(':eq(0)').find("[id*=ddlNotes]").val();
+        //            if (ddlNotes == GlblddlNote && hdnServiceID == _value) {
+        //                $(".stoast").toastText("Info", "This Service is Already Exists", 5, 2);
+        //                return false;
+        //            }
+        //        });
+        $(".stoast").toastText("Info", "This Service is Already Exists", 5, 2);
+        sender.value = '';
+        sender.focus();
+        return false;
+    }
+    if (results.SRV_GENDER_ID == "1" || results.SRV_GENDER_ID == "2") {
+        if (S_Gen_ID != undefined && S_Gen_ID != null && S_Gen_ID != '') {
+            if (S_Gen_ID != results.SRV_GENDER_ID) {
+                var Gen = '';
+                if (S_Gen_ID == '1')
+                { Gen = 'Male '; }
+                else if (S_Gen_ID == '2')
+                { Gen = 'Female '; }
+                else {
+                    Gen = 'this gender ';
+                }
+                $(".stoast").toastText("Info", "this service is not applicable for " + Gen, 5, 2);
+                sender.value = '';
+                sender.focus();
+                return false;
+            }
+        }
+    }
+    pat_age = $('#ctl00_ContentPlaceHolder1_IPPatientDtls1_hdnPatAge').val();
+    if (pat_age == undefined || pat_age == null || pat_age == '') { pat_age = 0; }
+    pat_age = parseInt(pat_age);
+    if (parseInt(results.FROM_DAYS) > 0 && parseInt(results.TO_DAYS) > 0) {
+        if ((parseInt(results.FROM_DAYS) <= parseInt(pat_age)) && (parseInt(pat_age) <= parseInt(results.TO_DAYS))) {
+
+        }
+        else {
+            $(".stoast").toastText("Info", "This service is applicable for patient of age " + parseInt(results.FROM_DAYS) + ' To ' + parseInt(results.TO_DAYS), 5, 3);
+            sender.value = '';
+            sender.focus();
+            return false;
+        }
+    }
+    var grid = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_gvServices');
+    var packCollection = document.getElementById('ctl00_ContentPlaceHolder1_hdnPkgGrpServices').value;
+    var assayCollection = document.getElementById('ctl00_ContentPlaceHolder1_hdnSelection').value;
+    var _status = false;
+    var count = 0;
+    var cnt = 0;
+    var PS = '', AC = '';
+
+    /*Package Start Here  */
+    var PkgCollection = document.getElementById('ctl00_ContentPlaceHolder1_hdnPkgGrpServices').value;
+    if ((PkgCollection != NaN) && (PkgCollection != '') && (PkgCollection != undefined)) {
+        var PackValue = PkgCollection.split('$');
+        if (PackValue.length > 0) {
+            var PkgArray = new Array();
+            for (var p = 0; p < PackValue.length; p++) {
+                var ChildPkgArray = PackValue[p].split('*');
+                if (ChildPkgArray[0].length > 0) {
+                    var PackNames = ChildPkgArray[0].split(',');
+                }
+                if (ChildPkgArray[1].length > 0) {
+                    var PackVal = ChildPkgArray[1].split(',');
+                    for (var j = 0; j < PackVal.length; j++) {
+                        PkgArray[pkgCount] = PackVal[j];
+                        pkgCount++;
+                    }
+                }
+                if (results.Value == "2") {
+                    if ($.inArray(results.Doctor_id, PkgArray) == -1) {
+                    }
+                    else {
+                        $(".stoast").toastText("Info", "This " + results.Text + " Already Exists in " + PackNames[1], 5, 3);
+                        sender.value = '';
+                        sender.focus();
+                        count++;
+                    }
+                }
+                else {
+                    if ($.inArray(results.Value, PkgArray) == -1) {
+                    }
+                    else {
+                        $(".stoast").toastText("Info", "This " + results.Text + ' Already Exists in ' + PackNames[1] + ".", 5, 2);
+                        sender.value = '';
+                        sender.focus();
+                        count++;
+                    }
+                }
+            }
+        }
+    }
+    /*Package End      */
+
+    /* assay comparision Begin   */
+    if (document.getElementById('ctl00_ContentPlaceHolder1_hdnIsInvCompReq').value == 'Y') {
+        var MainValues = document.getElementById('ctl00_ContentPlaceHolder1_hdnSelection').value;
+        if ((MainValues != NaN) && (MainValues != '') && (MainValues != undefined)) {
+            var DollarValue = MainValues.split('$');
+            if (DollarValue.length > 0) {
+                var ChildArray = new Array();
+                for (var p = 0; p < DollarValue.length; p++) {
+                    var SubArray = DollarValue[p].split('*');
+                    if (SubArray[0].length > 0) {
+                        var TestNames = SubArray[0].split(',');
+                    }
+                    if (SubArray[1].length > 0) {
+                        var TestVal = SubArray[1].split(',');
+                        for (var j = 0; j < TestVal.length; j++) {
+                            ChildArray[Childcount] = TestVal[j];
+                            Childcount++;
+                        }
+                    }
+
+                    if ($.inArray(results.Value, ChildArray) == -1) {
+                    }
+                    else {
+                        $(".stoast").toastText("Info", "This " + results.Text + ' Already Exists in ' + TestNames[1], 5, 2);
+                        sender.value = '';
+                        sender.focus();
+                        count++;
+                    }
+                }
+            }
+        }
+    }
+    /*assay end*/
+
+    if (cnt != 0)
+        return false;
+
+    if (results.Text != '') {
+        $("table[id$=gvServices] tr:has(td)").each(function (e) {
+            var _posted_dt = $(this).closest('tr').find('[id*=lblSrvDt]').text();
+            var WardId = $(this).closest('tr').find("input[type=hidden][id*=hdnindwrdsrvid]").val();
+            var ServiceWrdid = $('#ctl00_ContentPlaceHolder1_ucleftMenuServices_ddlServiceforward option:selected').val();
+            var servicedt = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_txtSrvDate').value;
+            var ParentSrvID = $(this).closest('tr').find("input[type=hidden][id*=hdnParentSrvID]").val();
+            if (results.Service_type_id == '9') {
+                if (sender._popupBehavior != undefined) {
+                    if ($(this).closest('tr').find("input[type=text][id*=txtServiceName]")[0].id != sender._popupBehavior._parentElement.id && (ParentSrvID == results.Value) && (_posted_dt == servicedt) && (WardId == ServiceWrdid)) {
+                        $(".stoast").toastText("Info", "This " + results.Text + ' Already Exists in ' + TestNames[1], 5, 2);
+                        sender.value = '';
+                        sender.focus();
+                        count++;
+                    }
+                }
+                else {
+                    if ($(this).closest('tr').find("input[type=text][id*=txtServiceName]")[0].id != sender.id && (ParentSrvID == results.Value) && (_posted_dt == servicedt) && (WardId == ServiceWrdid)) {
+                        $(".stoast").toastText("Info", "This " + results.Text + ' Already Exists in ' + TestNames[1], 5, 2);
+                        sender.value = '';
+                        sender.focus();
+                        count++;
+                    }
+                }
+            }
+            else {
+                if (sender._popupBehavior != undefined) {
+                    if ($(this).closest('tr').find("input[type=text][id*=txtServiceName]").val().trim() == results.Text.trim() && $(this).closest('tr').find("input[type=text][id*=txtServiceName]")[0].id != sender._popupBehavior._parentElement.id && (_posted_dt == servicedt) && (WardId == ServiceWrdid)) {
+                        $(".stoast").toastText("warning", "Service " + results.Text + " Is already exists.", 5, 3);
+                        sender.value = '';
+                        sender.focus();
+                        count++;
+                    }
+                }
+                else {
+                    if ($(this).closest('tr').find("input[type=text][id*=txtServiceName]").val().trim() == results.Text.trim() && $(this).closest('tr').find("input[type=text][id*=txtServiceName]")[0].id != sender.id && (_posted_dt == servicedt) && (WardId == ServiceWrdid)) {
+                        $(".stoast").toastText("warning", "Service " + results.Text + " Is already exists.", 5, 3);
+                        sender.value = '';
+                        sender.focus();
+                        count++;
+                    }
+                }
+            }
+        });
+
+        CheckApprove(results);
+        if (ServicePostFlag == "N") {
+            return false;
+        }
+        else {
+        }
+        if (count == 0) {
+            if (sender.id == undefined) {
+                id = sender.attr('id');
+            }
+            else {
+                id = sender.id;
+            }
+            AssignValuesToGrid(results, id);
+            var length = $("table[id$=gvServices] tr:has(td)").length;
+        }
+    }
+}
+function AssignValuesToGrid(results, id) {
+    var gridRowIndex = 0;
+    var value = 0;
+    var Rate;
+    var VisitDisg = '';
+    var _srvdt = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_txtSrvDate').value;
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    if (hr == null || hr == undefined || hr == '') {
+        hr = 00;
+    }
+    if (min == null || min == undefined || min == '') {
+        min = 00;
+    }
+    document.getElementById('ctl00_ContentPlaceHolder1_UCServices_ddlamorpm').value = 1;
+    if (hr > 12) {
+        var hrr = hr - 12;
+        hr = hrr;
+        document.getElementById('ctl00_ContentPlaceHolder1_UCServices_ddlamorpm').value = 2;
+    }
+    var _tmode = $('[id*=ddlamorpm] option:selected').text();
+    var srvdt = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_txtSrvDate').value + " " + hr + ":" + min + ":" + _tmode;
+    if (results.Service_type_id != '9') {
+        fn_AddFilterRow();
+    }
+    $('table[id*=gvServices] tr:has(td)').each(function (e) {
+        if ($(this).closest('tr').find("input[type=text]")[0].id == id) {
+            gridRowIndex = this.rowIndex;
+            var gvServices = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_gvServices');
+            var rowIndex = gvServices.rows.length;
+            var checkRowIndex = rowIndex - 1;
+            var gridindex = 1;
+            var ev = this.rowIndex;
+            if (ev != undefined && ev != '' && ev != null) { ev = ev; } else { ev = 1; }
+            if (results.Value == '2') {
+                arrServiceIds[checkRowIndex] = parseInt(results.Doctor_id);
+            }
+            else {
+                arrServiceIds[checkRowIndex] = parseInt(results.Value);
+            }
+            var ddlNotesVal = $('[id$=gvServices] tr').filter(':eq(' + 1 + ')').find("[id*=ddlNotes]").val();
+            var ddltypeVal = $('[id$=gvServices] tr').filter(':eq(' + 1 + ')').find("[id*=ddltype]").val();
+            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("[id*=ddlNotes]").val(ddlNotesVal);
+            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("[id*=ddltype]").val(ddltypeVal);
+            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("[id*=ddlNotes]").attr('disabled', 'disabled');
+            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("[id*=ddltype]").attr('disabled', 'disabled');
+
+            if (results.Value != '') {
+                if (results.Service_type_id == '9') {
+                    GetGroupBillServices(results.Value);
+                }
+                else {
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtServiceName]").val(results.Text);
+                    $($('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtServiceName]")[0]).onkeydown = function () { return CancelBackSpace(event); };
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtServiceName]").attr("readOnly", "readOnly");
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=button][id*=BtnSrvSearch]").attr('disabled', 'disabled');
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").val("1");
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").val(results.Price);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnServiceID]").val(results.Value);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnAdtImrSrvID]").val(AdtImrSrvID);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").val("0");
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnServiceGrp]").val(results.Service_group_id);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnServiceTypID]").val(results.Service_type_id);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnDoctorID]").val(results.Doctor_id);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnServiceClass]").val(results.Service_Class_Id);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnDeptID]").val(results.Department_id);
+
+                    var Qty = $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").val();
+                    Rate = $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").val();
+                    var Amount = parseFloat(Qty) * parseFloat(Rate);
+                    if (Amount == 0)
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", true);
+                    else
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("[id*=lblgvAmount]").text(Amount);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("[id*=lblServiceType]").text(results.Service_type_name);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=lblNetAmount]").val(Amount);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("[id*=lblSrvDt]").text(srvdt);
+                    var srvWrd = $('#ctl00_ContentPlaceHolder1_ucleftMenuServices_ddlServiceforward option:selected').text()
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=lblWrsSrv]").val(srvWrd);
+                    var srvWrdid = $('#ctl00_ContentPlaceHolder1_ucleftMenuServices_ddlServiceforward option:selected').val();
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnindwrdsrvid]").val(srvWrdid);
+                    $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=lblWrsSrv]").attr("disabled", true);
+                    /* added on 20.08.2016 */
+                    /* up to here */
+                    var _cncltypeid = results.CONSULTATION_TYPE_ID;
+                    if (_cncltypeid == "" || _cncltypeid == undefined || _cncltypeid == null) { _cncltypeid = 0; }
+                    if (results.Service_type_id == '1')/*Consultations*/
+                    {
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").attr("disabled", false);
+                        if (document.getElementById('ctl00_ContentPlaceHolder1_hdnConcCons').value == "Y") {
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").addClass("formtextbox");
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", true);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").addClass("ReadOnlyTextBox");
+                        }
+                        else {
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", true);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").addClass("ReadOnlyTextBox");
+                        }
+                    }
+                    else if (results.Service_type_id == '11') {
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").attr("disabled", true);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").addClass("ReadOnlyTextBox");
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", false);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").addClass("ReadOnlyTextBox");
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                    }
+                    else if (results.Service_type_id == '2')/*Investigation*/
+                    {
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").attr("disabled", true);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").addClass("ReadOnlyTextBox");
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", true);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").addClass("ReadOnlyTextBox");
+
+                        if (document.getElementById('ctl00_ContentPlaceHolder1_hdnConcInvst').value == "Y") {
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").addClass("formtextbox");
+                        }
+                        else {
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", true);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").addClass("ReadOnlyTextBox");
+                        }
+                        if (results.Service_Class_Id == 4)/*Assay Comparision*/
+                        {
+                            if (document.getElementById('ctl00_ContentPlaceHolder1_hdnIsInvCompReq').value == 'Y')
+                                GetAssayCompServices(results.Value, 'A');
+                        }
+                    }
+                    else if (results.Service_type_id == '3' || results.Service_type_id == '4' || results.Service_type_id == '5' || results.Service_type_id == '13' || results.Service_type_id == '6' || results.Service_type_id == '7' || results.Service_type_id == '10' || results.Service_type_id == '11') {
+                        /*Procedures OR Misclenious OR Registration OR Profile OR HealthCheckup OR Ward Charges*/
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", false);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").addClass("formtextbox");
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                        if (results.Service_type_id == '13' || results.Service_type_id == '6' || results.Service_type_id == '7') {
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").attr("disabled", true);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").addClass("formtextbox");
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", false);
+                        }
+                        else if (results.Service_type_id == '3') {/*Procedure*/
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", false);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").attr("disabled", true);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").addClass("formtextbox");
+                        }
+                    }
+                    else if (results.Service_type_id == '8')/*Service*/
+                    {
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", true);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").addClass("ReadOnlyTextBox");
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").attr("disabled", false);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+
+                        if (document.getElementById('ctl00_ContentPlaceHolder1_hdnConcSrv').value == "Y") {
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").addClass("formtextbox");
+                        }
+                        else {
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                            $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").addClass("ReadOnlyTextBox");
+                        }
+                    }
+                    if (results.Service_type_id == '10') {/*Ward Charges*/
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", true);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").addClass("ReadOnlyTextBox");
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").attr("disabled", false);
+                    }
+                    else if (results.Service_type_id == '6' || results.Service_type_id == '7' || results.Service_type_id == '11') {
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").attr("disabled", true);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtQuantity]").addClass("ReadOnlyTextBox");
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").attr("disabled", false);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtRate]").addClass("ReadOnlyTextBox");
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtConcession]").attr("disabled", false);
+                    }
+                    if (results.Service_Class_Id == 3) {
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("[id*=imgBtnShowPkg]")[0].style.display = 'block';
+                        GetPkgIncludeServices(results.Value, 'P');
+                    }
+                    if ($('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=hidden][id*=hdnServiceTypID]").val() != '4') {
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtServiceName]").attr("disabled", true);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtServiceName]").addClass("ReadOnlyTextBox");
+                    }
+                    else if (document.getElementById('ctl00_ContentPlaceHolder1_hdnIsEdtMiscSrv').value == 'N') {
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtServiceName]").attr("disabled", true);
+                        $('[id$=gvServices] tr').filter(':eq(' + checkRowIndex + ')').find("input[type=text][id*=txtServiceName]").addClass("ReadOnlyTextBox");
+                    }
+                    CalculateAmountGridSrv();
+                    $(this).closest('tr').find("input[type=text][id*=txtServiceName]").val('');
+                    $(this).closest('tr').find("input[type=text][id*=txtServiceName]").focus();
+                }
+            }
+        }
+    });
+
+}
+var index = 0;
+var rowColor = 0;
+function fn_AddFilterRow(SrvName, Quantity, ServiceId, SrvGrpID, SrvTypeId, doctorId, SrvClassId, deptID, SrvTypeName, SrvDt, ServiceWard, Rate, Amount, NetAmount, ConsAmt, SerStatus, Wardid, WardName, ConslTypeID, recordStatus) {
+    try {
+        var rowIndex = 0;
+        var newCell = 0;
+        var gvServices = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_gvServices');
+        var rowIndex = gvServices.rows.length; var checkRowIndex = rowIndex - 1; var gridindex = 1;
+        $('[id$=hdnRowIndex]').val(rowIndex);
+        var newRow = gvServices.insertRow(rowIndex);
+        if (rowColor == 0) {
+            newRow.className = 'gridAlternaterow'
+            rowColor++;
+        }
+        else {
+            newRow.className = 'gridrow'
+            rowColor = 0;
+        }
+        var newCell = newRow.insertCell(0);
+        var span = document.createElement('span');
+        span.style.width = "100%";
+        var HiddenValue = document.createElement('input'); HiddenValue.type = 'hidden'; HiddenValue.id = 'hdnServiceID' + index; HiddenValue.value = ServiceId; span.appendChild(HiddenValue);
+        var hdnAdtImrSrvID = document.createElement('input'); hdnAdtImrSrvID.type = 'hidden'; hdnAdtImrSrvID.id = 'hdnAdtImrSrvID' + index; hdnAdtImrSrvID.value = ServiceId; span.appendChild(hdnAdtImrSrvID);
+        var newTextBox = document.createElement('label'); newTextBox.id = 'lblSNo'; newTextBox.innerHTML = rowIndex - 1; span.appendChild(newTextBox);
+        newCell.align = 'left';
+        newCell.appendChild(span);
+
+        newCell = newRow.insertCell(1);
+        var imgBtnDelete = document.createElement('IMG');
+        imgBtnDelete.onclick = function () { RemoveGridService(this); };
+        imgBtnDelete.id = 'imgBtnDelete' + index;
+        imgBtnDelete.src = '../../../../Assets/Grid_Icons/delete.png';
+        newCell.align = 'left';
+        imgBtnDelete.title = 'Remove';
+        newCell.appendChild(imgBtnDelete);
+
+        newCell = newRow.insertCell(2);
+        var ddlNotes = document.createElement("select"); ddlNotes.id = "ddlNotes" + index;
+        var opt = '', _VisitVal = '';
+        var optionVal = document.createElement("option");
+        optionVal.text = "Credit Note";
+        optionVal.value = 1;
+        ddlNotes.options.add(optionVal, 1);
+        var optionVal1 = document.createElement("option");
+        optionVal1.text = "Debit Note";
+        optionVal1.value = 2;
+
+        ddlNotes.options.add(optionVal1, 2);
+        if (recordStatus != '' && recordStatus != undefined && recordStatus != null) {
+            if (recordStatus == 'C')
+                ddlNotes.value = 1;
+            else if (recordStatus == 'A')
+                ddlNotes.value = 2;
+        }
+        newCell.appendChild(ddlNotes);
+
+
+
+
+//        newCell = newRow.insertCell(3);
+//        var ddltype = document.createElement("select"); ddltype.id = "ddltype" + index;
+//        var opt = '', _VisitVal = '';
+//        var optionVal = document.createElement("option");
+//        optionVal.text = "Services";
+//        optionVal.value = 1;
+//        ddltype.options.add(optionVal, 1);
+
+//        var optionVal1 = document.createElement("option");
+//        optionVal1.text = "Items";
+//        optionVal1.value = 2;
+//        ddltype.style.display = 'none';
+//        ddltype.options.add(optionVal1, 2);
+//        newCell.appendChild(ddltype);
+
+        /*Service Name */
+        newCell = newRow.insertCell(3);
+        var divsrvname = document.createElement('div'); divsrvname.id = 'divsrvname';
+        divsrvname.className = "btntxt";
+        var txtServiceName = GetServiceTextBox("ctl00_ContentPlaceHolder1_gvServices_ctl02_txtServiceName");
+        txtServiceName.value = SrvName;
+        txtServiceName.onblur = function () { IsChkValidSrvName(this); }
+        var divBtnSrc = document.createElement('div');
+        divBtnSrc.id = 'divBtnSrc';
+        divBtnSrc.className = "txtbtn";
+        var BtnSrvSearch = document.createElement('input');
+        BtnSrvSearch.type = 'button';
+        BtnSrvSearch.className = 'tb_Btn searchbtn';
+        BtnSrvSearch.id = 'BtnSrvSearch' + index;
+        BtnSrvSearch.align = "right";
+
+        BtnSrvSearch.onclick = function () { OnServicesSearchLookup(this); }
+        divsrvname.appendChild(txtServiceName);
+        divsrvname.appendChild(divBtnSrc);
+        divBtnSrc.appendChild(BtnSrvSearch);
+        newCell.appendChild(divsrvname);
+
+        Sys.Application.add_init(function () {
+            $create(AjaxControlToolkit.AutoCompleteBehavior, { "firstRowSelected": true, "completionListCssClass": "autocomplete_completionListElement", "completionListItemCssClass": "autocomplete_listItem", "highlightedItemCssClass": "autocomplete_highlightedListItem", "id": 'autoComplete1' + index, "minimumPrefixLength": 1, "serviceMethod": "GetAllIPServiceAuto", "servicePath": "../../../../ServiceMasterWebService.asmx", "useContextKey": true }, { "itemSelected": OnItemSelection }, null, $get(txtServiceName.id));
+        });
+        newCell = newRow.insertCell(4);
+        var hdnSrvClass = document.createElement('input'); hdnSrvClass.type = 'hidden'; hdnSrvClass.id = 'hdnServiceClass' + index; hdnSrvClass.value = SrvClassId; newCell.appendChild(hdnSrvClass);
+        var hdnSerGrpId = document.createElement('input'); hdnSerGrpId.type = 'hidden'; hdnSerGrpId.id = 'hdnServiceGrp' + index; hdnSerGrpId.value = SrvGrpID; newCell.appendChild(hdnSerGrpId);
+        var hdnSerTypId = document.createElement('input'); hdnSerTypId.type = 'hidden'; hdnSerTypId.id = 'hdnServiceTypID' + index; hdnSerTypId.value = SrvTypeId; newCell.appendChild(hdnSerTypId);
+        var lblSerType = document.createElement('label'); lblSerType.id = 'lblServiceType' + index; newCell.align = 'left'; lblSerType.innerHTML = SrvTypeName; newCell.appendChild(lblSerType);
+
+        var hdnVisitTypeId = document.createElement('input'); hdnVisitTypeId.type = 'hidden'; hdnVisitTypeId.id = 'hdnVisitTypeId' + index; hdnVisitTypeId.value = ConslTypeID; newCell.appendChild(hdnVisitTypeId);
+        var hdnWardGroupId = document.createElement('input'); hdnWardGroupId.type = 'hidden'; hdnWardGroupId.id = 'hdnWardGrpID' + index; hdnWardGroupId.value = Wardid; newCell.appendChild(hdnWardGroupId);
+        var hdnDoctorID = document.createElement('input'); hdnDoctorID.type = 'hidden'; hdnDoctorID.id = 'hdnDoctorID' + index; hdnDoctorID.value = doctorId; newCell.appendChild(hdnDoctorID);
+        var hdnDeptID = document.createElement('input'); hdnDeptID.type = 'hidden'; hdnDeptID.id = 'hdnDeptID' + index; hdnDeptID.value = deptID; newCell.appendChild(hdnDeptID);
+        var spanImgPkg = document.createElement('span');
+        spanImgPkg.onmouseover = function () { tooltip.show('Click to get  package details.'); };
+        spanImgPkg.onmouseout = function () { tooltip.hide(); };
+        var imgBtnShowPkg = document.createElement('IMG');
+        imgBtnShowPkg.onmouseover = function () { imgBtnShowPkg.style.cursor = 'hand'; };
+        imgBtnShowPkg.onmouseout = function () { imgBtnShowPkg.style.cursor = 'none'; };
+        imgBtnShowPkg.id = 'imgBtnShowPkg' + index;
+        imgBtnShowPkg.src = '../../../../Images/Grid_Icons/pkg.png';
+        imgBtnShowPkg.onclick = function () { ShowPackages(this); };
+        imgBtnShowPkg.style.display = 'none';
+        spanImgPkg.appendChild(imgBtnShowPkg);
+        newCell.appendChild(spanImgPkg);
+
+        newCell = newRow.insertCell(5);
+        var txtQty = GetQtyTextBox("txtQuantity");
+        txtQty.maxLength = 3;
+        txtQty.value = Quantity;
+        txtQty.onkeyup = function () { CalQtyAmount(rowIndex, 'Q'); };
+        newCell.appendChild(txtQty);
+
+        newCell = newRow.insertCell(6);
+        var txtRate = GetRateTextBox("txtRate");
+        txtRate.length = 6;
+        txtRate.maxLength = 7;
+        txtRate.value = Rate;
+        txtRate.onblur = function () { CalQtyAmount(rowIndex, 'R'); };
+        txtRate.onkeyup = function () { return CalculateAmount1(); };
+        newCell.appendChild(txtRate);
+
+        newCell = newRow.insertCell(7);
+        var lblgvAmount = document.createElement('label');
+        lblgvAmount.id = 'lblgvAmount' + index;
+        lblgvAmount.innerHTML = Amount;
+        newCell.align = 'right';
+        newCell.appendChild(lblgvAmount);
+
+        newCell = newRow.insertCell(8);
+        var txtConcession = document.createElement('input'); txtConcession.type = 'text'; txtConcession.Enabled = true; txtConcession.id = 'txtConcession' + index; txtConcession.className = 'Aright'; txtConcession.value = '0';
+        txtConcession.onclick = function () { return ClearTextbox(this); };
+        txtConcession.onkeypress = function () { return numeralsOnly1(event); };
+        txtConcession.onkeyup = function () { return CalQtyAmount(rowIndex, 'C'); };
+        newCell.appendChild(txtConcession);
+
+        newCell = newRow.insertCell(9);
+        var lblNetAmount = GetNetAmtTextBox("lblNetAmount");
+        lblNetAmount.value = NetAmount;
+        newCell.appendChild(lblNetAmount);
+
+        newCell = newRow.insertCell(10);
+        var hdnDateFormat = document.getElementById('ctl00_ContentPlaceHolder1_hdnDateFormat').value;
+        if (hdnDateFormat == '' || hdnDateFormat == null || hdnDateFormat == undefined) { hdnDateFormat = 'dd-MMM-yyyy'; }
+
+        if (SrvDt != "" && SrvDt != undefined && SrvDt != null)
+            SrvDt = new Date(SrvDt).format(hdnDateFormat) + " " + new Date(SrvDt).format("HH:mm:ss");
+
+        var lblSrvDt = document.createElement('label'); lblSrvDt.id = 'lblSrvDt' + index; lblSrvDt.innerHTML = SrvDt; newCell.appendChild(lblSrvDt);
+        var hdnindsrvid = document.createElement('input'); hdnindsrvid.type = 'hidden'; hdnindsrvid.id = 'hdnindsrvid' + index; newCell.appendChild(hdnindsrvid);
+        var hdnindno = document.createElement('input'); hdnindno.type = 'hidden'; hdnindno.id = 'hdnindno' + index; newCell.appendChild(hdnindno);
+        var hdnindid = document.createElement('input'); hdnindid.type = 'hidden'; hdnindid.id = 'hdnindid' + index; newCell.appendChild(hdnindid); newCell.align = 'left';
+
+        newCell = newRow.insertCell(11);
+        var lblWrsSrv = GetWardServiceName('lblWrsSrv');
+
+        lblWrsSrv.value = WardName;
+        newCell.appendChild(lblWrsSrv);
+        var hdnindwrdsrvid = document.createElement('input'); hdnindwrdsrvid.type = 'hidden'; hdnindwrdsrvid.id = 'hdnindwrdsrvid' + index;
+
+        hdnindwrdsrvid.value = Wardid;
+        if (ServiceWard == null) {
+            ServiceWard = 0;
+        }
+        hdnindwrdsrvid.value = ServiceWard;
+        newCell.align = 'left';
+        newCell.appendChild(hdnindwrdsrvid);
+
+        newCell = newRow.insertCell(12);
+        var lblVistDesig = document.createElement('label'); lblVistDesig.id = 'lblVistDesig' + index; newCell.align = 'left';
+        newCell.appendChild(lblVistDesig);
+        var hdnDesignationID = document.createElement('input'); hdnDesignationID.type = 'hidden'; hdnDesignationID.id = 'hdnDesignationID' + index;
+        hdnDesignationID.value = 0;
+        newCell.appendChild(hdnDesignationID);
+        var hdnParentSrvID = document.createElement('input'); hdnParentSrvID.type = 'hidden'; hdnParentSrvID.id = 'hdnParentSrvID' + index;
+        newCell.appendChild(hdnParentSrvID);
+
+        newCell = newRow.insertCell(13);
+        var chkEmergency = GetEmergecnyCheckBox("chkEmergency");
+        newCell.align = 'center';
+        chkEmergency.onclick = function () { onCheckEmergency(this); };
+        newCell.appendChild(chkEmergency);
+        var hdnIsEmergency = document.createElement('input'); hdnIsEmergency.type = 'hidden'; hdnIsEmergency.id = 'hdnIsEmergency' + index; hdnIsEmergency.style.textAlign = "center";
+        newCell.appendChild(hdnIsEmergency);
+        if (SrvTypeId == '2') {
+            txtQty.disabled = true;
+            txtRate.disabled = true;
+        }
+        index++;
+        //ServicesAutoContextKey('', '');
+        $(".srinu").on("keydown", function (e) {
+            if (e.keyCode === 13) {
+                e.stopImmediatePropagation();
+                e.stopPropagation();
+                return false;
+            }
+        });
+    }
+    catch (err)
+                            { }
+}
+function RemoveGridService(ev) {
+    var CurrentRowIndex = 0;
+    CurrentRowIndex = typeof (ev.parentElement.parentElement.rowIndex) == 'number' ? ev.parentElement.parentElement.rowIndex : 0;
+    CurrentRowIndex = CurrentRowIndex == 0 || CurrentRowIndex == '' || CurrentRowIndex == undefined ? 1 : CurrentRowIndex;
+
+    var _service_name = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('input[type=text][id*=txtServiceName]').val();
+    var _srv_id = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('input[type=hidden][id*=hdnServiceID]').val();
+    var srvdate = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('[id*=lblSrvDt]').text();
+    var Ward_id = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('input[type=hidden][id*=hdnindwrdsrvid]').val();
+    var _Srv_Class_Id = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('input[type=hidden][id*=hdnServiceClass]').val();
+    var hdnDoctorID = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('input[type=hidden][id*=hdnDoctorID]').val();
+    if (hdnDoctorID == '' || hdnDoctorID == 'undefined' || hdnDoctorID == null || isNaN(hdnDoctorID)) { hdnDoctorID = 0; }
+    if ((_srv_id > 0) && (_srv_id != '') && (_service_name != '') && (srvdate != '')) {
+        /* up to here debit calculation end*/
+        $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').remove();
+        $('table[id*=ucleftMenuServices_GvAllService] tr:has(td)').each(function (e) {
+            var hdnSerID = $(this).closest('tr').find("input[type=hidden][id*=hdnSerID]").val();
+            if (hdnSerID == _srv_id) {
+                if ($(this).closest('tr').find("input[type=checkbox][id*=chkBxService]").is(':checked')) {
+                    $(this).closest('tr').find("input[type=checkbox][id*=chkBxService]")[0].checked = false;
+                }
+            }
+        });
+    }
+    else {
+        $(".stoast").toastText("Info", "No services exist to delete", 5, 2);
+    }
+    var gridID = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_gvServices');
+    var rowIndex = gridID.rows.length - 1;
+    $('[id$=hdnRowIndex]').val(rowIndex);
+    var index = 1;
+    if (gridID.rows.length == 1 || (gridID.rows.length == 0 && gridID != null))
+        fn_AddFilterRow();
+
+    AssignSno(index);
+    CalculateAmountGridSrv();
+    document.getElementById('ctl00_ContentPlaceHolder1_hdnHTMLstring').value = document.getElementById('ctl00_ContentPlaceHolder1_UCServices_gvServices').innerHTML;
+    /*This is  for Assay Comparission Service*/
+    if (_Srv_Class_Id == "4") {
+        if (document.getElementById('ctl00_ContentPlaceHolder1_hdnIsInvCompReq').value == 'Y') {
+            var MainValues = document.getElementById('ctl00_ContentPlaceHolder1_hdnSelection').value;
+            if ((MainValues != NaN) && (MainValues != '') && (MainValues != undefined)) {
+                var DollarValue = MainValues.split('$');
+                if (DollarValue.length > 0) {
+                    var ChildArray = new Array();
+                    document.getElementById('ctl00_ContentPlaceHolder1_hdnSelection').value = '';
+                    for (var p = 0; p < DollarValue.length; p++) {
+                        var SubArray = DollarValue[p].split('*');
+                        if (SubArray[0].length > 0) {
+                            var TestNames = SubArray[0].split(',');
+                            if (TestNames[0] != _srv_id) {
+                                if (p == DollarValue.length - 1)
+                                    document.getElementById('ctl00_ContentPlaceHolder1_hdnSelection').value += DollarValue[p];
+                                else
+                                    document.getElementById('ctl00_ContentPlaceHolder1_hdnSelection').value += DollarValue[p] + "$";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*Assay Comparission Delete Ends*/
+    /*This is For Pkg Service Delete*/
+    if (_Srv_Class_Id == "3") {
+        var MainPkgValues = document.getElementById('ctl00_ContentPlaceHolder1_hdnPkgGrpServices').value;
+        if ((MainPkgValues != NaN) && (MainPkgValues != '') && (MainPkgValues != undefined)) {
+            var PkgValue = MainPkgValues.split('$');
+            if (PkgValue.length > 0) {
+                var ChildArray = new Array();
+                document.getElementById('ctl00_ContentPlaceHolder1_hdnPkgGrpServices').value = '';
+                for (var p = 0; p < PkgValue.length; p++) {
+                    var SubArray = PkgValue[p].split('*');
+                    if (SubArray[0].length > 0) {
+                        var PkgNames = SubArray[0].split(',');
+                        if (PkgNames[0] != _srv_id) {
+                            if (p == PkgValue.length - 1)
+                                document.getElementById('ctl00_ContentPlaceHolder1_hdnPkgGrpServices').value += PkgValue[p];
+                            else
+                                document.getElementById('ctl00_ContentPlaceHolder1_hdnPkgGrpServices').value += PkgValue[p] + "$";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*End Pkg Service Delete*/
+    return false;
+}
+
+
+function ddlChangeNotes(ev) {
+    var CurrentRowIndex = 0;
+    CurrentRowIndex = typeof (ev.parentElement.parentElement.rowIndex) == 'number' ? ev.parentElement.parentElement.rowIndex : 0;
+    CurrentRowIndex = CurrentRowIndex == 0 || CurrentRowIndex == '' || CurrentRowIndex == undefined ? 1 : CurrentRowIndex;
+
+    var ddlNotes = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('[id*=ddlNotes]').val();
+    var ddltype = $('[id$=gvServices] tr').filter(':eq(' + CurrentRowIndex + ')').find('[id*=ddltype]').val();
+    ServicesAutoContextKey(ddlNotes, ddltype);
+  
+}
